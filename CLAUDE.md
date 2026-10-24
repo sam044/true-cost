@@ -6,11 +6,15 @@ Read `docs/PRD.md` before any task. It is the source of truth for scope, screens
 
 Two people each run their own Claude Code on this repo:
 
-- **Sam** (@sam044) owns extraction: `app/compare/add`, `app/compare/review`, `app/api/extract`, `lib/ai/`, `components/upload/`, `components/review/`, `extension/` (Chrome extension, F19) and `app/compare/import` (the page that receives the extension's capture).
+- **Sam** (@sam044) owns extraction: `app/compare/add`, `app/compare/review`, `app/api/extract`, `lib/ai/`, `components/upload/`, `components/review/`, `extension/` (Chrome extension, F19), `app/compare/import` (the page that receives the extension's capture) and `lib/catalog/` plus `components/catalog/` (catalog of pre-scanned complexes, F21).
 - **Andy** (@andyshah17) owns compare: `app/compare/setup`, `app/compare/results`, `app/api/email`, `lib/cost.ts`, `lib/flags.ts`, `components/compare/`.
 - **Shared, change with care:** `lib/types.ts`, `lib/store.ts`, `app/globals.css`, `app/layout.tsx`, `components/ui/`, `package.json`. Keep changes small, land them in their own commit, and tell your person to tell the other person.
 
-**Extension plan (F19):** the web app is the main product; `extension/` is a small MV3 add-on (plain JS, no build) that captures the current listing (visible-tab screenshot plus page text), opens the app's `/compare/import`, and that page calls `POST /api/extract` and opens Review. The extension never holds an API key and never edits `lib/ai/`; it relies on the `/api/extract` body `{ images: data URLs, text? }` and the `Extraction` type in `lib/types.ts`, so tell Sam before changing either. See the PRD's "Browser extension" section.
+**Primary flow:** (1) the catalog (F21): the Apartments step opens on pre-scanned Blacksburg complexes and one selection adds a complex to Compare with zero input; (2) the extension (F19): one click captures a listing's full page. Uploading screenshots or pasting text on Add is the fallback. Build and demo in that order.
+
+**Catalog plan (F21):** a static seed in `lib/catalog/` built from `eval/cases/`, read only through `getCatalog()` so the fee index (F20) can back it later. The catalog never writes to the index; don't edit F20 files from catalog work.
+
+**Extension plan (F19):** `extension/` is a small MV3 add-on (plain JS, no build) that captures the current listing (full page by scrolling and stitching into at most 5 images, plus the full page text), opens the app's `/compare/import`, and that page calls `POST /api/extract` and opens Review. Its default app URL is `https://true-cost-xi.vercel.app`, with a localhost option. The extension never holds an API key and never edits `lib/ai/`; it relies on the `/api/extract` body `{ images: data URLs, text? }` and the `Extraction` type in `lib/types.ts`, so tell Sam before changing either. See the PRD's "Browser extension" section.
 
 Ask your person whose half a task belongs to if it is unclear. Do not edit the other person's folders unless your person says the other person agreed.
 

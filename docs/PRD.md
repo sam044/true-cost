@@ -45,7 +45,13 @@ Students compare apartments by the headline per-bed price, but the real monthly 
 
 ## Goals, non-goals and success metrics
 
-The goal is a deployed app where a judge can drop in screenshots of 2 or 3 real apartments and see a trustworthy per-person monthly cost comparison in under a minute.
+The goal is a deployed app where a judge picks 2 or 3 real Blacksburg complexes from a catalog, with no typing or uploading, and sees a trustworthy per-person monthly cost comparison in under a minute. For a listing not in the catalog, one click in the Chrome extension captures the whole page and lands on Review. Uploading screenshots or pasting text stays as the fallback.
+
+**Primary flow (in priority order)**
+
+1. **Catalog (F21), zero input.** The Apartments step opens on a catalog of pre-scanned Blacksburg complexes. Selecting a complex adds it straight to the comparison with its fees already extracted and checked.
+2. **Extension (F19), one click.** On any listing page, the toolbar button captures the full page (every screen of it, plus all its text) and opens Review in the app.
+3. **Fallback:** upload screenshots or paste listing text on the Add screen (F1, F2).
 
 **Goals**
 
@@ -77,7 +83,7 @@ One linear flow, six screens, desktop-first and responsive down to phone width. 
 
 1. **Landing** (`/`). Headline: "The rent you see isn't the rent you pay." One real example, one primary button "Compare apartments", a "See a sample comparison" button, a three-step "how it works" strip and a privacy line: "No sign-up. Your screenshots are never stored." (Built; with F20 it becomes "No sign-up. Screenshots are never stored. Fee amounts are shared only if you choose to, with nothing that identifies you.")
 2. **Setup** (`/compare/setup`). Number of people sharing (1 to 6, default 1), lease length in months (default 12), optional monthly budget per person. "Continue" button.
-3. **Add apartment** (`/compare/add`). Name field ("Hub Blacksburg"), a large drop zone for up to 5 screenshots (drag, click, or paste with Ctrl+V), and a "Paste listing text instead" tab. Thumbnails with remove buttons. "Find fees" runs extraction with a progress state that names what is happening ("Reading screenshot 2 of 3"). Users add up to 3 apartments; each appears as a card with its status.
+3. **Add apartment** (`/compare/add`). Opens on the **catalog** (F21): a searchable grid of pre-scanned Blacksburg complexes, each card showing the name, advertised price range and how many fees were found. Selecting a card (click, or Enter/Space) adds the apartment to the comparison at once, already reviewed; a selected card shows "Added" and can be removed. "Get the extension" explains the one-click capture for listings not in the catalog (F19). Below the catalog, a "Not in the list? Upload screenshots or paste text" section holds the fallback: a name field ("Hub Blacksburg"), a large drop zone for up to 5 screenshots (drag, click, or paste with Ctrl+V), and a "Paste listing text instead" tab. Thumbnails with remove buttons. "Find fees" runs extraction with a progress state that names what is happening ("Reading screenshot 2 of 3"). Users add up to 3 apartments; each appears as a card with its status.
 4. **Review fees** (`/compare/review/[id]`). Header shows the detected advertised price (editable). Fee rows: name, amount, frequency chip (one-time, monthly, per semester, annual), basis chip (per person, per unit), mandatory or optional toggle, and the source quote in a muted block underneath. Low-confidence rows get an amber "Check this" badge and sort to the top. Users can edit any field, delete a row, or add a fee by hand. Utility estimates appear as separate rows labelled "Estimate". One primary button: "Looks right" (sets `reviewed: true`), with an unchecked "Add these fees to the Blacksburg fee index" checkbox beside it (F20).
 5. **Compare** (`/compare/results`). One column per apartment: name, the big number (true monthly cost per person), advertised price struck through beside it, the "hidden per year" amount, a stacked bar of rent vs recurring fees vs utilities vs one-time fees spread monthly, total cost over the lease, law flags as badges, and a "Fee index" panel listing fees other students reported at that complex that this apartment doesn't have (F20). The cheapest true cost gets a "Lowest true cost" badge. Budget line drawn if a budget was set. `?sample=1` loads the sample apartments.
 6. **Fee detail drawer** (Sheet, opens from Compare). Fee-by-fee breakdown, each flag with its plain-language explanation and statute citation, a "Draft email to leasing office" button that shows the Gemma-written email with Copy and Open in mail app buttons, and a "not legal advice" note linking Virginia Law Help.
@@ -90,8 +96,8 @@ P0 items must work for the demo; P1 items ship if P0 is done by 8:30 PM; Stretch
 
 | ID | Requirement | Priority | Owner |
 | --- | --- | --- | --- |
-| F1 | Upload up to 5 images per apartment by drag, click or paste; resize in the browser to 1600 px JPEG so each request stays under Vercel's 4.5 MB limit | P0 | Sam |
-| F2 | Paste listing text as an alternative input | P0 | Sam |
+| F1 | Fallback input: upload up to 5 images per apartment by drag, click or paste; resize in the browser to 1600 px JPEG so each request stays under Vercel's 4.5 MB limit | P0 | Sam |
+| F2 | Fallback input: paste listing text | P0 | Sam |
 | F3 | `POST /api/extract` sends images and text to Gemma 4 and returns validated fees | P0 | Sam |
 | F4 | Review screen: edit, delete, add fees; low-confidence fees flagged and sorted first | P0 | Sam |
 | F5 | Setup: people sharing, lease months, optional budget | P0 | Andy |
@@ -108,20 +114,30 @@ P0 items must work for the demo; P1 items ship if P0 is done by 8:30 PM; Stretch
 | F16 | README with setup, model name and license, architecture, eval results | P0 | Started in scaffold |
 | F17 | Highlight fee locations on the screenshot | Stretch | — |
 | F18 | Export comparison as an image | Stretch | — |
-| F19 | Chrome extension: one click on a listing captures it and opens Review in the app (see below) | P1 | Sam |
+| F19 | Chrome extension: one click on a listing captures the full page and opens Review in the app; the primary way to add a listing not in the catalog (see below) | P0 | Sam |
 | F20 | Blacksburg fee index: opted-in reviewed fees saved anonymously by complex, seeded with the 8 eval cases, shown on Compare (see below) | P1 | Sam (data, API, Review), Andy (Compare panel) |
+| F21 | Catalog of pre-scanned Blacksburg complexes: the default Apartments step; one selection adds a complex to Compare with its checked fees, zero input (see below) | P0 | Sam |
 
 ## Browser extension (F19)
 
 The web app stays the main product. The extension is a small add-on that saves the screenshot step: on a listing page, the student clicks the True Cost toolbar button and lands on Review for that apartment.
 
 - **What it is:** a Manifest V3 Chrome extension in `extension/`, plain JavaScript, no build step, loaded unpacked for the demo.
-- **Capture:** clicking the toolbar button captures the visible tab (resized in the extension to 1600 px JPEG) and the page's visible text (first 20,000 characters), plus the page title as the apartment name.
+- **Capture (full page, one click):** clicking the toolbar button scrolls the listing from top to bottom, capturing the visible tab at each step (`chrome.tabs.captureVisibleTab`, paced under Chrome's two-captures-a-second limit), then restores the user's scroll position. The extension stitches the shots into at most 5 tall images (the `/api/extract` limit), each resized to 1600 px wide JPEG and kept small enough that the whole request stays under Vercel's 4.5 MB body limit. Very long pages keep the first screens (prices and fees sit near the top on the Blacksburg listing sites) and rely on the text for the rest. Fixed headers are hidden after the first shot so they do not repeat in every slice. It also reads the full page text (`document.body.innerText`, first 20,000 characters, including content below the fold) and the page title as the apartment name.
 - **Hand-off:** the extension opens the app at `/compare/import` and hands the capture to that page in the browser (written to the app tab's `sessionStorage`). Nothing goes to a server other than the app.
-- **Extraction:** the import page calls the same `POST /api/extract` the Add screen uses (one image plus the text), adds the apartment to the store and opens `/compare/review/[id]`. Errors show the same "We couldn't read this" state with a link to Add.
+- **Extraction:** the import page calls the same `POST /api/extract` the Add screen uses (the stitched images plus the text), adds the apartment to the store and opens `/compare/review/[id]`. Errors show the same "We couldn't read this" state with a link to Add.
 - **No API key in the extension.** Gemma is still only called from the app's server code.
-- **App URL:** set on the extension's options page; defaults to `http://localhost:3000`. Host permissions cover `localhost:3000` and `*.vercel.app`.
-- **Limits:** the max of 3 apartments still applies; the import page says so if the user is full. Only the visible part of the page is captured, so the pasted text carries fees below the fold.
+- **App URL:** defaults to the deployed app, `https://true-cost-xi.vercel.app`; the options page switches to `http://localhost:3000` for development. Host permissions cover `localhost:3000` and `*.vercel.app`.
+- **Limits:** the max of 3 apartments still applies; the import page says so if the user is full. Pages that block scripting (the Chrome Web Store, `chrome://` pages) show a short error in the extension's badge.
+
+## Catalog of pre-scanned complexes (F21)
+
+The fastest way to compare is to not add anything: the Apartments step opens on a catalog of Blacksburg complexes whose fees were already extracted and checked, so a judge or student picks 2 or 3 and goes straight to Compare.
+
+- **Data:** a static seed in `lib/catalog/` built from the 8 hand-labelled eval cases (`eval/cases/*/expected.json` plus each case's name and source URL), stored as `Apartment` objects with `reviewed: true` and every fee's source quote taken from the case's `listing.txt` where one exists. Static data means no database, no API call and no Gemma call at selection time.
+- **Selecting:** one click (or Enter/Space on the focused card) adds the complex to the store and it appears on Compare; selecting it again removes it. The 3-apartment maximum applies, and full cards say so.
+- **Freshness:** each card shows the source site and the date the listing was read ("Read Oct 24, 2026") and links to the original listing.
+- **F20 compatibility:** the catalog entry shape (complex id, name, source URL, read date, fees) matches what the fee index stores, so the index can later back the catalog without changing the UI: the catalog reads through one function, `getCatalog()`, which returns the static seed today and can merge index data later. The catalog never writes to the index.
 
 ## Blacksburg fee index (F20)
 
@@ -386,6 +402,7 @@ One public repo, `sam044/true-cost`, Apache-2.0. Each person owns separate folde
 | `app/api/extract`, `lib/ai/` | Sam | Gemma client, prompt, schema, checks |
 | `components/upload/`, `components/review/` | Sam | Drop zone, thumbnails, fee rows |
 | `extension/`, `app/compare/import` | Sam | Chrome extension and the page that receives its capture (F19) |
+| `lib/catalog/`, `components/catalog/` | Sam | Catalog of pre-scanned complexes and its picker on the Add screen (F21) |
 | `lib/index/`, `app/api/index/`, `scripts/seed-index.ts` | Sam | Fee index database, API and seed (F20) |
 | `app/compare/setup`, `app/compare/results` | Andy | Setup and Compare screens |
 | `app/api/email`, `lib/cost.ts`, `lib/flags.ts` | Andy | Cost engine, flags, email draft |
