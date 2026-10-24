@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# True Cost
 
-## Getting Started
+**The rent you see isn't the rent you pay.** True Cost reads apartment listing screenshots with Gemma 4, finds every fee, and shows the real monthly cost per person, side by side, before you sign.
 
-First, run the development server:
+Built at GDG Build with AI x Hacktoberfest 2026, Virginia Tech (Oct 24–25, 2026).
+
+## Why
+
+Blacksburg students compare apartments by the headline per-bed price, but admin fees, utility fees, parking and reconditioning fees live on separate tabs and in fine print. Virginia now requires advertised prices to include mandatory fees (Va. Code § 59.1-608) and leases to itemize charges on page one (Va. Code § 55.1-1204.1), but nobody adds it all up for you.
+
+## AI model
+
+- **Model:** `gemma-4-26b-a4b-it` (fallback `gemma-4-31b-it`) through the Gemini API, using the `@google/genai` SDK.
+- **License:** Gemma is provided under the [Gemma Terms of Use](https://ai.google.dev/gemma/terms).
+- **What it does:** reads screenshots (multimodal), transcribes them, and returns structured fees through the `record_fees` function. Each fee carries the exact quote it came from.
+- **What it never does:** arithmetic or legal judgments. Code in `lib/cost.ts` and `lib/flags.ts` does both.
+
+## Run it locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # then paste your key from https://aistudio.google.com
+npm run dev                  # http://localhost:3000
+npm test                     # cost engine tests
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+Browser (Next.js)                Vercel functions               Gemini API
+ Screens, image resize  ──────▶  POST /api/extract  ──────────▶  gemma-4-26b-a4b-it
+ Cost engine + VA flags ◀──────  Zod + quote checks
+ localStorage (no account)       POST /api/email (P1)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Responsible AI
 
-## Learn More
+- Every fee shows its source quote; quotes and amounts are checked against the transcript, and anything unverified is flagged "Check this".
+- Users must review fees before any numbers are shown.
+- No accounts. Screenshots are processed in memory and never stored.
+- Virginia flags cite the statute and link to legal aid. Information, not legal advice.
 
-To learn more about Next.js, take a look at the following resources:
+## Evaluation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm run eval` reports extraction precision and recall on labelled Blacksburg listings in `eval/cases/`. Results: _coming soon_.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Team and contributing
 
-## Deploy on Vercel
+Sam ([@sam044](https://github.com/sam044)) and Andy ([@andyshah17](https://github.com/andyshah17)).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Branch per feature from `main` (`sam/...`, `andy/...`, `claude/...`), small pull requests, pull `main` often.
+- Folder ownership: Sam owns `app/compare/add`, `app/compare/review`, `app/api/extract`, `lib/ai/`. Andy owns `app/compare/setup`, `app/compare/results`, `app/api/email`, `lib/cost.ts`, `lib/flags.ts`.
+- `lib/types.ts` and `lib/store.ts` are shared: change them in a small PR and say so first.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+[Apache-2.0](LICENSE)

@@ -1,102 +1,118 @@
-import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Images, ListChecks, Scale, ShieldCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+const steps = [
+  {
+    icon: Images,
+    title: "Drop in screenshots",
+    body: "Listing pages, fee sheets or lease tables for up to 3 apartments.",
+  },
+  {
+    icon: ListChecks,
+    title: "Check every fee",
+    body: "Gemma 4 finds each fee and shows the exact words it came from. You confirm.",
+  },
+  {
+    icon: Scale,
+    title: "Compare the real number",
+    body: "True monthly cost per person, side by side, with Virginia fee-law flags.",
+  },
+];
+
+// Brexx at Blacksburg, 4 roommates, 12-month lease (fees from its public listing)
+const example = [
+  { label: "Advertised rent per bed", amount: "$1,069.00" },
+  { label: "Utility service fee", amount: "+$62.00" },
+  { label: "Admin + application fees, spread over 12 months", amount: "+$16.67" },
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col gap-20 py-12 sm:py-20">
+      <section className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
+        <div className="flex flex-col gap-6">
+          <p className="w-fit rounded-full border bg-accent px-3 py-1 text-sm text-accent-foreground">
+            For Blacksburg renters
+          </p>
+          <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+            The rent you see isn&apos;t the rent you pay.
+          </h1>
+          <p className="max-w-xl text-lg text-muted-foreground text-pretty">
+            Admin fees, utility fees, parking, reconditioning. True Cost reads your apartment
+            screenshots and shows what each place really costs you per month, before you sign.
+          </p>
+          <div className="flex flex-wrap items-center gap-3">
+            <Button asChild size="lg">
+              <Link href="/compare/setup">
+                Compare apartments <ArrowRight aria-hidden />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link href="/compare/results?sample=1">See a sample comparison</Link>
+            </Button>
+          </div>
+          <p className="flex items-center gap-2 text-sm text-muted-foreground">
+            <ShieldCheck className="size-4 text-success" aria-hidden />
+            No sign-up. Your screenshots are never stored.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        <Card className="shadow-lg">
+          <CardContent className="flex flex-col gap-4 p-6">
+            <div className="flex items-baseline justify-between">
+              <h2 className="font-semibold">Brexx at Blacksburg</h2>
+              <span className="text-sm text-muted-foreground">per person / month</span>
+            </div>
+            <dl className="flex flex-col gap-2 text-sm">
+              {example.map((row) => (
+                <div key={row.label} className="flex justify-between gap-4">
+                  <dt className="text-muted-foreground">{row.label}</dt>
+                  <dd className="font-mono tabular-nums">{row.amount}</dd>
+                </div>
+              ))}
+            </dl>
+            <div className="flex items-end justify-between border-t pt-4">
+              <div>
+                <p className="text-sm text-muted-foreground">True monthly cost</p>
+                <p className="text-3xl font-semibold tabular-nums">$1,147.67</p>
+              </div>
+              <p className="rounded-md bg-hidden/15 px-2 py-1 text-sm font-medium text-hidden-foreground dark:text-hidden">
+                $944 / year not in the headline price
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section aria-labelledby="how" className="flex flex-col gap-6">
+        <h2 id="how" className="text-2xl font-semibold tracking-tight">
+          How it works
+        </h2>
+        <ol className="grid gap-4 sm:grid-cols-3">
+          {steps.map((step, i) => (
+            <li key={step.title}>
+              <Card className="h-full">
+                <CardContent className="flex flex-col gap-3 p-6">
+                  <span className="flex items-center gap-3">
+                    <span className="grid size-9 place-items-center rounded-lg bg-primary/10 text-primary">
+                      <step.icon className="size-5" aria-hidden />
+                    </span>
+                    <span className="text-sm text-muted-foreground">Step {i + 1}</span>
+                  </span>
+                  <h3 className="font-semibold">{step.title}</h3>
+                  <p className="text-sm text-muted-foreground">{step.body}</p>
+                </CardContent>
+              </Card>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <footer className="border-t pt-6 text-sm text-muted-foreground">
+        Built with Gemma 4 (<code className="font-mono">gemma-4-26b-a4b-it</code>) at GDG Build
+        with AI x Hacktoberfest 2026, Virginia Tech. Information, not legal advice.
       </footer>
     </div>
   );
