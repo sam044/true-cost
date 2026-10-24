@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { ExtractionError, extractFees } from "@/lib/ai/gemma";
 
-// Gemma can be slow under load; lib/ai/gemma.ts keeps the whole request under 280s.
+// Usually 5-20s; lib/ai/gemma.ts keeps the whole request under 150s even when Gemma is slow.
 // 300s is the Vercel Hobby limit with fluid compute.
 export const maxDuration = 300;
 

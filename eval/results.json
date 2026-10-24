@@ -1,26 +1,26 @@
 {
-  "ranAt": "2026-10-24T20:18:37.024Z",
+  "ranAt": "2026-10-24T22:38:25.754Z",
   "mode": "text plus any screenshots",
   "summary": {
     "cases": 8,
     "scored": 8,
-    "tp": 32,
-    "fp": 2,
-    "fn": 1,
-    "precision": 0.9411764705882353,
-    "recall": 0.9696969696969697,
-    "f1": 0.955223880597015,
+    "tp": 33,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
     "pricesOk": 8,
     "fields": {
       "category": {
-        "right": 31,
-        "total": 32,
-        "accuracy": 0.96875
+        "right": 32,
+        "total": 33,
+        "accuracy": 0.9696969696969697
       },
       "frequency": {
         "right": 27,
-        "total": 27,
-        "accuracy": 1
+        "total": 28,
+        "accuracy": 0.9642857142857143
       },
       "basis": {
         "right": 8,
@@ -28,9 +28,9 @@
         "accuracy": 1
       },
       "mandatory": {
-        "right": 26,
-        "total": 32,
-        "accuracy": 0.8125
+        "right": 32,
+        "total": 33,
+        "accuracy": 0.9696969696969697
       },
       "refundable": {
         "right": 2,
@@ -48,10 +48,34 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 24,
+      "seconds": 18,
       "attempts": 1,
       "score": {
         "matches": [
+          {
+            "expected": {
+              "name": "Rental Insurance Waiver",
+              "category": "insurance",
+              "amount": 15,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Rental Insurance Waiver Income",
+              "category": "insurance",
+              "amount": 15,
+              "frequency": "monthly",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Rental Insurance Waiver Income $15 / mo",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
           {
             "expected": {
               "name": "Trash",
@@ -71,7 +95,7 @@
               "refundable": false,
               "quote": "Trash $6 / mo",
               "sourceImage": 0,
-              "confidence": "medium"
+              "confidence": "high"
             },
             "by": "name",
             "wrong": []
@@ -95,7 +119,7 @@
               "refundable": false,
               "quote": "Credit Reporting Fees $9 / mo",
               "sourceImage": 0,
-              "confidence": "medium"
+              "confidence": "high"
             },
             "by": "name",
             "wrong": []
@@ -163,20 +187,14 @@
               "amount": 50,
               "frequency": "monthly",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "Parking Fee $50 / mo",
               "sourceImage": 0,
-              "confidence": "high"
+              "confidence": "medium"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "mandatory",
-                "expected": "no",
-                "predicted": "unknown"
-              }
-            ]
+            "wrong": []
           },
           {
             "expected": {
@@ -193,20 +211,14 @@
               "amount": 100,
               "frequency": "one_time",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "Damages Charge $100",
               "sourceImage": 0,
               "confidence": "medium"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "mandatory",
-                "expected": "no",
-                "predicted": "unknown"
-              }
-            ]
+            "wrong": []
           },
           {
             "expected": {
@@ -223,20 +235,14 @@
               "amount": 50,
               "frequency": "one_time",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "NSF Bank Fees $50",
               "sourceImage": 0,
               "confidence": "medium"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "mandatory",
-                "expected": "no",
-                "predicted": "unknown"
-              }
-            ]
+            "wrong": []
           },
           {
             "expected": {
@@ -253,20 +259,14 @@
               "amount": 500,
               "frequency": "one_time",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "Transfer Fee $500",
               "sourceImage": 0,
               "confidence": "medium"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "mandatory",
-                "expected": "no",
-                "predicted": "unknown"
-              }
-            ]
+            "wrong": []
           },
           {
             "expected": {
@@ -283,20 +283,14 @@
               "amount": 500,
               "frequency": "one_time",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "Reletting Fee $500",
               "sourceImage": 0,
               "confidence": "medium"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "mandatory",
-                "expected": "no",
-                "predicted": "unknown"
-              }
-            ]
+            "wrong": []
           },
           {
             "expected": {
@@ -313,56 +307,40 @@
               "amount": 62,
               "frequency": "one_time",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "Utility Billing Fee $62",
               "sourceImage": 0,
               "confidence": "medium"
             },
             "by": "name",
-            "wrong": []
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "unknown",
+                "predicted": "no"
+              }
+            ]
           }
         ],
-        "missed": [
-          {
-            "name": "Rental Insurance Waiver",
-            "category": "insurance",
-            "amount": 15,
-            "frequency": "monthly",
-            "basis": null,
-            "mandatory": "yes"
-          }
-        ],
-        "extra": [
-          {
-            "name": "Rental Insurance Waiver Income",
-            "category": "insurance",
-            "amount": 50,
-            "frequency": "monthly",
-            "basis": "per_person",
-            "mandatory": "yes",
-            "refundable": false,
-            "quote": "Rental Insurance Waiver Income $15 / mo",
-            "sourceImage": 0,
-            "confidence": "low"
-          }
-        ],
+        "missed": [],
+        "extra": [],
         "fields": {
           "category": {
-            "right": 10,
-            "total": 10
+            "right": 11,
+            "total": 11
           },
           "frequency": {
-            "right": 5,
-            "total": 5
+            "right": 6,
+            "total": 6
           },
           "basis": {
             "right": 1,
             "total": 1
           },
           "mandatory": {
-            "right": 5,
-            "total": 10
+            "right": 10,
+            "total": 11
           },
           "refundable": {
             "right": 0,
@@ -387,7 +365,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 9,
+      "seconds": 6,
       "attempts": 1,
       "score": {
         "matches": [
@@ -402,7 +380,7 @@
               "refundable": true
             },
             "predicted": {
-              "name": "Security Deposit",
+              "name": "Security Deposit - Refundable",
               "category": "security_deposit",
               "amount": 2200,
               "frequency": "one_time",
@@ -427,7 +405,7 @@
             },
             "predicted": {
               "name": "Risk Protection Fee",
-              "category": "other",
+              "category": "insurance",
               "amount": 15,
               "frequency": "monthly",
               "basis": "per_unit",
@@ -438,20 +416,14 @@
               "confidence": "high"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "category",
-                "expected": "insurance",
-                "predicted": "other"
-              }
-            ]
+            "wrong": []
           }
         ],
         "missed": [],
         "extra": [],
         "fields": {
           "category": {
-            "right": 1,
+            "right": 2,
             "total": 2
           },
           "frequency": {
@@ -489,7 +461,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 7,
+      "seconds": 5,
       "attempts": 1,
       "score": {
         "matches": [
@@ -584,7 +556,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 10,
+      "seconds": 7,
       "attempts": 1,
       "score": {
         "matches": [
@@ -703,7 +675,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 20,
+      "seconds": 13,
       "attempts": 1,
       "score": {
         "matches": [
@@ -768,8 +740,8 @@
               "name": "Administrative Fee",
               "category": "admin",
               "amount": 200,
-              "frequency": "one_time",
-              "basis": "per_unit",
+              "frequency": "monthly",
+              "basis": "per_person",
               "mandatory": "yes",
               "refundable": false,
               "quote": "Administrative Fee $200.00",
@@ -777,7 +749,13 @@
               "confidence": "high"
             },
             "by": "name",
-            "wrong": []
+            "wrong": [
+              {
+                "field": "frequency",
+                "expected": "one_time",
+                "predicted": "monthly"
+              }
+            ]
           },
           {
             "expected": {
@@ -797,9 +775,9 @@
               "category": "security_deposit",
               "amount": 400,
               "frequency": "one_time",
-              "basis": "per_unit",
+              "basis": "per_person",
               "mandatory": "yes",
-              "refundable": false,
+              "refundable": true,
               "quote": "Deposit $400-$1500",
               "sourceImage": 0,
               "confidence": "high"
@@ -821,7 +799,7 @@
               "category": "utility_fee",
               "amount": 1.5,
               "frequency": "monthly",
-              "basis": "per_unit",
+              "basis": "per_person",
               "mandatory": "yes",
               "refundable": false,
               "quote": "Utility - Billing Administrative Fee $1.50/mo",
@@ -845,12 +823,12 @@
               "category": "internet",
               "amount": 65,
               "frequency": "monthly",
-              "basis": "per_unit",
+              "basis": "per_person",
               "mandatory": "yes",
               "refundable": false,
               "quote": "Internet Service $65.00/mo",
               "sourceImage": 0,
-              "confidence": "medium"
+              "confidence": "high"
             },
             "by": "name",
             "wrong": []
@@ -866,10 +844,10 @@
             },
             "predicted": {
               "name": "Refuse Removal",
-              "category": "trash",
+              "category": "internet",
               "amount": 7,
               "frequency": "monthly",
-              "basis": "per_unit",
+              "basis": "per_person",
               "mandatory": "yes",
               "refundable": false,
               "quote": "Refuse Removal $7.00/mo",
@@ -877,31 +855,24 @@
               "confidence": "high"
             },
             "by": "name",
-            "wrong": []
+            "wrong": [
+              {
+                "field": "category",
+                "expected": "trash",
+                "predicted": "internet"
+              }
+            ]
           }
         ],
         "missed": [],
-        "extra": [
-          {
-            "name": "Late Fee",
-            "category": "other",
-            "amount": 0,
-            "frequency": "one_time",
-            "basis": "per_unit",
-            "mandatory": "yes",
-            "refundable": false,
-            "quote": "Late Fee 10.0% of base rent/per occurrence",
-            "sourceImage": 0,
-            "confidence": "low"
-          }
-        ],
+        "extra": [],
         "fields": {
           "category": {
-            "right": 7,
+            "right": 6,
             "total": 7
           },
           "frequency": {
-            "right": 7,
+            "right": 6,
             "total": 7
           },
           "basis": {
@@ -935,7 +906,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 10,
+      "seconds": 6,
       "attempts": 1,
       "score": {
         "matches": [
@@ -997,25 +968,19 @@
               "mandatory": "no"
             },
             "predicted": {
-              "name": "Parking Fee Garage",
+              "name": "Garage Parking Fee",
               "category": "parking",
               "amount": 30,
               "frequency": "monthly",
               "basis": "per_person",
-              "mandatory": "unknown",
+              "mandatory": "no",
               "refundable": false,
               "quote": "Parking Fee $30 / mo",
               "sourceImage": 0,
               "confidence": "high"
             },
             "by": "name",
-            "wrong": [
-              {
-                "field": "mandatory",
-                "expected": "no",
-                "predicted": "unknown"
-              }
-            ]
+            "wrong": []
           }
         ],
         "missed": [],
@@ -1034,7 +999,7 @@
             "total": 1
           },
           "mandatory": {
-            "right": 2,
+            "right": 3,
             "total": 3
           },
           "refundable": {
@@ -1045,9 +1010,9 @@
         "price": {
           "ok": true,
           "predicted": {
-            "amount": 1859,
+            "amount": 999,
             "basis": "per_person",
-            "quote": "$1,859 Plus Fees"
+            "quote": "$999 - $1,909"
           }
         }
       }
@@ -1060,7 +1025,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 11,
+      "seconds": 7,
       "attempts": 1,
       "score": {
         "matches": [
@@ -1179,7 +1144,7 @@
         "images": []
       },
       "model": "gemma-4-26b-a4b-it",
-      "seconds": 8,
+      "seconds": 5,
       "attempts": 1,
       "score": {
         "matches": [
@@ -1193,7 +1158,7 @@
               "mandatory": "yes"
             },
             "predicted": {
-              "name": "Application Fee",
+              "name": "Application Fee Per Applicant",
               "category": "application",
               "amount": 35,
               "frequency": "one_time",
@@ -1218,7 +1183,7 @@
               "refundable": true
             },
             "predicted": {
-              "name": "Security Deposit",
+              "name": "SECURITY DEPOSIT",
               "category": "security_deposit",
               "amount": 500,
               "frequency": "one_time",

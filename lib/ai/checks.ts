@@ -31,7 +31,7 @@ export function amountIsInQuote(amount: number, quote: string): boolean {
 
 const order = { low: 0, medium: 1, high: 2 } as const;
 
-// Fees whose quote is not in the transcript (or the pasted text), whose amount
+// Fees whose quote is not in the listing text or the transcript, whose amount
 // is not in their quote, or whose source image does not exist drop to low
 // confidence. Low-confidence fees sort first so Review shows them on top.
 export function applyChecks(
