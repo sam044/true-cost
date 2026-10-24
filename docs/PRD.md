@@ -11,12 +11,12 @@ Our two priorities are a product that works end to end on real listings, and a f
 | Rubric item (points) | How True Cost earns it |
 | --- | --- |
 | Problem definition (10) | Real Blacksburg listings hide $150 to $299 one-time fees and $30 to $74 monthly fees behind a per-bed headline price |
-| Impact multiplier (10) | One number per apartment: dollars per year not in the headline price |
+| Impact multiplier (10) | One number per apartment: dollars per year not in the headline price; the fee index (F20) turns each student's review into evidence for the next student |
 | Stakeholder empathy (5) | Quotes from 3 to 5 VT students asked at the event |
 | AI integration and necessity (15) | Gemma 4 multimodal reads messy screenshots and returns structured fees through function calling; this is the core, not a bolt-on |
 | Architectural soundness (10) | Typed schema validation, deterministic cost math in code, a working deployed app |
 | Safety and grounding (10) | Every fee carries its source quote, the model never does math, uncertain fees go to the user, plus a measured eval |
-| Privacy (8) | No accounts, images never stored, data stays in the browser |
+| Privacy (8) | No accounts, images never stored, data stays in the browser unless the student opts in to share fee amounts with the fee index, with nothing that identifies them |
 | Inclusive design (7) | WCAG AA contrast, full keyboard flow, labelled controls, light and dark themes |
 | Deployment viability (10) | One Vercel app, one API key, free tier |
 | Inference cost (8) | About one Gemma call per apartment on the smaller 26B A4B model |
@@ -75,11 +75,11 @@ The goal is a deployed app where a judge can drop in screenshots of 2 or 3 real 
 
 One linear flow, six screens, desktop-first and responsive down to phone width. A stepper at the top (Setup, Apartments, Review, Compare) always shows where the user is and lets them go back.
 
-1. **Landing** (`/`). Headline: "The rent you see isn't the rent you pay." One real example, one primary button "Compare apartments", a "See a sample comparison" button, a three-step "how it works" strip and a privacy line: "No sign-up. Your screenshots are never stored." (Built.)
+1. **Landing** (`/`). Headline: "The rent you see isn't the rent you pay." One real example, one primary button "Compare apartments", a "See a sample comparison" button, a three-step "how it works" strip and a privacy line: "No sign-up. Your screenshots are never stored." (Built; with F20 it becomes "No sign-up. Screenshots are never stored. Fee amounts are shared only if you choose to, with nothing that identifies you.")
 2. **Setup** (`/compare/setup`). Number of people sharing (1 to 6, default 1), lease length in months (default 12), optional monthly budget per person. "Continue" button.
 3. **Add apartment** (`/compare/add`). Name field ("Hub Blacksburg"), a large drop zone for up to 5 screenshots (drag, click, or paste with Ctrl+V), and a "Paste listing text instead" tab. Thumbnails with remove buttons. "Find fees" runs extraction with a progress state that names what is happening ("Reading screenshot 2 of 3"). Users add up to 3 apartments; each appears as a card with its status.
-4. **Review fees** (`/compare/review/[id]`). Header shows the detected advertised price (editable). Fee rows: name, amount, frequency chip (one-time, monthly, per semester, annual), basis chip (per person, per unit), mandatory or optional toggle, and the source quote in a muted block underneath. Low-confidence rows get an amber "Check this" badge and sort to the top. Users can edit any field, delete a row, or add a fee by hand. Utility estimates appear as separate rows labelled "Estimate". One primary button: "Looks right" (sets `reviewed: true`).
-5. **Compare** (`/compare/results`). One column per apartment: name, the big number (true monthly cost per person), advertised price struck through beside it, the "hidden per year" amount, a stacked bar of rent vs recurring fees vs utilities vs one-time fees spread monthly, total cost over the lease, and law flags as badges. The cheapest true cost gets a "Lowest true cost" badge. Budget line drawn if a budget was set. `?sample=1` loads the sample apartments.
+4. **Review fees** (`/compare/review/[id]`). Header shows the detected advertised price (editable). Fee rows: name, amount, frequency chip (one-time, monthly, per semester, annual), basis chip (per person, per unit), mandatory or optional toggle, and the source quote in a muted block underneath. Low-confidence rows get an amber "Check this" badge and sort to the top. Users can edit any field, delete a row, or add a fee by hand. Utility estimates appear as separate rows labelled "Estimate". One primary button: "Looks right" (sets `reviewed: true`), with an unchecked "Add these fees to the Blacksburg fee index" checkbox beside it (F20).
+5. **Compare** (`/compare/results`). One column per apartment: name, the big number (true monthly cost per person), advertised price struck through beside it, the "hidden per year" amount, a stacked bar of rent vs recurring fees vs utilities vs one-time fees spread monthly, total cost over the lease, law flags as badges, and a "Fee index" panel listing fees other students reported at that complex that this apartment doesn't have (F20). The cheapest true cost gets a "Lowest true cost" badge. Budget line drawn if a budget was set. `?sample=1` loads the sample apartments.
 6. **Fee detail drawer** (Sheet, opens from Compare). Fee-by-fee breakdown, each flag with its plain-language explanation and statute citation, a "Draft email to leasing office" button that shows the Gemma-written email with Copy and Open in mail app buttons, and a "not legal advice" note linking Virginia Law Help.
 
 Empty, loading and error states are designed for every screen: a failed extraction shows "We couldn't read this image" with retry and "paste text instead". State lives in localStorage, so a refresh never loses work; a "Start over" link clears it.
@@ -109,6 +109,7 @@ P0 items must work for the demo; P1 items ship if P0 is done by 8:30 PM; Stretch
 | F17 | Highlight fee locations on the screenshot | Stretch | — |
 | F18 | Export comparison as an image | Stretch | — |
 | F19 | Chrome extension: one click on a listing captures it and opens Review in the app (see below) | P1 | Sam |
+| F20 | Blacksburg fee index: opted-in reviewed fees saved anonymously by complex, seeded with the 8 eval cases, shown on Compare (see below) | P1 | Sam (data, API, Review), Andy (Compare panel) |
 
 ## Browser extension (F19)
 
@@ -121,6 +122,143 @@ The web app stays the main product. The extension is a small add-on that saves t
 - **No API key in the extension.** Gemma is still only called from the app's server code.
 - **App URL:** set on the extension's options page; defaults to `http://localhost:3000`. Host permissions cover `localhost:3000` and `*.vercel.app`.
 - **Limits:** the max of 3 apartments still applies; the import page says so if the user is full. Only the visible part of the page is captured, so the pasted text carries fees below the fold.
+
+## Blacksburg fee index (F20)
+
+When a student confirms an apartment on Review and has opted in, the reviewed fees are saved anonymously to a shared database, keyed by complex. Compare then shows what other students found at the same complex, for example "Not on your list: Utility service fee, $62/month, reported 3 times". The database starts with the 8 hand-labelled eval cases, so the demo has real data before anyone submits. The index only holds human-checked fees, never raw model output.
+
+**Storage: Neon Postgres through the Vercel Marketplace.** Vercel functions are serverless, so a local SQLite file would not persist between requests. Options compared (2026 free tiers; confirm on the vendor page):
+
+| Option | Free tier | Verdict |
+| --- | --- | --- |
+| **Neon Postgres** (what "Vercel Postgres" became) | 0.5 GB, about 100 compute hours a month, scales to zero | **Pick.** One click in Vercel Storage creates it and sets `DATABASE_URL` in every environment; `percentile_cont` gives medians in SQL; `@neondatabase/serverless` queries over HTTP, so no connection pool. Cost: a cold start of a few hundred ms, and the index loads after the page so it never blocks. |
+| Turso / libSQL (hosted SQLite) | 5 GB, 500M reads and 10M writes a month | Fallback with the same schema. Separate account, token and env vars copied by hand; no median function in SQLite, so medians move into JS. |
+| Supabase | 500 MB; pauses after 7 days idle | No: the pause would break the deployed app for late judges, and we need none of its auth or storage. |
+| Upstash Redis | 500K commands a month | No: key-value only; aggregation would be hand-built counters. Rate limiting is done in Postgres instead. |
+
+**Privacy**
+
+- Opt-in only: an **unchecked** checkbox beside "Looks right": "Add these fees to the Blacksburg fee index (anonymous: only the complex name and fee amounts are shared)". The choice is remembered in the store as `shareToIndex` (default `false`).
+- Sent: complex name, listing URL if known, advertised rent and basis, utilities, and each fee's category, name, amount, frequency, basis, mandatory and refundable.
+- Never sent or stored: images, fee quotes, fee ids, `counted`, anything from Setup (people, budget, needs), IP addresses. `base_rent` fees are skipped.
+- Rate limiting uses `client_hash = sha256(ip + INDEX_SALT + UTC date)`. The salt changes the hash daily, so it limits submissions per day but cannot link one student's submissions across days.
+
+**When data is written:** in `handleConfirm` on Review, after validation passes and `reviewed` is set, if the box is checked and the apartment is not a sample from `lib/mock.ts`, the page fires `POST /api/index/submit` without awaiting it. Navigation never waits on the database, and a failure only logs a warning. The submission id is the apartment's id, so confirming the same apartment again replaces its submission instead of double counting.
+
+**Schema** (`lib/index/schema.sql`, run once):
+
+```sql
+create table complexes (
+  id serial primary key,
+  slug text unique not null,               -- "brexx", "hub", "2001-christopher-drive"
+  name text not null,                      -- "Brexx at Blacksburg"
+  aliases text[] not null default '{}',    -- other normalized names that map here
+  listing_url text,
+  verified boolean not null default false, -- true for seeded complexes
+  created_at timestamptz not null default now()
+);
+create table submissions (
+  id uuid primary key,                     -- the apartment id; re-confirming replaces
+  complex_id int not null references complexes(id),
+  source text not null check (source in ('user', 'seed')),
+  advertised numeric(8,2),
+  advertised_basis text check (advertised_basis in ('per_person', 'per_unit')),
+  utilities jsonb,
+  client_hash text,                        -- null for seed rows
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index on submissions (complex_id);
+create index on submissions (client_hash, created_at);
+create table reported_fees (
+  id bigserial primary key,
+  submission_id uuid not null references submissions(id) on delete cascade,
+  category text not null,
+  name text not null,                      -- trimmed, max 80 chars
+  name_key text not null,                  -- normalized, groups "other" fees
+  amount numeric(8,2) not null,
+  frequency text,                          -- null when unknown (seed rows)
+  basis text,
+  mandatory text not null,
+  refundable boolean not null default false
+);
+create index on reported_fees (submission_id);
+```
+
+**Complex names.** One pure, tested function `complexKey(name, url?)` in `lib/index/complex.ts`:
+
+1. If a listing URL matches a complex's `listing_url` (host and path, query ignored), use it. offcampus.vt.edu property paths are stable ids.
+2. Otherwise lowercase the name, turn `&` into "and", strip punctuation, drop filler words (`the`, `apartments`, `apartment homes`, `apartment`, `townhomes`, `and townhomes`, `at blacksburg`, `of blacksburg`, `blacksburg`, `va`, `virginia`, and a trailing site suffix such as "- Apartments for Rent"), and join with hyphens. "Brexx at Blacksburg" and "BREXX Apartments" both become `brexx`.
+3. Match against `slug` and `aliases`. With no match, create an unverified complex; it appears in the index only after 2 different `client_hash` values have reported it, which keeps typos and junk out.
+
+**API routes** (`app/api/index/`, Node runtime, zod-validated, `lib/index/db.ts` wraps the Neon client; `DATABASE_URL` stays on the server):
+
+| Route | Does | Response |
+| --- | --- | --- |
+| `POST /api/index/submit` | Validate, rate-limit, resolve the complex, replace the submission and its fees in one transaction | `201 { complex }`, `400`, `429` |
+| `GET /api/index/complex?name=…&url=…` | Resolve the complex (without creating one) and return its aggregate | `IndexSummary` or `{ found: false }` |
+| `GET /api/index` (stretch) | Every visible complex with report counts and median fees | `{ complexes: IndexRow[] }` |
+
+GET responses set `Cache-Control: s-maxage=60, stale-while-revalidate=300`. The aggregate groups a complex's fees by category and frequency (and by `name_key` for `other`) and returns report count, median, low, high, whether seed data is included, and last seen. New shared types in `lib/types.ts`:
+
+```ts
+export interface IndexFee {
+  category: FeeCategory;
+  frequency: Frequency | null;
+  name: string;     // the category label, or the fee name for "other" once 2+ reports agree
+  reports: number;
+  median: number;
+  low: number;
+  high: number;
+}
+export interface IndexSummary {
+  found: true;
+  complex: { slug: string; name: string; verified: boolean };
+  reports: number;
+  medianAdvertised: number | null;
+  includesSeed: boolean;
+  fees: IndexFee[];
+  lastSeen: string; // ISO date
+}
+```
+
+**UI**
+
+1. **Compare panel (Andy).** A labelled "Fee index" section in each `apartment-column.tsx`, from `components/compare/index-panel.tsx`. It leads with fees reported at this complex that the apartment lacks (matched by category and frequency), then "Based on 5 reports, last seen Oct 24", plus "includes fees checked by the True Cost team on Oct 24" when seed data is in it. Loading shows a skeleton, not found says "No one has shared fees for this complex yet", and an error hides the panel. These are hints only: they never change the totals, since only reviewed fees count and money math stays in `lib/cost.ts`.
+2. **Review opt-in (Sam).** The checkbox and the submit call described above.
+3. **Review hint (Sam, below the cut line).** The same "Not on your list" fees with an **Add** button that inserts the fee with `source: "estimate"` and `quote: null`, so the index reaches the totals only when the student chooses.
+4. **`/index` page (stretch, either).** A sortable table of complexes with report counts and median monthly and one-time fees.
+
+**Abuse guarding** (in the submit route): at most 30 fees, amounts 0 to 10,000, names 1 to 80 characters with control characters stripped, enums from `lib/types.ts`; at most 10 submissions per `client_hash` per day; a second submission for the same complex from the same hash on the same day replaces the first; reject requests whose `Origin` is not the app's host; medians rather than means so one fake fee doesn't move the number, with low and high shown; free-text `other` names and unverified complexes shown only with 2 or more distinct reporters. Bad rows are deleted by hand in the Neon SQL editor (fees cascade). No captcha or accounts.
+
+**Seed.** `scripts/seed-index.ts` (run with `node --experimental-strip-types`, like `eval/run.ts`) reads each `eval/cases/<slug>/case.json` and `expected.json` and writes one verified complex (slug = folder name, name and URL from `case.json`, hand-written aliases such as `1435` for Fourteen35), one `source = 'seed'` submission with a fixed UUID derived from the slug so re-running is idempotent (advertised rent = the low end of `advertisedPrice`), and one row per expected fee: 33 fees across the 8 cases. `null` frequency or basis stays null; Foxridge's 400 to 1500 `amountRange` fee uses 400.
+
+**Tasks.** It is about 4 PM Saturday and features freeze at 8:30 PM, so F20 is scoped as a P1 add-on with its own cut line.
+
+| # | Task | Owner | Size |
+| --- | --- | --- | --- |
+| 0 | Create the database and env vars (below) | Sam by hand | 15 min |
+| 1 | Shared commit: `IndexFee`/`IndexSummary` types, `shareToIndex` in the store, `@neondatabase/serverless` in `package.json`, `.env.example` lines | Sam | 15 min |
+| 2 | `lib/index/`: db client, `schema.sql`, `complexKey` with Vitest tests | Sam | 45 min |
+| 3 | Seed script, run once | Sam | 30 min |
+| 4 | `POST /api/index/submit` with the limits above | Sam | 45 min |
+| 5 | `GET /api/index/complex` with the aggregate query | Sam | 30 min |
+| 6 | Review opt-in checkbox and submit on "Looks right" | Sam | 20 min |
+| 7 | Compare panel, against a mocked `IndexSummary` first, then live | Andy | 60 min |
+| — | **Cut line: below only if 0 to 7 are on main by 8:30 PM** | | |
+| 8 | Review "Not on your list" hint with Add | Sam | 40 min |
+| 9 | `GET /api/index` and the `/index` page | Either | 60 min |
+
+If Sam's tasks are not on main by 8:30 PM, ship read-only instead: seed data and the Compare panel (tasks 0, 1, 2, 3, 5, 7), with no student writes and the old privacy wording.
+
+**Sam does by hand**
+
+1. Vercel dashboard → `true-cost` → Storage → Create Database → Neon, free plan, region `us-east-1`, connected to Production, Preview and Development. This adds `DATABASE_URL`.
+2. Add `INDEX_SALT` (any long random string) in the project's Environment Variables, all environments.
+3. Back up `.env.local`, run `vercel env pull .env.local`, and check `GEMINI_API_KEY` is still there.
+4. Send Andy `DATABASE_URL` and `INDEX_SALT` privately (Hobby projects can't add members), or Andy builds against the mock and never needs them.
+5. Run `lib/index/schema.sql` once in the Neon SQL editor, then run the seed script once.
+6. Redeploy so production picks up the new variables.
 
 ## AI design
 
@@ -223,6 +361,7 @@ Browser (Next.js)                Vercel functions               Gemini API
  Review and Compare     ◀──────  Zod + quote checks              (fallback gemma-4-31b-it)
  Cost engine + VA flags ──────▶  POST /api/email (P1) ────────▶
  localStorage (no account)
+ Fee index (opt-in)     ◀─────▶  /api/index/* (F20) ──────────▶  Neon Postgres
 ```
 
 | Layer | Choice | Why |
@@ -235,6 +374,7 @@ Browser (Next.js)                Vercel functions               Gemini API
 | State | Zustand with `persist` to localStorage | Simple shared store across screens; survives refresh |
 | Tests | Vitest for `lib/cost.ts` and `lib/flags.ts` | Money math must be right |
 | Hosting | Vercel (Sam's account), `GEMINI_API_KEY` as an env var | Free tier |
+| Database (F20) | Neon Postgres via the Vercel Marketplace, `@neondatabase/serverless`; `DATABASE_URL` and `INDEX_SALT` as env vars | Serverless needs a hosted database; free tier, one-click setup (see "Blacksburg fee index") |
 
 ## Repo, branches and work split
 
@@ -246,9 +386,10 @@ One public repo, `sam044/true-cost`, Apache-2.0. Each person owns separate folde
 | `app/api/extract`, `lib/ai/` | Sam | Gemma client, prompt, schema, checks |
 | `components/upload/`, `components/review/` | Sam | Drop zone, thumbnails, fee rows |
 | `extension/`, `app/compare/import` | Sam | Chrome extension and the page that receives its capture (F19) |
+| `lib/index/`, `app/api/index/`, `scripts/seed-index.ts` | Sam | Fee index database, API and seed (F20) |
 | `app/compare/setup`, `app/compare/results` | Andy | Setup and Compare screens |
 | `app/api/email`, `lib/cost.ts`, `lib/flags.ts` | Andy | Cost engine, flags, email draft |
-| `components/compare/` | Andy | Apartment columns, stacked bar, drawer |
+| `components/compare/` | Andy | Apartment columns, stacked bar, drawer, fee index panel |
 | `lib/types.ts`, `lib/store.ts`, `app/globals.css`, `app/layout.tsx`, `components/ui/` | Shared | Small separate commits, announced to the other person |
 | `eval/`, `public/samples/`, `README.md` | Shared | Test set, sample screenshots, docs |
 
@@ -283,7 +424,7 @@ The same 2-minute video serves both submissions and follows the slide's demo ord
 1. **Problem (0:00 to 0:20).** A Blacksburg listing at "$1,069 per bed" and a student quote.
 2. **Solution (0:20 to 1:10).** Setup with 4 roommates, drop in screenshots for 3 complexes, Gemma reads them live, Review shows fees with their quotes and one "Check this" fee, Compare shows the true monthly cost and the hidden amount per year.
 3. **AI and Gemma 4 (1:10 to 1:35).** Show the `record_fees` call to `gemma-4-26b-a4b-it`, the quote check, and the eval result.
-4. **Responsible AI (1:35 to 1:50).** No accounts, nothing stored, model never does math, Virginia citations, keyboard-only run of the flow.
+4. **Responsible AI (1:35 to 1:50).** No accounts, screenshots never stored, fee sharing is opt-in and anonymous, model never does math, Virginia citations, keyboard-only run of the flow.
 5. **Impact (1:50 to 2:00).** "$X a year that wasn't in the headline price" across the demo apartments; deployable by any housing office for free.
 
 **Submission checklist**
@@ -306,6 +447,8 @@ The same 2-minute video serves both submissions and follows the slide's demo ord
 | Vercel 4.5 MB request limit | Resize to 1600 px JPEG in the browser; at most 5 images per call |
 | Merge conflicts in shared files | Folder ownership, small separate commits, announce changes to shared files |
 | Judges see flags as legal advice | "May" wording, citations, "not legal advice" note with a legal aid link |
+| Fee index spam or junk names (F20) | Zod limits, 10 submissions per device per day, medians, 2-reporter gate on free text and new complexes, manual delete in Neon |
+| Neon setup or cold start fails during the demo (F20) | The index loads after the page and hides on error; Turso is the fallback with the same schema |
 
 **Open questions**
 
