@@ -16,7 +16,7 @@ Open a listing page and click the True Cost button. The side panel opens and sho
 
 1. **Capture the page:** "Screen 2 of 5", with the latest screenshot. Keep the tab in front for these few seconds; the page scrolls by itself and goes back to where you were.
 2. **Put the screenshots together:** how many images and how big, plus how much page text.
-3. **Gemma reads the fees:** a running clock, what Gemma is reading and why it takes a while (it transcribes every screenshot, then lists each fee with the line it came from). Usually 30 seconds to 2 minutes; after 100 seconds the panel says True Cost is trying the backup model, as the app does.
+3. **Gemma reads the fees:** a running clock and what Gemma is reading. Usually 10 to 20 seconds; after 30 seconds the panel says True Cost has also asked the backup model, as the app does.
 4. **Fees ready:** the advertised rent, then each fee grouped as required, not clear, or optional, with its amount, tags (per person, refundable, "check this" for low confidence) and the quote it came from. **Review in True Cost** opens Review for the apartment; **Add to Compare** adds it and opens Compare. Both open a new tab and don't call Gemma again; clicking both adds the apartment once.
 
 If something fails, the panel says what and offers **Try again** (resends the same capture, no rescroll) and **Add it another way**. "What was sent" shows the stitched images.

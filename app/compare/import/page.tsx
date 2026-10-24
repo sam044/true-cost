@@ -145,7 +145,7 @@ export default function ImportPage() {
         <div role="status" aria-live="polite" className="flex flex-col gap-4">
           <PageHeading
             title={status.kind === "reading" ? `Reading ${status.name}` : "Getting your listing"}
-            description="Gemma is reading the whole page, its screenshots and text, for fees. This can take a little while."
+            description="Gemma is reading the whole page, its screenshots and text, for fees. This usually takes 10 to 20 seconds."
           />
           <div className="h-40 animate-pulse rounded-xl bg-muted motion-reduce:animate-none" />
         </div>

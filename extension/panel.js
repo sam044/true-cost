@@ -4,8 +4,8 @@
 import { DEFAULT_APP_URL, getAppUrl, hostOf, isLocal } from "./config.js";
 
 const STALE_MS = 50_000; // background.js writes a heartbeat at least every 15s while working
-const SLOW_MS = 100_000; // lib/ai/gemma.ts moves to the backup model after 100s
-const VERY_SLOW_MS = 200_000;
+const SLOW_MS = 30_000; // lib/ai/gemma.ts starts the backup model too after 30s
+const VERY_SLOW_MS = 90_000;
 
 const STEPS = [
   { key: "capturing", label: "Capture the page" },
@@ -147,9 +147,9 @@ function renderReading(job, lost) {
     $("elapsed-note").textContent = "so far";
     $("reading-slow").textContent =
       ms > VERY_SLOW_MS
-        ? "This is a slow one. True Cost stops waiting at about 5 minutes; if it fails, Try again usually works."
+        ? "Gemma is very busy right now. True Cost stops waiting at about 2.5 minutes; if it fails, Try again usually works."
         : ms > SLOW_MS
-          ? "Gemma is busy right now, so True Cost is asking its backup model (Gemma 4 31B). Still working."
+          ? "Taking longer than usual, so True Cost has also asked its backup model (Gemma 4 31B). The first answer wins."
           : "";
   };
   update();

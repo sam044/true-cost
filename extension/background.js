@@ -17,7 +17,7 @@ import { MAX_SHOTS, OUTPUT_WIDTH, fitBudget, planImages, planPieces } from "./st
 const MAX_TEXT = 20000; // /api/extract rejects longer text
 const CAPTURE_GAP_MS = 550; // Chrome allows about 2 captureVisibleTab calls a second
 const SETTLE_MS = 250; // let lazy images and scroll-linked headers settle after scrolling
-const EXTRACT_TIMEOUT_MS = 310_000; // the app's /api/extract gives up by 300s
+const EXTRACT_TIMEOUT_MS = 170_000; // the app's /api/extract gives up by 150s
 const HEARTBEAT_MS = 15_000; // keeps this worker alive during the long Gemma wait; the panel watches it
 const BUSY_COLOR = "#2563eb";
 const DONE_COLOR = "#15803d";
