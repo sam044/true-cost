@@ -15,7 +15,7 @@ export function CostBar({ summary }: { summary: CostSummary }) {
 
   return (
     <div className="flex flex-col gap-3">
-      <div aria-hidden className="flex h-3 w-full gap-0.5 overflow-hidden rounded-full bg-muted">
+      <div aria-hidden className="flex h-4 w-full gap-0.5 overflow-hidden rounded-full bg-muted">
         {parts.map((s) => (
           <div
             key={s.key}

@@ -1,7 +1,8 @@
 "use client";
 
-// One apartment on the Compare screen: the true monthly cost, the bar, and an
-// itemized breakdown. Every number comes from lib/cost.ts; flags from lib/flags.ts.
+// One apartment on the Compare screen: the true monthly cost and the bar up
+// front, with the itemized breakdown and the fee index behind expandables.
+// Every number comes from lib/cost.ts; flags from lib/flags.ts.
 import { useState } from "react";
 import { ExternalLink, Trophy } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -17,8 +18,8 @@ import { cn } from "@/lib/utils";
 import { CostBar } from "./cost-bar";
 import { money, moneyWhole } from "./format";
 import { EmailDrawer } from "./email-drawer";
+import { Expandable } from "./expandable";
 import { IndexPanel } from "./index-panel";
-import { FlagBadges, FlagList } from "./law-flags";
 
 // Editable per-unit amount and source for a utility estimate row (F9). Saves on
 // blur or Enter; an invalid entry snaps back to the saved amount.
@@ -187,68 +188,62 @@ export function ApartmentColumn({
                 : `Within your ${money(setup.budget)} budget`}
             </p>
           )}
-          <FlagBadges apartmentId={apartment.id} flags={flags} />
         </section>
 
         <CostBar summary={summary} />
 
+        <p className="flex items-baseline justify-between text-sm text-muted-foreground">
+          <span>Over a {setup.leaseMonths}-month lease</span>
+          <span className="font-medium text-foreground tabular-nums">{money(summary.leaseTotal)}</span>
+        </p>
+
         <Separator />
 
-        <section aria-label={`Itemized monthly cost for ${apartment.name}`} className="text-sm">
-          <h3 className="mb-1 font-medium">Breakdown per person per month</h3>
-          <ul className="divide-y">
-            <li className="flex items-start gap-3 py-1.5">
-              <div className="flex flex-col">
-                <span>{rent < summary.advertisedMonthly - 0.005 ? "Rent" : "Rent (advertised)"}</span>
-                {apartment.advertised.basis === "per_unit" && setup.people > 1 && (
-                  <span className="text-xs text-muted-foreground">
-                    {money(apartment.advertised.amount)} ÷ {setup.people} people
-                  </span>
-                )}
-                {rent < summary.advertisedMonthly - 0.005 && (
-                  <span className="text-xs text-muted-foreground">
-                    Advertised {money(summary.advertisedMonthly)} includes{" "}
-                    {money(summary.advertisedMonthly - rent)} of the fees below
-                  </span>
-                )}
-              </div>
-              <span className="ml-auto tabular-nums">{money(rent)}</span>
-            </li>
-            {lines.map((line) => (
-              <FeeLine key={line.fee.id} apartmentId={apartment.id} line={line} />
-            ))}
-          </ul>
-          <div className="mt-1 flex items-baseline justify-between border-t-2 border-foreground/20 pt-2 font-semibold">
-            <span>True monthly cost</span>
-            <span className="tabular-nums">{money(summary.trueMonthly)}</span>
-          </div>
-          <div className="flex items-baseline justify-between pt-1 text-muted-foreground">
-            <span>Over a {setup.leaseMonths}-month lease</span>
-            <span className="tabular-nums">{money(summary.leaseTotal)}</span>
-          </div>
-
-          {excluded.length > 0 && (
-            <div className="mt-4">
-              <h3 className="font-medium">Not included</h3>
-              <p className="text-xs text-muted-foreground">Switch one on to add it.</p>
-              <ul className="divide-y">
-                {excluded.map((line) => (
-                  <FeeLine key={line.fee.id} apartmentId={apartment.id} line={line} />
-                ))}
-              </ul>
+        <Expandable title="See every fee">
+          <section aria-label={`Itemized monthly cost for ${apartment.name}`} className="text-sm">
+            <h3 className="mb-1 font-medium">Breakdown per person per month</h3>
+            <ul className="divide-y">
+              <li className="flex items-start gap-3 py-1.5">
+                <div className="flex flex-col">
+                  <span>{rent < summary.advertisedMonthly - 0.005 ? "Rent" : "Rent (advertised)"}</span>
+                  {apartment.advertised.basis === "per_unit" && setup.people > 1 && (
+                    <span className="text-xs text-muted-foreground">
+                      {money(apartment.advertised.amount)} ÷ {setup.people} people
+                    </span>
+                  )}
+                  {rent < summary.advertisedMonthly - 0.005 && (
+                    <span className="text-xs text-muted-foreground">
+                      Advertised {money(summary.advertisedMonthly)} includes{" "}
+                      {money(summary.advertisedMonthly - rent)} of the fees below
+                    </span>
+                  )}
+                </div>
+                <span className="ml-auto tabular-nums">{money(rent)}</span>
+              </li>
+              {lines.map((line) => (
+                <FeeLine key={line.fee.id} apartmentId={apartment.id} line={line} />
+              ))}
+            </ul>
+            <div className="mt-1 flex items-baseline justify-between border-t-2 border-foreground/20 pt-2 font-semibold">
+              <span>True monthly cost</span>
+              <span className="tabular-nums">{money(summary.trueMonthly)}</span>
             </div>
-          )}
-        </section>
 
-        <Separator />
+            {excluded.length > 0 && (
+              <div className="mt-4">
+                <h3 className="font-medium">Not included</h3>
+                <p className="text-xs text-muted-foreground">Switch one on to add it.</p>
+                <ul className="divide-y">
+                  {excluded.map((line) => (
+                    <FeeLine key={line.fee.id} apartmentId={apartment.id} line={line} />
+                  ))}
+                </ul>
+              </div>
+            )}
+          </section>
+        </Expandable>
+
         <IndexPanel key={apartment.name} apartment={apartment} />
-
-        {flags.length > 0 && (
-          <>
-            <Separator />
-            <FlagList apartmentId={apartment.id} flags={flags} />
-          </>
-        )}
 
         <EmailDrawer apartment={apartment} flags={flags} />
       </CardContent>

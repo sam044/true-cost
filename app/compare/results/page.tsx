@@ -1,7 +1,7 @@
 "use client";
 
 // Compare screen. Owner: Andy (B). One column per shown apartment with the true
-// cost, a stacked bar and an itemized breakdown; a picker hides apartments.
+// cost and a stacked bar (details behind expandables); a picker hides apartments.
 // TODO: flag badges, fee detail drawer (Sheet) with email draft.
 import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
@@ -12,6 +12,7 @@ import { PageHeading } from "@/components/page-heading";
 import { Stepper } from "@/components/stepper";
 import { ApartmentColumn } from "@/components/compare/apartment-column";
 import { ApartmentPicker } from "@/components/compare/apartment-picker";
+import { LegalNote } from "@/components/compare/law-flags";
 import { useHydrated } from "@/components/compare/use-hydrated";
 import { summarize } from "@/lib/cost";
 import { useTrueCost } from "@/lib/store";
@@ -92,6 +93,7 @@ function Results() {
           />
         ))}
       </div>
+      <LegalNote />
     </div>
   );
 }

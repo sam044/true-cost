@@ -88,18 +88,24 @@ export function FlagList({ apartmentId, flags }: { apartmentId: string; flags: L
           </li>
         ))}
       </ul>
-      <p className="text-xs text-muted-foreground">
-        This is information, not legal advice. For help with a lease, contact{" "}
-        <a
-          href={LEGAL_AID_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="underline underline-offset-4 hover:text-foreground"
-        >
-          Virginia Law Help<span className="sr-only"> (opens in a new tab)</span>
-        </a>
-        .
-      </p>
+      <LegalNote />
     </section>
+  );
+}
+
+export function LegalNote() {
+  return (
+    <p className="text-xs text-muted-foreground">
+      This is information, not legal advice. For help with a lease, contact{" "}
+      <a
+        href={LEGAL_AID_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="underline underline-offset-4 hover:text-foreground"
+      >
+        Virginia Law Help<span className="sr-only"> (opens in a new tab)</span>
+      </a>
+      .
+    </p>
   );
 }

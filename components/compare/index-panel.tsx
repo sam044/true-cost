@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { Users } from "lucide-react";
 import { feeAmountLabel, missingFees, reportsLabel, summaryLine, type IndexSummary } from "@/lib/fee-index";
 import type { Apartment } from "@/lib/types";
+import { Expandable } from "./expandable";
 import { mockSummary } from "./index-mock";
 
 type State =
@@ -50,30 +51,34 @@ export function IndexPanel({ apartment }: { apartment: Apartment }) {
   if (state.status === "error") return null;
 
   return (
-    <section
-      aria-labelledby={headingId}
-      aria-live="polite"
-      aria-busy={state.status === "loading"}
-      className="flex flex-col gap-2 text-sm"
+    <Expandable
+      title={
+        <span id={headingId} className="flex items-center gap-1.5">
+          <Users aria-hidden className="size-4 text-muted-foreground" />
+          Fees other students reported
+        </span>
+      }
     >
-      <h3 id={headingId} className="flex items-center gap-1.5 font-medium">
-        <Users aria-hidden className="size-4 text-muted-foreground" />
-        Fee index
-      </h3>
+      <section
+        aria-labelledby={headingId}
+        aria-live="polite"
+        aria-busy={state.status === "loading"}
+        className="flex flex-col gap-2 text-sm"
+      >
+        {state.status === "loading" && (
+          <div className="flex flex-col gap-2" role="status" aria-label="Loading fees other students reported">
+            <div className="h-4 w-3/4 animate-pulse rounded bg-muted motion-reduce:animate-none" />
+            <div className="h-4 w-1/2 animate-pulse rounded bg-muted motion-reduce:animate-none" />
+          </div>
+        )}
 
-      {state.status === "loading" && (
-        <div className="flex flex-col gap-2" role="status" aria-label="Loading fees other students reported">
-          <div className="h-4 w-3/4 animate-pulse rounded bg-muted motion-reduce:animate-none" />
-          <div className="h-4 w-1/2 animate-pulse rounded bg-muted motion-reduce:animate-none" />
-        </div>
-      )}
+        {state.status === "not_found" && (
+          <p className="text-muted-foreground">No one has shared fees for this complex yet.</p>
+        )}
 
-      {state.status === "not_found" && (
-        <p className="text-muted-foreground">No one has shared fees for this complex yet.</p>
-      )}
-
-      {state.status === "ready" && <IndexResult apartment={apartment} summary={state.summary} />}
-    </section>
+        {state.status === "ready" && <IndexResult apartment={apartment} summary={state.summary} />}
+      </section>
+    </Expandable>
   );
 }
 
