@@ -85,6 +85,10 @@ export interface Fee {
   quote: string | null; // null for user-added fees and estimates
   source: "ai" | "user" | "estimate";
   confidence: "high" | "medium" | "low";
+  // True when the listing says its advertised price already includes this fee
+  // (e.g. "Price shown is total price based on ... monthly required fees"), so
+  // lib/cost.ts shows it but doesn't add it on top of the rent again.
+  includedInAdvertised?: boolean;
 }
 
 export interface Apartment {
