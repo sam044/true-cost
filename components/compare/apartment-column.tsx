@@ -16,6 +16,7 @@ import type { Apartment, Setup } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { CostBar } from "./cost-bar";
 import { money, moneyWhole } from "./format";
+import { IndexPanel } from "./index-panel";
 import { FlagBadges, FlagList } from "./law-flags";
 
 // Editable per-unit amount and source for a utility estimate row (F9). Saves on
@@ -231,6 +232,9 @@ export function ApartmentColumn({
             </div>
           )}
         </section>
+
+        <Separator />
+        <IndexPanel key={apartment.name} apartment={apartment} />
 
         {flags.length > 0 && (
           <>
