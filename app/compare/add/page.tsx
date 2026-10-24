@@ -1,13 +1,14 @@
 "use client";
 
 // Add apartment screen. Owner: Sam (A).
-// Name, up to 5 screenshots (drag, click or Ctrl+V paste) and/or pasted
+// Opens on the catalog of pre-scanned complexes (F21). The fallback below it:
+// name, up to 5 screenshots (drag, click or Ctrl+V paste) and/or pasted
 // listing text. Screenshots are resized to 1600 px JPEG in the browser, then
 // everything goes to POST /api/extract in one call. Each apartment added shows
 // as a card (max 3); "Review fees" moves on.
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
-import { CircleCheck, CircleDashed, Trash2, X } from "lucide-react";
+import { CircleCheck, CircleDashed, Puzzle, Trash2, X } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,6 +18,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { PageHeading } from "@/components/page-heading";
 import { Stepper } from "@/components/stepper";
+import { CatalogPicker } from "@/components/catalog/catalog-picker";
 import { useHydrated } from "@/components/review/use-hydrated";
 import { DropZone } from "@/components/upload/drop-zone";
 import { extractListing } from "@/components/upload/extract";
@@ -36,7 +38,7 @@ export default function AddApartmentPage() {
       <Stepper current="add" />
       <PageHeading
         title="Add up to 3 apartments"
-        description="Drop in screenshots of the listing, the fees page or the lease's fee table, or paste the listing text."
+        description="Pick Blacksburg complexes we've already checked, or add any listing from screenshots or its text."
       />
       {hydrated ? (
         <AddApartments />
@@ -56,6 +58,7 @@ function AddApartments() {
   // A new key resets the form after each apartment is added.
   const [formKey, setFormKey] = useState(0);
   const full = apartments.length >= MAX_APARTMENTS;
+  const unreviewed = apartments.some((a) => !a.reviewed);
 
   function handleAdded(apartment: Apartment) {
     addApartment(apartment);
@@ -74,6 +77,8 @@ function AddApartments() {
 
   return (
     <div className="flex flex-col gap-8">
+      <CatalogPicker />
+
       {apartments.length > 0 && (
         <section aria-labelledby="added-heading" className="flex flex-col gap-3">
           <h2 id="added-heading" className="text-lg font-semibold">
@@ -92,16 +97,22 @@ function AddApartments() {
         </section>
       )}
 
-      {full ? (
-        <p className="rounded-xl border bg-card p-4 text-muted-foreground">
-          That&apos;s {MAX_APARTMENTS} apartments, the most True Cost compares at once. Remove one
-          to add a different apartment.
-        </p>
-      ) : (
-        <AddForm key={formKey} position={apartments.length + 1} onAdded={handleAdded} />
-      )}
+      <section aria-labelledby="fallback-heading" className="flex flex-col gap-4 border-t pt-6">
+        <h2 id="fallback-heading" className="text-lg font-semibold">
+          Not in the list? Upload screenshots or paste text
+        </h2>
+        <ExtensionNote />
+        {full ? (
+          <p className="rounded-xl border bg-card p-4 text-muted-foreground">
+            That&apos;s {MAX_APARTMENTS} apartments, the most True Cost compares at once. Remove one
+            to add a different apartment.
+          </p>
+        ) : (
+          <AddForm key={formKey} position={apartments.length + 1} onAdded={handleAdded} />
+        )}
+      </section>
 
-      {apartments.length > 0 && (
+      {unreviewed && (
         <div className="flex flex-wrap items-center gap-3 border-t pt-6">
           <Button asChild size="lg">
             <Link href="/compare/review">Review fees</Link>
@@ -111,6 +122,28 @@ function AddApartments() {
           </p>
         </div>
       )}
+    </div>
+  );
+}
+
+function ExtensionNote() {
+  return (
+    <div className="flex items-start gap-3 rounded-xl border bg-muted/40 p-4">
+      <Puzzle className="mt-0.5 size-5 shrink-0 text-muted-foreground" aria-hidden />
+      <p className="text-sm">
+        <span className="font-medium">Get the extension.</span>{" "}
+        <span className="text-muted-foreground">
+          On any listing page, one click captures the whole page and opens it here for review.
+        </span>{" "}
+        <a
+          href="https://github.com/sam044/true-cost/tree/main/extension#load-it"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-sm font-medium text-primary underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          How to install it<span className="sr-only"> (opens in a new tab)</span>
+        </a>
+      </p>
     </div>
   );
 }
@@ -282,9 +315,9 @@ function AddForm({ position, onAdded }: { position: number; onAdded: (a: Apartme
     <Card>
       <CardContent className="p-4 sm:p-6">
         <form onSubmit={onSubmit} noValidate className="flex flex-col gap-6">
-          <h2 className="text-lg font-semibold">
+          <h3 className="text-lg font-semibold">
             {position === 1 ? "Add an apartment" : "Add another apartment"}
-          </h2>
+          </h3>
 
           <div className="flex max-w-md flex-col gap-1.5">
             <Label htmlFor="apartment-name">Apartment name</Label>
