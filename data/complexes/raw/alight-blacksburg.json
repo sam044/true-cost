@@ -1,0 +1,18 @@
+{
+  "slug": "alight-blacksburg",
+  "name": "Alight Blacksburg",
+  "address": "1600 Patrick Henry Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.brightplace.ai/property/va/blacksburg/alight-blacksburg/scion-alight-blacksburg",
+  "site": "Brightplace",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.alightblacksburg.com/", "result": "no fees"},
+    {"url": "https://alight-blacksburg.com/rates-floorplans/", "result": "no fees"},
+    {"url": "https://findmyplace.co/student-housing/blacksburg-va/alight-blacksburg/", "result": "ok"},
+    {"url": "https://www.brightplace.ai/property/va/blacksburg/alight-blacksburg/scion-alight-blacksburg", "result": "ok"}
+  ],
+  "text": "Rent prices:\n- \"$835 – $999/mo\"\n- \"As of October 23, 2026, Alight in Blacksburg, VA has 8 apartments for rent from $835 to $999/mo.\"\n- \"Two-bedrooms start at $955 and 4-bedrooms at $835.\"\n- \"The average asking rent has held near $911 since September 1, 2026.\"\n- \"Starting at $955/mo\" (2 Bedroom, 1 Bath)\n- \"$955\" / \"$999\" (2 Bedroom, 1 Bath units)\n- \"Starting at $835/mo\" (4 Bedroom, 2 Bath)\n- \"$835\" / \"$855\" (4 Bedroom, 2 Bath units)\nFees, deposits, charges:\n- Deposits, application fees, admin fees, pet rent: NO FEES listed on the page.\n- \"Alight is pet friendly and has free parking and in-unit washers and dryers.\"\n- \"Free Parking Available\"\n- \"Pet-Friendly\" (listed as an amenity; no pet rent or pet fee is stated.)\n- Other amenities: \"Fireplaces Available In Select Apartments,\" \"In-Unit Laundry,\" \"High-Speed Internet,\" \"Fitness Center,\" \"Swimming Pool.\"",
+  "notes": "Official site alight-blacksburg.com (managed by Scion) renders its rates with JavaScript, so WebFetch got an empty page. A search snippet of the official rates page showed 2027-28 rates of 4BR East $835, West $855, 2BR $955 and $999 with fireplace, which match Brightplace. Brightplace's third-party utility estimates ('Electric, gas, water $217', 'Internet $86', 'Renters insurance $13', which it calls 'local averages, not quotes from the property') were left out of the kept text so they aren't read as property fees. Findmyplace said 'this property hasn't listed its monthly fees yet'. Rates are per bedroom and include furniture and internet according to the official site snippet."
+}

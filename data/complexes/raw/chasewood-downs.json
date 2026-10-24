@@ -1,0 +1,17 @@
+{
+  "slug": "chasewood-downs",
+  "name": "Chasewood Downs (Chasewood Apartments)",
+  "address": "1304 University City Blvd, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/chasewood-downs/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://en.uhomes.com/us/blacksburg/detail-apartments-1464891", "result": "ok"},
+    {"url": "https://www.rentable.co/blacksburg-va/chasewood-downs", "result": "error: 404"},
+    {"url": "https://www.cmgleasing.com/property/chasewood-downs/", "result": "ok"}
+  ],
+  "text": "Address: 1304-4 University City Blvd, Blacksburg, VA 24060\nRent prices (as listed):\n- 1309 Lynn Drive: \"$3,250.00\"\n- 509-R Sunridge Drive: \"$1,300.00\"\n- Chasewood - 1 Bedroom Belmont, 494 sq. ft.: \"$1,050.00\"\n- Chasewood - 1 Bedroom Belmont, 541 sq. ft.: \"$1,080.00\"\n- Chasewood - 1 Bedroom Belmont, 566 sq. ft.: \"$1,100.00\"\n- Chasewood - 1 Bedroom Delmar: \"$1,160.00\"\n- Chasewood - 1 Bedroom Delmar with Balcony: \"$1,180.00\"\n- Chasewood - 2 Bedroom Belmont: \"$1,320.00\"\n- Chasewood - 2 Bedroom Delmar: \"$1,400.00\"\n- Chasewood - 2 Bedroom Delmar with Balcony: \"$1,420.00\"\nFees, deposits, pet rent, parking, and admin or amenity fees: NO FEES. The page lists no amounts for these.\nUtility-related lines (no charge amounts shown):\n- \"Water and Trash Removal Included\"\n- \"Internet Included, provided by SingleDigits\"\n- \"Gas heat and water in select apartments\"\n- \"Internet included\" (listed under each floor plan)",
+  "notes": "Managed by CMG Leasing. The 1309 Lynn Drive and 509-R Sunridge Drive lines appear on the same page but are probably other CMG rentals, not Chasewood units. The page has a 'Load more' link, so more floor plans may exist. Pet Policy and Lease PDFs were not parsed. A search snippet from a listing site mentioned a $25 application fee, $15/mo pet rent, and a $200 pet fee plus $200 pet deposit, but no fetched page contained that, so it was NOT kept. uHomes showed 'US$1,182 /month' with its own 'No Service Fee' and 'No Deposit' marketing."
+}

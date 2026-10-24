@@ -1,0 +1,56 @@
+{
+  "slug": "windsor-hills",
+  "name": "Windsor Hills Apartments",
+  "sourceUrl": "https://www.rentcafe.com/apartments/va/blacksburg/windsor-hills/default.aspx",
+  "site": "RentCafe",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "95116f204e32a483",
+  "scannedAt": "2026-10-24T21:32:17.604Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent prices (base rent, as listed):\n- Summary: \"Base rent $1,234 - $2,961\"\n- Starting prices: \"All Studio $1,294+ 1 Bed $1,234+ 2 Beds $1,403+ 3+ Beds $1,680+\"\n- The Ripley (Studio): \"$1,294 - $1,941\"\n- The Canterbury (1 Bed): \"$1,234 - $1,851\"\n- The Dover - 1 Bedroom 1 Bath + Den: \"$1,250 - $1,875\"\n- The Lincoln (2 Beds): \"$1,403 - $2,105\"\n- The Rochester - 2 Bedroom 1 Bath + Den: \"$1,441 - $2,321\" (listing header) and \"$1,441 - $2,161\" (unit table)\n- The Lynford (3 Beds): \"$1,680 - $2,520\"\n- The Warwick - 3 Bedroom 1.5 Bath + Den: \"$1,844 - $2,961\" (listing header) and \"$1,844 - $2,766\" (unit table)\nRent disclaimer:\n- \"This listing displays base rent, which is the rent provided by the property and may not include recurring monthly fees and costs.\"\n- \"It does not include application fees, variable costs, and optional charges such as application fees, utility costs, pet charges, etc.\"\nFees:\n- Application fee: \"Application fees $30\"\n- Unit-specific fees: \"There may be additional unit-specific fees.\"\n- Estimate note: \"The fees are estimates and actual amounts may vary.\"\nPet fees and policy:\n- \"Pets allowed. Pets - Max 3 allowed per home\"\n- \"One Time Pet Fee : $150 per pet\"\n- \"We do not have a weight limit or breed restrictions.\"\n- \"Cats allowed.\" and \"Dogs allowed.\"\nOther charges:\n- Deposits, pet rent, admin fees, amenity fees, utility charges, and utility costs are not listed.\n- Parking is listed as an amenity (\"Hassle-free Parking\") with no associated charge."
+    ],
+    "advertisedPrice": {
+      "amount": 1234,
+      "basis": "per_person",
+      "quote": "Base rent $1,234 - $2,961"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Application fee",
+        "category": "application",
+        "amount": 30,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "Application fees $30",
+        "sourceImage": 0,
+        "confidence": "medium"
+      },
+      {
+        "name": "One Time Pet Fee",
+        "category": "pet",
+        "amount": 150,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "One Time Pet Fee : $150 per pet",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

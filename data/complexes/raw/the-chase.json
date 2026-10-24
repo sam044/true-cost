@@ -1,0 +1,18 @@
+{
+  "slug": "the-chase",
+  "name": "The Chase Apartments",
+  "address": "421-461 Roanoke St E, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/chase/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://thechaseapts.prospectportal.com/", "result": "403"},
+    {"url": "https://www.forrent.com/va/blacksburg/chase-apartments/mcxxpwk", "result": "403"},
+    {"url": "https://www.cmgleasing.com/property/chase/", "result": "ok"},
+    {"url": "https://www.cmgleasing.com/upload/office/Resident_Handbook_2026_09152026_7TWxFIE.pdf", "result": "error: PDF returned as binary, no readable text"}
+  ],
+  "text": "Rent and pricing:\n- \"$3,576.00\" (floor plan listing for The Chase Apartments, 1,250 sqft, 4 bed, 2.0 bath)\nFees, deposits, pet rent, admin fees, and charges: NO FEES\nParking, utility, and amenity lines:\n- \"Resident parking decals required for off-street parking\"\n- \"Recycling services included in rent\"\n- \"Gas heat and water\"\n- \"Internet Included, provided by SingleDigits\"\n- \"Internet included\"\n- \"Washer and dryer\" / \"Washer/Dryer\"\n- \"Central air and heating\"\n- \"Mini blinds included\"\n- \"Patio or deck, with additional storage\"\n- \"Private deck or patio (depending on floor)\"\n- \"Storage unit for every floor\"\n- \"24-Hour Emergency Maintenance & Lockout Service\"\nPet policy: \"No Pets\" (floor plan listing)",
+  "notes": "Managed by CMG Leasing. $3,576.00 is per 4-bed unit (about $894/bedroom). No fee schedule on the page; the resident handbook PDF may list fees but WebFetch could not read it."
+}

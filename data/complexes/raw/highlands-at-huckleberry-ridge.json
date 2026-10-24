@@ -1,0 +1,16 @@
+{
+  "slug": "highlands-at-huckleberry-ridge",
+  "name": "Highlands at Huckleberry Ridge",
+  "address": "535 Blackrock Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.zumper.com/apartment-buildings/p236919/highlands-at-huckleberry-ridge-blacksburg-va",
+  "site": "Zumper",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.point2homes.com/US/Apartment-Buildings/VA/Blacksburg/Highlands-At-Huckleberry-Ridge.html", "result": "403"},
+    {"url": "https://www.zumper.com/apartment-buildings/p236919/highlands-at-huckleberry-ridge-blacksburg-va", "result": "ok"}
+  ],
+  "text": "Monthly rent and fees\n- \"Monthly rent\" / \"$1,900\"\n- \"Fees may apply. The price shown reflects base rent.\"\n- \"Complete fee information is not available from the property, so additional fees may increase the total monthly cost.\"\nPolicies and fees\n- \"REQUIRED FEES\"\n- \"Applicants\" / \"One-time.\" / \"Contact Property\"\n- \"Move-In Fees\" / \"Security Deposit\" / \"One-time. Refundable.\" / \"Contact Property\"\n- \"Parking Policy\" / \"Garage Parking\"\n- \"Dog Policy\" / \"Allowed\"\n- \"Cat Policy\" / \"Allowed\"\n- \"Contact for more information on pet policy.\"\nFloor plan\n- \"The Glen\" / \"$1,900 /mo\"\nAmenities disclaimer\n- \"Units, floor plans, amenities, dimensions, details, availability, and prices may be approximate and subject to change. Please contact a community representative for more information.\"",
+  "notes": "Managed by Park Properties Management (Park Advantage). The official site was not located. Only one floor plan price (The Glen, 3-bed, $1,900) is shown, and fee amounts say 'Contact Property'. Neighborhood medians and nearby listings on the Zumper page were left out."
+}

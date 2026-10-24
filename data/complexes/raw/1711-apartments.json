@@ -1,0 +1,15 @@
+{
+  "slug": "1711-apartments",
+  "name": "1711 Apartments",
+  "address": "1711 Whipple Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/1711-apartments",
+  "site": "Rentable",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.rentable.co/blacksburg-va/1711-apartments", "result": "ok"}
+  ],
+  "text": "Fees: The page lists only one fee-related line: \"Security Deposit: 0 - 300\". It doesn't list any pet rent, parking, utility, or admin fee amounts. The pet, parking, and trash labels appear without charges.\nRent prices (as listed, by unit):\n- \"$565 - $675\" (overall listing range)\n- \"$1,860 / room\"\n- \"$565\" (1711 04, available Nov 15th, 2026)\n- \"$545\"\n- \"$635\"\n- \"$700\"\n- \"$600\"\n- \"$605\"\n- \"$495\"\n- \"$550\"\n- \"$675 / unit & room\" (1711 Whipple, available Aug 6th, 2027)\n- \"$450 / room\"\n- \"$1,750 / room\"\n- \"$1,940 / room\"\n- \"$545 - $2,500 / room\"\n- \"$625 / room\"\n- \"$1,900 / room\"\n- \"$2,400 / room\"\n- \"$2,500 / room\"\n- \"$450 - $2,250 / room & unit\"\n- \"$2,000 / room\"\n- \"$2,250\"\n- \"$1,980\"\n- \"$437 / room\"\nMany of these units are marked \"Rented,\" and the page shows two units as available: one at \"$565\" and one at \"$675.\"",
+  "notes": "Managed by Pointe West Management; no official site was fetched. The 4-bed/2-bath units are leased individually by the room. Rentable mixes per-room prices with what look like whole-unit prices ($1,750-$2,500), so treat the larger figures as whole-unit amounts that are mislabeled."
+}

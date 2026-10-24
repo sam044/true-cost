@@ -1,0 +1,16 @@
+{
+  "slug": "cedar-pointe",
+  "name": "Cedar Pointe Apartments",
+  "address": "200 Cedar Pointe Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/cedarpointe/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.cmgleasing.com/property/cedar-pointe/", "result": "error: 404"},
+    {"url": "https://www.cmgleasing.com/property/cedarpointe/", "result": "ok"}
+  ],
+  "text": "Rent prices:\n- \"$2,000.00\" (Cedar Pointe Apartments - B1 Floorplan)\n- \"$2,100.00\" (Cedar Pointe Apartments - B2 Floorplan)\n- \"$2,000.00\" (Cedar Pointe Apartments - B3 Floorplan)\n- \"$1,570.00\" (Cedar Pointe Apartments - S1 Floorplan)\n- \"$1,620.00\" (Cedar Pointe Apartments - S2 Floorplan)\n- \"$1,520.00\" (Cedar Pointe Apartments - S3 Floorplan)\n- \"$1,520.00\" (Cedar Pointe Apartments - S4 Floorplan)\nFees, deposits, pet rent, admin fees: NO FEES\nParking:\n- \"Free on-site parking\"\n- \"Resident parking decals required for on-site parking\"\nUtilities:\n- \"Furniture, Gigabit high-speed internet, recycling, and trash are included in the rent.\"",
+  "notes": "Managed by CMG Leasing. The property site (cedarpointeapts.prospectportal.com) was not tried because other prospectportal sites returned 403. S = studio, B = 2-bed. Units are furnished."
+}

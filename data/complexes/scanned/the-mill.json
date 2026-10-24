@@ -1,0 +1,56 @@
+{
+  "slug": "the-mill",
+  "name": "The Mill at Blacksburg",
+  "sourceUrl": "https://www.blacksburgmill.com/floor-plans/",
+  "site": "Official site (blacksburgmill.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "7d718197a5d67ebe",
+  "scannedAt": "2026-10-24T21:32:03.951Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "1 Bedroom\n- \"Rent:\" / \"$1100\"\n- \"Security Deposit: $800\"\n- \"Application Fee: $35\"\n2 Bedroom\n- \"$1300\"\n- \"(Only $650 per room with 2 people)\"\n- \"Security Deposit: $900\"\n- \"Application Fee: $35\"\n- \"Pricing is per unit. All residents share joint and several responsibility for full rent\"\n3 Bedroom\n- \"$1680\"\n- \"(Only $560 per room with 3 people)\"\n- \"Security Deposit: $1050\"\n- \"Application Fee: $35\"\n- \"Pricing is per unit. All residents share joint and several responsibility for full rent\"\nUtilities (included, not a charge):\n- \"Water, Recycling & Trash Included\"\n- \"The Mill provides free water, sewer, trash removal, and recycling\"\n\n[From https://www.blacksburgmill.com/faq/]\n- \"The rent and deposit rate is per apartment, not per roommate.\"\n- \"The lease agreement will reflect the total rent amount, divided into 12 equal installments due August 1 – July 1.\"\n- \"The installments do not represent a monthly rent amount and are not prorated.\"\n- \"Residents are responsible for their electricity which is to be contracted through American Electric Power.\"\n- \"The Mill is wired for high-speed internet and cable through Xfinity.\"\n- \"The Mill has open parking for you and your guests. No parking pass required.\"\n- \"The Mill does not charge a standard redecoration fee.\"\n- \"The Mill's preferred vendor offers discounted carpet cleaning prices payable by residents who request it.\"\n- \"The Mill has 24-hour lock-out services for our residents. Service fees may apply after office hours.\""
+    ],
+    "advertisedPrice": {
+      "amount": 1100,
+      "basis": "per_unit",
+      "quote": "$1100"
+    },
+    "bedrooms": 1,
+    "utilities": {
+      "electric": "not_included",
+      "water": "included",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "included"
+    },
+    "fees": [
+      {
+        "name": "Security Deposit",
+        "category": "security_deposit",
+        "amount": 800,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": true,
+        "quote": "Security Deposit: $800",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Application Fee",
+        "category": "application",
+        "amount": 35,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Application Fee: $35",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

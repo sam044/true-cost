@@ -1,0 +1,56 @@
+{
+  "slug": "terrace-view",
+  "name": "Terrace View Apartments",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/terrace-view",
+  "site": "Rentable",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "624c99829750948f",
+  "scannedAt": "2026-10-24T21:31:51.927Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Overall range\n- \"$865 - $1,610 / room\"\nFloor plan price headers (available units)\n- 01 Bed: \"$1,450 - $1,610 / room\" (Available Aug 21st, 2027: \"$1,450 / room\", \"$1,505 / room\", \"$1,505 / room\", \"$1,520 / room\", \"$1,550 / room\", \"$1,610 / room\")\n- 2 beds, 1 Bath: \"$865 - $1,080 / room\"\n- 2 Beds, 2 Bath: \"$1,110 - $1,125 / room\"\n- 3 Beds, 3 Bath: \"$1,040 / room\"\n- 3 Beds, 1 Bath: \"$865 - $965 / room\"\n- 3 Beds, 2 Bath: \"$900 - $1,045 / room\"\n- 4 Beds, 2 Bath: \"$920 - $995 / room\"\n- 4 Beds, 3 Bath: \"$985 / room\"\n- 4 Beds, 4 Bath: \"$1,085 / room\"\nFAQ: \"Terrace View has a 3 bedroom unit starting at $1,040.\"\nFees and charges\n- \"Pet Fee: $300.00\"\n- \"Pet Rent: $45.00\"\n- \"Please call our leasing office for pet policy.\"\n- Parking: \"Off-street Parking\" (no price listed)\nDeposits, utilities, and admin fees: None listed on the page.\nAmenities (as listed): In-unit Laundry, Air Conditioning, Furnished, Fitness Center, Refrigerator, Garbage Disposal, Pool, Public Transportation, Controlled Access, On Bus Line, Secured Entry, Hot Tub / Spa, Business Center, Clubhouse, Coffee Bar, Media Room, Volleyball Court, Online Payments, Fire Pit, Parking, Partial Upgrade, Ceiling Fans, Dishwasher, Freezer, Range / Oven, Stainless Steel Appliances, Balcony, Deck, Patio, Student, 24-hour Maintenance, Central A / C, Heat: Forced Air, Cable-ready, High-speed Internet, Microwave, Granite Countertop\nPet options: \"Dogs Ok\", \"Cats Ok\", \"Pet Park\", \"Pet Friendly Community\""
+    ],
+    "advertisedPrice": {
+      "amount": 865,
+      "basis": "per_person",
+      "quote": "\"$865 - $1,610 / room\""
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Pet Fee",
+        "category": "pet",
+        "amount": 300,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Pet Fee: $300.00\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Pet Rent",
+        "category": "pet",
+        "amount": 45,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Pet Rent: $45.00\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

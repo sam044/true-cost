@@ -1,0 +1,19 @@
+{
+  "slug": "vue",
+  "name": "Vue Apartments",
+  "address": "1906 Research Center Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/vue-apartments/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://vueblacksburg.prospectportal.com/", "result": "403"},
+    {"url": "https://www.rent.com/virginia/blacksburg-apartments/vue-4-100133457", "result": "error: redirect to ratelimited.rent.com"},
+    {"url": "https://www.zumper.com/apartment-buildings/p862809/vue-farmview-ramble-blacksburg-va", "result": "error: wrong property (3300 Farmview Dr listing)"},
+    {"url": "https://www.cmgleasing.com/property/vue/", "result": "error: 404"},
+    {"url": "https://www.cmgleasing.com/property/vue-apartments/", "result": "ok"}
+  ],
+  "text": "Rent prices (Floor Plans section):\n- \"$1,660.00\" (Vue Apartments - A1 Floorplan, 1 bed, 1.0 bath)\n- \"$1,710.00\" (Vue Apartments - A2 Floorplan, 1 bed, 1.0 bath)\n- \"$2,190.00\" (Vue Apartments - B1-2 Floorplan, 2 bed, 2.0 bath)\n- \"$2,100.00\" (Vue Apartments - B1 Floorplan, 2 bed, 2.0 bath)\n- \"$2,300.00\" (Vue Apartments - B2 Floorplan, 2 bed, 2.0 bath)\n- \"$2,300.00\" (Vue Apartments - B3 Floorplan, 2 bed, 2.0 bath)\n- \"$2,100.00\" (Vue Apartments - B4 Floorplan, 2 bed, 2.0 bath)\n- \"$2,745.00\" (Vue Apartments - C1 Floorplan, 3 bed, 3.0 bath)\n- \"$2,670.00\" (Vue Apartments - C2 Floorplan, 3 bed, 2.0 bath)\n- \"$2,670.00\" (Vue Apartments - C3 Floorplan, 3 bed, 2.0 bath)\nFees, deposits, pet rent, parking, and admin charges: NO FEES\nUtilities:\n- \"Gigabit high-speed internet, recycling, and trash are included in the rent.\"\n- \"Washer/Dryer Included\" (listed on each floor plan)\nCommunity Amenities:\n- \"EarthCraft® Certified Community\"\n- \"Mailroom and package center with smart technology\"\n- \"Playground\"\n- \"Resident lounge\"\n- \"Coffee bar featuring Starbucks® coffee machine\"\n- \"Heated swimming pool with sun shelves\"\n- \"Outdoor grilling areas\"\n- \"Professional-level fitness center\"\n- \"Pet park\"\n- \"Collab spaces\"\n- \"Rooftop Terrace\"",
+  "notes": "Managed by CMG Leasing. A Pet Policy PDF is linked but was not fetched. Listings elsewhere describe rent as 'Plus Fees', but no fee amounts were on the fetched page. Five URLs were tried; one was a 404 on a guessed cmg URL (/property/vue/) before the right slug was found."
+}

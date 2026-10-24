@@ -1,0 +1,56 @@
+{
+  "slug": "highlands-at-huckleberry-ridge",
+  "name": "Highlands at Huckleberry Ridge",
+  "sourceUrl": "https://www.zumper.com/apartment-buildings/p236919/highlands-at-huckleberry-ridge-blacksburg-va",
+  "site": "Zumper",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "f746f734f5fb1e83",
+  "scannedAt": "2026-10-24T21:31:22.081Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Monthly rent and fees\n- \"Monthly rent\" / \"$1,900\"\n- \"Fees may apply. The price shown reflects base rent.\"\n- \"Complete fee information is not available from the property, so additional fees may increase the total monthly cost.\"\nPolicies and fees\n- \"REQUIRED FEES\"\n- \"Applicants\" / \"One-time.\" / \"Contact Property\"\n- \"Move-In Fees\" / \"Security Deposit\" / \"One-time. Refundable.\" / \"Contact Property\"\n- \"Parking Policy\" / \"Garage Parking\"\n- \"Dog Policy\" / \"Allowed\"\n- \"Cat Policy\" / \"Allowed\"\n- \"Contact for more information on pet policy.\"\nFloor plan\n- \"The Glen\" / \"$1,900 /mo\"\nAmenities disclaimer\n- \"Units, floor plans, amenities, dimensions, details, availability, and prices may be approximate and subject to change. Please contact a community representative for more information.\""
+    ],
+    "advertisedPrice": {
+      "amount": 1900,
+      "basis": "per_unit",
+      "quote": "$1,900 /mo"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Applicants Fee",
+        "category": "application",
+        "amount": 0,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Applicants / One-time. / Contact Property",
+        "sourceImage": 0,
+        "confidence": "low"
+      },
+      {
+        "name": "Security Deposit",
+        "category": "security_deposit",
+        "amount": 0,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": true,
+        "quote": "Security Deposit / One-time. Refundable. / Contact Property",
+        "sourceImage": 0,
+        "confidence": "low"
+      }
+    ]
+  },
+  "error": null
+}

@@ -1,5 +1,113 @@
 [
   {
+    "id": "1711-apartments",
+    "name": "1711 Apartments",
+    "url": "https://www.rentable.co/blacksburg-va/1711-apartments",
+    "site": "Rentable",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 565,
+      "max": 565,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1711-apartments",
+      "name": "1711 Apartments",
+      "advertised": {
+        "amount": 565,
+        "basis": "per_person",
+        "quote": "$565"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1711-apartments-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit: 0 - 300",
+          "source": "ai",
+          "confidence": "medium"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "alight-blacksburg",
+    "name": "Alight Blacksburg",
+    "url": "https://www.brightplace.ai/property/va/blacksburg/alight-blacksburg/scion-alight-blacksburg",
+    "site": "Brightplace",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 835,
+      "max": 999,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-alight-blacksburg",
+      "name": "Alight Blacksburg",
+      "advertised": {
+        "amount": 835,
+        "basis": "per_person",
+        "quote": "$835 – $999/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "cedar-pointe",
+    "name": "Cedar Pointe Apartments",
+    "url": "https://www.cmgleasing.com/property/cedarpointe/",
+    "site": "Official site (cmgleasing.com, CMG Leasing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2000,
+      "max": 2000,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-cedar-pointe",
+      "name": "Cedar Pointe Apartments",
+      "advertised": {
+        "amount": 2000,
+        "basis": "per_unit",
+        "quote": "$2,000.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
     "id": "cedarfield",
     "name": "Cedarfield Apartments & Townhomes",
     "url": "https://www.cmgleasing.com/property/cedarfield-apts-townhomes/",
@@ -27,6 +135,83 @@
         "trash": "unknown"
       },
       "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "chasewood-downs",
+    "name": "Chasewood Downs (Chasewood Apartments)",
+    "url": "https://www.cmgleasing.com/property/chasewood-downs/",
+    "site": "Official site (cmgleasing.com, CMG Leasing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3250,
+      "max": 3250,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-chasewood-downs",
+      "name": "Chasewood Downs (Chasewood Apartments)",
+      "advertised": {
+        "amount": 3250,
+        "basis": "per_unit",
+        "quote": "$3,250.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "collegiate-court",
+    "name": "Collegiate Court Apartments",
+    "url": "https://www.rentable.co/blacksburg-va/collegiate-court",
+    "site": "Rentable",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3640,
+      "max": 4040,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-collegiate-court",
+      "name": "Collegiate Court Apartments",
+      "advertised": {
+        "amount": 3640,
+        "basis": "per_unit",
+        "quote": "$3,640 - $4,040"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "included",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "collegiate-court-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 1750,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit: 980 - 1750",
+          "source": "ai",
+          "confidence": "low"
+        }
+      ],
       "reviewed": false
     }
   },
@@ -118,6 +303,37 @@
         "gas": "unknown",
         "internet": "not_included",
         "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "highlands-at-huckleberry-ridge",
+    "name": "Highlands at Huckleberry Ridge",
+    "url": "https://www.zumper.com/apartment-buildings/p236919/highlands-at-huckleberry-ridge-blacksburg-va",
+    "site": "Zumper",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1900,
+      "max": 1900,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-highlands-at-huckleberry-ridge",
+      "name": "Highlands at Huckleberry Ridge",
+      "advertised": {
+        "amount": 1900,
+        "basis": "per_unit",
+        "quote": "$1,900 /mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
       },
       "fees": [],
       "reviewed": false
@@ -502,6 +718,52 @@
     }
   },
   {
+    "id": "park-37",
+    "name": "Park 37 (Park37)",
+    "url": "https://www.rentable.co/blacksburg-va/park-37",
+    "site": "Rentable",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1090,
+      "max": 1350,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-park-37",
+      "name": "Park 37 (Park37)",
+      "advertised": {
+        "amount": 1090,
+        "basis": "per_person",
+        "quote": "$1,090 - $1,350"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "park-37-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 1250,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit: 0 - 1250",
+          "source": "ai",
+          "confidence": "low"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
     "id": "pheasant-run",
     "name": "Pheasant Run Townhomes",
     "url": "https://granitesl.appfolio.com/listings/detail/dd27850a-81e9-4b26-895c-0e7705c5a7a0",
@@ -544,6 +806,37 @@
           "confidence": "medium"
         }
       ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "reserve-at-knollwood",
+    "name": "The Reserve at Knollwood Apartments",
+    "url": "https://www.cmgleasing.com/property/reserve-at-knollwood/",
+    "site": "Official site (cmgleasing.com, CMG Leasing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1550,
+      "max": 1570,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-reserve-at-knollwood",
+      "name": "The Reserve at Knollwood Apartments",
+      "advertised": {
+        "amount": 1550,
+        "basis": "per_unit",
+        "quote": "$1,550.00 - $1,570.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "unknown"
+      },
+      "fees": [],
       "reviewed": false
     }
   },
@@ -625,6 +918,68 @@
     }
   },
   {
+    "id": "summit-at-uptown",
+    "name": "The Summit at Uptown (The Summit Townhome Community)",
+    "url": "https://www.rentable.co/blacksburg-va/100-hoopers-ln",
+    "site": "Rentable",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 780,
+      "max": 900,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-summit-at-uptown",
+      "name": "The Summit at Uptown (The Summit Townhome Community)",
+      "advertised": {
+        "amount": 780,
+        "basis": "per_person",
+        "quote": "$780 - $900"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "tech-terrace",
+    "name": "Tech Terrace Apartments",
+    "url": "https://www.cmgleasing.com/property/tech-terrace/",
+    "site": "Official site (cmgleasing.com, CMG Leasing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3576,
+      "max": 3576,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-tech-terrace",
+      "name": "Tech Terrace Apartments",
+      "advertised": {
+        "amount": 3576,
+        "basis": "per_unit",
+        "quote": "$3,576.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
     "id": "terpence",
     "name": "Terpence Apartments",
     "url": "https://www.cmgleasing.com/property/terpence/",
@@ -656,6 +1011,66 @@
     }
   },
   {
+    "id": "terrace-view",
+    "name": "Terrace View Apartments",
+    "url": "https://www.rentable.co/blacksburg-va/terrace-view",
+    "site": "Rentable",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 865,
+      "max": 1610,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-terrace-view",
+      "name": "Terrace View Apartments",
+      "advertised": {
+        "amount": 865,
+        "basis": "per_person",
+        "quote": "\"$865 - $1,610 / room\""
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "terrace-view-pet-fee",
+          "name": "Pet Fee",
+          "category": "pet",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "\"Pet Fee: $300.00\"",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "terrace-view-pet-rent",
+          "name": "Pet Rent",
+          "category": "pet",
+          "amount": 45,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "\"Pet Rent: $45.00\"",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
     "id": "the-arbors",
     "name": "The Arbors of Blacksburg",
     "url": "https://homefinder.com/rentals/details/777-Triangle-St_Blacksburg_VA_24060_M97068-79770",
@@ -683,6 +1098,97 @@
         "trash": "unknown"
       },
       "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "the-chase",
+    "name": "The Chase Apartments",
+    "url": "https://www.cmgleasing.com/property/chase/",
+    "site": "Official site (cmgleasing.com, CMG Leasing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3576,
+      "max": 3576,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-the-chase",
+      "name": "The Chase Apartments",
+      "advertised": {
+        "amount": 3576,
+        "basis": "per_unit",
+        "quote": "$3,576.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "the-mill",
+    "name": "The Mill at Blacksburg",
+    "url": "https://www.blacksburgmill.com/floor-plans/",
+    "site": "Official site (blacksburgmill.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1100,
+      "max": 1100,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-the-mill",
+      "name": "The Mill at Blacksburg",
+      "advertised": {
+        "amount": 1100,
+        "basis": "per_unit",
+        "quote": "$1100"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "the-mill-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 800,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit: $800",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "the-mill-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $35",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
       "reviewed": false
     }
   },
@@ -771,6 +1277,97 @@
           "counted": true,
           "refundable": true,
           "quote": "Security Deposit: 0 - 1100",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "vue",
+    "name": "Vue Apartments",
+    "url": "https://www.cmgleasing.com/property/vue-apartments/",
+    "site": "Official site (cmgleasing.com, CMG Leasing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1660,
+      "max": 1660,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-vue",
+      "name": "Vue Apartments",
+      "advertised": {
+        "amount": 1660,
+        "basis": "per_unit",
+        "quote": "$1,660.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "windsor-hills",
+    "name": "Windsor Hills Apartments",
+    "url": "https://www.rentcafe.com/apartments/va/blacksburg/windsor-hills/default.aspx",
+    "site": "RentCafe",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1234,
+      "max": 2961,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-windsor-hills",
+      "name": "Windsor Hills Apartments",
+      "advertised": {
+        "amount": 1234,
+        "basis": "per_person",
+        "quote": "Base rent $1,234 - $2,961"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "windsor-hills-application-fee",
+          "name": "Application fee",
+          "category": "application",
+          "amount": 30,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application fees $30",
+          "source": "ai",
+          "confidence": "medium"
+        },
+        {
+          "id": "windsor-hills-one-time-pet-fee",
+          "name": "One Time Pet Fee",
+          "category": "pet",
+          "amount": 150,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "One Time Pet Fee : $150 per pet",
           "source": "ai",
           "confidence": "high"
         }

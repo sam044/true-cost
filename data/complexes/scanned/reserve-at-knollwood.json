@@ -1,0 +1,31 @@
+{
+  "slug": "reserve-at-knollwood",
+  "name": "The Reserve at Knollwood Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/reserve-at-knollwood/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "52f255c7ce72ab2b",
+  "scannedAt": "2026-10-24T21:31:31.744Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent prices (from the floorplan listings):\n- A1, 1 bed, 715 sq ft: \"$1,550.00 - $1,570.00\"\n- A2, 1 bed, 667 sq ft: \"$1,570.00\"\n- B1 End, 2 bed, 1,073 sq ft: \"$1,890.00 - $1,900.00\"\n- B1, 2 bed, 1,058 sq ft: \"$1,870.00 - $1,900.00\"\n- B2, 2 bed, 1,093 sq ft: \"$1,890.00 - $1,900.00\"\n- B3 End, 2 bed, 1,112 sq ft: \"$1,900.00\"\n- B3, 2 bed, 1,108 sq ft: \"$1,900.00\"\n- C1, 3 bed, 1,226 sq ft: \"$2,440.00 - $2,480.00\"\n- C2, 3 bed, 1,206 sq ft: \"$2,470.00 - $2,480.00\"\nFees, deposits, charges, pet rent, parking, utility, amenity, and admin fees: NO FEES. The only related item is that internet is included: \"Internet Included in the Rent.\" Parking and clubhouse amenities are described without any stated cost."
+    ],
+    "advertisedPrice": {
+      "amount": 1550,
+      "basis": "per_unit",
+      "quote": "$1,550.00 - $1,570.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "included",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

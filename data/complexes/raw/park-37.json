@@ -1,0 +1,15 @@
+{
+  "slug": "park-37",
+  "name": "Park 37 (Park37)",
+  "address": "1222 Patrick Henry Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/park-37",
+  "site": "Rentable",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.rentable.co/blacksburg-va/park-37", "result": "ok"}
+  ],
+  "text": "Listing summary:\n- \"$1,090 - $1,350\"\n- \"Available starting Aug. 6th\"\nUnit listings:\n- \"Park 37 Maybrook 1 Bed\" / \"$1,760\" / \"Rented\"\n- \"Park 37 Maybrook 1 Bed Furnished\" / \"$1,860\" / \"Rented\"\n- \"Maybrook - 1222 Patrick Henry Dr. Blacksburg , VA\" / \"$1,600\" / \"Rented\"\n- \"Park 37 Ellett Valley 2 Bed\" / \"$1,250\" / \"Available Aug 6th, 2027\"\n- \"Park 37 Ellett Valley 2 Bed Furnished\" / \"$1,350\" / \"Available Aug 6th, 2027\"\n- \"1222 Patrick Henry Dr\" / \"$1,150 / room\" / \"Rented\"\n- \"Ellett Valley - 1222 Patrick Henry Dr\" / \"$1,000\" / \"Rented\"\n- \"Park 37 Walker Creek 4 Bed\" / \"$1,090\" / \"Available Aug 6th, 2027\"\n- \"Park 37 Walker Creek 4 Bed Furnished\" / \"$1,190\" / \"Available Aug 6th, 2027\"\n- \"Park 37 Pearis Mountain 4 Bed\" / \"$1,150\" / \"Available Aug 6th, 2027\"\n- \"Park 37 Pearis Mountain 4 Bed Furnished\" / \"$1,250\" / \"Available Aug 6th, 2027\"\n- \"1222 Patrick Henry Dr\" / \"$925 / room\" / \"Rented\"\n- \"Walker Creek - 1222 Patrick Henry Dr. Blacksburg, VA\" / \"$950\" / \"Rented\"\n- \"Walker Creek - 1222 Patrick Henry Dr. Blacksburg, VA\" / \"$1,085\" / \"Rented\"\n- \"218 Individual - 218 B\" / \"$985\" / \"Rented\"\n- \"326 Individual - 326 B\" / \"$985\" / \"Rented\"\n- \"1222 Patrick Henry Dr\" / \"$950 / room\" / \"Rented\"\n- \"Pearis Mountain - 4 bed/4 bath balcony unit - Park37\" / \"$1,000\" / \"Rented\"\n- \"Paris Mountain - 1222 Patrick Henry Dr\" / \"$950\" / \"Rented\"\nRent report:\n- Park 37 2BR: \"$1,300\"; Blacksburg average 2BR: \"$1,384\"\n- Park 37 4BR: \"$1,170\"; Blacksburg average 4BR: \"$1,925\"\nFees, deposits, and charges:\n- \"Security Deposit:\" / \"0 - 1250\"\nNo pet rent, parking fee, utility charge, or admin fee is listed. The page mentions \"on-site vehicle parking\" and \"covered bike storage\" in the description, but gives no price for either. Pet policy shows \"Dogs Ok\" and \"Cats Ok,\" with no associated charge.",
+  "notes": "Managed by Roost Real Estate Group per Rentable; no official site was located. Prices for 2- and 4-bed plans appear to be per bedroom; furnished units cost $100 more than unfurnished."
+}

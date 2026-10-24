@@ -1,0 +1,31 @@
+{
+  "slug": "alight-blacksburg",
+  "name": "Alight Blacksburg",
+  "sourceUrl": "https://www.brightplace.ai/property/va/blacksburg/alight-blacksburg/scion-alight-blacksburg",
+  "site": "Brightplace",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "d7556b45d58ffe02",
+  "scannedAt": "2026-10-24T21:31:00.067Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent prices:\n- \"$835 – $999/mo\"\n- \"As of October 23, 2026, Alight in Blacksburg, VA has 8 apartments for rent from $835 to $999/mo.\"\n- \"Two-bedrooms start at $955 and 4-bedrooms at $835.\"\n- \"The average asking rent has held near $911 since September 1, 2026.\"\n- \"Starting at $955/mo\" (2 Bedroom, 1 Bath)\n- \"$955\" / \"$999\" (2 Bedroom, 1 Bath units)\n- \"Starting at $835/mo\" (4 Bedroom, 2 Bath)\n- \"$835\" / \"$855\" (4 Bedroom, 2 Bath units)\nFees, deposits, application fees, admin fees, pet rent: NO FEES listed on the page.\n- \"Alight is pet friendly and has free parking and in-unit washers and dryers.\"\n- \"Free Parking Available\"\n- \"Pet-Friendly\" (listed as an amenity; no pet rent or pet fee is stated.)\n- Other amenities: \"Fireplaces Available In Select Apartments,\" \"In-Unit Laundry,\" \"High-Speed Internet,\" \"Fitness Center,\" \"Swimming Pool.\""
+    ],
+    "advertisedPrice": {
+      "amount": 835,
+      "basis": "per_person",
+      "quote": "$835 – $999/mo"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

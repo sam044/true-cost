@@ -1,0 +1,44 @@
+{
+  "slug": "summit-at-uptown",
+  "name": "The Summit at Uptown (The Summit Townhome Community)",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/100-hoopers-ln",
+  "site": "Rentable",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "53108a62249d8898",
+  "scannedAt": "2026-10-24T21:31:42.080Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Property: The Summit Townhome Community In Blacksburg\nAddress: 100 Hoopers Ln Blacksburg, VA\n\"The Summit at Uptown is a new and unique residential community in Blacksburg.\"\nRent prices (this property):\n- \"$780 - $900\"\n- \"3 Beds • 2 Bath\"\n- \"1600 ft2\"\n0900\" / \"Rented\" / \"View\"\n- \"$780\" / \"Rented\" / \"View\"\n- \"*Price is per bedroom*\"\nFees and charges:\n- \"Security Deposit: $0\"\n- \"Ask about our fully furnished unit options for an additional fee!\" (no amount listed)\n- \"This property requires enrollment in our Benefit Package.\" (no amount listed)\n- Pet rent: not listed\n- Utilities: no utility charges listed (only \"Trash Removal Included\" appears)\n- Admin fee: not listed\nParking:\n- \"Surface Parking\"\n- \"Garage - Attached\"\nPets:\n- \"Dogs Ok\"\n- \"Cats Ok\"\nAmenities: On-site Laundry, Storage, Disability Access, Refrigerator, Garbage Disposal, Trash Removal Included, Range / Oven, Microwave, High-speed Internet, Elevator, Smoke-free Community\nAvailability: \"Is this property currently leasing units? No. This property is not currently accepting new tenants.\""
+    ],
+    "advertisedPrice": {
+      "amount": 780,
+      "basis": "per_person",
+      "quote": "$780 - $900"
+    },
+    "bedrooms": 3,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "included"
+    },
+    "fees": [
+      {
+        "name": "Security Deposit",
+        "category": "security_deposit",
+        "amount": 0,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": true,
+        "quote": "Security Deposit: $0",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

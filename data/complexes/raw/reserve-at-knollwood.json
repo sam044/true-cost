@@ -1,0 +1,19 @@
+{
+  "slug": "reserve-at-knollwood",
+  "name": "The Reserve at Knollwood Apartments",
+  "address": "2401 Pamela Way, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/reserve-at-knollwood/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.apartmentfinder.com/Virginia/Blacksburg-Apartments/The-Reserve-At-Knollwood-Apartments", "result": "403"},
+    {"url": "https://reservekwapts.prospectportal.com/", "result": "403"},
+    {"url": "https://www.zumper.com/address/213-s-knollwood-dr-blacksburg-va-24060-usa", "result": "no fees"},
+    {"url": "https://www.zumper.com/address/211-s-knollwood-dr-blacksburg-va-24060-usa", "result": "ok"},
+    {"url": "https://www.cmgleasing.com/property/reserve-at-knollwood/", "result": "ok"}
+  ],
+  "text": "Rent prices (from the floorplan listings):\n- A1, 1 bed, 715 sq ft: \"$1,550.00 - $1,570.00\"\n- A2, 1 bed, 667 sq ft: \"$1,570.00\"\n- B1 End, 2 bed, 1,073 sq ft: \"$1,890.00 - $1,900.00\"\n- B1, 2 bed, 1,058 sq ft: \"$1,870.00 - $1,900.00\"\n- B2, 2 bed, 1,093 sq ft: \"$1,890.00 - $1,900.00\"\n- B3 End, 2 bed, 1,112 sq ft: \"$1,900.00\"\n- B3, 2 bed, 1,108 sq ft: \"$1,900.00\"\n- C1, 3 bed, 1,226 sq ft: \"$2,440.00 - $2,480.00\"\n- C2, 3 bed, 1,206 sq ft: \"$2,470.00 - $2,480.00\"\nFees, deposits, charges, pet rent, parking, utility, amenity, and admin fees: NO FEES. The only related item is that internet is included: \"Internet Included in the Rent.\" Parking and clubhouse amenities are described without any stated cost.",
+  "notes": "Managed by CMG Leasing. Kept the official CMG floorplan page. Zumper 211 S Knollwood Dr (individually rented condo units, which may be the separate Knollwood Condominium rather than the Reserve apartments) listed 'Risk Protection Fee $15.00 monthly' and 'Pets are allowed with additional rent and pet deposit'. That text was NOT kept because it is unclear it applies to the Reserve apartments. The page links pet policy and lease PDFs, which were not parsed. Five URLs were tried, one over the limit of four."
+}

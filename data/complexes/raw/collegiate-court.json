@@ -1,0 +1,15 @@
+{
+  "slug": "collegiate-court",
+  "name": "Collegiate Court Apartments",
+  "address": "100-106 Collegiate Ct, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/collegiate-court",
+  "site": "Rentable",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.rentable.co/blacksburg-va/collegiate-court", "result": "ok"}
+  ],
+  "text": "Rent prices (4 Bed, 100-106 Collegiate Ct)\n- \"$3,640 - $4,040\"\n- \"Unit 19\" \"$3,640\" \"Available Jun 16th, 2027\"\n- \"Unit 27\" \"$3,640\" \"Available Jun 16th, 2027\"\n- \"Unit 21\" \"$3,640\" \"Available Jun 16th, 2027\"\n- \"Unit 24\" \"$3,740\" \"Available Jun 16th, 2027\"\n- \"Unit 25\" \"$4,040\" \"Available Jun 16th, 2027\"\n- \"Unit 26\" \"$4,040\" \"Available Jun 16th, 2027\"\n- Rented units (listed with prices): \"$3,000\", \"$3,800\", \"$3,520\", \"$3,620\", \"$3,920\", \"$4,040\"\n- \"Collegiate Court\" \"$3,840\" (4BR rent report figure)\nFees and deposits\n- \"Security Deposit:\" \"980 - 1750\"\n- No other fees, admin fees, pet rent, or utility charges are listed. The page says \"No Pets Allowed,\" and \"Lease & Fees\" appears with no further entries.\nParking\n- \"Garage - Attached\"\nUtilities\n- \"The unit includes all utilities in the rent\"\nAmenities\n- \"On-site Laundry,\" \"Air Conditioning,\" \"Storage,\" \"Disability Access,\" \"Refrigerator,\" \"Garbage Disposal,\" \"Trash Removal Included,\" \"Range / Oven,\" \"Microwave,\" \"High-speed Internet,\" \"Elevator,\" \"Smoke-free Community\"",
+  "notes": "No official site found. Management is listed as Price Real Estate Inc in some places and CMG Leasing in others; it is not on cmgleasing.com's property list. The Rentable page contradicts itself ('3 Bedroom 1 Bath' in the description, and 'all utilities included', while other listings say trash only). Prices are per 4-bed unit."
+}

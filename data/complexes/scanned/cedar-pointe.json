@@ -1,0 +1,31 @@
+{
+  "slug": "cedar-pointe",
+  "name": "Cedar Pointe Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/cedarpointe/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "fcd9bc9ca1e53227",
+  "scannedAt": "2026-10-24T21:31:08.697Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent prices:\n- \"$2,000.00\" (Cedar Pointe Apartments - B1 Floorplan)\n- \"$2,100.00\" (Cedar Pointe Apartments - B2 Floorplan)\n- \"$2,000.00\" (Cedar Pointe Apartments - B3 Floorplan)\n- \"$1,570.00\" (Cedar Pointe Apartments - S1 Floorplan)\n- \"$1,620.00\" (Cedar Pointe Apartments - S2 Floorplan)\n- \"$2,000.00\" (Cedar Pointe Apartments - B3 Floorplan)\n- \"$1,520.00\" (Cedar Pointe Apartments - S3 Floorplan)\n- \"$1,520.00\" (Cedar Pointe Apartments - S4 Floorplan)\nFees, deposits, pet rent, admin fees: NO FEES\nParking:\n- \"Free on-site parking\"\n- \"Resident parking decals required for on-site parking\"\nUtilities:\n- \"Furniture, Gigabit high-speed internet, recycling, and trash are included in the rent.\""
+    ],
+    "advertisedPrice": {
+      "amount": 2000,
+      "basis": "per_unit",
+      "quote": "$2,000.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "included",
+      "trash": "included"
+    },
+    "fees": []
+  },
+  "error": null
+}

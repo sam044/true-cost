@@ -1,0 +1,15 @@
+{
+  "slug": "summit-at-uptown",
+  "name": "The Summit at Uptown (The Summit Townhome Community)",
+  "address": "100 Hoopers Ln, Blacksburg, VA (listed elsewhere as 1820 N Main St)",
+  "status": "fetched",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/100-hoopers-ln",
+  "site": "Rentable",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.rentable.co/blacksburg-va/100-hoopers-ln", "result": "ok"}
+  ],
+  "text": "Property: The Summit Townhome Community In Blacksburg\nAddress: 100 Hoopers Ln Blacksburg, VA\n\"The Summit at Uptown is a new and unique residential community in Blacksburg.\"\nRent prices (this property):\n- \"$780 - $900\"\n- \"3 Beds • 2 Bath\"\n- \"1600 ft2\"\n- \"$900\" / \"Rented\" / \"View\"\n- \"$780\" / \"Rented\" / \"View\"\n- \"*Price is per bedroom*\"\nFees and charges:\n- \"Security Deposit: $0\"\n- \"Ask about our fully furnished unit options for an additional fee!\" (no amount listed)\n- \"This property requires enrollment in our Benefit Package.\" (no amount listed)\n- Pet rent: not listed\n- Utilities: no utility charges listed (only \"Trash Removal Included\" appears)\n- Admin fee: not listed\nParking:\n- \"Surface Parking\"\n- \"Garage - Attached\"\nPets:\n- \"Dogs Ok\"\n- \"Cats Ok\"\nAmenities: On-site Laundry, Storage, Disability Access, Refrigerator, Garbage Disposal, Trash Removal Included, Range / Oven, Microwave, High-speed Internet, Elevator, Smoke-free Community\nAvailability: \"Is this property currently leasing units? No. This property is not currently accepting new tenants.\"",
+  "notes": "No official site found. The Rentable page names it 'The Summit at Uptown' but gives the address as 100 Hoopers Ln, not 1820 N Main St. Other listings group 100-220 Hoopers Ln with 1740-1816 Staniel Dr, so this is probably the same townhome community off N Main. The page says it is not accepting new tenants, and both listed units are 'Rented', so prices may be stale. The required 'Benefit Package' (amount not shown) is a likely hidden fee."
+}

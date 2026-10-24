@@ -1,0 +1,31 @@
+{
+  "slug": "the-chase",
+  "name": "The Chase Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/chase/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "61d880f2638ce386",
+  "scannedAt": "2026-10-24T21:31:57.333Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent and pricing:\n- \"$3,576.00\" (floor plan listing for The Chase Apartments, 1,250 sqft, 4 bed, 2.0 bath)\nFees, deposits, pet rent, admin fees, and charges: NO FEES\nParking, utility, and amenity lines:\n- \"Resident parking decals required for off-street parking\"\n- \"Recycling services included in rent\"\n- \"Gas heat and water\"\n- \"Internet Included, provided by SingleDigits\"\n- \"Internet included\"\n- \"Washer and dryer\" / \"Washer/Dryer\"\n- \"Central air and heating\"\n- \"Mini blinds included\"\n- \"Patio or deck, with additional storage\"\n- \"Private deck or patio (depending on floor)\"\n- \"Storage unit for every floor\"\n- \"24-Hour Emergency Maintenance & Lockout Service\"\nPet policy: \"No Pets\" (floor plan listing)"
+    ],
+    "advertisedPrice": {
+      "amount": 3576,
+      "basis": "per_unit",
+      "quote": "$3,576.00"
+    },
+    "bedrooms": 4,
+    "utilities": {
+      "electric": "unknown",
+      "water": "included",
+      "gas": "unknown",
+      "internet": "included",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

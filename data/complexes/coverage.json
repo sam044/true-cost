@@ -1,5 +1,37 @@
 [
   {
+    "slug": "1711-apartments",
+    "name": "1711 Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentable.co/blacksburg-va/1711-apartments",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 565,
+      "max": 565,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "alight-blacksburg",
+    "name": "Alight Blacksburg",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.brightplace.ai/property/va/blacksburg/alight-blacksburg/scion-alight-blacksburg",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 835,
+      "max": 999,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
     "slug": "blacksburg-rentals",
     "name": "River Mountain Properties",
     "fetch": "fetched",
@@ -10,6 +42,22 @@
     "lowConfidence": null,
     "price": null,
     "inCatalog": false
+  },
+  {
+    "slug": "cedar-pointe",
+    "name": "Cedar Pointe Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/cedarpointe/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 2000,
+      "max": 2000,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
   },
   {
     "slug": "cedarfield",
@@ -28,6 +76,22 @@
     "inCatalog": true
   },
   {
+    "slug": "chasewood-downs",
+    "name": "Chasewood Downs (Chasewood Apartments)",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/chasewood-downs/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 3250,
+      "max": 3250,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
     "slug": "cmg-leasing",
     "name": "CMG Leasing",
     "fetch": "fetched",
@@ -38,6 +102,22 @@
     "lowConfidence": null,
     "price": null,
     "inCatalog": false
+  },
+  {
+    "slug": "collegiate-court",
+    "name": "Collegiate Court Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentable.co/blacksburg-va/collegiate-court",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 1,
+    "price": {
+      "min": 3640,
+      "max": 4040,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
   },
   {
     "slug": "cottages-on-main",
@@ -146,6 +226,22 @@
     "lowConfidence": null,
     "price": null,
     "inCatalog": false
+  },
+  {
+    "slug": "highlands-at-huckleberry-ridge",
+    "name": "Highlands at Huckleberry Ridge",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.zumper.com/apartment-buildings/p236919/highlands-at-huckleberry-ridge-blacksburg-va",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1900,
+      "max": 1900,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
   },
   {
     "slug": "hokie-real-estate",
@@ -336,6 +432,22 @@
     "inCatalog": true
   },
   {
+    "slug": "park-37",
+    "name": "Park 37 (Park37)",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentable.co/blacksburg-va/park-37",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 1,
+    "price": {
+      "min": 1090,
+      "max": 1350,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
     "slug": "pheasant-run",
     "name": "Pheasant Run Townhomes",
     "fetch": "fetched",
@@ -386,6 +498,22 @@
     "lowConfidence": null,
     "price": null,
     "inCatalog": false
+  },
+  {
+    "slug": "reserve-at-knollwood",
+    "name": "The Reserve at Knollwood Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/reserve-at-knollwood/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1550,
+      "max": 1570,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
   },
   {
     "slug": "retreat-at-blacksburg",
@@ -516,6 +644,22 @@
     "inCatalog": false
   },
   {
+    "slug": "summit-at-uptown",
+    "name": "The Summit at Uptown (The Summit Townhome Community)",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentable.co/blacksburg-va/100-hoopers-ln",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 780,
+      "max": 900,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
     "slug": "sundance-ridge",
     "name": "Sundance Ridge",
     "fetch": "blocked",
@@ -526,6 +670,22 @@
     "lowConfidence": null,
     "price": null,
     "inCatalog": false
+  },
+  {
+    "slug": "tech-terrace",
+    "name": "Tech Terrace Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/tech-terrace/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 3576,
+      "max": 3576,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
   },
   {
     "slug": "terpence",
@@ -544,6 +704,22 @@
     "inCatalog": true
   },
   {
+    "slug": "terrace-view",
+    "name": "Terrace View Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentable.co/blacksburg-va/terrace-view",
+    "scan": "ok",
+    "fees": 2,
+    "lowConfidence": 0,
+    "price": {
+      "min": 865,
+      "max": 1610,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
     "slug": "the-arbors",
     "name": "The Arbors of Blacksburg",
     "fetch": "fetched",
@@ -556,6 +732,38 @@
       "min": 630,
       "max": 700,
       "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "the-chase",
+    "name": "The Chase Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/chase/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 3576,
+      "max": 3576,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "the-mill",
+    "name": "The Mill at Blacksburg",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.blacksburgmill.com/floor-plans/",
+    "scan": "ok",
+    "fees": 2,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1100,
+      "max": 1100,
+      "basis": "per_unit"
     },
     "inCatalog": true
   },
@@ -638,5 +846,37 @@
     "lowConfidence": null,
     "price": null,
     "inCatalog": false
+  },
+  {
+    "slug": "vue",
+    "name": "Vue Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/vue-apartments/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1660,
+      "max": 1660,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "windsor-hills",
+    "name": "Windsor Hills Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentcafe.com/apartments/va/blacksburg/windsor-hills/default.aspx",
+    "scan": "ok",
+    "fees": 2,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1234,
+      "max": 2961,
+      "basis": "per_person"
+    },
+    "inCatalog": true
   }
 ]

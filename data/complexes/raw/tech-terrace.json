@@ -1,0 +1,18 @@
+{
+  "slug": "tech-terrace",
+  "name": "Tech Terrace Apartments",
+  "address": "301-307 Webb St, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/tech-terrace/",
+  "site": "Official site (cmgleasing.com, CMG Leasing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.apartmentfinder.com/Virginia/Blacksburg-Apartments/Tech-Terrace-Apartments", "result": "403"},
+    {"url": "https://www.apartments.com/tech-terrace-blacksburg-va/", "result": "403"},
+    {"url": "https://www.apartmenthomeliving.com/blacksburg-va/tech-terrace", "result": "403"},
+    {"url": "https://www.cmgleasing.com/property/tech-terrace/", "result": "ok"}
+  ],
+  "text": "Rent and pricing (floor plan listing):\n- \"$3,576.00\" (The page does not label this figure as rent.)\nFees, deposits, admin fees, pet rent, and other charges: The page lists NO FEES. The only pet-related line is \"No Pets\" in the floor plan details.\nParking:\n- \"Parking decals are required for the off-street parking\"\n- \"Residents at Tech Terrace have full access to The Edge Apartments and Townhomes community amenities across the street\" (\"including pool, clubhouse, gym, tanning beds, and parking\")\nUtilities and included services:\n- \"Recycling services included in rent\"\n- \"Internet included, provided by SingleDigits\"\n- \"Internet included\"\n- \"Central air and heating\"\nAmenities and features:\n- \"Amenities include a heated pool, sand volleyball court, study rooms, a state-of-the-art fitness center,\" (\"a pool table, and a yoga/spin room.\")\n- \"Grilling and picnic areas\"\n- \"Bike racks\"\n- \"Washer and dryer\"\n- \"Patio or balcony with storage\"\n- \"Mini blinds included\"\n- \"Online resident portal for rent payments and maintenance requests\"\n- \"24-Hour Emergency Maintenance & Lockout Service\"",
+  "notes": "Managed by CMG Leasing; $3,576.00 appears to be the per-unit price of a 4-bed/2-bath unit (about $894/bedroom). The property site (techterrace.prospectportal.com) and the big listing sites (apartments.com, apartmentfinder) return 403. The page links a lease PDF and resident handbook PDF that may contain fee terms; they were not parsed."
+}

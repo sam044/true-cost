@@ -1,0 +1,17 @@
+{
+  "slug": "the-mill",
+  "name": "The Mill at Blacksburg",
+  "address": "1811 Grayland St, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.blacksburgmill.com/floor-plans/",
+  "site": "Official site (blacksburgmill.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.rentable.co/blacksburg-va/the-mill", "result": "error: 404"},
+    {"url": "https://www.blacksburgmill.com/faq/", "result": "ok"},
+    {"url": "https://www.blacksburgmill.com/floor-plans/", "result": "ok"}
+  ],
+  "text": "1 Bedroom\n- \"Rent:\" / \"$1100\"\n- \"Security Deposit: $800\"\n- \"Application Fee: $35\"\n2 Bedroom\n- \"$1300\"\n- \"(Only $650 per room with 2 people)\"\n- \"Security Deposit: $900\"\n- \"Application Fee: $35\"\n- \"Pricing is per unit. All residents share joint and several responsibility for full rent\"\n3 Bedroom\n- \"$1680\"\n- \"(Only $560 per room with 3 people)\"\n- \"Security Deposit: $1050\"\n- \"Application Fee: $35\"\n- \"Pricing is per unit. All residents share joint and several responsibility for full rent\"\nUtilities (included, not a charge):\n- \"Water, Recycling & Trash Included\"\n- \"The Mill provides free water, sewer, trash removal, and recycling\"\n\n[From https://www.blacksburgmill.com/faq/]\n- \"The rent and deposit rate is per apartment, not per roommate.\"\n- \"The lease agreement will reflect the total rent amount, divided into 12 equal installments due August 1 – July 1.\"\n- \"These installments do not represent a monthly rent amount and are not prorated.\"\n- \"Residents are responsible for their electricity which is to be contracted through American Electric Power.\"\n- \"The Mill is wired for high-speed internet and cable through Xfinity.\"\n- \"The Mill has open parking for you and your guests. No parking pass required.\"\n- \"The Mill does not charge a standard redecoration fee.\"\n- \"The Mill's preferred vendor offers discounted carpet cleaning prices payable by residents who request it.\"\n- \"The Mill has 24-hour lock-out services for our residents. Service fees may apply after office hours.\"",
+  "notes": "Managed by Weisz Properties, LLC according to listings. The text combines two official pages: floor plans (primary sourceUrl) plus FAQ lines, marked in the text. Installments are not prorated, so a mid-cycle move-in pays the full installment. After-hours lockouts may carry a fee (amount not stated)."
+}
