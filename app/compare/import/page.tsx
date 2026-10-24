@@ -1,9 +1,9 @@
 "use client";
 
 // Import from the browser extension. Owner: Sam (A). See docs/PRD.md, F19.
-// The extension opens this page and writes its capture (one screenshot plus the
-// page text) to sessionStorage. We send it to /api/extract like the Add screen
-// does, save the apartment and open Review for it.
+// The extension opens this page and writes its capture (the full page stitched
+// into at most 5 screenshots, plus the page text) to sessionStorage. We send it
+// to /api/extract like the Add screen does, save the apartment and open Review.
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -20,13 +20,21 @@ const STORAGE_KEY = "true-cost-capture";
 const WAIT_MS = 8000;
 
 // The capture comes from another page's script, so check it like any input.
-const Capture = z.object({
-  version: z.literal(1),
-  name: z.string().max(200),
-  url: z.string().optional(),
-  image: z.string().regex(/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/),
-  text: z.string().max(20000),
-});
+// Version 1 (one screenshot) came from the first extension build.
+const JpegDataUrl = z.string().regex(/^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/);
+const Fields = { name: z.string().max(200), url: z.string().optional(), text: z.string().max(20000) };
+const Capture = z
+  .union([
+    z.object({ version: z.literal(2), images: z.array(JpegDataUrl).max(5), ...Fields }),
+    z.object({ version: z.literal(1), image: JpegDataUrl, ...Fields }),
+  ])
+  .transform(({ name, url, text, ...rest }) => ({
+    name,
+    url,
+    text,
+    images: "images" in rest ? rest.images : [rest.image],
+  }))
+  .refine((c) => c.images.length > 0 || c.text.trim().length > 0);
 type Capture = z.infer<typeof Capture>;
 
 type Status =
@@ -63,7 +71,7 @@ export default function ImportPage() {
       }
       setStatus({ kind: "reading", name: capture.name });
       try {
-        const extraction = await extractListing({ images: [capture.image], text: capture.text });
+        const extraction = await extractListing({ images: capture.images, text: capture.text });
         const apartment = toApartment(capture.name, extraction);
         addApartment(apartment);
         router.replace(`/compare/review/${apartment.id}`);
@@ -107,7 +115,7 @@ export default function ImportPage() {
         <div role="status" aria-live="polite" className="flex flex-col gap-4">
           <PageHeading
             title={status.kind === "reading" ? `Reading ${status.name}` : "Getting your listing"}
-            description="Gemma is reading the screenshot and page text for fees. This can take a little while."
+            description="Gemma is reading the whole page, its screenshots and text, for fees. This can take a little while."
           />
           <div className="h-40 animate-pulse rounded-xl bg-muted motion-reduce:animate-none" />
         </div>
