@@ -82,7 +82,7 @@ async function captureListing(tab) {
 
 // For checking a capture from the service worker's DevTools console:
 // await trueCost.captureListing((await chrome.tabs.query({ active: true, lastFocusedWindow: true }))[0])
-globalThis.trueCost = { captureListing, stitch };
+globalThis.trueCost = { captureAndSend, captureListing, stitch };
 
 async function stitch(shots, page) {
   const { pieces, height } = planPieces(shots, page.region);
