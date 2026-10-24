@@ -2,13 +2,15 @@
 
 // One apartment on the Compare screen: the true monthly cost, the bar, and an
 // itemized breakdown. Every number comes from lib/cost.ts; flags from lib/flags.ts.
-import { Trophy } from "lucide-react";
+import { useState } from "react";
+import { ExternalLink, Trophy } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 import { itemize, summarize, type ItemLine } from "@/lib/cost";
 import { flagsFor } from "@/lib/flags";
+import { estimateFor, type UtilityEstimate } from "@/lib/utilities";
 import { useTrueCost } from "@/lib/store";
 import type { Apartment, Setup } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -16,12 +18,73 @@ import { CostBar } from "./cost-bar";
 import { money, moneyWhole } from "./format";
 import { FlagBadges, FlagList } from "./law-flags";
 
+// Editable per-unit amount and source for a utility estimate row (F9). Saves on
+// blur or Enter; an invalid entry snaps back to the saved amount.
+function EstimateEditor({
+  apartmentId,
+  line,
+  estimate,
+}: {
+  apartmentId: string;
+  line: ItemLine;
+  estimate: UtilityEstimate;
+}) {
+  const updateFee = useTrueCost((s) => s.updateFee);
+  const people = useTrueCost((s) => s.setup.people);
+  const { fee } = line;
+  const [value, setValue] = useState(String(fee.amount));
+  const inputId = `estimate-${apartmentId}-${fee.id}`;
+
+  function save() {
+    const n = Number(value);
+    if (value.trim() === "" || !Number.isFinite(n) || n < 0) return setValue(String(fee.amount));
+    if (n !== fee.amount) updateFee(apartmentId, fee.id, { amount: n });
+  }
+
+  return (
+    <span className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs text-muted-foreground">
+      <label htmlFor={inputId} className="sr-only">
+        {fee.name} estimate, dollars per month for the whole unit
+      </label>
+      <span className="relative inline-flex items-center">
+        <span aria-hidden className="pointer-events-none absolute left-1.5">
+          $
+        </span>
+        <input
+          id={inputId}
+          type="number"
+          inputMode="decimal"
+          min={0}
+          step="any"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          onBlur={save}
+          onKeyDown={(e) => e.key === "Enter" && save()}
+          className="h-6 w-16 rounded border bg-transparent pr-1 pl-3.5 text-foreground tabular-nums focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+        />
+      </span>
+      <span>/mo for the unit{people > 1 && ` ÷ ${people} people`}</span>
+      <a
+        href={estimate.sourceUrl}
+        target="_blank"
+        rel="noreferrer"
+        title={estimate.basis}
+        className="inline-flex items-center gap-0.5 underline underline-offset-2 hover:text-foreground"
+      >
+        Source<span className="sr-only">: {estimate.basis} ({estimate.sourceLabel}, opens in a new tab)</span>
+        <ExternalLink aria-hidden className="size-3" />
+      </a>
+    </span>
+  );
+}
+
 function FeeLine({ apartmentId, line }: { apartmentId: string; line: ItemLine }) {
   const updateFee = useTrueCost((s) => s.updateFee);
   const { fee } = line;
   const optional = fee.mandatory === "no";
-  // Optional fees can always be toggled; so can any fee left out on Review.
-  const toggleable = optional || !fee.counted;
+  const estimate = estimateFor(fee);
+  // Optional fees and estimates can always be toggled; so can any fee left out on Review.
+  const toggleable = optional || estimate != null || !fee.counted;
   const switchId = `include-${apartmentId}-${fee.id}`;
 
   function toggle(counted: boolean) {
@@ -48,11 +111,15 @@ function FeeLine({ apartmentId, line }: { apartmentId: string; line: ItemLine })
           {fee.name}
           {fee.source === "estimate" && <span className="text-muted-foreground"> (estimate)</span>}
         </span>
-        <span className="text-xs text-muted-foreground">
-          {[line.note, optional && "optional", fee.refundable && "refundable"]
-            .filter(Boolean)
-            .join(" · ")}
-        </span>
+        {estimate ? (
+          <EstimateEditor apartmentId={apartmentId} line={line} estimate={estimate} />
+        ) : (
+          <span className="text-xs text-muted-foreground">
+            {[line.note, optional && "optional", fee.refundable && "refundable"]
+              .filter(Boolean)
+              .join(" · ")}
+          </span>
+        )}
       </div>
       <span
         className={cn("ml-auto shrink-0 tabular-nums", !fee.counted && "text-muted-foreground")}
