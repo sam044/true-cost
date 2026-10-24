@@ -1,6 +1,6 @@
 # True Cost PRD
 
-Oct 24, 2026 · Sam (@sam044) and Andy (@andyshah17). The editable original is a Claude Doc owned by Sam; this copy is what each person's Claude reads.
+Oct 24, 2026 (updated 9 PM ET) · Sam (@sam044) and Andy (@andyshah17). The editable original is a Claude Doc owned by Sam; this copy is what each person's Claude reads.
 
 ## Summary and how we win
 
@@ -23,6 +23,28 @@ Our two priorities are a product that works end to end on real listings, and a f
 | Documentation (7) | README with setup, model name and license, architecture diagram, eval results |
 
 Gemma 4 track fit: the README names `gemma-4-26b-a4b-it` and the demo shows the extraction happening live.
+
+## Status (Oct 24, 2026, 9 PM ET)
+
+What is on `main` and deployed at https://true-cost-xi.vercel.app (pushes to main auto-deploy):
+
+| Area | State |
+| --- | --- |
+| Extraction (F3) | Done. `POST /api/extract`, `gemma-4-26b-a4b-it` with `gemma-4-31b-it` fallback, quote and amount checks |
+| Add, Review (F1, F2, F4) | Done. Upload and paste are now the fallback section of Add |
+| Catalog (F21) | Done. Add opens on 8 checked complexes built from `eval/cases/`; one click adds a complex, "Go to compare" goes straight to Compare |
+| Extension (F19) | Done. One click scrolls and stitches the full page into up to 5 images plus full page text; defaults to the deployed app. Tested in Edge on local pages; still to test with a real toolbar click on a real listing |
+| Setup, cost engine, flags, Compare (F5 to F9) | Done |
+| Leasing-office email (F10) | Done. Gemma drafts it; if Gemma fails or the draft quotes an amount it wasn't given, a plain template is returned; Virginia flags are asked as questions, not accusations |
+| Eval (F14) | Done. Text-only run on 8 cases: **94% precision, 97% recall** (32 right, 2 extra, 1 missed), advertised price right 8 of 8; category 97%, frequency 100%, mandatory 81% (misses are "unknown" vs labelled "no" on parking and situational fees). Image run waits on hand-taken screenshots |
+| Fee index (F20) | In progress (Andy). The Compare panel is on main against mock data; the database, API, seed and Review opt-in are not on main yet |
+| Auto-scanned complexes | In progress, not on main. About 45 Blacksburg complexes and rental companies were tried; fee text is fetched from each complex's own site (listing sites block scripts) and run through `extractFees` into `data/complexes/`. These are marked auto-scanned and not reviewed, so in the catalog they must open Review or carry an "Auto-scanned, not checked" label, listed after the 8 checked complexes, and they are never fee index seed data |
+
+**Known issues**
+
+- Brexx's catalog entry is about $30 a month too high: its listed price already includes $30 of monthly required fees, which Compare adds again.
+- Brexx's $62 utility fee frequency is inferred as monthly; the eval label leaves it blank.
+- Catalog apartment ids look like `catalog-<slug>--<uuid>`, while the fee index uses the apartment id as a plain UUID submission id. Fix before a catalog apartment can be shared to the index.
 
 ## Problem and users
 
@@ -55,14 +77,14 @@ The goal is a deployed app where a judge picks 2 or 3 real Blacksburg complexes 
 
 **Goals**
 
-- Extract every fee from listing screenshots or pasted text with Gemma 4, each tied to its source quote.
+- Show a ready catalog of checked Blacksburg complexes, and extract every fee from a full-page capture, screenshots or pasted text with Gemma 4, each tied to its source quote.
 - Compute true monthly cost per person and total lease cost in code, for up to 3 apartments side by side.
 - Flag likely Virginia fee-law issues with citations, and draft an email to the leasing office.
 - Feel polished and effortless: no sign-up, keyboard accessible, light and dark themes.
 
 **Non-goals for this weekend**
 
-- Scraping listing URLs, PDFs, accounts, sharing or export, Spanish, Google Cloud.
+- Scraping listing URLs inside the app (the auto-scanned complexes are fetched offline by a script, never at request time), PDFs, accounts, sharing or export, Spanish, Google Cloud.
 - Legal advice: we show information with citations and point to legal aid.
 - Highlight boxes on screenshots.
 
@@ -70,9 +92,9 @@ The goal is a deployed app where a judge picks 2 or 3 real Blacksburg complexes 
 
 | Metric | Target |
 | --- | --- |
-| Fee extraction recall on the labelled test set | 90% or higher |
-| Fee extraction precision on the labelled test set | 90% or higher |
-| Time from first upload to comparison | Under 60 seconds for 3 apartments |
+| Fee extraction recall on the labelled test set | 90% or higher (now 97% on text) |
+| Fee extraction precision on the labelled test set | 90% or higher (now 94% on text) |
+| Time from opening Add to comparison | Under 15 seconds for 3 catalog complexes; under 60 seconds for 3 captured or uploaded listings |
 | Gemma calls per apartment | 1 (all its screenshots in one call, at most 5) |
 | Lighthouse accessibility score | 95 or higher |
 | Students who tried it at the event | 3 to 5, with 2 quotes in the video |
@@ -134,10 +156,11 @@ The web app stays the main product. The extension is a small add-on that saves t
 
 The fastest way to compare is to not add anything: the Apartments step opens on a catalog of Blacksburg complexes whose fees were already extracted and checked, so a judge or student picks 2 or 3 and goes straight to Compare.
 
-- **Data:** a static seed in `lib/catalog/` built from the 8 hand-labelled eval cases (`eval/cases/*/expected.json` plus each case's name and source URL), stored as `Apartment` objects with `reviewed: true` and every fee's source quote taken from the case's `listing.txt` where one exists. Static data means no database, no API call and no Gemma call at selection time.
+- **Data:** a static seed in `lib/catalog/seed.json`, regenerated by `node --experimental-strip-types scripts/build-catalog.ts`, built from the 8 hand-labelled eval cases (`eval/cases/*/expected.json` plus each case's name and source URL), stored as `Apartment` objects with `reviewed: true` and every fee's source quote taken from the case's `listing.txt` where one exists. Static data means no database, no API call and no Gemma call at selection time.
 - **Selecting:** one click (or Enter/Space on the focused card) adds the complex to the store and it appears on Compare; selecting it again removes it. The 3-apartment maximum applies, and full cards say so.
 - **Freshness:** each card shows the source site and the date the listing was read ("Read Oct 24, 2026") and links to the original listing.
 - **F20 compatibility:** the catalog entry shape (complex id, name, source URL, read date, fees) matches what the fee index stores, so the index can later back the catalog without changing the UI: the catalog reads through one function, `getCatalog()`, which returns the static seed today and can merge index data later. The catalog never writes to the index.
+- **Growing it:** auto-scanned complexes from `data/complexes/catalog-entries.json` use the same `CatalogEntry` shape with `autoScanned: true` and `reviewed: false`. They sort after the checked complexes and either open Review on selection or show an "Auto-scanned, not checked" label.
 
 ## Blacksburg fee index (F20)
 
@@ -331,11 +354,11 @@ Enums: `category` is one of base_rent, admin, application, amenity, parking, uti
 
 **Email call** (`POST /api/email`, P1)
 
-Input is the confirmed fee list and flags, never raw images. Gemma 4 writes a short, polite email asking for the complete written fee schedule and naming any fee that looks undisclosed. The user edits and sends it themselves; we never send anything.
+Input is the confirmed fee list and flags, never raw images. Gemma 4 writes a short, polite email asking for the complete written fee schedule and naming any fee that looks undisclosed, with Virginia flags phrased as questions. It returns `{ subject, body, source }`: if Gemma fails, or its draft quotes a dollar amount it was not given, the route returns a plain template instead (`source: "template"`), so the user always gets a usable draft. The user edits and sends it themselves; we never send anything.
 
 **Eval**
 
-`npm run eval` runs extraction on 8 labelled listings in `eval/cases/` and prints precision, recall and the misses. The numbers go in the README and the demo.
+`npm run eval` (flags `--case`, `--text-only`, `--images-only`) runs extraction on 8 labelled listings in `eval/cases/`, prints precision, recall, field accuracy and the misses, and writes `eval/results.json`. First text-only result: 94% precision, 97% recall, price 8 of 8. The numbers go in the README and the demo.
 
 ## Data model and cost math
 
@@ -412,6 +435,8 @@ One public repo, `sam044/true-cost`, Apache-2.0. Each person owns separate folde
 
 ## Build timeline
 
+The original plan, kept for reference; see Status at the top for where things stand.
+
 Ten hours Saturday (about 1 PM to 11 PM Eastern) plus one hour Sunday morning; the app must work end to end on real listings by 8:30 PM.
 
 | Time | Sam | Andy |
@@ -439,8 +464,8 @@ Ten hours Saturday (about 1 PM to 11 PM Eastern) plus one hour Sunday morning; t
 The same 2-minute video serves both submissions and follows the slide's demo order: problem, solution, AI and track fit, impact.
 
 1. **Problem (0:00 to 0:20).** A Blacksburg listing at "$1,069 per bed" and a student quote.
-2. **Solution (0:20 to 1:10).** Setup with 4 roommates, drop in screenshots for 3 complexes, Gemma reads them live, Review shows fees with their quotes and one "Check this" fee, Compare shows the true monthly cost and the hidden amount per year.
-3. **AI and Gemma 4 (1:10 to 1:35).** Show the `record_fees` call to `gemma-4-26b-a4b-it`, the quote check, and the eval result.
+2. **Solution (0:20 to 1:10).** Setup with 4 roommates, pick 2 complexes from the catalog, then one click in the extension on a third listing so Gemma reads it live, Review shows fees with their quotes and one "Check this" fee, Compare shows the true monthly cost and the hidden amount per year.
+3. **AI and Gemma 4 (1:10 to 1:35).** Show the `record_fees` call to `gemma-4-26b-a4b-it`, the quote check, and the eval result (94% precision, 97% recall).
 4. **Responsible AI (1:35 to 1:50).** No accounts, screenshots never stored, fee sharing is opt-in and anonymous, model never does math, Virginia citations, keyboard-only run of the flow.
 5. **Impact (1:50 to 2:00).** "$X a year that wasn't in the headline price" across the demo apartments; deployable by any housing office for free.
 
@@ -460,7 +485,7 @@ The same 2-minute video serves both submissions and follows the slide's demo ord
 | --- | --- |
 | Gemma misreads or invents fees from images | Quote and amount checks, required Review, eval to measure it; paste-text input as plan B at the 5 PM cut line |
 | Function calling not honoured by Gemma on the API | Same schema requested as plain JSON and parsed by the same validator |
-| Free-tier rate limits during the demo | Sample apartments load from `lib/mock.ts`; one key per person for development |
+| Free-tier rate limits during the demo | The catalog needs no Gemma call; sample apartments load from `lib/mock.ts`; one key per person for development |
 | Vercel 4.5 MB request limit | Resize to 1600 px JPEG in the browser; at most 5 images per call |
 | Merge conflicts in shared files | Folder ownership, small separate commits, announce changes to shared files |
 | Judges see flags as legal advice | "May" wording, citations, "not legal advice" note with a legal aid link |
