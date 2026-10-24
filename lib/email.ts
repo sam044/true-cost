@@ -1,9 +1,20 @@
 // Leasing-office email draft (F10). Owner: Andy (B). Pure helpers shared by
 // POST /api/email and the Compare drawer. Gemma only sees confirmed fees and
-// flag titles, never images, quotes or anything from Setup. Nothing is sent:
+// flag ids, never images, quotes or anything from Setup. Nothing is sent:
 // the student copies the draft or opens it in their own mail app.
 import { z } from "zod";
 import { Basis, Frequency, Mandatory, type Apartment, type LawFlag } from "./types";
+
+// Each Virginia flag as a question the student asks the leasing office. Flag
+// titles are notes to the student, so they never go in the email.
+export const FLAG_QUESTIONS: Record<LawFlag["id"], string> = {
+  advertised_price:
+    "Is the advertised rent the full monthly price, or are required fees charged on top of it?",
+  deposit_cap: "How is the security deposit calculated, and how much is it per person?",
+  first_page_itemization:
+    "Will the first page of the lease list the deposit, rent and every one-time charge due before move-in?",
+};
+const FlagId = z.enum(["advertised_price", "deposit_cap", "first_page_itemization"]);
 
 export const EmailRequest = z.object({
   apartmentName: z.string().trim().min(1).max(120),
@@ -19,7 +30,7 @@ export const EmailRequest = z.object({
       }),
     )
     .max(40),
-  flags: z.array(z.string().trim().min(1).max(120)).max(5),
+  flags: z.array(FlagId).max(3),
 });
 export type EmailRequest = z.infer<typeof EmailRequest>;
 
@@ -29,7 +40,7 @@ export interface EmailDraft {
 }
 
 // What the browser sends: counted fees from the listing or typed in by the
-// student (not utility estimates, which are our guesses), and flag titles.
+// student (not utility estimates, which are our guesses), and flag ids.
 export function emailRequestFor(apartment: Apartment, flags: LawFlag[]): EmailRequest {
   return {
     apartmentName: apartment.name,
@@ -43,7 +54,7 @@ export function emailRequestFor(apartment: Apartment, flags: LawFlag[]): EmailRe
         basis,
         mandatory,
       })),
-    flags: flags.map((f) => f.title),
+    flags: flags.map((f) => f.id),
   };
 }
 
@@ -79,19 +90,21 @@ export function buildEmailPrompt(req: EmailRequest): string {
         )
         .join("\n")
     : "- (none listed)";
-  const flags = req.flags.length ? req.flags.map((t) => `- ${t}`).join("\n") : "- (none)";
+  const flags = req.flags.length
+    ? req.flags.map((id) => `- ${FLAG_QUESTIONS[id]}`).join("\n")
+    : "- (none)";
   return [
     `Apartment: ${req.apartmentName}`,
     `Advertised rent: ${dollars(req.advertised.amount)} ${BASIS_WORD[req.advertised.basis]} per month`,
     "Fees the student found in the listing:",
     fees,
-    "Things the student wants to check:",
+    "Other questions the student wants answered:",
     flags,
     "",
     "Write an email (under 170 words) that: asks for the complete written schedule of every fee, " +
       "deposit and charge for the lease; asks which fees are required and whether any are already " +
       "included in the advertised rent; asks specifically about any fee whose required status is " +
-      "unknown; and, if there are things to check, asks politely about them. Do not add a signature " +
+      "unknown; and asks each of the student's other questions in your own words. Do not add a signature " +
       "name; end with \"Thank you,\".",
     'Reply with only this JSON: {"subject": "...", "body": "..."}',
   ].join("\n");
@@ -137,7 +150,7 @@ export function templateEmail(req: EmailRequest): EmailDraft {
     "Could you confirm which of these are required, and whether any are already included in the advertised rent?" +
       (unknown.length ? ` In particular, is the ${unknown.join(", ")} required?` : ""),
     ...(req.flags.length
-      ? ["", `I'd also like to confirm the following before signing: ${req.flags.join("; ")}.`]
+      ? ["", "I'd also like to know:", ...req.flags.map((id) => `- ${FLAG_QUESTIONS[id]}`)]
       : []),
     "",
     "Thank you,",

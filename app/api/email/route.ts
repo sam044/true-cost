@@ -1,6 +1,6 @@
 // POST /api/email. Owner: Andy (B). P1 (F10).
 // Body: EmailRequest (lib/email.ts): apartment name, advertised rent, counted
-// fees and flag titles. Never images, quotes or Setup.
+// fees and flag ids. Never images, quotes or Setup.
 // Returns: { subject, body, source: "gemma" | "template" }. Always a usable
 // draft: if Gemma fails or its draft quotes an amount we didn't give it, the
 // plain template is returned instead. Errors: 400 for invalid input.
