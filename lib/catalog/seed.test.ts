@@ -1,7 +1,7 @@
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import { entriesFromCases } from "./cases";
-import { findQuote } from "./convert";
+import { findQuote, priceIncludesMonthlyFees } from "./convert";
 import { catalogApartment, catalogIdOf, getCatalog } from "./index";
 import seed from "./seed.json";
 
@@ -31,6 +31,24 @@ describe("catalog seed", () => {
 
   it("matches the committed seed.json (rerun scripts/build-catalog.ts)", () => {
     expect(seed).toEqual(fresh);
+  });
+});
+
+describe("fees included in the advertised price", () => {
+  it("marks Brexx's monthly required fees, since its price shown includes them", () => {
+    const brexx = fresh.find((e) => e.id === "brexx")!;
+    const included = brexx.apartment.fees.filter((f) => f.includedInAdvertised).map((f) => f.name);
+    expect(included.sort()).toEqual(["Credit Reporting Fees", "Rental Insurance Waiver", "Trash"]);
+  });
+
+  it("leaves listings whose price shown is base rent alone", () => {
+    const tee = fresh.find((e) => e.id === "tee-street")!;
+    expect(tee.apartment.fees.some((f) => f.includedInAdvertised)).toBe(false);
+  });
+
+  it("recognizes the wording", () => {
+    expect(priceIncludesMonthlyFees("* Price shown is total price based on community-supplied monthly required fees.")).toBe(true);
+    expect(priceIncludesMonthlyFees("* Price shown is base rent. Excludes user-selected optional fees")).toBe(false);
   });
 });
 

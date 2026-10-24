@@ -38,7 +38,8 @@
           "refundable": false,
           "quote": "Rental Insurance Waiver Income $15 / mo",
           "source": "ai",
-          "confidence": "high"
+          "confidence": "high",
+          "includedInAdvertised": true
         },
         {
           "id": "brexx-trash",
@@ -52,7 +53,8 @@
           "refundable": false,
           "quote": "Trash $6 / mo",
           "source": "ai",
-          "confidence": "high"
+          "confidence": "high",
+          "includedInAdvertised": true
         },
         {
           "id": "brexx-credit-reporting-fees",
@@ -66,7 +68,8 @@
           "refundable": false,
           "quote": "Credit Reporting Fees $9 / mo",
           "source": "ai",
-          "confidence": "high"
+          "confidence": "high",
+          "includedInAdvertised": true
         },
         {
           "id": "brexx-application-fee",

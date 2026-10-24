@@ -111,6 +111,14 @@ function advertisedQuote(listing: string, amount: number): string | null {
 
 const PER_UNIT = /\bper (unit|apartment|household|home)\b/i;
 
+// Some listing sites say the price shown already holds the monthly required
+// fees ("Price shown is total price based on community-supplied monthly
+// required fees"); others say it is base rent. When it holds them, those fees
+// are marked includedInAdvertised so Compare doesn't add them twice. (Andy)
+export function priceIncludesMonthlyFees(listing: string): boolean {
+  return /price shown is total price based on [^.]*monthly required fees/i.test(listing);
+}
+
 const slug = (text: string) =>
   text
     .toLowerCase()
@@ -127,6 +135,7 @@ export function caseToEntry(
   listing: string,
 ): CatalogEntry {
   const usedIds = new Set<string>();
+  const priceIncludesFees = priceIncludesMonthlyFees(listing);
   const fees: Fee[] = expected.fees.map((f) => {
     const quote = findQuote(listing, f.name, f.amount);
     let feeId = `${id}-${slug(f.name)}`;
@@ -146,7 +155,12 @@ export function caseToEntry(
       source: "ai",
       confidence: "high",
     };
-    return { ...fee, counted: defaultCounted(fee, NO_NEEDS) };
+    const included = priceIncludesFees && fee.mandatory === "yes" && fee.frequency === "monthly";
+    return {
+      ...fee,
+      counted: defaultCounted(fee, NO_NEEDS),
+      ...(included ? { includedInAdvertised: true } : {}),
+    };
   });
 
   const { min, max, basis } = expected.advertisedPrice;
