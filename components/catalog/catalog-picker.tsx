@@ -174,7 +174,7 @@ function CatalogCard({
   onToggle: () => void;
 }) {
   const fees = listingFeeCount(entry);
-  const statusId = useId();
+  const fullNoteId = useId();
   return (
     <div
       className={cn(
@@ -186,7 +186,7 @@ function CatalogCard({
       <button
         type="button"
         aria-pressed={added}
-        aria-describedby={statusId}
+        aria-describedby={blocked ? fullNoteId : undefined}
         aria-disabled={blocked || undefined}
         onClick={onToggle}
         className={cn(
@@ -196,8 +196,9 @@ function CatalogCard({
       >
         <span className="flex items-start justify-between gap-2">
           <span className="font-semibold break-words">{entry.name}</span>
+          {/* aria-pressed already says whether it's added. */}
           <span
-            id={statusId}
+            aria-hidden
             className={cn(
               "inline-flex shrink-0 items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium",
               added
@@ -222,6 +223,11 @@ function CatalogCard({
         <span className="text-sm text-muted-foreground">
           {fees === 1 ? "1 fee found" : `${fees} fees found`}
         </span>
+        {blocked && (
+          <span id={fullNoteId} className="sr-only">
+            Your list is full. Remove an apartment to add this one.
+          </span>
+        )}
       </button>
       <div className="flex flex-col gap-1 border-t px-4 py-3 text-xs text-muted-foreground">
         <span>
