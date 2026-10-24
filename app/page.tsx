@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="flex min-h-[calc(100dvh-12rem)] flex-col items-center justify-center gap-6 py-12 text-center sm:py-20">
       <p className="rounded-full border bg-accent px-3 py-1 text-sm text-accent-foreground">
-        For Blacksburg renters
+        Made by renters, for renters
       </p>
       <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl">
         The rent you see isn&apos;t the rent you pay.
@@ -22,7 +22,7 @@ export default function Home() {
       </Button>
       <p className="flex items-center gap-2 text-sm text-muted-foreground">
         <ShieldCheck className="size-4 text-success" aria-hidden />
-        No sign-up. Your screenshots are never stored.
+        No sign-up. Your screenshots aren&apos;t saved.
       </p>
     </section>
   );
