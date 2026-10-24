@@ -68,6 +68,9 @@ export const Extraction = z.object({
   bedrooms: z.number().int().positive().nullable(),
   utilities: Utilities,
   fees: z.array(ExtractedFee),
+  // The leasing office's email if the listing shows one; null otherwise. Kept
+  // only when it appears in the listing itself (lib/ai/checks.ts).
+  contactEmail: z.string().max(200).nullable().optional(),
 });
 export type Extraction = z.infer<typeof Extraction>;
 
@@ -98,6 +101,9 @@ export interface Apartment {
   utilities: Utilities;
   fees: Fee[];
   reviewed: boolean;
+  // Leasing office email, from the listing or the complex's own website. Fills
+  // the To line of the email draft; never typed by the student.
+  contactEmail?: string;
 }
 
 export interface Setup {
