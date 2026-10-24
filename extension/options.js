@@ -1,4 +1,4 @@
-import { DEFAULT_APP_URL, LOCAL_APP_URL, getAppUrl } from "./config.js";
+import { DEFAULT_APP_URL, LOCAL_APP_URL, getAppUrl, setAppUrl } from "./config.js";
 
 const form = document.getElementById("form");
 const custom = document.getElementById("app-url");
@@ -30,7 +30,7 @@ form.addEventListener("submit", async (event) => {
     status.textContent = "Not saved: True Cost needs access to that site to send it listings.";
     return;
   }
-  await chrome.storage.sync.set({ appUrl: origin });
+  await setAppUrl(origin);
   if (target === "custom") custom.value = origin;
   status.textContent = `Saved. Listings go to ${origin}.`;
 });
