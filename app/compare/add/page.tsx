@@ -29,7 +29,6 @@ export default function AddApartmentPage() {
       <Stepper current="add" />
       <PageHeading
         title="Add up to 3 apartments"
-        description="Pick Blacksburg complexes we've already checked, or add any listing with the extension."
       />
       {hydrated ? (
         <AddApartments />
@@ -89,9 +88,6 @@ function AddApartments() {
           <Button asChild size="lg">
             <Link href="/compare/review">Review fees</Link>
           </Button>
-          <p className="text-sm text-muted-foreground">
-            You&apos;ll check what Gemma found before anything is compared.
-          </p>
         </div>
       )}
     </div>
@@ -103,7 +99,7 @@ function ExtensionNote() {
     <div className="flex flex-col gap-4 rounded-xl border bg-muted/40 p-4 sm:p-5">
       <p className="flex items-start gap-3 text-sm text-muted-foreground">
         <Puzzle className="mt-0.5 size-5 shrink-0" aria-hidden />
-        On any listing page, one click captures the whole page and opens it here for review.
+        One click on any listing page adds it here.
       </p>
       <div className="flex flex-wrap items-start gap-3">
         <Button asChild>
