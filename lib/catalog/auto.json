@@ -1,0 +1,781 @@
+[
+  {
+    "id": "cedarfield",
+    "name": "Cedarfield Apartments & Townhomes",
+    "url": "https://www.cmgleasing.com/property/cedarfield-apts-townhomes/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1280,
+      "max": 1280,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-cedarfield",
+      "name": "Cedarfield Apartments & Townhomes",
+      "advertised": {
+        "amount": 1280,
+        "basis": "per_unit",
+        "quote": "$1,280.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "crossing-at-knollwood",
+    "name": "The Crossing at Knollwood Apartments",
+    "url": "https://www.cmgleasing.com/property/crossing-at-knollwood/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1480,
+      "max": 1490,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-crossing-at-knollwood",
+      "name": "The Crossing at Knollwood Apartments",
+      "advertised": {
+        "amount": 1480,
+        "basis": "per_unit",
+        "quote": "$1,480.00 - $1,490.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "green-street-station",
+    "name": "Green Street Station",
+    "url": "https://www.cmgleasing.com/property/green-street/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3600,
+      "max": 3600,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-green-street-station",
+      "name": "Green Street Station",
+      "advertised": {
+        "amount": 3600,
+        "basis": "per_unit",
+        "quote": "513 - 525 Green Street: $3,600.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "not_included",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "harrell-place",
+    "name": "Harrell Place Townhomes",
+    "url": "https://www.cmgleasing.com/property/harrell-place/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3600,
+      "max": 3600,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-harrell-place",
+      "name": "Harrell Place Townhomes",
+      "advertised": {
+        "amount": 3600,
+        "basis": "per_unit",
+        "quote": "$3,600.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "not_included",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "houston-street",
+    "name": "Houston Street Apartments",
+    "url": "https://www.cmgleasing.com/property/houston-street/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1900,
+      "max": 2000,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-houston-street",
+      "name": "Houston Street Apartments",
+      "advertised": {
+        "amount": 1900,
+        "basis": "per_unit",
+        "quote": "\"$1,900.00 - $2,000.00\""
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "knollwood-townhomes",
+    "name": "Knollwood Townhomes",
+    "url": "https://www.cmgleasing.com/property/knollwood-townhomes/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2200,
+      "max": 2200,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-knollwood-townhomes",
+      "name": "Knollwood Townhomes",
+      "advertised": {
+        "amount": 2200,
+        "basis": "per_unit",
+        "quote": "$2,200.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "landing-at-stonegate",
+    "name": "The Landing at Stonegate",
+    "url": "https://granitesl.appfolio.com/listings/detail/18b94e25-a045-49ba-bfae-77c60341e98a",
+    "site": "Granite Student Living listings (granitesl.appfolio.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1070,
+      "max": 1070,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-landing-at-stonegate",
+      "name": "The Landing at Stonegate",
+      "advertised": {
+        "amount": 1070,
+        "basis": "per_unit",
+        "quote": "$1,070/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "landing-at-stonegate-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $49",
+          "source": "ai",
+          "confidence": "medium"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "lofts-at-316",
+    "name": "The Lofts at 316",
+    "url": "https://www.cmgleasing.com/property/lofts-at-316/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1415,
+      "max": 1415,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-lofts-at-316",
+      "name": "The Lofts at 316",
+      "advertised": {
+        "amount": 1415,
+        "basis": "per_unit",
+        "quote": "$1,415.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "not_included",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "maple-ridge",
+    "name": "Maple Ridge Townhomes",
+    "url": "https://admistay.com/student-accommodation/united-states/blacksburg/property/maple-ridge-townhomes-blacksburg-626696",
+    "site": "Admistay (admistay.com student housing listing)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 965,
+      "max": 965,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-maple-ridge",
+      "name": "Maple Ridge Townhomes",
+      "advertised": {
+        "amount": 965,
+        "basis": "per_person",
+        "quote": "$965/month"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "maple-ridge-tech-fee-new-residents",
+          "name": "Tech Fee (New Residents)",
+          "category": "technology",
+          "amount": 90,
+          "frequency": "annual",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "$90 Tech Fee (New Residents) yearly",
+          "source": "ai",
+          "confidence": "low"
+        },
+        {
+          "id": "maple-ridge-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "maple-ridge-tech-fee-renewals",
+          "name": "Tech Fee (Renewals)",
+          "category": "technology",
+          "amount": 75,
+          "frequency": "annual",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "$75 (Renewals)",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "maple-ridge-insurance-premium",
+          "name": "Insurance Premium",
+          "category": "insurance",
+          "amount": 17,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "$17 Insurance Premium",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "maple-ridge-credit-builder",
+          "name": "Credit Builder",
+          "category": "other",
+          "amount": 8,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "$8 Credit Builder",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "maple-ridge-guarantor-waiver-program-deposit",
+          "name": "Guarantor Waiver Program Deposit",
+          "category": "security_deposit",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": true,
+          "quote": "$300 deposit",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "oak-manor",
+    "name": "Oak Manor Townhomes",
+    "url": "https://granitesl.appfolio.com/listings/detail/3a20a6e4-394c-49d4-877b-63588e491ab1",
+    "site": "Granite Student Living / Pointe West listings (granitesl.appfolio.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2230,
+      "max": 2230,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-oak-manor",
+      "name": "Oak Manor Townhomes",
+      "advertised": {
+        "amount": 2230,
+        "basis": "per_unit",
+        "quote": "$2,230/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "included",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "oak-manor-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "$49",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "old-row-on-north-main",
+    "name": "Old Row on North Main (The Row on North Main)",
+    "url": "https://granitesl.appfolio.com/listings/detail/47ecc385-0d32-44d8-bfdf-e997e6d3795c",
+    "site": "Granite Student Living AppFolio listing (granitesl.appfolio.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 5276,
+      "max": 5276,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-old-row-on-north-main",
+      "name": "Old Row on North Main (The Row on North Main)",
+      "advertised": {
+        "amount": 5276,
+        "basis": "per_unit",
+        "quote": "$5,276/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "old-row-on-north-main-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $49",
+          "source": "ai",
+          "confidence": "medium"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "orchards-townhomes",
+    "name": "The Orchards Townhomes",
+    "url": "https://www.cmgleasing.com/property/orchards-townhomes/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2500,
+      "max": 2500,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-orchards-townhomes",
+      "name": "The Orchards Townhomes",
+      "advertised": {
+        "amount": 2500,
+        "basis": "per_unit",
+        "quote": "$2,500.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "not_included",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "pheasant-run",
+    "name": "Pheasant Run Townhomes",
+    "url": "https://granitesl.appfolio.com/listings/detail/dd27850a-81e9-4b26-895c-0e7705c5a7a0",
+    "site": "Granite Student Living listings (granitesl.appfolio.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2520,
+      "max": 2520,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-pheasant-run",
+      "name": "Pheasant Run Townhomes",
+      "advertised": {
+        "amount": 2520,
+        "basis": "per_unit",
+        "quote": "$2,520/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "pheasant-run-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $49",
+          "source": "ai",
+          "confidence": "medium"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "shawnee",
+    "name": "Shawnee Apartments",
+    "url": "https://www.cmgleasing.com/office/shawnee/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1130,
+      "max": 1145,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-shawnee",
+      "name": "Shawnee Apartments",
+      "advertised": {
+        "amount": 1130,
+        "basis": "per_person",
+        "quote": "$1,130.00 - $1,145.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "included",
+        "internet": "not_included",
+        "trash": "included"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "stonegate-carlton-scott",
+    "name": "Stonegate and Carlton Scott Apartments",
+    "url": "https://granitesl.appfolio.com/listings/detail/be5238ff-212c-47fb-a5a9-ec9bf5c60303",
+    "site": "Granite Student Living listings (granitesl.appfolio.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 730,
+      "max": 730,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-stonegate-carlton-scott",
+      "name": "Stonegate and Carlton Scott Apartments",
+      "advertised": {
+        "amount": 730,
+        "basis": "per_unit",
+        "quote": "$730/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "stonegate-carlton-scott-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $49",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "terpence",
+    "name": "Terpence Apartments",
+    "url": "https://www.cmgleasing.com/property/terpence/",
+    "site": "Manager site (cmgleasing.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1980,
+      "max": 1980,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-terpence",
+      "name": "Terpence Apartments",
+      "advertised": {
+        "amount": 1980,
+        "basis": "per_unit",
+        "quote": "$1,980.00"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "the-arbors",
+    "name": "The Arbors of Blacksburg",
+    "url": "https://homefinder.com/rentals/details/777-Triangle-St_Blacksburg_VA_24060_M97068-79770",
+    "site": "Homefinder (homefinder.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 630,
+      "max": 700,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-the-arbors",
+      "name": "The Arbors of Blacksburg",
+      "advertised": {
+        "amount": 630,
+        "basis": "per_person",
+        "quote": "$630 - $700/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "university-terrace",
+    "name": "University Terrace",
+    "url": "https://granitesl.appfolio.com/listings/detail/2c9ee737-5b8b-4d57-a2e8-51e44327343b",
+    "site": "Granite Student Living listings (granitesl.appfolio.com)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 495,
+      "max": 495,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-university-terrace",
+      "name": "University Terrace",
+      "advertised": {
+        "amount": 495,
+        "basis": "per_unit",
+        "quote": "RENT $495/mo"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "university-terrace-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee: $49",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "uptown-village",
+    "name": "Uptown Village Townhomes",
+    "url": "https://www.rentable.co/blacksburg-va/uptown-village",
+    "site": "Rentable (rentable.co)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1100,
+      "max": 1100,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-uptown-village",
+      "name": "Uptown Village Townhomes",
+      "advertised": {
+        "amount": 1100,
+        "basis": "per_unit",
+        "quote": "$1,100"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "uptown-village-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 1100,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit: 0 - 1100",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  }
+]

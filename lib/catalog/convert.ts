@@ -48,6 +48,9 @@ export interface CatalogEntry {
   site: string;
   readOn: string; // YYYY-MM-DD
   priceRange: { min: number; max: number; basis: Basis };
+  // Fetched and extracted by scripts/complexes/ with nobody checking the fees:
+  // the apartment has reviewed: false, so it goes through Review before Compare.
+  autoScanned?: boolean;
   apartment: Apartment;
 }
 

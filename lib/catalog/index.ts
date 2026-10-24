@@ -1,15 +1,18 @@
 // Catalog of pre-scanned Blacksburg complexes (F21). Owner: Sam (A).
 // The app reads the catalog only through getCatalog(), which returns the static
-// seed today (built from eval/cases/ by scripts/build-catalog.ts) and can merge
+// seed today (built from eval/cases/ by scripts/build-catalog.ts, then the
+// auto-scanned complexes from scripts/complexes/ in auto.json) and can merge
 // fee index (F20) data later without changing the UI. Never writes to the index.
 import type { Apartment } from "../types";
 import { withUtilityEstimates } from "../utilities";
 import type { CatalogEntry } from "./convert";
+import auto from "./auto.json";
 import seed from "./seed.json";
 
 export type { CatalogEntry } from "./convert";
 
-const entries: CatalogEntry[] = (seed as CatalogEntry[]).map((entry) => ({
+// Hand-checked complexes first, then auto-scanned ones.
+const entries: CatalogEntry[] = [...(seed as CatalogEntry[]), ...(auto as CatalogEntry[])].map((entry) => ({
   ...entry,
   // Utilities a listing says aren't included get Blacksburg estimate rows, the
   // same as an extracted apartment would.

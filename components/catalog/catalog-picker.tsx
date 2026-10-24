@@ -1,8 +1,10 @@
 "use client";
 
 // Catalog picker (F21). Owner: Sam (A). A searchable grid of pre-scanned
-// Blacksburg complexes; selecting a card (click, Enter or Space) adds its
-// already-reviewed apartment to the store, selecting it again removes it.
+// Blacksburg complexes in a scrollable box about 6 cards tall; selecting a card
+// (click, Enter or Space) adds its apartment to the store, selecting it again
+// removes it. Hand-checked complexes come first and go straight to Compare;
+// auto-scanned ones are added unreviewed, so they open Review first.
 import Link from "next/link";
 import { useId, useMemo, useState } from "react";
 import { ArrowRight, Check, ExternalLink, Plus, Search, X } from "lucide-react";
@@ -47,6 +49,7 @@ export function CatalogPicker() {
   const [query, setQuery] = useState("");
   const [announcement, setAnnouncement] = useState("");
   const searchId = useId();
+  const listHeadingId = useId();
 
   const selected = useMemo(() => {
     const ids = new Set<string>();
@@ -57,6 +60,8 @@ export function CatalogPicker() {
     return ids;
   }, [apartments]);
   const full = apartments.length >= MAX_APARTMENTS;
+  const autoCount = catalog.filter((e) => e.autoScanned).length;
+  const anyUnreviewed = apartments.some((a) => catalogIdOf(a.id) && !a.reviewed);
 
   const q = query.trim().toLowerCase();
   const shown = q
@@ -86,7 +91,9 @@ export function CatalogPicker() {
           Pick Blacksburg complexes
         </h2>
         <p className="text-sm text-muted-foreground">
-          Fees already read from each listing and checked by hand. Select up to {MAX_APARTMENTS}.
+          {catalog.length} complexes with fees already read from each listing.{" "}
+          {catalog.length - autoCount} are checked by hand; {autoCount} marked Auto-scanned open
+          Review first. Select up to {MAX_APARTMENTS}.
         </p>
       </div>
 
@@ -102,7 +109,7 @@ export function CatalogPicker() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Hub, Foxridge, Tee Street…"
+            placeholder="Hub, Union, Foxridge…"
             autoComplete="off"
             className="pl-9"
           />
@@ -131,30 +138,44 @@ export function CatalogPicker() {
           </Button>
         </div>
       ) : (
-        <ul aria-label="Blacksburg complexes" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {shown.map((entry) => (
-            <li key={entry.id}>
-              <CatalogCard
-                entry={entry}
-                added={selected.has(entry.id)}
-                blocked={full && !selected.has(entry.id)}
-                onToggle={() => toggle(entry)}
-              />
-            </li>
-          ))}
-        </ul>
+        // About two rows of three on desktop; the rest scroll inside the box.
+        // tabIndex lets keyboard users scroll it; the cards stay in tab order.
+        <div
+          role="region"
+          aria-labelledby={listHeadingId}
+          tabIndex={0}
+          className="max-h-[26rem] overflow-y-auto rounded-xl border bg-muted/30 p-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+        >
+          <h3 id={listHeadingId} className="sr-only">
+            {shown.length} Blacksburg complexes, scroll for more
+          </h3>
+          <ul aria-label="Blacksburg complexes" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {shown.map((entry) => (
+              <li key={entry.id}>
+                <CatalogCard
+                  entry={entry}
+                  added={selected.has(entry.id)}
+                  blocked={full && !selected.has(entry.id)}
+                  onToggle={() => toggle(entry)}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       {selected.size > 0 && (
         <div className="flex flex-wrap items-center gap-3">
           <Button asChild size="lg">
-            <Link href="/compare/results">
-              Go to compare <ArrowRight className="size-4" aria-hidden />
+            <Link href={anyUnreviewed ? "/compare/review" : "/compare/results"}>
+              {anyUnreviewed ? "Review fees" : "Go to compare"} <ArrowRight className="size-4" aria-hidden />
             </Link>
           </Button>
           <p className="text-sm text-muted-foreground">
-            {apartments.length} of {MAX_APARTMENTS} apartments selected. Catalog fees are already
-            checked, so they go straight to Compare.
+            {apartments.length} of {MAX_APARTMENTS} apartments selected.{" "}
+            {anyUnreviewed
+              ? "Auto-scanned complexes open Review first so you can check their fees."
+              : "Catalog fees are already checked, so they go straight to Compare."}
           </p>
         </div>
       )}
@@ -222,6 +243,7 @@ function CatalogCard({
         <span className="text-sm">{priceRange(entry.priceRange)}</span>
         <span className="text-sm text-muted-foreground">
           {fees === 1 ? "1 fee found" : `${fees} fees found`}
+          {entry.autoScanned ? " · Auto-scanned, not checked yet" : " · Checked by hand"}
         </span>
         {blocked && (
           <span id={fullNoteId} className="sr-only">
