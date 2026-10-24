@@ -22,7 +22,7 @@ export default function Home() {
       </Button>
       <p className="flex items-center gap-2 text-sm text-muted-foreground">
         <ShieldCheck className="size-4 text-success" aria-hidden />
-        No sign-up. Your screenshots aren&apos;t saved.
+        No sign-up.
       </p>
     </section>
   );
