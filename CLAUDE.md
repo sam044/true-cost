@@ -7,7 +7,7 @@ Read `docs/PRD.md` before any task. It is the source of truth for scope, screens
 Two people each run their own Claude Code on this repo:
 
 - **Sam** (@sam044) owns extraction: `app/compare/add`, `app/compare/review`, `app/api/extract`, `lib/ai/`, `components/upload/`, `components/review/`, `extension/` (Chrome extension, F19), `app/compare/import` (the page that receives the extension's capture) and `lib/catalog/` plus `components/catalog/` (catalog of pre-scanned complexes, F21).
-- **Andy** (@andyshah17) owns compare: `app/compare/setup`, `app/compare/results`, `app/api/email`, `lib/cost.ts`, `lib/flags.ts`, `components/compare/`.
+- **Andy** (@andyshah17) owns compare: `app/compare/setup`, `app/compare/results`, `app/api/email`, `lib/cost.ts`, `lib/flags.ts`, `components/compare/`, and the fee index (F20): `lib/index/`, `app/api/index/`, `scripts/seed-index.ts`, plus the opt-in on Review.
 - **Shared, change with care:** `lib/types.ts`, `lib/store.ts`, `app/globals.css`, `app/layout.tsx`, `components/ui/`, `package.json`. Keep changes small, land them in their own commit, and tell your person to tell the other person.
 
 **Primary flow:** (1) the catalog (F21): the Apartments step opens on pre-scanned Blacksburg complexes and one selection adds a complex to Compare with zero input; (2) the extension (F19): one click captures a listing's full page. Uploading screenshots or pasting text on Add is the fallback. Build and demo in that order.

@@ -35,7 +35,7 @@ What is on `main` and deployed at https://true-cost-xi.vercel.app (pushes to mai
 | Catalog (F21) | Done. Add opens on 8 checked complexes built from `eval/cases/`; one click adds a complex, "Go to compare" goes straight to Compare |
 | Extension (F19) | Done. One click scrolls and stitches the full page into up to 5 images plus full page text; defaults to the deployed app. Tested in Edge on local pages; still to test with a real toolbar click on a real listing |
 | Setup, cost engine, flags, Compare (F5 to F9) | Done |
-| Leasing-office email (F10) | Done. Gemma drafts it; if Gemma fails or the draft quotes an amount it wasn't given, a plain template is returned; Virginia flags are asked as questions, not accusations |
+| Leasing-office email (F10) | Done. Gemma drafts it; if Gemma fails or the draft quotes an amount it wasn't given, a plain template is returned; Virginia flags are asked as questions, not accusations; Copy, Gmail, Outlook and mail-app buttons |
 | Eval (F14) | Done. Text-only run on 8 cases: **94% precision, 97% recall** (32 right, 2 extra, 1 missed), advertised price right 8 of 8; category 97%, frequency 100%, mandatory 81% (misses are "unknown" vs labelled "no" on parking and situational fees). Image run waits on hand-taken screenshots |
 | Fee index (F20) | In progress (Andy). The Compare panel is on main against mock data; the database, API, seed and Review opt-in are not on main yet |
 | Auto-scanned complexes | In progress, not on main. About 45 Blacksburg complexes and rental companies were tried; fee text is fetched from each complex's own site (listing sites block scripts) and run through `extractFees` into `data/complexes/`. These are marked auto-scanned and not reviewed, so in the catalog they must open Review or carry an "Auto-scanned, not checked" label, listed after the 8 checked complexes, and they are never fee index seed data |
@@ -137,7 +137,7 @@ P0 items must work for the demo; P1 items ship if P0 is done by 8:30 PM; Stretch
 | F17 | Highlight fee locations on the screenshot | Stretch | — |
 | F18 | Export comparison as an image | Stretch | — |
 | F19 | Chrome extension: one click on a listing captures the full page and opens Review in the app; the primary way to add a listing not in the catalog (see below) | P0 | Sam |
-| F20 | Blacksburg fee index: opted-in reviewed fees saved anonymously by complex, seeded with the 8 eval cases, shown on Compare (see below) | P1 | Sam (data, API, Review), Andy (Compare panel) |
+| F20 | Blacksburg fee index: opted-in reviewed fees saved anonymously by complex, seeded with the 8 eval cases, shown on Compare (see below) | P1 | Andy |
 | F21 | Catalog of pre-scanned Blacksburg complexes: the default Apartments step; one selection adds a complex to Compare with its checked fees, zero input (see below) | P0 | Sam |
 
 ## Browser extension (F19)
@@ -277,18 +277,18 @@ export interface IndexSummary {
 | # | Task | Owner | Size |
 | --- | --- | --- | --- |
 | 0 | Create the database and env vars (below) | Sam by hand | 15 min |
-| 1 | Shared commit: `IndexFee`/`IndexSummary` types, `shareToIndex` in the store, `@neondatabase/serverless` in `package.json`, `.env.example` lines | Sam | 15 min |
-| 2 | `lib/index/`: db client, `schema.sql`, `complexKey` with Vitest tests | Sam | 45 min |
-| 3 | Seed script, run once | Sam | 30 min |
-| 4 | `POST /api/index/submit` with the limits above | Sam | 45 min |
-| 5 | `GET /api/index/complex` with the aggregate query | Sam | 30 min |
-| 6 | Review opt-in checkbox and submit on "Looks right" | Sam | 20 min |
+| 1 | Shared commit: `IndexFee`/`IndexSummary` types, `shareToIndex` in the store, `@neondatabase/serverless` in `package.json`, `.env.example` lines | Andy | 15 min |
+| 2 | `lib/index/`: db client, `schema.sql`, `complexKey` with Vitest tests | Andy | 45 min |
+| 3 | Seed script, run once | Andy | 30 min |
+| 4 | `POST /api/index/submit` with the limits above | Andy | 45 min |
+| 5 | `GET /api/index/complex` with the aggregate query | Andy | 30 min |
+| 6 | Review opt-in checkbox and submit on "Looks right" | Andy | 20 min |
 | 7 | Compare panel, against a mocked `IndexSummary` first, then live | Andy | 60 min |
 | — | **Cut line: below only if 0 to 7 are on main by 8:30 PM** | | |
-| 8 | Review "Not on your list" hint with Add | Sam | 40 min |
+| 8 | Review "Not on your list" hint with Add | Andy | 40 min |
 | 9 | `GET /api/index` and the `/index` page | Either | 60 min |
 
-If Sam's tasks are not on main by 8:30 PM, ship read-only instead: seed data and the Compare panel (tasks 0, 1, 2, 3, 5, 7), with no student writes and the old privacy wording.
+If tasks 1 to 6 are not on main by 8:30 PM, ship read-only instead: seed data and the Compare panel (tasks 0, 1, 2, 3, 5, 7), with no student writes and the old privacy wording.
 
 **Sam does by hand**
 
@@ -354,7 +354,7 @@ Enums: `category` is one of base_rent, admin, application, amenity, parking, uti
 
 **Email call** (`POST /api/email`, P1)
 
-Input is the confirmed fee list and flags, never raw images. Gemma 4 writes a short, polite email asking for the complete written fee schedule and naming any fee that looks undisclosed, with Virginia flags phrased as questions. It returns `{ subject, body, source }`: if Gemma fails, or its draft quotes a dollar amount it was not given, the route returns a plain template instead (`source: "template"`), so the user always gets a usable draft. The user edits and sends it themselves; we never send anything.
+Input is the confirmed fee list and flags, never raw images. Gemma 4 writes a short, polite email asking for the complete written fee schedule and naming any fee that looks undisclosed, with Virginia flags phrased as questions. It returns `{ subject, body, source }`: if Gemma fails, or its draft quotes a dollar amount it was not given, the route returns a plain template instead (`source: "template"`), so the user always gets a usable draft. The drawer offers Copy, Open in Gmail, Open in Outlook (which copies the draft first so it survives sign-in) and Open in mail app. The user edits and sends it themselves; we never send anything.
 
 **Eval**
 
@@ -426,7 +426,7 @@ One public repo, `sam044/true-cost`, Apache-2.0. Each person owns separate folde
 | `components/upload/`, `components/review/` | Sam | Drop zone, thumbnails, fee rows |
 | `extension/`, `app/compare/import` | Sam | Chrome extension and the page that receives its capture (F19) |
 | `lib/catalog/`, `components/catalog/` | Sam | Catalog of pre-scanned complexes and its picker on the Add screen (F21) |
-| `lib/index/`, `app/api/index/`, `scripts/seed-index.ts` | Sam | Fee index database, API and seed (F20) |
+| `lib/index/`, `app/api/index/`, `scripts/seed-index.ts` | Andy | Fee index database, API and seed (F20) |
 | `app/compare/setup`, `app/compare/results` | Andy | Setup and Compare screens |
 | `app/api/email`, `lib/cost.ts`, `lib/flags.ts` | Andy | Cost engine, flags, email draft |
 | `components/compare/` | Andy | Apartment columns, stacked bar, drawer, fee index panel |
