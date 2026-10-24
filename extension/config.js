@@ -1,5 +1,6 @@
 // The True Cost app this extension hands listings to. Change it on the options page.
-export const DEFAULT_APP_URL = "http://localhost:3000";
+export const DEFAULT_APP_URL = "https://true-cost-xi.vercel.app";
+export const LOCAL_APP_URL = "http://localhost:3000";
 
 export async function getAppUrl() {
   const { appUrl } = await chrome.storage.sync.get("appUrl");
