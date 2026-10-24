@@ -1,0 +1,1271 @@
+{
+  "ranAt": "2026-10-24T20:18:37.024Z",
+  "mode": "text plus any screenshots",
+  "summary": {
+    "cases": 8,
+    "scored": 8,
+    "tp": 32,
+    "fp": 2,
+    "fn": 1,
+    "precision": 0.9411764705882353,
+    "recall": 0.9696969696969697,
+    "f1": 0.955223880597015,
+    "pricesOk": 8,
+    "fields": {
+      "category": {
+        "right": 31,
+        "total": 32,
+        "accuracy": 0.96875
+      },
+      "frequency": {
+        "right": 27,
+        "total": 27,
+        "accuracy": 1
+      },
+      "basis": {
+        "right": 8,
+        "total": 8,
+        "accuracy": 1
+      },
+      "mandatory": {
+        "right": 26,
+        "total": 32,
+        "accuracy": 0.8125
+      },
+      "refundable": {
+        "right": 2,
+        "total": 2,
+        "accuracy": 1
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "brexx",
+      "name": "Brexx at Blacksburg",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 24,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Trash",
+              "category": "trash",
+              "amount": 6,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Trash",
+              "category": "trash",
+              "amount": 6,
+              "frequency": "monthly",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Trash $6 / mo",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Credit Reporting Fees",
+              "category": "other",
+              "amount": 9,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Credit Reporting Fees",
+              "category": "other",
+              "amount": 9,
+              "frequency": "monthly",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Credit Reporting Fees $9 / mo",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 50,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 50,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee $50",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Administration Fee",
+              "category": "admin",
+              "amount": 150,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Administration Fee",
+              "category": "admin",
+              "amount": 150,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Administration Fee $150",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Covered Parking",
+              "category": "parking",
+              "amount": 50,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "no"
+            },
+            "predicted": {
+              "name": "Parking Fee",
+              "category": "parking",
+              "amount": 50,
+              "frequency": "monthly",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "Parking Fee $50 / mo",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "no",
+                "predicted": "unknown"
+              }
+            ]
+          },
+          {
+            "expected": {
+              "name": "Damages Charge",
+              "category": "other",
+              "amount": 100,
+              "frequency": null,
+              "basis": null,
+              "mandatory": "no"
+            },
+            "predicted": {
+              "name": "Damages Charge",
+              "category": "other",
+              "amount": 100,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "Damages Charge $100",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "no",
+                "predicted": "unknown"
+              }
+            ]
+          },
+          {
+            "expected": {
+              "name": "NSF Bank Fees",
+              "category": "other",
+              "amount": 50,
+              "frequency": null,
+              "basis": null,
+              "mandatory": "no"
+            },
+            "predicted": {
+              "name": "NSF Bank Fees",
+              "category": "other",
+              "amount": 50,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "NSF Bank Fees $50",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "no",
+                "predicted": "unknown"
+              }
+            ]
+          },
+          {
+            "expected": {
+              "name": "Transfer Fee",
+              "category": "other",
+              "amount": 500,
+              "frequency": null,
+              "basis": null,
+              "mandatory": "no"
+            },
+            "predicted": {
+              "name": "Transfer Fee",
+              "category": "other",
+              "amount": 500,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "Transfer Fee $500",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "no",
+                "predicted": "unknown"
+              }
+            ]
+          },
+          {
+            "expected": {
+              "name": "Reletting Fee",
+              "category": "other",
+              "amount": 500,
+              "frequency": null,
+              "basis": null,
+              "mandatory": "no"
+            },
+            "predicted": {
+              "name": "Reletting Fee $500",
+              "category": "other",
+              "amount": 500,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "Reletting Fee $500",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "no",
+                "predicted": "unknown"
+              }
+            ]
+          },
+          {
+            "expected": {
+              "name": "Utility Billing Fee",
+              "category": "utility_fee",
+              "amount": 62,
+              "frequency": null,
+              "basis": null,
+              "mandatory": "unknown"
+            },
+            "predicted": {
+              "name": "Utility Billing Fee",
+              "category": "utility_fee",
+              "amount": 62,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "Utility Billing Fee $62",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": []
+          }
+        ],
+        "missed": [
+          {
+            "name": "Rental Insurance Waiver",
+            "category": "insurance",
+            "amount": 15,
+            "frequency": "monthly",
+            "basis": null,
+            "mandatory": "yes"
+          }
+        ],
+        "extra": [
+          {
+            "name": "Rental Insurance Waiver Income",
+            "category": "insurance",
+            "amount": 50,
+            "frequency": "monthly",
+            "basis": "per_person",
+            "mandatory": "yes",
+            "refundable": false,
+            "quote": "Rental Insurance Waiver Income $15 / mo",
+            "sourceImage": 0,
+            "confidence": "low"
+          }
+        ],
+        "fields": {
+          "category": {
+            "right": 10,
+            "total": 10
+          },
+          "frequency": {
+            "right": 5,
+            "total": 5
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 5,
+            "total": 10
+          },
+          "refundable": {
+            "right": 0,
+            "total": 0
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 1069,
+            "basis": "per_person",
+            "quote": "$1,069 - $1,399"
+          }
+        }
+      }
+    },
+    {
+      "id": "christopher-drive-house",
+      "name": "4 Bedroom House, 2001 Christopher Drive",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 9,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Security Deposit",
+              "category": "security_deposit",
+              "amount": 2200,
+              "frequency": "one_time",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": true
+            },
+            "predicted": {
+              "name": "Security Deposit",
+              "category": "security_deposit",
+              "amount": 2200,
+              "frequency": "one_time",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": true,
+              "quote": "Security Deposit - Refundable $2,200 one-time",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Risk Protection Fee",
+              "category": "insurance",
+              "amount": 15,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Risk Protection Fee",
+              "category": "other",
+              "amount": 15,
+              "frequency": "monthly",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Risk Protection Fee $15.00 monthly.",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "category",
+                "expected": "insurance",
+                "predicted": "other"
+              }
+            ]
+          }
+        ],
+        "missed": [],
+        "extra": [],
+        "fields": {
+          "category": {
+            "right": 1,
+            "total": 2
+          },
+          "frequency": {
+            "right": 2,
+            "total": 2
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 2,
+            "total": 2
+          },
+          "refundable": {
+            "right": 1,
+            "total": 1
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 2200,
+            "basis": "per_unit",
+            "quote": "$2,200"
+          }
+        }
+      }
+    },
+    {
+      "id": "collegiate-suites",
+      "name": "Collegiate Suites of Blacksburg",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 7,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 50,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee Per Applicant",
+              "category": "application",
+              "amount": 50,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee Per Applicant $50",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 150,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 150,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Administrative Fee $150",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          }
+        ],
+        "missed": [],
+        "extra": [],
+        "fields": {
+          "category": {
+            "right": 2,
+            "total": 2
+          },
+          "frequency": {
+            "right": 2,
+            "total": 2
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 2,
+            "total": 2
+          },
+          "refundable": {
+            "right": 0,
+            "total": 0
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 999,
+            "basis": "per_person",
+            "quote": "$999 /Bedroom"
+          }
+        }
+      }
+    },
+    {
+      "id": "fourteen35",
+      "name": "Fourteen35 Apartments",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 10,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 49,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee Per Applicant",
+              "category": "application",
+              "amount": 49,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee Per Applicant $49",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 199,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 199,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Administrative Fee $199",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Reconditioning Fee",
+              "category": "reconditioning",
+              "amount": 299,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Reconditioning Fee",
+              "category": "reconditioning",
+              "amount": 299,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Reconditioning Fee $299",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          }
+        ],
+        "missed": [],
+        "extra": [],
+        "fields": {
+          "category": {
+            "right": 3,
+            "total": 3
+          },
+          "frequency": {
+            "right": 3,
+            "total": 3
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 3,
+            "total": 3
+          },
+          "refundable": {
+            "right": 0,
+            "total": 0
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 965,
+            "basis": "per_person",
+            "quote": "$965 - $1,005 /Bedroom"
+          }
+        }
+      }
+    },
+    {
+      "id": "foxridge",
+      "name": "Foxridge Apartment Homes",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 20,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 35,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee Per Applicant",
+              "category": "application",
+              "amount": 35,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee Per Applicant $35.00",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Reservation Deposit",
+              "category": "security_deposit",
+              "amount": 200,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Reservation Deposit",
+              "category": "security_deposit",
+              "amount": 200,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Reservation Deposit $200.00",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 200,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 200,
+              "frequency": "one_time",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Administrative Fee $200.00",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Deposit",
+              "category": "security_deposit",
+              "amount": 400,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes",
+              "amountRange": [
+                400,
+                1500
+              ]
+            },
+            "predicted": {
+              "name": "Deposit",
+              "category": "security_deposit",
+              "amount": 400,
+              "frequency": "one_time",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Deposit $400-$1500",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Utility Billing Administrative Fee",
+              "category": "utility_fee",
+              "amount": 1.5,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Utility - Billing Administrative Fee",
+              "category": "utility_fee",
+              "amount": 1.5,
+              "frequency": "monthly",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Utility - Billing Administrative Fee $1.50/mo",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Internet Service",
+              "category": "internet",
+              "amount": 65,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Internet Service",
+              "category": "internet",
+              "amount": 65,
+              "frequency": "monthly",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Internet Service $65.00/mo",
+              "sourceImage": 0,
+              "confidence": "medium"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Refuse Removal",
+              "category": "trash",
+              "amount": 7,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Refuse Removal",
+              "category": "trash",
+              "amount": 7,
+              "frequency": "monthly",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Refuse Removal $7.00/mo",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          }
+        ],
+        "missed": [],
+        "extra": [
+          {
+            "name": "Late Fee",
+            "category": "other",
+            "amount": 0,
+            "frequency": "one_time",
+            "basis": "per_unit",
+            "mandatory": "yes",
+            "refundable": false,
+            "quote": "Late Fee 10.0% of base rent/per occurrence",
+            "sourceImage": 0,
+            "confidence": "low"
+          }
+        ],
+        "fields": {
+          "category": {
+            "right": 7,
+            "total": 7
+          },
+          "frequency": {
+            "right": 7,
+            "total": 7
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 7,
+            "total": 7
+          },
+          "refundable": {
+            "right": 0,
+            "total": 0
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 1453,
+            "basis": "per_unit",
+            "quote": "$1,453-$3,638"
+          }
+        }
+      }
+    },
+    {
+      "id": "hub",
+      "name": "Hub Blacksburg",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 10,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 35,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee Per Applicant",
+              "category": "application",
+              "amount": 35,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee Per Applicant $35",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 200,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 200,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Administrative Fee $200",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Garage Parking",
+              "category": "parking",
+              "amount": 30,
+              "frequency": "monthly",
+              "basis": null,
+              "mandatory": "no"
+            },
+            "predicted": {
+              "name": "Parking Fee Garage",
+              "category": "parking",
+              "amount": 30,
+              "frequency": "monthly",
+              "basis": "per_person",
+              "mandatory": "unknown",
+              "refundable": false,
+              "quote": "Parking Fee $30 / mo",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": [
+              {
+                "field": "mandatory",
+                "expected": "no",
+                "predicted": "unknown"
+              }
+            ]
+          }
+        ],
+        "missed": [],
+        "extra": [],
+        "fields": {
+          "category": {
+            "right": 3,
+            "total": 3
+          },
+          "frequency": {
+            "right": 3,
+            "total": 3
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 2,
+            "total": 3
+          },
+          "refundable": {
+            "right": 0,
+            "total": 0
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 1859,
+            "basis": "per_person",
+            "quote": "$1,859 Plus Fees"
+          }
+        }
+      }
+    },
+    {
+      "id": "tee-street",
+      "name": "203-209 Tee Street",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 11,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 49,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee Per Applicant",
+              "category": "application",
+              "amount": 49,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee Per Applicant $49",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 199,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Administrative Fee",
+              "category": "admin",
+              "amount": 199,
+              "frequency": "one_time",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Administrative Fee $199",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Reconditioning Fee",
+              "category": "reconditioning",
+              "amount": 299,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Reconditioning Fee",
+              "category": "reconditioning",
+              "amount": 299,
+              "frequency": "one_time",
+              "basis": "per_unit",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Reconditioning Fee $299",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          }
+        ],
+        "missed": [],
+        "extra": [],
+        "fields": {
+          "category": {
+            "right": 3,
+            "total": 3
+          },
+          "frequency": {
+            "right": 3,
+            "total": 3
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 3,
+            "total": 3
+          },
+          "refundable": {
+            "right": 0,
+            "total": 0
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 1725,
+            "basis": "per_unit",
+            "quote": "$1,725 Plus Fees"
+          }
+        }
+      }
+    },
+    {
+      "id": "the-edge",
+      "name": "The Edge Apartments and Townhomes",
+      "input": {
+        "text": true,
+        "images": []
+      },
+      "model": "gemma-4-26b-a4b-it",
+      "seconds": 8,
+      "attempts": 1,
+      "score": {
+        "matches": [
+          {
+            "expected": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 35,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes"
+            },
+            "predicted": {
+              "name": "Application Fee",
+              "category": "application",
+              "amount": 35,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": false,
+              "quote": "Application Fee Per Applicant $35",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          },
+          {
+            "expected": {
+              "name": "Security Deposit",
+              "category": "security_deposit",
+              "amount": 500,
+              "frequency": "one_time",
+              "basis": null,
+              "mandatory": "yes",
+              "refundable": true
+            },
+            "predicted": {
+              "name": "Security Deposit",
+              "category": "security_deposit",
+              "amount": 500,
+              "frequency": "one_time",
+              "basis": "per_person",
+              "mandatory": "yes",
+              "refundable": true,
+              "quote": "SECURITY DEPOSIT $500",
+              "sourceImage": 0,
+              "confidence": "high"
+            },
+            "by": "name",
+            "wrong": []
+          }
+        ],
+        "missed": [],
+        "extra": [],
+        "fields": {
+          "category": {
+            "right": 2,
+            "total": 2
+          },
+          "frequency": {
+            "right": 2,
+            "total": 2
+          },
+          "basis": {
+            "right": 1,
+            "total": 1
+          },
+          "mandatory": {
+            "right": 2,
+            "total": 2
+          },
+          "refundable": {
+            "right": 1,
+            "total": 1
+          }
+        },
+        "price": {
+          "ok": true,
+          "predicted": {
+            "amount": 1245,
+            "basis": "per_person",
+            "quote": "$1,245 - $1,415 /Bedroom"
+          }
+        }
+      }
+    }
+  ]
+}
