@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { monthlyEquivalent, perPerson, summarize } from "./cost";
+import { defaultCounted, itemize, monthlyEquivalent, perPerson, summarize } from "./cost";
 import { mockApartments } from "./mock";
 import type { Apartment, Fee, Setup } from "./types";
 
@@ -130,5 +130,91 @@ describe("summarize", () => {
     expect(summarize(apt, setup).overBudget).toBeNull();
     expect(summarize(apt, { ...setup, budget: 1040 }).overBudget).toBe(true);
     expect(summarize(apt, { ...setup, budget: 1050 }).overBudget).toBe(false);
+  });
+});
+
+describe("defaultCounted", () => {
+  const needs = { parking: true, pet: false, furnished: false };
+
+  it("always counts mandatory and unknown fees", () => {
+    expect(defaultCounted(fee({ mandatory: "yes", category: "parking" }), setup)).toBe(true);
+    expect(defaultCounted(fee({ mandatory: "unknown", category: "pet" }), { ...setup, needs })).toBe(true);
+  });
+
+  it("counts optional fees only for extras the user needs", () => {
+    const s = { ...setup, needs };
+    expect(defaultCounted(fee({ mandatory: "no", category: "parking" }), s)).toBe(true);
+    expect(defaultCounted(fee({ mandatory: "no", category: "pet" }), s)).toBe(false);
+    expect(defaultCounted(fee({ mandatory: "no", category: "furniture" }), s)).toBe(false);
+    expect(
+      defaultCounted(fee({ mandatory: "no", category: "furniture" }), {
+        ...setup,
+        needs: { ...needs, furnished: true },
+      }),
+    ).toBe(true);
+  });
+
+  it("leaves other optional fees out, and everything optional out when needs are unset", () => {
+    expect(defaultCounted(fee({ mandatory: "no", category: "amenity" }), { ...setup, needs })).toBe(false);
+    expect(defaultCounted(fee({ mandatory: "no", category: "parking" }), setup)).toBe(false);
+  });
+});
+
+describe("itemize", () => {
+  it("lists counted fees with their monthly share and how it was worked out", () => {
+    const { rent, lines, excluded } = itemize(mockApartments[2], setup);
+    expect(rent).toBe(600);
+    expect(excluded).toEqual([]);
+    const byId = Object.fromEntries(lines.map((l) => [l.fee.id, l]));
+    expect(byId["tee-admin"].monthly).toBeCloseTo(199 / 48, 6);
+    expect(byId["tee-admin"].note).toBe("$199 ÷ 4 people ÷ 12 mo");
+    expect(byId["tee-recon"].note).toBe("$299 ÷ 12 mo");
+    expect(byId["tee-deposit"].group).toBe("oneTimeAndDeposits");
+  });
+
+  it("notes per-semester, annual and plain monthly fees", () => {
+    const { lines } = itemize(
+      apartment([
+        fee({ id: "m", amount: 62 }),
+        fee({ id: "s", amount: 300, frequency: "per_semester" }),
+        fee({ id: "y", amount: 240, frequency: "annual" }),
+        fee({ id: "u", amount: 30, basis: "per_unit" }),
+      ]),
+      setup,
+    );
+    const notes = Object.fromEntries(lines.map((l) => [l.fee.id, l.note]));
+    expect(notes).toEqual({
+      m: null,
+      s: "$300 per semester",
+      y: "$240 per year",
+      u: "$30 ÷ 4 people",
+    });
+  });
+
+  it("puts uncounted fees in excluded with what they would add", () => {
+    const { lines, excluded } = itemize(mockApartments[1], setup);
+    expect(lines.map((l) => l.fee.id)).not.toContain("hub-parking");
+    expect(excluded).toHaveLength(1);
+    expect(excluded[0].monthly).toBe(7.5);
+  });
+
+  it("skips base_rent fees and orders recurring lines before one-time lines", () => {
+    const { lines } = itemize(
+      apartment([
+        fee({ id: "once", frequency: "one_time", amount: 120 }),
+        fee({ id: "rent", category: "base_rent" }),
+        fee({ id: "monthly", amount: 5 }),
+      ]),
+      setup,
+    );
+    expect(lines.map((l) => l.fee.id)).toEqual(["monthly", "once"]);
+  });
+
+  it("adds up to the same true monthly cost as summarize", () => {
+    for (const apt of mockApartments) {
+      const { rent, lines } = itemize(apt, setup);
+      const total = lines.reduce((sum, l) => sum + l.monthly, rent);
+      expect(total).toBeCloseTo(summarize(apt, setup).trueMonthly, 9);
+    }
   });
 });
