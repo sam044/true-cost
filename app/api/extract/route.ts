@@ -1,13 +1,22 @@
 // POST /api/extract. Owner: Sam (A).
-// Body: { images: string[] (base64 JPEG data URLs, max 5), text?: string }
-// Returns: Extraction (lib/types.ts), already validated and quote-checked.
+// Body: { images: string[] (base64 JPEG/PNG/WebP data URLs, max 5), text?: string }
+// Returns: Extraction (lib/types.ts), validated, quote-checked, low confidence first.
+// Errors: { error: string } with 400 (bad input), 422 (unreadable), 502 (model down).
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import type { Extraction } from "@/lib/types";
+import { ExtractionError, extractFees } from "@/lib/ai/gemma";
+
+// Gemma can be slow under load; lib/ai/gemma.ts keeps the whole request under 280s.
+// 300s is the Vercel Hobby limit with fluid compute.
+export const maxDuration = 300;
+
+const DataUrl = z
+  .string()
+  .regex(/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/, "Images must be base64 data URLs.");
 
 const Body = z.object({
-  images: z.array(z.string()).max(5),
-  text: z.string().max(20000).optional(),
+  images: z.array(DataUrl).max(5),
+  text: z.string().trim().max(20000).optional(),
 });
 
 export async function POST(request: Request) {
@@ -16,45 +25,25 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Send at least one image or some text." }, { status: 400 });
   }
 
-  // TODO(Sam): call Gemma via lib/ai, validate with Extraction, run quote and
-  // amount checks. Until then, return a fixed result so the Review UI can be built.
-  const placeholder: Extraction = {
-    transcript: ["$1,069 / bed  Administrative Fee $150  Utility Service Fee $62"],
-    advertisedPrice: { amount: 1069, basis: "per_person", quote: "$1,069 / bed" },
-    bedrooms: 4,
-    utilities: {
-      electric: "not_included",
-      water: "unknown",
-      gas: "unknown",
-      internet: "included",
-      trash: "unknown",
-    },
-    fees: [
-      {
-        name: "Administrative fee",
-        category: "admin",
-        amount: 150,
-        frequency: "one_time",
-        basis: "per_person",
-        mandatory: "yes",
-        refundable: false,
-        quote: "Administrative Fee $150",
-        sourceImage: 0,
-        confidence: "high",
-      },
-      {
-        name: "Utility service fee",
-        category: "utility_fee",
-        amount: 62,
-        frequency: "monthly",
-        basis: "per_person",
-        mandatory: "unknown",
-        refundable: false,
-        quote: "Utility Service Fee $62",
-        sourceImage: 0,
-        confidence: "low",
-      },
-    ],
-  };
-  return NextResponse.json(placeholder);
+  const images = parsed.data.images.map((url) => {
+    const [, mimeType, data] = url.match(/^data:(image\/\w+);base64,(.*)$/)!;
+    return { mimeType, data };
+  });
+
+  try {
+    const { extraction, model } = await extractFees({ images, text: parsed.data.text || undefined });
+    return NextResponse.json(extraction, { headers: { "x-model": model } });
+  } catch (e) {
+    console.error("extract failed:", e instanceof Error ? e.message : e);
+    if (e instanceof ExtractionError) {
+      return NextResponse.json(
+        { error: "We couldn't read this listing. Try clearer screenshots or paste the text instead." },
+        { status: 422 },
+      );
+    }
+    return NextResponse.json(
+      { error: "The fee reader is unavailable right now. Try again in a moment, or paste the text instead." },
+      { status: 502 },
+    );
+  }
 }
