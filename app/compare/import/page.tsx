@@ -1,9 +1,11 @@
 "use client";
 
 // Import from the browser extension. Owner: Sam (A). See docs/PRD.md, F19.
-// The extension opens this page and writes its capture (the full page stitched
-// into at most 5 screenshots, plus the page text) to sessionStorage. We send it
-// to /api/extract like the Add screen does, save the apartment and open Review.
+// The extension opens this page and writes a capture to sessionStorage. Since
+// extension 0.3 its side panel has already called /api/extract, so the capture
+// carries the extraction (version 3) and we only save the apartment and open
+// Review or Compare. Older builds send the screenshots and text (versions 1
+// and 2), which we send to /api/extract like the Add screen does.
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -15,6 +17,7 @@ import { useHydrated } from "@/components/review/use-hydrated";
 import { extractListing } from "@/components/upload/extract";
 import { toApartment } from "@/components/upload/to-apartment";
 import { MAX_APARTMENTS, useTrueCost } from "@/lib/store";
+import { Extraction } from "@/lib/types";
 
 const STORAGE_KEY = "true-cost-capture";
 const WAIT_MS = 8000;
@@ -37,6 +40,16 @@ const Capture = z
   .refine((c) => c.images.length > 0 || c.text.trim().length > 0);
 type Capture = z.infer<typeof Capture>;
 
+const Extracted = z.object({
+  version: z.literal(3),
+  id: z.string().uuid(), // becomes the apartment id, so opening it twice doesn't add it twice
+  name: z.string().max(200),
+  url: z.string().optional(),
+  extraction: Extraction,
+  then: z.enum(["review", "compare"]),
+});
+type Extracted = z.infer<typeof Extracted>;
+
 type Status =
   | { kind: "waiting" }
   | { kind: "none" }
@@ -44,12 +57,13 @@ type Status =
   | { kind: "full" }
   | { kind: "error"; message: string; capture: Capture };
 
-function takeCapture(): Capture | null {
+function takeCapture(): Capture | Extracted | null {
   const raw = sessionStorage.getItem(STORAGE_KEY);
   if (!raw) return null;
   sessionStorage.removeItem(STORAGE_KEY);
   try {
-    const parsed = Capture.safeParse(JSON.parse(raw));
+    const json = JSON.parse(raw);
+    const parsed = json?.version === 3 ? Extracted.safeParse(json) : Capture.safeParse(json);
     return parsed.success ? parsed.data : null;
   } catch {
     return null;
@@ -86,6 +100,21 @@ export default function ImportPage() {
     [addApartment, router],
   );
 
+  const open = useCallback(
+    (capture: Extracted) => {
+      const { apartments } = useTrueCost.getState();
+      if (!apartments.some((a) => a.id === capture.id)) {
+        if (apartments.length >= MAX_APARTMENTS) {
+          setStatus({ kind: "full" });
+          return;
+        }
+        addApartment({ ...toApartment(capture.name, capture.extraction), id: capture.id });
+      }
+      router.replace(capture.then === "compare" ? "/compare/results" : `/compare/review/${capture.id}`);
+    },
+    [addApartment, router],
+  );
+
   // Wait for saved apartments to load so the 3-apartment limit is checked
   // against them, then take the capture whichever arrived first, page or capture.
   useEffect(() => {
@@ -95,7 +124,8 @@ export default function ImportPage() {
       const capture = takeCapture();
       if (!capture) return;
       started.current = true;
-      void run(capture);
+      if ("extraction" in capture) open(capture);
+      else void run(capture);
     };
     tryStart();
     window.addEventListener(STORAGE_KEY, tryStart);
@@ -106,7 +136,7 @@ export default function ImportPage() {
       window.removeEventListener(STORAGE_KEY, tryStart);
       clearTimeout(timer);
     };
-  }, [hydrated, run]);
+  }, [hydrated, run, open]);
 
   return (
     <>
