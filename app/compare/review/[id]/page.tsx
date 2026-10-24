@@ -24,6 +24,7 @@ import { FeeRow } from "@/components/review/fee-row";
 import { BASIS_LABELS, needsCheck } from "@/components/review/labels";
 import { MoneyInput } from "@/components/review/money-input";
 import { useHydrated } from "@/components/review/use-hydrated";
+import { submissionFor } from "@/lib/index/submit";
 import { useTrueCost } from "@/lib/store";
 import type { Apartment, Basis, Fee, UtilityName } from "@/lib/types";
 
@@ -76,7 +77,7 @@ export default function ReviewPage({ params }: { params: Promise<{ id: string }>
 function ReviewApartment({ apartment }: { apartment: Apartment }) {
   const router = useRouter();
   const apartments = useTrueCost((s) => s.apartments);
-  const { updateApartment, updateFee, addFee, removeFee } = useTrueCost();
+  const { updateApartment, updateFee, addFee, removeFee, shareToIndex, setShareToIndex } = useTrueCost();
 
   // Flagged fees go first. The order is fixed when the screen opens so rows
   // don't jump while the user edits them; new fees go at the end.
@@ -150,6 +151,19 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
       return;
     }
     updateApartment(apartment.id, { reviewed: true });
+    // Fee index (F20, Andy): opted in, so share the confirmed fees. Fire and
+    // forget: navigation never waits, and a failure only logs a warning.
+    const submission = shareToIndex ? submissionFor({ ...apartment, reviewed: true }) : null;
+    if (submission) {
+      fetch("/api/index/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(submission),
+        keepalive: true,
+      })
+        .then((res) => res.ok || console.warn("Fee index submit returned", res.status))
+        .catch((e) => console.warn("Fee index submit failed", e));
+    }
     const next = apartments.find((a) => a.id !== apartment.id && !a.reviewed);
     router.push(next ? `/compare/review/${next.id}` : "/compare/results");
   }
@@ -295,6 +309,21 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
               {errors.join(" ")}
             </div>
           )}
+          <label className="flex max-w-xl cursor-pointer items-start gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={shareToIndex}
+              onChange={(e) => setShareToIndex(e.target.checked)}
+              className="mt-0.5 size-4 shrink-0 cursor-pointer accent-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+            />
+            <span>
+              Add these fees to the Blacksburg fee index
+              <span className="block text-muted-foreground">
+                Anonymous: only the complex name and fee amounts are shared, so the next student
+                knows what to expect.
+              </span>
+            </span>
+          </label>
           <div className="flex flex-wrap items-center gap-3">
             <Button size="lg" onClick={handleConfirm}>
               <CircleCheck aria-hidden />
