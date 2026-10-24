@@ -119,7 +119,7 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                 <span className="font-medium">To: </span>
                 {to ? (
                   <>
-                    {to} <span className="text-muted-foreground">(from the listing)</span>
+                    {to} <span className="text-muted-foreground">(from the listing or the manager&apos;s website)</span>
                   </>
                 ) : (
                   <span className="text-muted-foreground">

@@ -52,6 +52,19 @@ describe("fees included in the advertised price", () => {
   });
 });
 
+describe("leasing office email", () => {
+  it("comes from the case's checked contact, with a source", () => {
+    const house = fresh.find((e) => e.id === "christopher-drive-house")!;
+    expect(house.apartment.contactEmail).toBe("rentals@townside.com");
+    expect(house.contactSource).toMatch(/^https:\/\//);
+  });
+
+  it("is left out where no public email was found", () => {
+    const brexx = fresh.find((e) => e.id === "brexx")!;
+    expect(brexx.apartment.contactEmail).toBeUndefined();
+  });
+});
+
 describe("findQuote", () => {
   it("joins a name line with the amount line below it", () => {
     expect(findQuote("Deposit\n$400-$1500", "Deposit", 400)).toBe("Deposit $400-$1500");

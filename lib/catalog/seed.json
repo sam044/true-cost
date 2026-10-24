@@ -198,6 +198,7 @@
       "max": 2200,
       "basis": "per_unit"
     },
+    "contactSource": "https://www.renttnt.com/contact",
     "apartment": {
       "id": "catalog-christopher-drive-house",
       "name": "4 Bedroom House, 2001 Christopher Drive",
@@ -243,7 +244,8 @@
           "confidence": "high"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "contactEmail": "rentals@townside.com"
     }
   },
   {

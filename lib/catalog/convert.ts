@@ -20,6 +20,10 @@ export interface CaseInfo {
   url: string;
   site: string;
   readOn: string; // YYYY-MM-DD
+  // Leasing office email from the complex's or manager's own site, and where
+  // it was read. Only for addresses checked by hand. (Andy)
+  contactEmail?: string;
+  contactSource?: string;
 }
 
 export interface ExpectedFee {
@@ -51,6 +55,7 @@ export interface CatalogEntry {
   // Fetched and extracted by scripts/complexes/ with nobody checking the fees:
   // the apartment has reviewed: false, so it goes through Review before Compare.
   autoScanned?: boolean;
+  contactSource?: string; // where apartment.contactEmail was read
   apartment: Apartment;
 }
 
@@ -174,6 +179,7 @@ export function caseToEntry(
     site: info.site,
     readOn: info.readOn,
     priceRange: { min, max, basis },
+    ...(info.contactSource ? { contactSource: info.contactSource } : {}),
     apartment: {
       id: `catalog-${id}`,
       name: info.name,
@@ -181,6 +187,7 @@ export function caseToEntry(
       utilities: expected.utilities ?? UNKNOWN_UTILITIES,
       fees,
       reviewed: true,
+      ...(info.contactEmail ? { contactEmail: info.contactEmail } : {}),
     },
   };
 }
