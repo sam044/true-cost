@@ -86,7 +86,7 @@ export default function ImportPage() {
       setStatus({ kind: "reading", name: capture.name });
       try {
         const extraction = await extractListing({ images: capture.images, text: capture.text });
-        const apartment = toApartment(capture.name, extraction);
+        const apartment = toApartment(capture.name, extraction, useTrueCost.getState().setup);
         addApartment(apartment);
         router.replace(`/compare/review/${apartment.id}`);
       } catch (error) {
@@ -108,7 +108,10 @@ export default function ImportPage() {
           setStatus({ kind: "full" });
           return;
         }
-        addApartment({ ...toApartment(capture.name, capture.extraction), id: capture.id });
+        addApartment({
+          ...toApartment(capture.name, capture.extraction, useTrueCost.getState().setup),
+          id: capture.id,
+        });
       }
       router.replace(capture.then === "compare" ? "/compare/results" : `/compare/review/${capture.id}`);
     },

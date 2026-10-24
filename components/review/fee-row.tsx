@@ -15,6 +15,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { defaultCounted } from "@/lib/cost";
+import { useTrueCost } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import type { Basis, Fee, Frequency } from "@/lib/types";
 import { BASIS_LABELS, FREQUENCY_LABELS, MANDATORY_LABELS, needsCheck } from "./labels";
@@ -32,6 +34,7 @@ export const FeeRow = forwardRef<HTMLInputElement, FeeRowProps>(function FeeRow(
   nameRef,
 ) {
   const id = useId();
+  const setup = useTrueCost((s) => s.setup);
   const flagged = needsCheck(fee);
   const nameMissing = showErrors && fee.name.trim() === "";
   const label = fee.name.trim() || "new fee";
@@ -117,11 +120,12 @@ export const FeeRow = forwardRef<HTMLInputElement, FeeRowProps>(function FeeRow(
           label="Required?"
           value={fee.mandatory}
           options={MANDATORY_LABELS}
-          // Optional fees stay out of the true cost until the user turns them on in Compare.
+          // Optional fees count only for extras the student said they need in
+          // Setup; any fee can still be switched on or off in Compare.
           onChange={(mandatory) =>
             onChange({
               mandatory: mandatory as Fee["mandatory"],
-              counted: mandatory !== "no",
+              counted: defaultCounted({ ...fee, mandatory: mandatory as Fee["mandatory"] }, setup),
             })
           }
         />
