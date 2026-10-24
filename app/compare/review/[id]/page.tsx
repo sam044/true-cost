@@ -172,6 +172,7 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
     <>
       <PageHeading
         title={`Check the fees for ${apartment.name}`}
+        description="Every fee shows the words it came from. Fix anything that looks off, then confirm."
       />
       {apartments.length > 1 && (
         <p className="-mt-4 pb-6 text-sm text-muted-foreground">
@@ -283,6 +284,10 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
           <h2 id="utilities-heading" className="text-lg font-semibold">
             Utilities
           </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            What the listing says is covered. Costs for utilities you pay yourself show up as fees
+            marked Estimate.
+          </p>
           <dl className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-5">
             {(Object.keys(UTILITY_LABELS) as UtilityName[]).map((name) => (
               <div key={name} className="rounded-lg bg-muted px-3 py-2">

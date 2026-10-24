@@ -116,6 +116,11 @@ function SetupForm() {
                 </label>
               ))}
             </div>
+            <p className="text-sm text-muted-foreground">
+              {people === 1
+                ? "Per-unit fees are all yours."
+                : `Per-unit rent and fees are split ${people} ways.`}
+            </p>
           </fieldset>
 
           <div className="flex flex-col gap-3">
@@ -132,7 +137,7 @@ function SetupForm() {
                 value={lease}
                 onChange={(e) => setLease(e.target.value)}
                 aria-invalid={leaseError ? true : undefined}
-                aria-describedby={leaseError ? "lease-error" : undefined}
+                aria-describedby={cn("lease-hint", leaseError && "lease-error")}
                 className="h-10 w-24 tabular-nums"
               />
               {LEASE_PRESETS.map((n) => (
@@ -148,6 +153,9 @@ function SetupForm() {
                 </Button>
               ))}
             </div>
+            <p id="lease-hint" className="text-sm text-muted-foreground">
+              One-time fees and deposits are spread over this many months.
+            </p>
             {leaseError && (
               <p id="lease-error" className="text-sm text-destructive">
                 {leaseError}
@@ -157,7 +165,8 @@ function SetupForm() {
 
           <fieldset className="flex flex-col gap-3">
             <legend className="mb-3 text-sm font-medium">
-              Will you need any of these?
+              Will you need any of these?{" "}
+              <span className="font-normal text-muted-foreground">(tick any that apply)</span>
             </legend>
             <div className="flex flex-wrap gap-x-6 gap-y-3">
               {NEED_OPTIONS.map(({ key, label }) => (
@@ -166,12 +175,17 @@ function SetupForm() {
                     type="checkbox"
                     checked={needs[key]}
                     onChange={(e) => setNeeds({ ...needs, [key]: e.target.checked })}
+                    aria-describedby="needs-hint"
                     className="size-4 cursor-pointer accent-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
                   />
                   {label}
                 </label>
               ))}
             </div>
+            <p id="needs-hint" className="text-sm text-muted-foreground">
+              Optional fees for these count toward the true cost. You can still change any
+              single fee on the Compare screen.
+            </p>
           </fieldset>
 
           <div className="flex flex-col gap-3">
@@ -197,10 +211,13 @@ function SetupForm() {
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
                 aria-invalid={budgetError ? true : undefined}
-                aria-describedby={budgetError ? "budget-error" : undefined}
+                aria-describedby={cn("budget-hint", budgetError && "budget-error")}
                 className="h-10 pl-6 tabular-nums"
               />
             </div>
+            <p id="budget-hint" className="text-sm text-muted-foreground">
+              All-in, after every fee. We&apos;ll show which places fit.
+            </p>
             {budgetError && (
               <p id="budget-error" className="text-sm text-destructive">
                 {budgetError}
@@ -227,6 +244,7 @@ export default function SetupPage() {
       <Stepper current="setup" />
       <PageHeading
         title="Who's splitting the rent?"
+        description="We use this to turn per-unit fees into what you pay per person."
       />
       {hydrated ? (
         <SetupForm />

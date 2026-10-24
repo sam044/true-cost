@@ -116,7 +116,7 @@ export default function ResultsPage() {
       <Stepper current="results" />
       <PageHeading
         title="What each place really costs you"
-        description="Per person, per month, every fee included."
+        description="Per person per month, with every fee counted. Recurring fees count in full; one-time fees and deposits are spread over the lease."
       />
       <Suspense fallback={<Loading />}>{hydrated ? <Results /> : <Loading />}</Suspense>
     </>

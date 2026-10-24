@@ -32,6 +32,16 @@ function priceRange({ min, max, basis }: CatalogEntry["priceRange"]): string {
   return `${range} a month ${basis === "per_unit" ? "for the whole unit" : "per person"}`;
 }
 
+// "2026-10-24" -> "Oct 24, 2026", without a time zone shift.
+function readDate(iso: string): string {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(y, m - 1, d).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
 export function CatalogPicker() {
   const catalog = getCatalog();
   const apartments = useTrueCost((s) => s.apartments);
@@ -50,6 +60,7 @@ export function CatalogPicker() {
     return ids;
   }, [apartments]);
   const full = apartments.length >= MAX_APARTMENTS;
+  const autoCount = catalog.filter((e) => e.autoScanned).length;
   const anyUnreviewed = apartments.some((a) => catalogIdOf(a.id) && !a.reviewed);
 
   const q = query.trim().toLowerCase();
@@ -79,6 +90,11 @@ export function CatalogPicker() {
         <h2 id="catalog-heading" className="text-lg font-semibold">
           Pick Blacksburg complexes
         </h2>
+        <p className="text-sm text-muted-foreground">
+          {catalog.length} complexes with fees already read from each listing.{" "}
+          {catalog.length - autoCount} are checked by hand; {autoCount} marked Auto-scanned open
+          Review first. Select up to {MAX_APARTMENTS}.
+        </p>
       </div>
 
       <div className="flex max-w-md flex-col gap-1.5">
@@ -106,13 +122,17 @@ export function CatalogPicker() {
 
       {full && (
         <p className="rounded-lg border bg-muted/50 p-3 text-sm text-muted-foreground">
-          That&apos;s {MAX_APARTMENTS}, the most you can compare. Select one again to remove it.
+          You have {MAX_APARTMENTS} apartments, the most True Cost compares at once. Select an added
+          complex again to remove it.
         </p>
       )}
 
       {shown.length === 0 ? (
         <div className="flex flex-col items-start gap-3 rounded-xl border border-dashed p-6">
           <p className="font-medium">No complexes match &ldquo;{query.trim()}&rdquo;</p>
+          <p className="text-sm text-muted-foreground">
+            Check the spelling, or add the listing yourself below.
+          </p>
           <Button type="button" variant="outline" size="sm" onClick={() => setQuery("")}>
             <X className="size-4" aria-hidden /> Clear search
           </Button>
@@ -152,7 +172,10 @@ export function CatalogPicker() {
             </Link>
           </Button>
           <p className="text-sm text-muted-foreground">
-            {apartments.length} of {MAX_APARTMENTS} selected
+            {apartments.length} of {MAX_APARTMENTS} apartments selected.{" "}
+            {anyUnreviewed
+              ? "Auto-scanned complexes open Review first so you can check their fees."
+              : "Catalog fees are already checked, so they go straight to Compare."}
           </p>
         </div>
       )}
@@ -220,7 +243,7 @@ function CatalogCard({
         <span className="text-sm">{priceRange(entry.priceRange)}</span>
         <span className="text-sm text-muted-foreground">
           {fees === 1 ? "1 fee found" : `${fees} fees found`}
-          {entry.autoScanned && " · Not checked yet"}
+          {entry.autoScanned ? " · Auto-scanned, not checked yet" : " · Checked by hand"}
         </span>
         {blocked && (
           <span id={fullNoteId} className="sr-only">
@@ -228,7 +251,10 @@ function CatalogCard({
           </span>
         )}
       </button>
-      <div className="border-t px-4 py-3 text-xs">
+      <div className="flex flex-col gap-1 border-t px-4 py-3 text-xs text-muted-foreground">
+        <span>
+          {entry.site} · Read {readDate(entry.readOn)}
+        </span>
         <a
           href={entry.url}
           target="_blank"

@@ -170,6 +170,7 @@ export function ApartmentColumn({
               <s>{money(summary.advertisedMonthly)}</s>
             </span>
           </p>
+          <p className="text-sm text-muted-foreground">per person per month, all-in</p>
           {summary.hiddenPerYear > 0.005 && (
             <p className="mt-2 w-fit rounded-md bg-hidden px-2 py-1 text-sm font-medium text-hidden-foreground">
               {moneyWhole(summary.hiddenPerYear)} / year not in the headline price
