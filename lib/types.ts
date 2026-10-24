@@ -100,6 +100,15 @@ export interface Setup {
   people: number; // people sharing the unit, 1 to 6
   leaseMonths: number; // default 12
   budget?: number; // optional monthly budget per person
+  // Optional extras the user said they need; decides whether optional fees in
+  // these categories count by default (see defaultCounted in lib/cost.ts).
+  needs?: Needs;
+}
+
+export interface Needs {
+  parking: boolean;
+  pet: boolean;
+  furnished: boolean;
 }
 
 // Output of lib/cost.ts for one apartment. All values are dollars per person.
