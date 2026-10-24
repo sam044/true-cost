@@ -108,6 +108,19 @@ P0 items must work for the demo; P1 items ship if P0 is done by 8:30 PM; Stretch
 | F16 | README with setup, model name and license, architecture, eval results | P0 | Started in scaffold |
 | F17 | Highlight fee locations on the screenshot | Stretch | — |
 | F18 | Export comparison as an image | Stretch | — |
+| F19 | Chrome extension: one click on a listing captures it and opens Review in the app (see below) | P1 | Sam |
+
+## Browser extension (F19)
+
+The web app stays the main product. The extension is a small add-on that saves the screenshot step: on a listing page, the student clicks the True Cost toolbar button and lands on Review for that apartment.
+
+- **What it is:** a Manifest V3 Chrome extension in `extension/`, plain JavaScript, no build step, loaded unpacked for the demo.
+- **Capture:** clicking the toolbar button captures the visible tab (resized in the extension to 1600 px JPEG) and the page's visible text (first 20,000 characters), plus the page title as the apartment name.
+- **Hand-off:** the extension opens the app at `/compare/import` and hands the capture to that page in the browser (written to the app tab's `sessionStorage`). Nothing goes to a server other than the app.
+- **Extraction:** the import page calls the same `POST /api/extract` the Add screen uses (one image plus the text), adds the apartment to the store and opens `/compare/review/[id]`. Errors show the same "We couldn't read this" state with a link to Add.
+- **No API key in the extension.** Gemma is still only called from the app's server code.
+- **App URL:** set on the extension's options page; defaults to `http://localhost:3000`. Host permissions cover `localhost:3000` and `*.vercel.app`.
+- **Limits:** the max of 3 apartments still applies; the import page says so if the user is full. Only the visible part of the page is captured, so the pasted text carries fees below the fold.
 
 ## AI design
 
@@ -232,6 +245,7 @@ One public repo, `sam044/true-cost`, Apache-2.0. Each person owns separate folde
 | `app/compare/add`, `app/compare/review` | Sam | Add apartment and Review screens |
 | `app/api/extract`, `lib/ai/` | Sam | Gemma client, prompt, schema, checks |
 | `components/upload/`, `components/review/` | Sam | Drop zone, thumbnails, fee rows |
+| `extension/`, `app/compare/import` | Sam | Chrome extension and the page that receives its capture (F19) |
 | `app/compare/setup`, `app/compare/results` | Andy | Setup and Compare screens |
 | `app/api/email`, `lib/cost.ts`, `lib/flags.ts` | Andy | Cost engine, flags, email draft |
 | `components/compare/` | Andy | Apartment columns, stacked bar, drawer |
