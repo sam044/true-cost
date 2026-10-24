@@ -199,10 +199,16 @@ export function ApartmentColumn({
           <ul className="divide-y">
             <li className="flex items-start gap-3 py-1.5">
               <div className="flex flex-col">
-                <span>Rent (advertised)</span>
+                <span>{rent < summary.advertisedMonthly - 0.005 ? "Rent" : "Rent (advertised)"}</span>
                 {apartment.advertised.basis === "per_unit" && setup.people > 1 && (
                   <span className="text-xs text-muted-foreground">
                     {money(apartment.advertised.amount)} ÷ {setup.people} people
+                  </span>
+                )}
+                {rent < summary.advertisedMonthly - 0.005 && (
+                  <span className="text-xs text-muted-foreground">
+                    Advertised {money(summary.advertisedMonthly)} includes{" "}
+                    {money(summary.advertisedMonthly - rent)} of the fees below
                   </span>
                 )}
               </div>

@@ -76,6 +76,12 @@ describe("advertised_price flag", () => {
   });
 });
 
+describe("advertised_price flag and included fees", () => {
+  it("does not fire for fees the listing says its price already includes", () => {
+    expect(ids(apartment([fee({ category: "insurance", includedInAdvertised: true })]))).toEqual([]);
+  });
+});
+
 describe("deposit_cap flag", () => {
   it("flags a deposit above two months' rent on the same basis", () => {
     // Rent is $2,400 per unit; a $5,000 per-unit deposit is more than 2 x 2,400.

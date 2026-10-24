@@ -38,6 +38,7 @@ function advertisedPrice(apartment: Apartment): LawFlag | null {
     (f) =>
       fromListing(f) &&
       f.counted &&
+      !f.includedInAdvertised &&
       f.mandatory === "yes" &&
       f.frequency !== "one_time" &&
       f.category !== "base_rent" &&

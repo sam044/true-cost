@@ -8,6 +8,8 @@
 // - only fees with counted: true enter the true cost
 // - deposits are spread like fees but keep their "refundable" label in the UI
 // - base_rent fees are skipped: rent comes from the advertised price
+// - fees with includedInAdvertised are shown but not added again: they move out
+//   of "rent" into their own group, so the advertised total stays the same
 // - optional fees count by default only for extras the user needs (defaultCounted)
 import type { Apartment, CostSummary, Fee, FeeCategory, Needs, Setup } from "./types";
 
@@ -57,6 +59,18 @@ export function groupOf(fee: Fee): FeeGroup {
   return "recurringFees";
 }
 
+// A fee the advertised price already holds is always paid, whatever its
+// toggle says; it moves from "rent" into its own group instead of adding to it.
+const inTotal = (fee: Fee) => fee.includedInAdvertised === true || fee.counted;
+
+// Advertised price per person, minus any fees it already includes.
+function rentPerPerson(apartment: Apartment, setup: Setup): number {
+  const included = apartment.fees
+    .filter((f) => f.includedInAdvertised && f.category !== "base_rent")
+    .reduce((sum, f) => sum + monthlyEquivalent(f, setup), 0);
+  return perPerson(apartment.advertised.amount, apartment.advertised.basis, setup) - included;
+}
+
 export function summarize(apartment: Apartment, setup: Setup): CostSummary {
   const advertisedMonthly = perPerson(
     apartment.advertised.amount,
@@ -64,9 +78,14 @@ export function summarize(apartment: Apartment, setup: Setup): CostSummary {
     setup,
   );
 
-  const breakdown = { rent: advertisedMonthly, recurringFees: 0, utilities: 0, oneTimeAndDeposits: 0 };
+  const breakdown = {
+    rent: rentPerPerson(apartment, setup),
+    recurringFees: 0,
+    utilities: 0,
+    oneTimeAndDeposits: 0,
+  };
   for (const fee of apartment.fees) {
-    if (!fee.counted || fee.category === "base_rent") continue;
+    if (!inTotal(fee) || fee.category === "base_rent") continue;
     breakdown[groupOf(fee)] += monthlyEquivalent(fee, setup);
   }
 
@@ -92,7 +111,7 @@ export interface ItemLine {
 }
 
 export interface Itemized {
-  rent: number; // advertised price per person per month
+  rent: number; // advertised price per person per month, minus fees it already includes
   lines: ItemLine[]; // counted fees, recurring before one-time, largest first
   excluded: ItemLine[]; // uncounted fees, with what they would add
 }
@@ -109,6 +128,7 @@ function dollars(amount: number): string {
 }
 
 function noteFor(fee: Fee, setup: Setup): string | null {
+  if (fee.includedInAdvertised) return "included in the advertised price";
   const parts: string[] = [];
   if (fee.basis === "per_unit" && setup.people > 1) parts.push(`÷ ${setup.people} people`);
   if (fee.frequency === "one_time") parts.push(`÷ ${setup.leaseMonths} mo`);
@@ -129,8 +149,8 @@ export function itemize(apartment: Apartment, setup: Setup): Itemized {
 
   const fees = apartment.fees.filter((f) => f.category !== "base_rent");
   return {
-    rent: perPerson(apartment.advertised.amount, apartment.advertised.basis, setup),
-    lines: fees.filter((f) => f.counted).map(toLine).sort(byGroupThenSize),
-    excluded: fees.filter((f) => !f.counted).map(toLine).sort(byGroupThenSize),
+    rent: rentPerPerson(apartment, setup),
+    lines: fees.filter(inTotal).map(toLine).sort(byGroupThenSize),
+    excluded: fees.filter((f) => !inTotal(f)).map(toLine).sort(byGroupThenSize),
   };
 }

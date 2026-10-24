@@ -218,3 +218,40 @@ describe("itemize", () => {
     }
   });
 });
+
+describe("fees included in the advertised price", () => {
+  // Brexx: "Price shown is total price based on community-supplied monthly
+  // required fees", so $1,069 already holds $15 + $6 + $9 = $30 of fees.
+  const included = [
+    fee({ id: "ins", category: "insurance", amount: 15, includedInAdvertised: true }),
+    fee({ id: "trash", category: "trash", amount: 6, includedInAdvertised: true }),
+    fee({ id: "credit", category: "other", amount: 9, includedInAdvertised: true }),
+  ];
+  const brexxLike = apartment([...included, fee({ id: "util", category: "utility_fee", amount: 62 })], 1069);
+
+  it("does not add them on top of the advertised price", () => {
+    const s = summarize(brexxLike, setup);
+    expect(s.trueMonthly).toBe(1069 + 62);
+    expect(s.hiddenPerYear).toBe(62 * 12);
+  });
+
+  it("moves them out of rent into their own groups so the bar still adds up", () => {
+    const s = summarize(brexxLike, setup);
+    expect(s.breakdown.rent).toBe(1039);
+    expect(s.breakdown.recurringFees).toBe(15 + 9);
+    expect(s.breakdown.utilities).toBe(6 + 62);
+  });
+
+  it("keeps them in the price even if switched off, since the rent already holds them", () => {
+    const off = apartment([{ ...included[0], counted: false }], 1069);
+    expect(summarize(off, setup).trueMonthly).toBe(1069);
+  });
+
+  it("itemizes them with a note, and the lines add up to the true cost", () => {
+    const { rent, lines, excluded } = itemize(brexxLike, setup);
+    expect(rent).toBe(1039);
+    expect(excluded).toEqual([]);
+    expect(lines.find((l) => l.fee.id === "ins")?.note).toBe("included in the advertised price");
+    expect(lines.reduce((sum, l) => sum + l.monthly, rent)).toBe(summarize(brexxLike, setup).trueMonthly);
+  });
+});
