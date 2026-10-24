@@ -1,0 +1,15 @@
+{
+  "slug": "progress-street",
+  "name": "Progress Street Apartments",
+  "address": "Progress St NE, Blacksburg",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": null,
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://1215progressaptl.prospectportal.com/", "result": "403"}
+  ],
+  "text": null,
+  "notes": "No complex named 'Progress Street Townhomes' found; the closest match is 'Progress Street Apartments' (Blacksburg Partnership directory, phone (540) 951-0514, the same number listed for CMG Leasing). The only property page found (CMG's prospectportal for 1215 Progress St Apt L) returned 403. CMG's downtown homes page (see cottages-on-main.json) lists 1215 Progress Street, Apt L at $2,600.00, and River Mountain Properties (see blacksburg-rentals.json) lists units at 733 Progress Street at $1,400-$1,500."
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "crossing-at-knollwood",
+  "name": "The Crossing at Knollwood Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/crossing-at-knollwood/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "bd671e1b15d4833e",
+  "scannedAt": "2026-10-24T21:20:56.358Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Property Address: 2379 Research Center Dr, Blacksburg, VA 24060\n\nRent Prices:\n- \"$1,480.00 - $1,490.00\" (Crossing at Knollwood - 1 bedroom)\n- \"$1,755.00 - $1,790.00\" (Crossing at Knollwood - 2 bedroom)\n\nFees, Deposits, Pet Rent, Parking, Utility, and Admin Charges: NO FEES\n\nAmenities and Related Lines (verbatim):\n- \"Clubhouse\"\n- \"Pool\"\n- \"Gym\"\n- \"Fully equipped kitchen\"\n- \"9-Foot ceilings\"\n- \"Washer/Dryer\"\n- \"Patio/Deck\"\n- \"Walk-in closets\"\n- \"Ethernet and Cable Ready\"\n- \"Internet included, provided by SingleDigits\"\n- \"Near the 460 Bypass\"\n- \"Huckleberry Trail\"\n- \"24 Hour Emergency Maintenance & Lockout Service\"\n- \"Online Leasing\"\n- \"Pets Welcome\"\n- \"Allows Pets\" (listed under both floor plans)\n- \"Internet Included\" (listed under both floor plans)\n- \"Ample parking\" (from the property description)"
+    ],
+    "advertisedPrice": {
+      "amount": 1480,
+      "basis": "per_unit",
+      "quote": "$1,480.00 - $1,490.00"
+    },
+    "bedrooms": 1,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "included",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

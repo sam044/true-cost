@@ -1,0 +1,16 @@
+{
+  "slug": "jefferson-apartments",
+  "name": "Jefferson Apartments",
+  "address": "614 Washington St. S.E. Apt. #8, Blacksburg, Virginia 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.jeffersonapt.com/2021-fees",
+  "site": "Official site (jeffersonapt.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.jeffersonapt.com", "result": "no fees"},
+    {"url": "https://www.jeffersonapt.com/2021-fees", "result": "ok"}
+  ],
+  "text": "Common Fee list 2025\n\n- \"Application (& co-signer): $35\"\n- \"Change of Roommate: $50\"\n- \"Sublease $100\"\n- \"Security Deposit $400-$800 or 1 Month's rent\"\n- \"Pet Deposit $400-$500\"\n- \"Pet Rent $15-20/month\"\n- \"Caged Animals $30-$50\"\n- \"Cleaning Fee $100-$300\"\n- \"Additional may be charged for specific items\"\n\nUncommon Fees\n\n- \"Incomplete/invalid or no Notice to Vacate submitted: $35\"\n- \"Fines- $25 or more\"\n- \"Re-rental Fee: $175.00\"\n- \"Less than 90 days required notice before lease expiration: Starting at $30\"\n- \"Unapproved Roommate or animal Fee starting at $150.00\"\n\n[From the home page https://www.jeffersonapt.com, verbatim:]\n- \"Plentiful off-street parking; no resident parking fee.\"\n- \"Water, sewer and trash pick-up are included for most units.\"\n- \"24 hour maintenance service included.\"\n- \"Coin or app operated laundry facilities in each building.\"",
+  "notes": "Good fee schedule (titled 'Common Fee list 2025' at URL /2021-fees) but no rent prices on the fees or home page."
+}

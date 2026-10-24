@@ -1,0 +1,16 @@
+{
+  "slug": "smiths-landing",
+  "name": "Smith's Landing Apartments",
+  "address": "870 Plantation Rd, Blacksburg, VA 24060",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": "Official site (smithslandingapartments.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.smithslandingapartments.com/", "result": "403"},
+    {"url": "https://www.smithslandingapartments.com/floorplans", "result": "403"}
+  ],
+  "text": null,
+  "notes": "Official site returned 403 on home and floorplans pages."
+}

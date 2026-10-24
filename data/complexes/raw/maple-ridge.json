@@ -1,0 +1,15 @@
+{
+  "slug": "maple-ridge",
+  "name": "Maple Ridge Townhomes",
+  "address": "344 Red Maple Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://admistay.com/student-accommodation/united-states/blacksburg/property/maple-ridge-townhomes-blacksburg-626696",
+  "site": "Admistay (admistay.com student housing listing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://admistay.com/student-accommodation/united-states/blacksburg/property/maple-ridge-townhomes-blacksburg-626696", "result": "ok"}
+  ],
+  "text": "Rent\n- Starting rent is \"$965/month,\" described as \"Subject to availability.\"\n- The sample listing shows \"$965 /month\" for an 11-month term, moving in 1 Sep, 2026 and out 31 Jul, 2027.\n\nFees\n- Application fee: \"Application Fee: $50\" (one-time).\n- Tech fee: \"$90 Tech Fee (New Residents)\" yearly, or \"$75 (Renewals).\"\n- Insurance premium: \"$17 Insurance Premium\" monthly. Residents can opt out with their own third-party insurance.\n- Credit builder: \"$8 Credit Builder\" monthly. Residents can opt out.\n- Utility billing: monthly fees from the third-party provider Simple Bills, with no amount listed.\n- Late fees: not charged until after the 5th of the month, with no amount listed.\n\nDeposits and guarantor options\n- Opting out of a guarantor requires either a deposit of \"2-month installment\" or the Guarantor Waiver Program.\n- The Guarantor Waiver Program involves an additional monthly fee, \"subject to change by year and property,\" plus a \"$300 deposit.\"\n\nIncluded or unclear\n- Internet and pest control are included in the monthly rent.\n- Water, sewer, and electric appear under \"Bills Included,\" but the FAQ says utilities are billed monthly through Simple Bills.",
+  "notes": "No official property website found in search. Text is from a third-party student-housing aggregator; the WebFetch model refused full verbatim copy (quote-length limit), so dollar amounts are quoted but surrounding wording is the fetch model's paraphrase. Page itself flags a contradiction: utilities listed as 'Bills Included' but FAQ says billed monthly via Simple Bills."
+}

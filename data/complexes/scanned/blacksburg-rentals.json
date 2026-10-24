@@ -1,0 +1,31 @@
+{
+  "slug": "blacksburg-rentals",
+  "name": "River Mountain Properties",
+  "sourceUrl": "https://rivermountainprops.appfolio.com/listings",
+  "site": "River Mountain Properties AppFolio listings (rivermountainprops.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "cca61b7a752cc3f9",
+  "scannedAt": "2026-10-24T20:45:26.426Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "1. 733 - 23 Progress Street, Blacksburg, VA 24060: RENT $1,400\n2. 733 - 32 Progress Street, Blacksburg,VA 24060: RENT $1,400\n3. 2536 Blossom Trl W, Blacksburg, VA 24060: RENT $2,500\n4. 440 Roanoke St., Blacksburg, VA 24060: RENT $3,200\n5. 1003 Giles Rd Unit D - Individual, Blacksburg, VA 24060: RENT $800 (\"PRICE IS PER BEDROOM\")\n6. 432 Roanoke St., Blacksburg, VA 24060: RENT $1,475\n7. 430 Roanoke St., Blacksburg, VA 24060: RENT $3,050\n8. 215 S Knollwood Dr Ste 4305, Blacksburg, VA 24060: RENT $2,010\n9. 213 S Knollwood Dr - Ste 3204, Blacksburg, VA 24060: RENT $1,995\n10. 301 N Knollwood Dr Ste 7201, Blacksburg, VA 24060: RENT $1,725\n11. 1483 Sandy Circle, Blacksburg, VA 24060: RENT $1,700\n12. 1013 Evergreen Way, Blacksburg, VA 24060: RENT $2,200\n13. 307 Loudon Rd, apt 522, Blacksburg, VA 24060: RENT $1,250\n14. 733 Progress Street Northeast, Blacksburg, VA 24060: RENT $1,500\n15. 114 Southampton Court - Joint, Blacksburg, VA 24060: RENT $2,500\n\nFees: NO FEES are listed in the visible content. Several listings say \"This property requires enrollment in our Benefit Package.\" No cost is given for that enrollment."
+    ],
+    "advertisedPrice": {
+      "amount": 1400,
+      "basis": "per_unit",
+      "quote": "RENT $1,400"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

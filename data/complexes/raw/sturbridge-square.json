@@ -1,0 +1,13 @@
+{
+  "slug": "sturbridge-square",
+  "name": "Sturbridge Square (redeveloped as Union Blacksburg)",
+  "address": "1001 University City Blvd, Blacksburg",
+  "status": "not_found",
+  "sourceUrl": null,
+  "site": null,
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [],
+  "text": null,
+  "notes": "Sturbridge Square Apartments at 1001 University City Blvd was razed and redeveloped by Greystar (424 units, scheduled to finish fall 2022). Listings now give that address as Union Blacksburg, which is already in list.json (union-blacksburg). Treated as a duplicate."
+}

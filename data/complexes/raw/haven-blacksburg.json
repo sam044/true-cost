@@ -1,0 +1,30 @@
+{
+  "slug": "haven-blacksburg",
+  "name": "Haven Blacksburg",
+  "address": "901-917 Lunch Pail Ln, Blacksburg, VA 24060",
+  "status": "not_found",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/d9bf4d7b-d469-4d2d-8f04-6bfe7c3f9118",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://edge.apartmentiq.io/blacksburg-va/901-lunch-pail-ln",
+      "result": "error: 404"
+    },
+    {
+      "url": "https://www.granitestudentliving.com/",
+      "result": "no fees"
+    },
+    {
+      "url": "https://granitesl.appfolio.com/listings",
+      "result": "ok"
+    },
+    {
+      "url": "https://granitesl.appfolio.com/listings/detail/d9bf4d7b-d469-4d2d-8f04-6bfe7c3f9118",
+      "result": "ok"
+    }
+  ],
+  "text": "Listing title and address:\n\"901-917 Lunch Pail Lane, Blacksburg, VA 24060\"\n\nRent prices and fees:\n- \"$2,838/mo\"\n- \"Rent: $2,838\"\n- \"Application Fee: $49\"\n- \"(This listing is a joint listing - price advertised for full apartment)\"\n\nUtilities included:\n- \"wifi\"\n- \"Trash/Recycling\"\n\nPet policy:\n- \"Cats not allowed\"\n- \"Dogs not allowed\"\n\nThe page lists no deposits, pet rent, parking charges, or admin fees.",
+  "notes": "Managed by Granite Student Living. The $2,838 is for a full 2-bed apartment (joint listing), 2027-2028 term; the index also showed a 4-bed at $5,276. The listings index labeled these units 'Old Row' / 'The Row', and a forrentuniversity result calls the address 'Old Row on North Main', so the complex may have been renamed. Search snippets cite a $199 admin fee and $49 application fee from the VT off-campus site (not fetched; off limits). Dropped as a duplicate of old-row-on-north-main."
+}

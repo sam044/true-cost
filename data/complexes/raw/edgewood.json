@@ -1,0 +1,18 @@
+{
+  "slug": "edgewood",
+  "name": "Shawnee Apartments",
+  "address": "1222 University City Blvd, Blacksburg, VA 24060",
+  "status": "not_found",
+  "sourceUrl": "https://www.cmgleasing.com/property/shawnee-apartments/",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://www.cmgleasing.com/property/shawnee-apartments/",
+      "result": "ok"
+    }
+  ],
+  "text": "1 bedroom: \"$1,130.00 - $1,145.00\"\n2 bedroom: \"$1,325.00 - $1,340.00\"\n3 bedroom: \"$1,660.00 - $1,675.00\"\n\nFees: NO FEES are listed on this page.\n\nUtilities:\n\"Gas heat & hot water included in rent\"\n\"Trash collection & recycling included in rent\"\n\nAddress: \"1222 University City Blvd, Blacksburg, VA 24060\"",
+  "notes": "Vague placeholder ('Edgewood / Ridgeview apartments', which matched no real complex) resolved to Shawnee Apartments (208 units near VT, managed by CMG Leasing). Only rent and included utilities appear, no fee amounts. Dropped as a duplicate of shawnee."
+}

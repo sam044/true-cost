@@ -1,0 +1,16 @@
+{
+  "slug": "landing-at-stonegate",
+  "name": "The Landing at Stonegate",
+  "address": "Broce Dr (listed as 400 / 503 / 511 Broce Dr), Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/18b94e25-a045-49ba-bfae-77c60341e98a",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://edge.apartmentiq.io/blacksburg-va/400-broce-dr", "result": "error: 404"},
+    {"url": "https://granitesl.appfolio.com/listings/detail/18b94e25-a045-49ba-bfae-77c60341e98a", "result": "ok"}
+  ],
+  "text": "Listing title and address:\n\"503 Broce Drive - L303, Blacksburg, VA 24060\"\n\nRent and fee lines:\n- \"RENT\"\n- \"$1,070/mo\"\n- \"RENT\"\n- \"$1,070 /mo\"\n- \"Rent: $1,070\"\n- \"Application Fee: $49\"\n\nThe page lists no other deposit, pet rent, pet policy, parking, utility, amenity, or admin fees.",
+  "notes": "Real, separate from Stonegate/Carlton Scott: built 2020, 37 units, part of the Willow Creek Blacksburg portfolio, managed by Granite / Pointe West. The '503 Broce Drive - L303' unit is assumed to be The Landing ('L' prefix); the listing page did not name the community, so this match is inferred."
+}

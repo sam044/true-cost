@@ -1,0 +1,44 @@
+{
+  "slug": "uptown-village",
+  "name": "Uptown Village Townhomes",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/uptown-village",
+  "site": "Rentable (rentable.co)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "01887692287359f9",
+  "scannedAt": "2026-10-24T21:22:17.561Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Address: 200 227 Uptown Trl, Blacksburg, VA (the page displays it this way)\n\nRent prices:\n- Listing range: \"$950 - $1,725\"\n- Unit listings: \"$1,100\" (2 Bed, 1 available), \"$1,850\" (2 Bed, rented), \"$980\" (3 Bed, 1 available), \"$1,725\" (3 Bed, 1 available), \"$950\" (4 Bed, 1 available)\n- Rent report, Uptown Village: \"$1,100\" (2BR), \"$1,353\" (3BR), \"$950\" (4BR)\n- Rent report, Blacksburg average: \"$1,384\" (2BR), \"$1,825\" (3BR), \"$1,925\" (4BR)\n- Rent per sq. ft., Uptown Village: \"$0.80\" (2BR), \"$1.10\" (3BR), \"$0.60\" (4BR)\n\nFees, deposits, and charges:\n- Under \"Lease & Fees,\" the page lists one item: \"Security Deposit: 0 - 1100\"\n- The page lists no pet rent, parking, utility, amenity, or admin fees. Its amenity section says \"No amenity information provided,\" and its pet policy section says the property manager did not submit one."
+    ],
+    "advertisedPrice": {
+      "amount": 1100,
+      "basis": "per_unit",
+      "quote": "$1,100"
+    },
+    "bedrooms": 2,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Security Deposit",
+        "category": "security_deposit",
+        "amount": 1100,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": true,
+        "quote": "Security Deposit: 0 - 1100",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

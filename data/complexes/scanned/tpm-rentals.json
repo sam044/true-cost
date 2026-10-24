@@ -1,0 +1,44 @@
+{
+  "slug": "tpm-rentals",
+  "name": "Townside Property Management",
+  "sourceUrl": "https://townsidepropertymgmt.appfolio.com/listings",
+  "site": "Townside AppFolio listings (townsidepropertymgmt.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "887af723284ee840",
+  "scannedAt": "2026-10-24T20:46:20.532Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "1. 218 Huntington Lane, Blacksburg - RENT $2,200\n\"Pets are allowed with additional rent and pet deposit.\"\n2. 717 Lee Street, Unit 9, Blacksburg - RENT $1,455\n3. 808 Patrick Henry Drive, Blacksburg - RENT $2,525\n\"Pets are allowed with additional rent and pet deposit.\"\n\"Risk Protection Fee $15.00 monthly.\"\n\"Ask us about the Security Deposit alternative.\"\n\"4. 345 Willow Oak Dr., Christiansburg - RENT $1,825\n\"Risk Protection Fee $15.00 monthly.\"\n5. 403B Berryfield Lane, Blacksburg - RENT $2,275\n6. 408 Harrell Street, Unit 5, Blacksburg - RENT $1,015\n\"Risk Protection Fee $15.00 monthly.\"\n7. 1011 Grove Ave., Unit R, Radford - RSB RENT $1,375\n8. 228 Mt. Breeze Rd., Blacksburg - RENT $2,300\n\"Risk Protection Fee ...\" (truncated)\n9. 116 Lester St., Christiansburg - RENT $1,400\n\"Risk Protection Fee $15.00 monthly.\"\n10. 1315 N. Main St., Blacksburg - RENT $1,250\n\"Risk Protection Fee $15.00 monthly.\"\n11. 115 Majestic Drive, Christiansburg - RENT $1,145\n\"Pets are allowed with additional rent and pet deposit.\"\n\"Lease goes through 7/31/28, rent inc...\" (truncated)\n12. 2710 Green Meadow Dr., Blacksburg - RENT $2,800\n13. 710 Republic Rd., Christiansburg - RENT $1,545\n14. 605 Twisted Oak Dr., Christiansburg - RENT $1,995\n15. 615 Twisted Oak Dr., Christiansburg - RENT $2,095"
+    ],
+    "advertisedPrice": {
+      "amount": 2200,
+      "basis": "per_unit",
+      "quote": "RENT $2,200"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "pet rent",
+        "category": "pet",
+        "amount": 0,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "Pets are allowed with additional rent and pet deposit.",
+        "sourceImage": 0,
+        "confidence": "low"
+      }
+    ]
+  },
+  "error": null
+}

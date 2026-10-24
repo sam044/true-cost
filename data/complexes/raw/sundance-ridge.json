@@ -1,0 +1,19 @@
+{
+  "slug": "sundance-ridge",
+  "name": "Sundance Ridge",
+  "address": "Sunridge Dr, Blacksburg, VA 24060",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": "Apartments.com / Prospect Portal / HotPads / Redfin (all blocked)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.apartments.com/505-sunridge-dr-blacksburg-va/2y1jlj9/", "result": "403"},
+    {"url": "https://509rsunridge.prospectportal.com/", "result": "403"},
+    {"url": "https://hotpads.com/503a-sunridge-dr-blacksburg-va-24060-1xs8mre/pad", "result": "403"},
+    {"url": "https://www.redfin.com/neighborhood/761412/VA/Blacksburg/Shenandoah/condos-for-rent"
+, "result": "403"}
+  ],
+  "text": null,
+  "notes": "Individually owned condos (about 100 units), with several managers (NRV Property Management, Townside Property Management, Chasewood per search snippets); no single official site. Every page tried returned 403."
+}

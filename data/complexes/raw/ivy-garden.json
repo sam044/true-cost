@@ -1,0 +1,15 @@
+{
+  "slug": "ivy-garden",
+  "name": "Ivy Garden Apartments",
+  "address": "Blacksburg, VA (near downtown)",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": "Apartments.com",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.apartments.com/ivy-garden-apartments-blacksburg-va/mq0qbjl/", "result": "403"}
+  ],
+  "text": null,
+  "notes": "1-bedroom complex near downtown listed by the Blacksburg Partnership directory; its only linked site (apartments.com) returned 403. No official site found."
+}

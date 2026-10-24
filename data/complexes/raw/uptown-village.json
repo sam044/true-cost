@@ -1,0 +1,15 @@
+{
+  "slug": "uptown-village",
+  "name": "Uptown Village Townhomes",
+  "address": "201-227 Uptown Trail, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.rentable.co/blacksburg-va/uptown-village",
+  "site": "Rentable (rentable.co)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.rentable.co/blacksburg-va/uptown-village", "result": "ok"}
+  ],
+  "text": "Address: 200 227 Uptown Trl, Blacksburg, VA (the page displays it this way)\n\nRent prices:\n- Listing range: \"$950 - $1,725\"\n- Unit listings: \"$1,100\" (2 Bed, 1 available), \"$1,850\" (2 Bed, rented), \"$980\" (3 Bed, 1 available), \"$1,725\" (3 Bed, 1 available), \"$950\" (4 Bed, 1 available)\n- Rent report, Uptown Village: \"$1,100\" (2BR), \"$1,353\" (3BR), \"$950\" (4BR)\n- Rent report, Blacksburg average: \"$1,384\" (2BR), \"$1,825\" (3BR), \"$1,925\" (4BR)\n- Rent per sq. ft., Uptown Village: \"$0.80\" (2BR), \"$1.10\" (3BR), \"$0.60\" (4BR)\n\nFees, deposits, and charges:\n- Under \"Lease & Fees,\" the page lists one item: \"Security Deposit: 0 - 1100\"\n- The page lists no pet rent, parking, utility, amenity, or admin fees. Its amenity section says \"No amenity information provided,\" and its pet policy section says the property manager did not submit one.",
+  "notes": "2018 townhome community on the BT route, units listed by multiple managers (River Mountain Properties, Roost Real Estate Group). Some 3BR/4BR rents look per-bedroom. Search snippets mentioned a $50 application fee and a required 'Benefit Package' on forrent.com, but forrent was not fetched (forrent.com returned 403 for another complex), so those are not in the text."
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "houston-street",
+  "name": "Houston Street Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/houston-street/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "202e646ad797f5be",
+  "scannedAt": "2026-10-24T21:21:14.140Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Property Address: 515 Houston St, Blacksburg, VA 24060\n\nRent Prices:\n\"$1,900.00 - $2,000.00\"\n\nFees: NO FEES"
+    ],
+    "advertisedPrice": {
+      "amount": 1900,
+      "basis": "per_unit",
+      "quote": "\"$1,900.00 - $2,000.00\""
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

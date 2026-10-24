@@ -1,0 +1,17 @@
+{
+  "slug": "union-blacksburg",
+  "name": "Union Blacksburg",
+  "address": "917 University City Blvd, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.greystar.com/union-blacksburg-blacksburg-va/p_16801",
+  "site": "Official site (greystar.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.greystar.com/union-blacksburg-blacksburg-va/p_16801", "result": "ok"},
+    {"url": "https://www.apartmentfinder.com/Virginia/Blacksburg-Apartments/Union-Blacksburg-Apartments-jc375y6", "result": "403"},
+    {"url": "https://www.forrentuniversity.com/va/blacksburg/union-blacksburg/eb396yp", "result": "403"}
+  ],
+  "text": "Contact the community for more information on pricing and availability.\nTotal Monthly Leasing Price includes base rent, all monthly mandatory and any user-selected optional add-ons.\nExcludes variable, usage-based, and required charges due at or prior to move-in or at move-out.\nSecurity Deposit may change based on screening results, but total will not exceed legal maximums.\nSome items may be taxed under applicable law.\nSome costs may not apply to rental homes subject to an affordable program.\nAll costs are subject to application and/or lease terms.\nPrices and availability subject to change.\nResident is responsible for damages beyond ordinary wear and tear.\nResident may need to maintain insurance and to activate and maintain utility services,\nincluding but not limited to electricity, water, gas, and internet, per the lease.\nAdditional costs may apply as detailed in the application and/or lease agreement, which can be requested prior to applying.\n\nFee table, \"Essentials\" tab:\nUse this table to understand what your initial and monthly costs will be in addition to your total monthly rent cost.\nThese required fees are charged one time or recurring during the lease term.\nRenters Liability Insurance - Third Party[1] | Varies per leaseholder | Monthly\nUtility - Billing Administrative Fee | $6.79 per leaseholder | Per installment\nUtility - Electric - Third Party | Usage-Based (Utilities) per leaseholder | Per installment\nAll fees paid to property unless indicated by symbol\n\nFootnotes:\n1. Price varies based on amount of coverage.\n2. Price varies based on rent amount.\n3. Price varies based on number of days.\n4. Price varies based on selections with third party provider.\n5. Price varies based on type of non-compliance.\n\n(The \"Move-in basics,\" \"Personalized add-ons,\" and \"Situational\" tab labels appear on the page, but no items were returned under them.)",
+  "notes": "Greystar-managed. Rent not shown on page ('Contact the community'). Only the Essentials fee tab was captured; other tabs (Move-in basics, Personalized add-ons, Situational) are probably JS-rendered and may hold application/admin/pet/parking fees. Some VT listings give 1001 University City Blvd as the address."
+}

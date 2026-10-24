@@ -1,0 +1,31 @@
+{
+  "slug": "edgewood",
+  "name": "Shawnee Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/shawnee-apartments/",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "678406cf19737276",
+  "scannedAt": "2026-10-24T20:45:40.389Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "1 bedroom: \"$1,130.00 - $1,145.00\"\n2 bedroom: \"$1,325.00 - $1,340.00\"\n3 bedroom: \"$1,660.00 - $1,675.00\"\n\nFees: NO FEES are listed on this page.\n\nUtilities:\n\"Gas heat & hot water included in rent\"\n\"Trash collection & recycling included in rent\"\n\nAddress: \"1222 University City Blvd, Blacksburg, VA 24060\""
+    ],
+    "advertisedPrice": {
+      "amount": 1130,
+      "basis": "per_unit",
+      "quote": "$1,130.00 - $1,145.00"
+    },
+    "bedrooms": 1,
+    "utilities": {
+      "electric": "unknown",
+      "water": "included",
+      "gas": "included",
+      "internet": "unknown",
+      "trash": "included"
+    },
+    "fees": []
+  },
+  "error": null
+}

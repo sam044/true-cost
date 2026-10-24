@@ -1,0 +1,17 @@
+{
+  "slug": "hethwood",
+  "name": "Hethwood Apartment Homes",
+  "address": "800 Hethwood Blvd (leasing office 750 Hethwood Blvd), Blacksburg",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": null,
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.forrent.com/va/blacksburg/hethwood-apartment-homes/w0501yh", "result": "403"},
+    {"url": "https://www.forrentuniversity.com/va/blacksburg/hethwood-apartment-homes/w0501yh", "result": "403"},
+    {"url": "https://www.point2homes.com/US/Apartment-Buildings/VA/Blacksburg/Foxridge-Apartments-0.html", "result": "403"}
+  ],
+  "text": null,
+  "notes": "No official Hethwood website found. Hethwood shares a leasing office (750 Hethwood Blvd) with Foxridge, which is on the skip list; Point2 lists them together as 'Foxridge and Hethwood Apartments'. May overlap with the Foxridge data. All listing pages tried returned 403."
+}

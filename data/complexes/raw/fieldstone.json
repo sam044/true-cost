@@ -1,0 +1,18 @@
+{
+  "slug": "fieldstone",
+  "name": "Fieldstone Family",
+  "address": "300 Fieldstone Ln, Blacksburg, VA 24060",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": "Apartmentfinder / ForRent / Point2Homes / After55 (all blocked)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.apartmentfinder.com/Virginia/Blacksburg-Apartments/Fieldstone-Family-Apartments-f500c0t", "result": "403"},
+    {"url": "https://www.forrent.com/va/blacksburg/fieldstone-family/k40f80b", "result": "403"},
+    {"url": "https://www.point2homes.com/US/Apartment-Buildings/VA/Blacksburg/Fieldstone-Family-0.html", "result": "403"},
+    {"url": "https://www.after55.com/va/blacksburg/fieldstone-family/k40f80b", "result": "403"}
+  ],
+  "text": null,
+  "notes": "Not a student complex: Fieldstone is senior / affordable (income-restricted, Housing for Older Persons) housing per search snippets. Several 'Fieldstone' listings exist (300 Fieldstone Ln, 301 Fieldstone Ln, 401 Givens Ln). No official site found; all aggregator pages returned 403. Consider dropping from the student list."
+}

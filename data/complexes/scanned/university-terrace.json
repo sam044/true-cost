@@ -1,0 +1,44 @@
+{
+  "slug": "university-terrace",
+  "name": "University Terrace",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/2c9ee737-5b8b-4d57-a2e8-51e44327343b",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "956952b7fb74666c",
+  "scannedAt": "2026-10-24T20:46:43.707Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Listing title and address:\n\"1213K University Terrace, Blacksburg, VA 24060\"\n\nRent:\n- \"RENT $495/mo\"\n- \"Rent: $495\"\n- \"$495 /mo\"\n\nFees:\n- \"Application Fee: $49\"\n\nUtilities Included:\n- \"trash\"\n\nThe page has no deposit, pet rent, pet policy, parking, amenity, or admin fee lines."
+    ],
+    "advertisedPrice": {
+      "amount": 495,
+      "basis": "per_unit",
+      "quote": "RENT $495/mo"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "included"
+    },
+    "fees": [
+      {
+        "name": "Application Fee",
+        "category": "application",
+        "amount": 49,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Application Fee: $49",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

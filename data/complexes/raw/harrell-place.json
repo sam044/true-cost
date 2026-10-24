@@ -1,0 +1,15 @@
+{
+  "slug": "harrell-place",
+  "name": "Harrell Place Townhomes",
+  "address": "600-604 Harrell St, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/harrell-place/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.cmgleasing.com/property/harrell-place/", "result": "ok"}
+  ],
+  "text": "Property Address: 600-604 Harrell St, Blacksburg, VA 24060\n\nRent:\n- \"$3,600.00\"\n\nFees, deposits, charges, pet rent, admin fees: NO FEES\n\nParking:\n- \"Private Parking\"\n- \"Open parking for residents and guests\"\n\nUtilities:\n- \"Gas Heat and Hot Water\"\n- \"Trash and Single Stream Recycling Included\"\n- \"Internet and cable available through Access Media 3\"\n\nAmenities:\n- \"Full-size washer/dryer\"\n- \"Washer and dryer\"\n- \"Central air and heating\"\n- \"Fully equipped kitchen\"\n- \"Mini blinds included\"\n- \"Grilling and picnic areas\"\n- \"24-Hour Emergency Maintenance & Lockout Service\"\n- \"Online resident portal for rent payments and maintenance requests\"",
+  "notes": "CMG Leasing property; single whole-unit rent, no fee schedule on the page."
+}

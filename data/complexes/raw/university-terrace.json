@@ -1,0 +1,16 @@
+{
+  "slug": "university-terrace",
+  "name": "University Terrace",
+  "address": "University Terrace, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/2c9ee737-5b8b-4d57-a2e8-51e44327343b",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://granitesl.appfolio.com/listings", "result": "ok"},
+    {"url": "https://granitesl.appfolio.com/listings/detail/2c9ee737-5b8b-4d57-a2e8-51e44327343b", "result": "ok"}
+  ],
+  "text": "Listing title and address:\n\"1213K University Terrace, Blacksburg, VA 24060\"\n\nRent:\n- \"RENT $495/mo\"\n- \"Rent: $495\"\n- \"$495 /mo\"\n\nFees:\n- \"Application Fee: $49\"\n\nUtilities:\n- \"Utilities Included\" with the item \"trash\"\n\nThe page has no deposit, pet rent, pet policy, parking, amenity, or admin fee lines.",
+  "notes": "Individually owned condo units with multiple managers (Granite/Pointe West, Haven Management Group, private owners). This is one Granite-managed room listing ('Available for Spring 2026 Semester'). A search snippet cited an apartments.com listing at 1213 University Terrace with a $2,400 refundable security deposit (not fetched)."
+}

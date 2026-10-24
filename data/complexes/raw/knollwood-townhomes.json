@@ -1,0 +1,15 @@
+{
+  "slug": "knollwood-townhomes",
+  "name": "Knollwood Townhomes",
+  "address": "245, 247, 249, 268, 306, 320 Sheliah Ct, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/knollwood-townhomes/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.cmgleasing.com/property/knollwood-townhomes/", "result": "ok"}
+  ],
+  "text": "Property Address: 245, 247, 249, 268, 306, 320 Sheliah Ct, Blacksburg, VA 24060\n\nRent prices (verbatim):\n- Knollwood Townhomes, 245 Sheliah Court: \"$2,200.00\"\n- Knollwood Townhomes, 247 Sheliah Court: \"$2,200.00\"\n- Knollwood Townhomes, 249 Sheliah Court: \"$2,200.00\"\n- Knollwood Townhomes, 268 Sheliah Court: \"$2,500.00\"\n- Knollwood Townhomes, 306 Sheliah Court: \"$2,275.00\"\n- Knollwood Townhomes, 320 Sheliah Court: \"$2,500.00\"\n\nFees, deposits, charges, pet rent, parking, utility, and admin fees: NO FEES\n\nThe page lists amenities and services, such as \"24 Hour Emergency Maintenance & Lockout Service,\" but none include a price or charge.",
+  "notes": "CMG-managed townhomes on Sheliah Ct; distinct from The Reserve at Knollwood apartments. Rents only."
+}

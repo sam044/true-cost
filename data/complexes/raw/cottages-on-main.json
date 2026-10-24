@@ -1,0 +1,19 @@
+{
+  "slug": "cottages-on-main",
+  "name": "CMG Leasing Downtown Single-Family Homes (student houses incl. 1216 N Main St)",
+  "address": "Various downtown addresses incl. 1216 North Main Street, Blacksburg",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/downtown-single-family-homes/",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://www.cmgleasing.com/property/downtown-single-family-homes/",
+      "result": "ok"
+    }
+  ],
+  "text": "107 Turner Street\nRent: \"$2,601.00\"\n\"No Pets\"\n\"Basement\"; \"Hardwood Floors\"\n\n109 Turner Street\nRent: \"$2,601.00\"\n\"No Pets\"\n\"Large size bedrooms\"; \"Private driveway\"; \"Detached garage and basement\"; \"Washer/dryer hookups\"\n\n1211 University Terrace, Apt C\nRent: \"$2,600.00\"\n\"No Pets\"\n\"Large Living Room/Dining Room\"; \"Lots of storage space\"; \"Dishwasher and garbage disposal included\"; \"Washer/Dryer included\"; \"Porch/Balcony with additional storage room\"\n\n1215 Progress Street, Apt L\nRent: \"$2,600.00\"\n\"No Pets\"\n\"Large Living Room/Dining Room\"; \"Lots of storage space\"; \"Dishwasher and garbage disposal included\"; \"Washer/Dryer included\"; \"Patio with additional storage room\"\n\n1216-1 North Main Street\nRent: \"$635.00\"\n\"Allows Pets\"; \"Pet-Friendly\"\n\"Ceiling Fans throughout\"; \"Built-in china cabinet\"; \"Washer/Dryer\"\n\n1216-2 and 1216-4 North Main Street\nRent: \"$550.00\"\n\"Allows Pets\"\n1216-2: \"Washer/dryer, overhead kitchen cabinets, pet-friendly\"\n1216-4: \"New carpet, washer/dryer, hardwood floors in kitchen\"\n\n200 Wharton Street\nRent: \"$2,901.00\"\n\"No Pets\"\n\"This is a no-guarantor property\"; \"Hardwood flooring throughout common areas\"; \"Ceiling Fans throughout the house\"; \"Stainless steel kitchen appliances\"; \"Private driveway\"; \"Natural light from windows\"\n\n205-B Church Street\nRent: \"$1,850.00\"\n\"No Pets\"\n\"Large Living Room\"; \"Lots of storage space\"; \"Great view with lots of natural light\"\n\n309 Webb Street\nRent: \"$3,576.00\"\n\"No Pets\"\n\"Sunroom\"; \"Back Deck\"; \"Washer/Dryer\"; \"Private driveway\"\n\n312 Shenandoah Circle\nRent: \"$2,300.00\"\n\"No Pets\"\n\"Washer/Dryer\"; \"Guest bathroom on the main level\"; \"Two floors\"; \"Permit parking\"\n\nFees: The page does not list any deposit, pet rent, admin fee, utility charge, or parking fee amount.",
+  "notes": "Vague placeholder resolved to CMG Leasing's downtown student houses, which include 1216 N Main St units. Only prices appear, no fee amounts; the page has a 'Load more' link, so not every home is captured. CMG's general fee terms (10% late charge, card convenience fee) are in cmg-leasing.json. Kept out of the catalog: a rental company or scattered houses, not one complex, so one price would mislead.",
+  "notComplex": true
+}

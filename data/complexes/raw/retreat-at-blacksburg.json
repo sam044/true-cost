@@ -1,0 +1,18 @@
+{
+  "slug": "retreat-at-blacksburg",
+  "name": "Brexx at Blacksburg (formerly The Retreat at Blacksburg)",
+  "address": "1800 Redd Rd, Blacksburg, VA 24060",
+  "status": "not_found",
+  "sourceUrl": "https://en.uhomes.com/us/blacksburg/detail-apartments-1615088",
+  "site": "uhomes.com",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://en.uhomes.com/us/blacksburg/detail-apartments-1615088",
+      "result": "ok"
+    }
+  ],
+  "text": "Property name: Brexx at Blacksburg\nAddress: 1800 Redd Road, Blacksburg, Virginia 24060\n\nPrice: US$1,069 /month\nNo Service Fee: no amount listed\nNo Deposit: no amount listed\nNo Landlord Gift Fee: no amount listed\n\nThe page has a \"Fees\" section heading, but it shows no fee amounts. It lists no parking, pet rent, utility, or admin fee. The three \"No ... Fee\" and \"No Deposit\" entries are feature tags with no amounts attached. The description text refers to \"The Retreat at Blacksburg,\" which doesn't match the property name.",
+  "notes": "The Retreat was rebranded Brexx at Blacksburg (furnished student cottages, 2-5 beds, 203 units). No official site found in two searches. Price only; the 'No Service Fee / No Deposit' tags are uhomes booking-platform tags, not property policy. Search snippets cite a $150 admin fee, $50 application fee and $62 one-time utility service fee from the VT off-campus site (not fetched; off limits). Dropped: The Retreat is now Brexx at Blacksburg, which is already a hand-checked catalog entry."
+}

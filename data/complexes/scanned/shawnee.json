@@ -1,0 +1,31 @@
+{
+  "slug": "shawnee",
+  "name": "Shawnee Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/office/shawnee/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "983c5e16b2ad5788",
+  "scannedAt": "2026-10-24T21:22:02.172Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Property Address: 1222 University City Blvd, Blacksburg, VA 24060\n\nRent Prices (verbatim from the Floor Plans section):\n- Shawnee - 1 bedroom: \"$1,130.00 - $1,145.00\"\n- Shawnee - duet - 2 bedroom: \"$1,325.00 - $1,340.00\"\n- Shawnee - trio - 3 bedroom: \"$1,660.00 - $1,675.00\"\n\nFees, Deposits, Pet Rent, Admin Fees, and Other Charges: NO FEES\n\nParking, Utilities, and Amenities (verbatim from the page):\n\nIntroductory description:\n- \"Apartments also include free heat and hot water.\"\n- \"Outdoor and recreation amenities include swimming pool, community room, exclusive resident socials, and picnic/grilling areas.\"\n- \"Cable and high-speed Internet are available through Comcast.\"\n\nCommunity Amenities:\n- \"Open Parking for Residents and Guests\"\n- \"Large Swimming Pool\"\n- \"Playgrounds\"\n- \"Remodeled, Resident-exclusive Central Laundry Facility\"\n- \"Multiple picnic & grilling areas\"\n- \"Resident special events & incentives exclusive to Shawnee Residents\"\n- \"Starbucks coffee bar & other refreshments available daily at the Leasing Office\"\n\nFeatures:\n- \"1, 2, & 3 bedroom apartments\"\n- \"Large bedrooms and closets\"\n- \"Huge kitchens with 16 cabinets & 8 Drawers\"\n- \"Large Windows\"\n- \"Gas heat & hot water included in rent\"\n- \"Trash collection & recycling included in rent\"\n\nNeighborhood:\n- \"Open parking for residents & guests\"\n- \"Laid back & friendly community atmosphere\"\n- \"On the BT Bus route with stops conveniently located near every building\"\n- \"Convenient to Math Emporium, shopping & restaurants\"\n- \"Close to Virginia Tech Campus & Route 460 Bypass\"\n- \"Remodeled Clubhouse\"\n- \"Starbucks coffee bar & other refreshments available daily at the Leasing Office\"\n\nTechnology:\n- \"Wi-Fi in common areas\"\n- * \"Cable & High-Speed Internet provided by Comcast\"\n\nOn-Site Services:\n- \"Responsive on-site management\"\n- \"24-hour Emergency & Lock Out Service\"\n\nPet Perks:\n- \"Pet-friendly community in park-like setting\"\n\nPet availability (floor plan listings): \"Allows Pets\" (listed for each of the 1, 2, and 3 bedroom plans)"
+    ],
+    "advertisedPrice": {
+      "amount": 1130,
+      "basis": "per_person",
+      "quote": "$1,130.00 - $1,145.00"
+    },
+    "bedrooms": 1,
+    "utilities": {
+      "electric": "unknown",
+      "water": "included",
+      "gas": "included",
+      "internet": "not_included",
+      "trash": "included"
+    },
+    "fees": []
+  },
+  "error": null
+}

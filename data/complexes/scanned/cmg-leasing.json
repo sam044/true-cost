@@ -1,0 +1,68 @@
+{
+  "slug": "cmg-leasing",
+  "name": "CMG Leasing",
+  "sourceUrl": "https://www.cmgleasing.com",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "64714dc359705dbe",
+  "scannedAt": "2026-10-24T20:45:26.441Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "[cmgleasing.com home page]\n\"Cedar Pointe Apartments $1,520.00 - $2,100.00\" (1 & 2 Bedrooms)\n\"Tech Terrace Apartments $3,576.00\" (4 Bedrooms)\n\"The Chase Apartments $3,576.00\" (4 Bedrooms)\n\"Vue Apartments $1,660.00 - $2,745.00\" (1, 2, & 3 Bedrooms)\n\n[cmgleasing.com/faq/]\nDeposits\n\"All deposits are refundable, less any damages that occur during tenancy.\"\n\"security deposit paid in full\" (listed as a move-in requirement)\nPayment fees\n\"Here you can pay with an e-check for free, or with a check card or credit card for a small convenience fee.\"\nLate charge\n\"A late charge of 10% of your total monthly rent will be applied to your account\"\n\"if payments are received after 5:00PM on the 5th.\""
+    ],
+    "advertisedPrice": {
+      "amount": 1520,
+      "basis": "per_unit",
+      "quote": "Cedar Pointe Apartments $1,520.00 - $2,100.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "e-check fee",
+        "category": "admin",
+        "amount": 0,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "no",
+        "refundable": false,
+        "quote": "Here you can pay with an e-check for free",
+        "sourceImage": 0,
+        "confidence": "low"
+      },
+      {
+        "name": "security deposit",
+        "category": "other",
+        "amount": 0,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": true,
+        "quote": "security deposit paid in full",
+        "sourceImage": 0,
+        "confidence": "low"
+      },
+      {
+        "name": "Late charge",
+        "category": "other",
+        "amount": 10,
+        "frequency": "monthly",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "A late charge of 10% of your total monthly rent will be applied to your account",
+        "sourceImage": 0,
+        "confidence": "medium"
+      }
+    ]
+  },
+  "error": null
+}

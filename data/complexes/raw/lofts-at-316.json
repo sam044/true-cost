@@ -1,0 +1,15 @@
+{
+  "slug": "lofts-at-316",
+  "name": "The Lofts at 316",
+  "address": "316 N. Main Street, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/lofts-at-316/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.cmgleasing.com/property/lofts-at-316/", "result": "ok"}
+  ],
+  "text": "Property Address: 316 N. Main Street, Blacksburg, VA 24060\n\nRent Prices:\n- Lofts at 316-A (600 sqft.): \"$1,415.00\"\n- Lofts at 316-B (700 sqft.): \"$1,415.00\"\n- Lofts at 316-C (692 sqft.): \"$1,415.00\"\n\nFees, Deposits, Charges, Pet Rent, Admin Fees: NO FEES\n\nOther Related Lines:\n- Parking: \"One guaranteed parking spot per apartment in Downtown Blacksburg\"\n- Utilities: \"Internet available through a local provider of your choice\"\n- Pets: \"No Pets\" (listed for each floor plan)",
+  "notes": "Downtown CMG Leasing building; rents only, parking spot included, no fees listed."
+}

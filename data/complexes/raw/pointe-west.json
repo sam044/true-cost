@@ -1,0 +1,15 @@
+{
+  "slug": "pointe-west",
+  "name": "Pointe West Apartments",
+  "address": "Blacksburg",
+  "status": "not_found",
+  "sourceUrl": null,
+  "site": null,
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.pointewestmanagement.com/", "result": "no fees"}
+  ],
+  "text": null,
+  "notes": "No Blacksburg complex by this name was found. 'Pointe West' is Pointe West Management, a Blacksburg property manager (now merged with Granite Student Living) that manages scattered units. Its listings are covered under stonegate-carlton-scott, landing-at-stonegate, pheasant-run, university-terrace and oak-manor (granitesl.appfolio.com, where units show 'Application Fee: $49'). A separate 'Pointe West' complex exists in Christiansburg (1380 Providence Blvd), which is outside Blacksburg. The pointewestmanagement.com homepage returned no text (JS-rendered)."
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "main-street-station",
+  "name": "Lofts at 316",
+  "address": "316 N. Main Street, Blacksburg, VA 24060",
+  "status": "not_found",
+  "sourceUrl": "https://www.cmgleasing.com/property/lofts-at-316/",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://www.cmgleasing.com/property/lofts-at-316/",
+      "result": "ok"
+    }
+  ],
+  "text": "Lofts at 316-A: \"$1,415.00\"\nLofts at 316-B: \"$1,415.00\"\nLofts at 316-C: \"$1,415.00\"\n\nFees, deposits, and charges: NO FEES\n\nParking (no charge listed): \"One guaranteed parking spot per apartment in Downtown Blacksburg\"\n\nUtilities (no charge listed): \"Internet available through a local provider of your choice\"\n\nProperty address: 316 N. Main Street, Blacksburg, VA 24060",
+  "notes": "Vague placeholder ('Main Street Station / downtown apartments') resolved to Lofts at 316, a downtown N Main St apartment building managed by CMG Leasing. Only rent appears, no fees. CMG's general fee terms are in cmg-leasing.json. Dropped as a duplicate of lofts-at-316."
+}

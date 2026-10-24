@@ -1,0 +1,31 @@
+{
+  "slug": "orchards-townhomes",
+  "name": "The Orchards Townhomes",
+  "sourceUrl": "https://www.cmgleasing.com/property/orchards-townhomes/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "6659d06b03c128bc",
+  "scannedAt": "2026-10-24T21:21:51.669Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent (as listed on the page):\n- \"$2,500.00\" (Orchards Townhomes, 2522 Cherry Lane)\n- \"$2,500.00\" (Orchards Townhomes, 2524 Cherry Lane)\n- \"$2,500.00\" (Orchards Townhomes, 2687 Blossom Trail West)\n- \"$2,300.00\" (Orchards Townhomes, 2689 Blossom Trail West)\n- \"$2,500.00\" (Orchards Townhomes, 2697 Blossom Trail East)\n- \"$2,500.00\" (Orchards Townhomes, 2699 Blossom Trail East)\n\nFees, deposits, pet rent, admin fees, and other charges: NO FEES\n\nParking, utility, and amenity lines:\n- \"Open parking for residents and guests\"\n- \"Single car garage\" (listed for 2687, 2689, 2697, and 2699 Blossom Trail)\n- \"Garages and basements are also available in select townhomes.\"\n- \"Internet available through a local provider of your choice\"\n- \"Swimming Pool\"\n- \"Central air and heating\"\n- \"Decks on all Blossom Trail townhomes\"\n- \"Pet-friendly community\"\n\nProperty address: 2401 Pamela Way, Blacksburg, VA 24060 (office address). The listed units are at 2522 and 2524 Cherry Lane and 2687, 2689, 2697, and 2699 Blossom Trail, Blacksburg, VA."
+    ],
+    "advertisedPrice": {
+      "amount": 2500,
+      "basis": "per_unit",
+      "quote": "$2,500.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "not_included",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "cottages-on-main",
+  "name": "CMG Leasing Downtown Single-Family Homes (student houses incl. 1216 N Main St)",
+  "sourceUrl": "https://www.cmgleasing.com/property/downtown-single-family-homes/",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "047b998cba7f5d82",
+  "scannedAt": "2026-10-24T20:45:39.072Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "107 Turner Street\nRent: \"$2,601.00\"\n\"No Pets\"\n\"Basement\"; \"Hardwood Floors\"\n\n109 Turner Street\nRent: \"$2,601.00\"\n\"No Pets\"\n\"Large size bedrooms\"; \"Private driveway\"; \"Detached garage and basement\"; \"Washer/dryer hookups\"\n\n1211 University Terrace, Apt C\nRent: \"$2,600.00\"\n\"No Pets\"\n\"Large Living Room/Dining Room\"; \"Lots of storage space\"; \"Dishwasher and garbage disposal included\"; \"Washer/Dryer included\"; \"Porch/Balcony with additional storage room\"\n\n1215 Progress Street, Apt L\nRent: \"$2,600.00\"\n\"No Pets\"\n\"Large Living Room/Dining Room\"; \"Lots of storage space\"; \"Dishwasher and garbage disposal included\"; \"Washer/Dryer included\"; \"Patio with additional storage room\"\n\n1216-1 North Main Street\nRent: \"$635.00\"\n\"Allows Pets\"; \"Pet-Friendly\"\n\"Ceiling Fans throughout\"; \"Built-in china cabinet\"; \"Washer/Dryer\"\n\n1216-2 and 1216-4 North Main Street\nRent: \"$550.00\"\n\"Allows Pets\"\n1216-2: \"Washer/dryer, overhead kitchen cabinets, pet-friendly\"\n1216-4: \"New carpet, washer/dryer, hardwood floors in kitchen\"\n\n200 Wharton Street\nRent: \"$2,901.00\"\n\"No Pets\"\n\"This is a no-guarantor property\"; \"Hardwood flooring throughout common areas\"; \"Ceiling Fans throughout the house\"; \"Stainless steel kitchen appliances\"; \"Private driveway\"; \"Natural light from windows\"\n\n205-B Church Street\nRent: \"$1,850.00\"\n\"No Pets\"\n\"Large Living Room\"; \"Lots of storage space\"; \"Great view with lots of natural light\"\n\n309 Webb Street\nRent: Rent: \"$3,576.00\"\n\"No Pets\"\n\"Sunroom\"; \"Back Deck\"; \"Washer/Dryer\"; \"Private driveway\"\n\n312 Shenandoah Circle\nRent: \"$2,300.00\"\n\"No Pets\"\n\"Washer/Dryer\"; \"Guest bathroom on the main level\"; \"Two floors\"; \"Permit parking\"\n\nFees: The page does not list any deposit, pet rent, admin fee, utility charge, or parking fee amount."
+    ],
+    "advertisedPrice": {
+      "amount": 2601,
+      "basis": "per_unit",
+      "quote": "$2,601.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

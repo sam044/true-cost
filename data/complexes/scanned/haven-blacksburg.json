@@ -1,0 +1,44 @@
+{
+  "slug": "haven-blacksburg",
+  "name": "Haven Blacksburg",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/d9bf4d7b-d469-4d2d-8f04-6bfe7c3f9118",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "fc1655c79358c25e",
+  "scannedAt": "2026-10-24T20:45:45.605Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Listing title and address:\n\"901-917 Lunch Pail Lane, Blacksburg, VA 24060\"\n\nRent prices and fees:\n- \"$2,838/mo\"\n- \"Rent: $2,838\"\n- \"Application Fee: $49\"\n- \"(This listing is a joint listing - price advertised for full apartment)\"\n\nUtilities included:\n- \"wifi\"\n- \"Trash/Recycling\"\n\nPet policy:\n- \"Cats not allowed\"\n- \"Dogs not allowed\"\n\nThe page lists no deposits, pet rent, parking charges, or admin fees."
+    ],
+    "advertisedPrice": {
+      "amount": 2838,
+      "basis": "per_unit",
+      "quote": "$2,838/mo"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "included",
+      "trash": "included"
+    },
+    "fees": [
+      {
+        "name": "Application Fee",
+        "category": "application",
+        "amount": 49,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Application Fee: $49",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

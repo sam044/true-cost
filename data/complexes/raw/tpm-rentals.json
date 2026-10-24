@@ -1,0 +1,31 @@
+{
+  "slug": "tpm-rentals",
+  "name": "Townside Property Management",
+  "address": "Blacksburg",
+  "status": "fetched",
+  "sourceUrl": "https://townsidepropertymgmt.appfolio.com/listings",
+  "site": "Townside AppFolio listings (townsidepropertymgmt.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://www.renttnt.com",
+      "result": "error: 301 redirect to townside.com"
+    },
+    {
+      "url": "https://www.townside.com/",
+      "result": "no fees"
+    },
+    {
+      "url": "https://www.townside.com/leasing",
+      "result": "no fees"
+    },
+    {
+      "url": "https://townsidepropertymgmt.appfolio.com/listings",
+      "result": "ok"
+    }
+  ],
+  "text": "1. 218 Huntington Lane, Blacksburg - RENT $2,200\n\"Pets are allowed with additional rent and pet deposit.\"\n2. 717 Lee Street, Unit 9, Blacksburg - RENT $1,455\n3. 808 Patrick Henry Drive, Blacksburg - RENT $2,525\n\"Pets are allowed with additional rent and pet deposit.\"\n\"Risk Protection Fee $15.00 monthly.\"\n\"Ask us about the Security Deposit alternative.\"\n4. 345 Willow Oak Dr., Christiansburg - RENT $1,825\n\"Risk Protection Fee $15.00 monthly.\"\n5. 403B Berryfield Lane, Blacksburg - RENT $2,275\n6. 408 Harrell Street, Unit 5, Blacksburg - RENT $1,015\n\"Risk Protection Fee $15.00 monthly.\"\n7. 1011 Grove Ave., Unit R, Radford - RENT $1,375\n8. 228 Mt. Breeze Rd., Blacksburg - RENT $2,300\n\"Risk Protection Fee ...\" (truncated)\n9. 116 Lester St., Christiansburg - RENT $1,400\n\"Risk Protection Fee $15.00 monthly.\"\n10. 1315 N. Main St., Blacksburg - RENT $1,250\n\"Risk Protection Fee $15.00 monthly.\"\n11. 115 Majestic Drive, Christiansburg - RENT $1,145\n\"Pets are allowed with additional rent and pet deposit.\"\n\"Lease goes through 7/31/28, rent inc...\" (truncated)\n12. 2710 Green Meadow Dr., Blacksburg - RENT $2,800\n13. 710 Republic Rd., Christiansburg - RENT $1,545\n14. 605 Twisted Oak Dr., Christiansburg - RENT $1,995\n15. 615 Twisted Oak Dr., Christiansburg - RENT $2,095",
+  "notes": "renttnt.com redirects to townside.com. The townside.com /leasing page has no fees but says 'Applicants will need a credit score of 650 or higher and income of 3x monthly rental rate to qualify.' Blacksburg leasing for the 27-28 school year starts 10/1. Kept text covers only the first 15 AppFolio listings, about the first third of the page. The notable hidden fee is a $15/month 'Risk Protection Fee'. Pet rent and pet deposit amounts are not stated. Search snippets mentioned a $65-67 application fee and a $100 lease preparation fee, but neither came from a fetched page, so neither is included. Kept out of the catalog: a rental company or scattered houses, not one complex, so one price would mislead.",
+  "notComplex": true
+}

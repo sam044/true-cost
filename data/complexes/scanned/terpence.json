@@ -1,0 +1,31 @@
+{
+  "slug": "terpence",
+  "name": "Terpence Apartments",
+  "sourceUrl": "https://www.cmgleasing.com/property/terpence/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "dd6c3dd1753ee853",
+  "scannedAt": "2026-10-24T21:22:11.148Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Property Address: 617 Lee St, Blacksburg, VA 24060\n\nRent:\n$1,980.00\n\nFees: NO FEES\n\nAmenity and service lines (verbatim, not fees):\n- \"Each apartment has its own washer and dryer and includes on-site parking and 24-hour emergency maintenance and lockout services.\"\n- \"Internet and cable available through Access Media 3\"\n- \"24-Hour Emergency Maintenance & Lockout Service\"\n- \"Private Deck\"\n- \"Washer/Dryer\"\n- \"Back yard common area\""
+    ],
+    "advertisedPrice": {
+      "amount": 1980,
+      "basis": "per_unit",
+      "quote": "$1,980.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

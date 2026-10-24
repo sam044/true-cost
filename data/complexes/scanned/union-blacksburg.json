@@ -1,0 +1,56 @@
+{
+  "slug": "union-blacksburg",
+  "name": "Union Blacksburg",
+  "sourceUrl": "https://www.greystar.com/union-blacksburg-blacksburg-va/p_16801",
+  "site": "Official site (greystar.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "23c9c2f27c8121eb",
+  "scannedAt": "2026-10-24T20:46:34.936Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Contact the community for more information on pricing and availability.\nTotal Monthly Leasing Price includes base rent, all monthly mandatory and any user-selected optional add-ons.\nExcludes variable, usage-based, and required charges due at or prior to move-in or at move-out.\nSecurity Deposit may change based on screening results, but total will not exceed legal maximums.\nSome items may be taxed under applicable law.\nSome costs may not apply to rental homes subject to an affordable program.\nAll costs are subject to application and/or lease terms.\nPrices and availability subject to change.\nResident is responsible for damages beyond ordinary wear and tear.\nResident may need to maintain insurance and to activate and maintain utility services,\nincluding but not limited to electricity, water, gas, and internet, per the lease.\nAdditional costs may apply as detailed in the application and/or lease agreement, which can be requested prior to applying.\n\nFee table, \"Essentials\" tab:\nUse this table to understand what your initial and monthly costs will be in addition to your total monthly rent cost.\nThese required fees are charged one time or recurring during the lease term.\nRenters Liability Insurance - Third Party[1] | Varies per leaseholder | Monthly\nUtility - Billing Administrative Fee | $6.79 per leaseholder | Per installment\nUtility - Electric - Third Party | Usage-Based (Utilities) per leaseholder | Per installment\nAll fees paid to property unless indicated by symbol\n\nFootnotes:\n1. Price varies based on amount of coverage.\n2. Price varies based on rent amount.\n3. Price varies based on number of days.\n4. Price varies based on selections with third party provider.\n5. Price varies based on type of non-compliance.\n\n(The \"Move-in basics,\" \"Personalized add-ons,\" and \"Situational\" tab labels appear on the page, but no items were returned under them.)"
+    ],
+    "advertisedPrice": {
+      "amount": null,
+      "basis": "per_person",
+      "quote": "Contact the community for more information on pricing and availability."
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "not_included",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Renters Liability Insurance - Third Party[1] | Varies per leaseholder | Monthly",
+        "category": "insurance",
+        "amount": 0,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Renters Liability Insurance - Third Party[1] | Varies per leaseholder | Monthly",
+        "sourceImage": 0,
+        "confidence": "low"
+      },
+      {
+        "name": "Utility - Billing Administrative Fee",
+        "category": "utility_fee",
+        "amount": 6.79,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Utility - Billing Administrative Fee | $6.79 per leaseholder | Per installment",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

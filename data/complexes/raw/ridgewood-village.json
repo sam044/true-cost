@@ -1,0 +1,15 @@
+{
+  "slug": "ridgewood-village",
+  "name": "Ridgewood Village Apartments",
+  "address": "400 Fairfax Rd, Blacksburg, VA 24060",
+  "status": "blocked",
+  "sourceUrl": null,
+  "site": "Official site (liveatridgewoodvillage.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.liveatridgewoodvillage.com", "result": "403"}
+  ],
+  "text": null,
+  "notes": "Managed by Beacon Management. Official site returned 403; not retried."
+}

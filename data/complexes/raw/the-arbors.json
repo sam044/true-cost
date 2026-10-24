@@ -1,0 +1,16 @@
+{
+  "slug": "the-arbors",
+  "name": "The Arbors of Blacksburg",
+  "address": "777 Triangle St, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://homefinder.com/rentals/details/777-Triangle-St_Blacksburg_VA_24060_M97068-79770",
+  "site": "Homefinder (homefinder.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://homefinder.com/apartments/24086", "result": "ok"},
+    {"url": "https://homefinder.com/rentals/details/777-Triangle-St_Blacksburg_VA_24060_M97068-79770", "result": "ok"}
+  ],
+  "text": "For rent\n$630 - $700/mo\nFrom$630\nContact for availability\nPrice breakdown\n\nFees: NO FEES\n\nThe page lists no deposit, pet rent, pet policy, parking, admin, or amenity fee. The only utility reference is \"Heating: Electric\" under Features, which states no charge.",
+  "notes": "No official website found. Studio units, 310 sq ft. Price only; no fee amounts listed on the aggregator page. Homefinder says 'Managed by The Arbors of Blacksburg'; search snippets also mentioned Partnership Property Management."
+}

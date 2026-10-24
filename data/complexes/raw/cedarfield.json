@@ -1,0 +1,15 @@
+{
+  "slug": "cedarfield",
+  "name": "Cedarfield Apartments & Townhomes",
+  "address": "Old Cedarfield Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com/property/cedarfield-apts-townhomes/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.cmgleasing.com/property/cedarfield-apts-townhomes/", "result": "ok"}
+  ],
+  "text": "Property address: Old Cedarfield Dr, Blacksburg, VA 24060\n\nRent prices (verbatim):\n- \"Cedarfield - 1 bedroom, Phase I and II\" : \"$1,280.00\"\n- \"Cedarfield - 1 bedroom, Phase III\" : \"$1,350.00\"\n- \"Cedarfield - 2 bedroom, Phase I and II\" : \"$1,420.00\"\n- \"Cedarfield - 2 bedroom, Phase III\" : \"$1,540.00 - $1,570.00\"\n- \"Cedarfield - 2 bedroom townhome\" : \"$1,820.00\"\n- \"Cedarfield - 3 bedroom townhome\" : \"$2,035.00\"\n\nFees (deposits, admin, application, pet rent, parking, and other charges): NO FEES\n\nUtility, parking, and amenity lines (verbatim):\n- \"Internet included, provided by SingleDigits\"\n- \"Internet included\"\n- \"a private, permit-only parking lot\"\n- \"Lots of greenspaces for enjoying the outdoors\"\n- \"Sand Volleyball Court\"\n- \"Basketball Court\"\n- \"Grills and Picnic Areas\"\n- \"Fully equipped kitchens\"\n- \"Washer/dryer\"\n- \"Back deck/patio\"\n- \"24 Hour Emergency Maintenance & Lockout Service\"\n- \"Online Leasing\"\n- \"Pets Welcome\"",
+  "notes": "Whole-complex price list by floor plan; internet included; permit-only parking (no permit price given)."
+}

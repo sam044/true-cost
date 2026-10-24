@@ -1,0 +1,23 @@
+{
+  "slug": "cmg-leasing",
+  "name": "CMG Leasing",
+  "address": "Blacksburg (office listed at 318 N Main St / 205 Church St SE)",
+  "status": "fetched",
+  "sourceUrl": "https://www.cmgleasing.com",
+  "site": "Official site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {
+      "url": "https://www.cmgleasing.com",
+      "result": "ok"
+    },
+    {
+      "url": "https://www.cmgleasing.com/faq/",
+      "result": "ok"
+    }
+  ],
+  "text": "[cmgleasing.com home page]\n\"Cedar Pointe Apartments $1,520.00 - $2,100.00\" (1 & 2 Bedrooms)\n\"Tech Terrace Apartments $3,576.00\" (4 Bedrooms)\n\"The Chase Apartments $3,576.00\" (4 Bedrooms)\n\"Vue Apartments $1,660.00 - $2,745.00\" (1, 2, & 3 Bedrooms)\n\n[cmgleasing.com/faq/]\nDeposits\n\"All deposits are refundable, less any damages that occur during tenancy.\"\n\"security deposit paid in full\" (listed as a move-in requirement)\nPayment fees\n\"Here you can pay with an e-check for free, or with a check card or credit card for a small convenience fee.\"\nLate charge\n\"A late charge of 10% of your total monthly rent will be applied to your account\"\n\"if payments are received after 5:00PM on the 5th.\"",
+  "notes": "Text joins two pages: the home page (prices) and /faq/ (fee policies), each labeled. No application or admin fee amount appears on either page. CMG manages several complexes already in list.json (Cedar Pointe, Tech Terrace, The Chase, Vue, Reserve at Knollwood, Chasewood Downs) and also The Edge, which is on the skip list. Several of my placeholder entries resolved to CMG properties: cottages-on-main, main-street-station and edgewood. Kept out of the catalog: a rental company or scattered houses, not one complex, so one price would mislead.",
+  "notComplex": true
+}

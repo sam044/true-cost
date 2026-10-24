@@ -1,0 +1,16 @@
+{
+  "slug": "stonegate-carlton-scott",
+  "name": "Stonegate and Carlton Scott Apartments",
+  "address": "500 Broce Dr / 600 Appalachian Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/be5238ff-212c-47fb-a5a9-ec9bf5c60303",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://granitesl.appfolio.com/listings", "result": "ok"},
+    {"url": "https://granitesl.appfolio.com/listings/detail/be5238ff-212c-47fb-a5a9-ec9bf5c60303", "result": "ok"}
+  ],
+  "text": "Listing title and address:\n\"500 Broce Drive - S50, Blacksburg, VA 24060\"\n\nRent:\n- \"RENT\"\n- \"$730/mo\"\n- \"Rent: $730\"\n- \"$730 /mo\"\n\nFees:\n- \"Application Fee: $49\"\n\nNo deposit, pet rent, pet policy, parking, utility, amenity, or admin fees appear on the page.",
+  "notes": "Owned by Willow Creek; managed by Granite Student Living (merged with Pointe West Management). Single unit listing (S50, 'Available for Spring 2026 Semester'), likely per-bedroom. The listings index also showed 600 Appalachian Drive units at $555 and $730. Search snippets mention a $199 admin fee and $50 utility package from the VT off-campus site, which was not fetched (off limits)."
+}

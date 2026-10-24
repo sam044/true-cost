@@ -1,0 +1,188 @@
+{
+  "slug": "jefferson-apartments",
+  "name": "Jefferson Apartments",
+  "sourceUrl": "https://www.jeffersonapt.com/2021-fees",
+  "site": "Official site (jeffersonapt.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "70b76ff1e9799a5f",
+  "scannedAt": "2026-10-24T21:21:16.091Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Common Fee list 2025\n\n- \"Application (& co-signer): $35\"\n- \"Change of Roommate: $50\"\n- \"Sublease $100\"\n- \"Security Deposit $400-$800 or 1 Month's rent\"\n- \"Pet Deposit $400-$500\"\n- \"Pet Rent $15-20/month\"\n- \"Caged Animals $30-$50\"\n- \"Cleaning Fee $100-$300\"\n- \"Additional may be charged for specific items\"\n\nUncommon Fees\n\n- \"Incomplete/invalid or no Notice to Vacate submitted: $35\"\n- \"Fines- $25 or more\"\n- \"Re-rental Fee: $175.00\"\n- \"Less than 90 days required notice before lease expiration: Starting at $30\"\n- \"Unapproved Roommate or animal Fee starting at $150.00\"\n\n[From the home page https://www.jeffersonapt.com, verbatim:]\n- \"Plentiful off-street parking; no resident parking fee.\"\n- \"Water, sewer and trash pick-up are included for most units.\"\n- \"24 hour maintenance service included.\"\n- \"Coin or app operated laundry facilities in each building.\""
+    ],
+    "advertisedPrice": {
+      "amount": 0,
+      "basis": "per_unit",
+      "quote": "Common Fee list 2025"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "included",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "included"
+    },
+    "fees": [
+      {
+        "name": "Application (& co-signer)",
+        "category": "application",
+        "amount": 35,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Application (& co-signer): $35\"",
+        "sourceImage": 0,
+        "confidence": "medium"
+      },
+      {
+        "name": "Change of Roommate",
+        "category": "other",
+        "amount": 50,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Change of Roommate: $50\"",
+        "sourceImage": 0,
+        "confidence": "medium"
+      },
+      {
+        "name": "Sublease",
+        "category": "other",
+        "amount": 100,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Sublease $100\"",
+        "sourceImage": 0,
+        "confidence": "medium"
+      },
+      {
+        "name": "Security Deposit",
+        "category": "security_deposit",
+        "amount": 400,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "yes",
+        "refundable": true,
+        "quote": "\"Security Deposit $400-$800 or 1 Month's rent\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Pet Deposit",
+        "category": "pet",
+        "amount": 400,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": true,
+        "quote": "\"Pet Deposit $400-$500\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Pet Rent",
+        "category": "pet",
+        "amount": 15,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Pet Rent $15-20/month\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "name:",
+        "category": "pet",
+        "amount": 30,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Caged Animals $30-$50\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Incomplete/invalid or no Notice to Vacate submitted",
+        "category": "other",
+        "amount": 35,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Incomplete/invalid or no Notice to Vacate submitted: $35\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Fines",
+        "category": "other",
+        "amount": 25,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Fines- $25 or more\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Re-rental Fee",
+        "category": "other",
+        "amount": 175,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Re-rental Fee: $175.00\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Less than 90 days required notice before lease expiration",
+        "category": "other",
+        "amount": 30,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Less than 90 days required notice before lease expiration: Starting at $30\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Unapproved Roommate or animal Fee",
+        "category": "other",
+        "amount": 150,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Unapproved Roommate or animal Fee starting at $150.00\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Cleaning Fee",
+        "category": "other",
+        "amount": 100,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "\"Cleaning Fee $100-$300\"",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

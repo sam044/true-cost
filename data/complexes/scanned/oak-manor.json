@@ -1,0 +1,44 @@
+{
+  "slug": "oak-manor",
+  "name": "Oak Manor Townhomes",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/3a20a6e4-394c-49d4-877b-63588e491ab1",
+  "site": "Granite Student Living / Pointe West listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "ee6585acd2ee4376",
+  "scannedAt": "2026-10-24T20:45:58.975Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "The listing for 222 Huntington Ln, Blacksburg, VA 24060 (3 bd / 3.5 ba, 2,002 sq. ft.) shows these rent and fee details:\n\n- Rent: \"$2,230/mo\"\n- Application Fee: \"$49\"\n- Utilities Included: Gas\n- Pet Policy: Cats allowed; dogs allowed. No pet rent or pet fee is listed.\n- Neighborhood: Oak Manor\n\nThe page does not list a security deposit, parking charge, admin fee, or other utility charges."
+    ],
+    "advertisedPrice": {
+      "amount": 2230,
+      "basis": "per_unit",
+      "quote": "$2,230/mo"
+    },
+    "bedrooms": 3,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "included",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Application Fee",
+        "category": "application",
+        "amount": 49,
+        "frequency": "one_time",
+        "basis": "per_unit",
+        "mandatory": "unknown",
+        "refundable": false,
+        "quote": "$49",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "smithfield",
+  "name": "Smithfield Townhomes",
+  "address": "Blacksburg",
+  "status": "not_found",
+  "sourceUrl": null,
+  "site": null,
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [],
+  "text": null,
+  "notes": "Searches found no 'Smithfield Townhomes' in Blacksburg (Smithfield Plantation is a historic site; Smithfield, VA is a different town). The likely intended complex is Smith's Landing (870 Plantation Rd, Armada Hoffler, 284 units). Its official site (smithslandingapartments.com) and apartmentfinder both returned 403 when tried for another entry, so no fee text exists for it."
+}

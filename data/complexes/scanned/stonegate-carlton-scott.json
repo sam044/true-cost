@@ -1,0 +1,44 @@
+{
+  "slug": "stonegate-carlton-scott",
+  "name": "Stonegate and Carlton Scott Apartments",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/be5238ff-212c-47fb-a5a9-ec9bf5c60303",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "e5271e672a40a3f6",
+  "scannedAt": "2026-10-24T20:46:13.734Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Listing title and address:\n\"500 Broce Drive - S50, Blacksburg, VA 24060\"\n\nRent:\n- \"RENT\"\n- \"$730/mo\"\n- \"Rent: $730\"\n- \"$730 /mo\"\n\nFees:\n- \"Application Fee: $49\"\n\nNo deposit, pet rent, pet policy, parking, utility, amenity, or admin fees appear on the page."
+    ],
+    "advertisedPrice": {
+      "amount": 730,
+      "basis": "per_unit",
+      "quote": "$730/mo"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "unknown",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Application Fee",
+        "category": "application",
+        "amount": 49,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Application Fee: $49",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

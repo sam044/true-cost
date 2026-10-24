@@ -1,0 +1,31 @@
+{
+  "slug": "green-street-station",
+  "name": "Green Street Station",
+  "sourceUrl": "https://www.cmgleasing.com/property/green-street/",
+  "site": "Manager site (cmgleasing.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "428e319382fe89c0",
+  "scannedAt": "2026-10-24T21:21:05.489Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Property Address: 513-525, 608-614 Green St, Blacksburg, VA 24060\n\nRent prices (as listed):\n- 513 - 25 Green Street: $3,600.00\n- 608 and 610 Green Street: $3,600.00\n- 612 Green Street: $2,000.00\n- 614 Green Street: $2,901.00\n\nFees, deposits, pet rent, admin fees, and utility charges: NO FEES. The page lists no deposits, pet rent, admin fees, or utility charges.\n\nParking, utility, and amenity lines (verbatim):\n- \"Off-street parking\"\n- \"Bike racks\"\n- \"Recycling services included in rent\"\n- \"Open parking for residents and guests\"\n- \"Internet available through a local provider of your choice\"\n- \"24-Hour Emergency Maintenance & Lockout Service\""
+    ],
+    "advertisedPrice": {
+      "amount": 3600,
+      "basis": "per_unit",
+      "quote": "513 - 525 Green Street: $3,600.00"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "unknown",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "not_included",
+      "trash": "unknown"
+    },
+    "fees": []
+  },
+  "error": null
+}

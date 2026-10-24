@@ -1,0 +1,16 @@
+{
+  "slug": "pheasant-run",
+  "name": "Pheasant Run Townhomes",
+  "address": "Pheasant Run Dr, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/dd27850a-81e9-4b26-895c-0e7705c5a7a0",
+  "site": "Granite Student Living listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://granitesl.appfolio.com/listings", "result": "ok"},
+    {"url": "https://granitesl.appfolio.com/listings/detail/dd27850a-81e9-4b26-895c-0e7705c5a7a0", "result": "ok"}
+  ],
+  "text": "Listing title: \"202 Pheasant Run Drive | 4 Bedroom 2.5 Bath Townhouse | 08/13/2027\"\n\nAddress: \"202 Pheasant Run Drive, Blacksburg, VA 24060\"\n\nRent:\n- \"$2,520/mo\"\n- \"Rent: $2,520\"\n- \"$2,520 /mo\"\n\nFees:\n- \"Application Fee: $49\"\n\nDeposits, pet rent, admin fees, other charges: None listed.\n\nUtilities:\n- \"Trash\" (listed under \"Utilities Included\")\n\nPet policy:\n- \"Cats not allowed\"\n- \"Dogs not allowed\"\n\nParking and amenities:\n- \"This townhome is located in a popular neighborhood with a very accessible bus stop and dedicated parking spaces!\"\n- \"A convenient paved path wraps around the back of the neighborhood perfect for walks and runs!\"\n- \"Soccer field and basketball court located at the entrance to the neighborhood.\"",
+  "notes": "Pheasant Run is a neighborhood of individually owned townhomes, not a single managed complex; fees vary by owner/manager. This is one Granite/Pointe West-managed unit (whole 4-bed townhouse, 2027-2028)."
+}

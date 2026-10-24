@@ -1,0 +1,642 @@
+[
+  {
+    "slug": "blacksburg-rentals",
+    "name": "River Mountain Properties",
+    "fetch": "fetched",
+    "notComplex": true,
+    "sourceUrl": "https://rivermountainprops.appfolio.com/listings",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "cedarfield",
+    "name": "Cedarfield Apartments & Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/cedarfield-apts-townhomes/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1280,
+      "max": 1280,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "cmg-leasing",
+    "name": "CMG Leasing",
+    "fetch": "fetched",
+    "notComplex": true,
+    "sourceUrl": "https://www.cmgleasing.com",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "cottages-on-main",
+    "name": "CMG Leasing Downtown Single-Family Homes (student houses incl. 1216 N Main St)",
+    "fetch": "fetched",
+    "notComplex": true,
+    "sourceUrl": "https://www.cmgleasing.com/property/downtown-single-family-homes/",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "crossing-at-knollwood",
+    "name": "The Crossing at Knollwood Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/crossing-at-knollwood/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1480,
+      "max": 1490,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "edgewood",
+    "name": "Shawnee Apartments",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/shawnee-apartments/",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "fieldstone",
+    "name": "Fieldstone Family",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "green-street-station",
+    "name": "Green Street Station",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/green-street/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 3600,
+      "max": 3600,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "harrell-place",
+    "name": "Harrell Place Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/harrell-place/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 3600,
+      "max": 3600,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "haven-blacksburg",
+    "name": "Haven Blacksburg",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/d9bf4d7b-d469-4d2d-8f04-6bfe7c3f9118",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "hethwood",
+    "name": "Hethwood Apartment Homes",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "hokie-real-estate",
+    "name": "Hokie Real Estate (rental company)",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "houston-street",
+    "name": "Houston Street Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/houston-street/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1900,
+      "max": 2000,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "ivy-garden",
+    "name": "Ivy Garden Apartments",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "jefferson-apartments",
+    "name": "Jefferson Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.jeffersonapt.com/2021-fees",
+    "scan": "ok",
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "kabrich-crossing",
+    "name": "Kabrich Crossing",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "knollwood-townhomes",
+    "name": "Knollwood Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/knollwood-townhomes/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 2200,
+      "max": 2200,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "landing-at-stonegate",
+    "name": "The Landing at Stonegate",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/18b94e25-a045-49ba-bfae-77c60341e98a",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1070,
+      "max": 1070,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "lofts-at-316",
+    "name": "The Lofts at 316",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/lofts-at-316/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1415,
+      "max": 1415,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "main-street-station",
+    "name": "Lofts at 316",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/lofts-at-316/",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "maple-ridge",
+    "name": "Maple Ridge Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://admistay.com/student-accommodation/united-states/blacksburg/property/maple-ridge-townhomes-blacksburg-626696",
+    "scan": "ok",
+    "fees": 6,
+    "lowConfidence": 1,
+    "price": {
+      "min": 965,
+      "max": 965,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "oak-manor",
+    "name": "Oak Manor Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/3a20a6e4-394c-49d4-877b-63588e491ab1",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 2230,
+      "max": 2230,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "old-row-on-north-main",
+    "name": "Old Row on North Main (The Row on North Main)",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/47ecc385-0d32-44d8-bfdf-e997e6d3795c",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 5276,
+      "max": 5276,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "orchards-townhomes",
+    "name": "The Orchards Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/orchards-townhomes/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 2500,
+      "max": 2500,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "pheasant-run",
+    "name": "Pheasant Run Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/dd27850a-81e9-4b26-895c-0e7705c5a7a0",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 2520,
+      "max": 2520,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "pointe-west",
+    "name": "Pointe West Apartments",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "prices-fork",
+    "name": "Prices Fork Apartments",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "progress-street",
+    "name": "Progress Street Apartments",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "retreat-at-blacksburg",
+    "name": "Brexx at Blacksburg (formerly The Retreat at Blacksburg)",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": "https://en.uhomes.com/us/blacksburg/detail-apartments-1615088",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "ridgewood-village",
+    "name": "Ridgewood Village Apartments",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "roanoke-street-apartments",
+    "name": "Roanoke Street Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "http://www.roanokestreetapartments.com/index.php/rental-information",
+    "scan": "ok",
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "shadowlake-village",
+    "name": "Shadowlake Village",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "shawnee",
+    "name": "Shawnee Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/office/shawnee/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1130,
+      "max": 1145,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "smithfield",
+    "name": "Smithfield Townhomes",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "smiths-landing",
+    "name": "Smith's Landing Apartments",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "snyder-associates",
+    "name": "Snyder & Associates (rental company)",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "stonegate-carlton-scott",
+    "name": "Stonegate and Carlton Scott Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/be5238ff-212c-47fb-a5a9-ec9bf5c60303",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 730,
+      "max": 730,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "sturbridge-square",
+    "name": "Sturbridge Square (redeveloped as Union Blacksburg)",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "sundance-ridge",
+    "name": "Sundance Ridge",
+    "fetch": "blocked",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "terpence",
+    "name": "Terpence Apartments",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.cmgleasing.com/property/terpence/",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1980,
+      "max": 1980,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "the-arbors",
+    "name": "The Arbors of Blacksburg",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://homefinder.com/rentals/details/777-Triangle-St_Blacksburg_VA_24060_M97068-79770",
+    "scan": "ok",
+    "fees": 0,
+    "lowConfidence": 0,
+    "price": {
+      "min": 630,
+      "max": 700,
+      "basis": "per_person"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "tpm-rentals",
+    "name": "Townside Property Management",
+    "fetch": "fetched",
+    "notComplex": true,
+    "sourceUrl": "https://townsidepropertymgmt.appfolio.com/listings",
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "uncommon-blacksburg",
+    "name": "Uncommon Blacksburg",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "union-blacksburg",
+    "name": "Union Blacksburg",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.greystar.com/union-blacksburg-blacksburg-va/p_16801",
+    "scan": "ok",
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  },
+  {
+    "slug": "university-terrace",
+    "name": "University Terrace",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://granitesl.appfolio.com/listings/detail/2c9ee737-5b8b-4d57-a2e8-51e44327343b",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 495,
+      "max": 495,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "uptown-village",
+    "name": "Uptown Village Townhomes",
+    "fetch": "fetched",
+    "notComplex": false,
+    "sourceUrl": "https://www.rentable.co/blacksburg-va/uptown-village",
+    "scan": "ok",
+    "fees": 1,
+    "lowConfidence": 0,
+    "price": {
+      "min": 1100,
+      "max": 1100,
+      "basis": "per_unit"
+    },
+    "inCatalog": true
+  },
+  {
+    "slug": "village-at-blacksburg",
+    "name": "The Village at Blacksburg",
+    "fetch": "not_found",
+    "notComplex": false,
+    "sourceUrl": null,
+    "scan": null,
+    "fees": null,
+    "lowConfidence": null,
+    "price": null,
+    "inCatalog": false
+  }
+]

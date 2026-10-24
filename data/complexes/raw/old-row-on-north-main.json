@@ -1,0 +1,17 @@
+{
+  "slug": "old-row-on-north-main",
+  "name": "Old Row on North Main (The Row on North Main)",
+  "address": "901-917 Lunch Pail Lane, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/47ecc385-0d32-44d8-bfdf-e997e6d3795c",
+  "site": "Granite Student Living AppFolio listing (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://www.forrent.com/va/blacksburg/old-row-on-north-main/0x6yzy2", "result": "403"},
+    {"url": "https://granitesl.appfolio.com/listings/listings", "result": "ok"},
+    {"url": "https://granitesl.appfolio.com/listings/detail/47ecc385-0d32-44d8-bfdf-e997e6d3795c", "result": "ok"}
+  ],
+  "text": "Address: 901-917 Lunch Pail Lane, Blacksburg, VA 24060\n\nRent and price lines:\n- \"RENT\" / \"$5,276/mo\"\n- \"Rent: $5,276\"\n- \"$5,276 /mo\"\n- \"(This listing is for a joint lease - price advertised for full apartment)\"\n\nFees:\n- \"Application Fee: $49\"\n\nUtilities and services (no charge listed):\n- \"wifi\"\n- \"Trash/Recycling\"\n\nThe page lists no deposit, parking, pet, or admin fees.\n\n[From the Granite listings index https://granitesl.appfolio.com/listings/listings: \"Old Row on North Main (4 Bed)\" $5,276, fully furnished, wifi and trash included; \"The Row on North Main (2 Bed)\" $2,838, fully furnished, wifi and trash included.]",
+  "notes": "Furnished student complex managed by Granite Student Living. Kept text is the 4-bed joint-lease listing (full-apartment price, about $1,319/bed). Index text is the WebFetch summary of the listings page, not verbatim."
+}

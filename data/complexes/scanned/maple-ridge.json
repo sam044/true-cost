@@ -1,0 +1,104 @@
+{
+  "slug": "maple-ridge",
+  "name": "Maple Ridge Townhomes",
+  "sourceUrl": "https://admistay.com/student-accommodation/united-states/blacksburg/property/maple-ridge-townhomes-blacksburg-626696",
+  "site": "Admistay (admistay.com student housing listing)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "textHash": "4e03ae13fb3b158d",
+  "scannedAt": "2026-10-24T20:45:58.585Z",
+  "model": "gemma-4-26b-a4b-it",
+  "extraction": {
+    "transcript": [
+      "Rent\n- Starting rent is \"$965/month,\" described as \"Subject to availability.\"\n- The sample listing shows \"$965 /month\" for an 11-month term, moving in 1 Sep, 2026 and out 31 Jul, 2027.\n\nFees\n- Application fee: \"Application Fee: $50\" (one-time).\n- Tech fee: \"$90 Tech Fee (New Residents)\" yearly, or \"$75 (Renewals).\"\n- Insurance premium: \"$17 Insurance Premium\" monthly. Residents can opt out with their own third-party insurance.\n- Credit Builder: \"$8 Credit Builder\" monthly. Residents can opt out.\n- Utility billing: monthly fees from the third-party provider Simple Bills, with no amount listed.\n- Late fees: not charged until after the 5th of the month, with no amount listed.\n\nDeposits and guarantor options\n- Opting out of a guarantor requires either a deposit of \"2-month installment\" or the Guarantor Waiver Program.\n- The Guarantor Waiver Program involves an additional monthly fee, \"subject to change by year and property,\" plus a \"$300 deposit.\"\n\nIncluded or unclear\n- Internet and pest control are included in the monthly rent.\n- Water, sewer, and electric appear under \"Bills Included,\" but the FAQ says utilities are billed monthly through Simple Bills."
+    ],
+    "advertisedPrice": {
+      "amount": 965,
+      "basis": "per_person",
+      "quote": "$965/month"
+    },
+    "bedrooms": null,
+    "utilities": {
+      "electric": "not_included",
+      "water": "unknown",
+      "gas": "unknown",
+      "internet": "included",
+      "trash": "unknown"
+    },
+    "fees": [
+      {
+        "name": "Tech Fee (New Residents)",
+        "category": "technology",
+        "amount": 90,
+        "frequency": "annual",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "$90 Tech Fee (New Residents) yearly",
+        "sourceImage": 0,
+        "confidence": "low"
+      },
+      {
+        "name": "Application Fee",
+        "category": "application",
+        "amount": 50,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "yes",
+        "refundable": false,
+        "quote": "Application Fee: $50",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Tech Fee (Renewals)",
+        "category": "technology",
+        "amount": 75,
+        "frequency": "annual",
+        "basis": "per_person",
+        "mandatory": "no",
+        "refundable": false,
+        "quote": "$75 (Renewals)",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Insurance Premium",
+        "category": "insurance",
+        "amount": 17,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "no",
+        "refundable": false,
+        "quote": "$17 Insurance Premium",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Credit Builder",
+        "category": "other",
+        "amount": 8,
+        "frequency": "monthly",
+        "basis": "per_person",
+        "mandatory": "no",
+        "refundable": false,
+        "quote": "$8 Credit Builder",
+        "sourceImage": 0,
+        "confidence": "high"
+      },
+      {
+        "name": "Guarantor Waiver Program Deposit",
+        "category": "security_deposit",
+        "amount": 300,
+        "frequency": "one_time",
+        "basis": "per_person",
+        "mandatory": "no",
+        "refundable": true,
+        "quote": "$300 deposit",
+        "sourceImage": 0,
+        "confidence": "high"
+      }
+    ]
+  },
+  "error": null
+}

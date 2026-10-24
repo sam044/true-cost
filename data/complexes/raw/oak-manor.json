@@ -1,0 +1,16 @@
+{
+  "slug": "oak-manor",
+  "name": "Oak Manor Townhomes",
+  "address": "Huntington Ln, Blacksburg, VA 24060",
+  "status": "fetched",
+  "sourceUrl": "https://granitesl.appfolio.com/listings/detail/3a20a6e4-394c-49d4-877b-63588e491ab1",
+  "site": "Granite Student Living / Pointe West listings (granitesl.appfolio.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "https://granitesl.appfolio.com/listings", "result": "ok"},
+    {"url": "https://granitesl.appfolio.com/listings/detail/3a20a6e4-394c-49d4-877b-63588e491ab1", "result": "ok"}
+  ],
+  "text": "The listing for 222 Huntington Ln, Blacksburg, VA 24060 (3 bd / 3.5 ba, 2,002 sq. ft.) shows these rent and fee details:\n\n- Rent: \"$2,230/mo\"\n- Application Fee: \"$49\"\n- Utilities Included: Gas\n- Pet Policy: Cats allowed; dogs allowed. No pet rent or pet fee is listed.\n- Neighborhood: Oak Manor\n\nThe page does not list a security deposit, parking charge, admin fee, or other utility charges.",
+  "notes": "Oak Manor is a neighborhood of individually owned townhomes (Hethwood/Prices Fork area), not one managed complex. This is one Granite/Pointe West-managed unit (whole 3-bed, 2027-2028 term). The WebFetch model summarized instead of copying verbatim (it misread the prompt as page instructions), but the amounts are quoted from the page."
+}

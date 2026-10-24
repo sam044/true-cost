@@ -1,0 +1,17 @@
+{
+  "slug": "roanoke-street-apartments",
+  "name": "Roanoke Street Apartments",
+  "address": "506-A Jackson Street, Blacksburg, VA 24060 (office)",
+  "status": "fetched",
+  "sourceUrl": "http://www.roanokestreetapartments.com/index.php/rental-information",
+  "site": "Official site (roanokestreetapartments.com)",
+  "fetchedOn": "2026-10-24",
+  "autoScanned": true,
+  "attempts": [
+    {"url": "http://www.roanokestreetapartments.com", "result": "no fees"},
+    {"url": "http://www.roanokestreetapartments.com/index.php/rental-information", "result": "ok"},
+    {"url": "http://www.roanokestreetapartments.com/index.php/apartment-layouts", "result": "no fees"}
+  ],
+  "text": "Fees and Deposits\nSecurity Deposit, 1 month's rent; Application Fee, $35 per person; Nonrefundable Pet Registration Fee, $200; Pet Rent, $25/month\n\nPet Policy\n- Non-refundable pet registration fee of $200\n- Monthly pet fee of $25 per month\n\nFloor Plans\nOptional Washer and dryer, $60\n\nThe page lists no rent prices, parking fees, utility fees, or admin fees.",
+  "notes": "2-5 bedroom apartments 5 blocks from downtown. Fees listed, but no rent prices on any fetched page. Site also links a Policy & Procedures Handbook PDF (/images/documents/POLICY-AND-PROCEDURE-HANDBOOK-UPDATED-2026.pdf) that may hold more fees; not fetched."
+}
