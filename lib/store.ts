@@ -21,6 +21,9 @@ interface TrueCostState {
   removeFee: (apartmentId: string, feeId: string) => void;
   loadSamples: () => void;
   reset: () => void;
+  // Fee index (F20): share confirmed fees anonymously. Off until the student opts in.
+  shareToIndex: boolean;
+  setShareToIndex: (share: boolean) => void;
 }
 
 const initialSetup: Setup = { people: 1, leaseMonths: 12 };
@@ -36,6 +39,8 @@ export const useTrueCost = create<TrueCostState>()(
     (set) => ({
       setup: initialSetup,
       apartments: [],
+      shareToIndex: false,
+      setShareToIndex: (shareToIndex) => set({ shareToIndex }),
       setSetup: (setup) => set((s) => ({ setup: { ...s.setup, ...setup } })),
       addApartment: (apartment) =>
         set((s) =>
