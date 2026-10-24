@@ -31,7 +31,11 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
   const [state, setState] = useState<State>({ status: "idle" });
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
-  const ids = { subject: `email-subject-${apartment.id}`, body: `email-body-${apartment.id}` };
+  const ids = {
+    subject: `email-subject-${apartment.id}`,
+    body: `email-body-${apartment.id}`,
+    appHint: `email-app-hint-${apartment.id}`,
+  };
 
   async function write() {
     setState({ status: "loading" });
@@ -138,38 +142,41 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                       <span className="sr-only"> (opens in a new tab)</span>
                     </a>
                   </Button>
+                  {/* mailto: opens the computer's default mail app; with Outlook
+                      as the default, the subject lands in Outlook's subject line. */}
                   <Button asChild variant="outline">
-                    <a
-                      href={outlookHref({ subject, body })}
-                      target="_blank"
-                      rel="noreferrer"
-                      // Signed-out Outlook can drop the draft on its way through
-                      // sign-in, so copy it first as a backup the student can paste.
-                      onClick={() =>
-                        void copy("Draft copied. If Outlook asks you to sign in, sign in, then paste it.")
-                      }
-                    >
-                      Open in Outlook<span className="sr-only"> (opens in a new tab)</span>
+                    <a href={mailtoHref({ subject, body })} aria-describedby={ids.appHint}>
+                      <Mail aria-hidden /> Open in Outlook app
                     </a>
                   </Button>
                   <Button variant="outline" onClick={() => void copy()}>
                     <Copy aria-hidden /> Copy
                   </Button>
                 </div>
+                <p id={ids.appHint} className="text-xs text-muted-foreground">
+                  Opens your computer&apos;s default mail app. To use Outlook, set it as the default
+                  for email in Windows Settings → Apps → Default apps.
+                </p>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                   <a
-                    href={mailtoHref({ subject, body })}
+                    href={outlookHref({ subject, body })}
+                    target="_blank"
+                    rel="noreferrer"
+                    // Signed-out Outlook can drop the draft on its way through
+                    // sign-in, so copy it first as a backup the student can paste.
+                    onClick={() =>
+                      void copy("Draft copied. If Outlook asks you to sign in, sign in, then paste it.")
+                    }
                     className="text-muted-foreground underline underline-offset-4 hover:text-foreground"
                   >
-                    Use my computer&apos;s mail app
+                    Outlook on the web<span className="sr-only"> (opens in a new tab)</span>
                   </a>
                   <Button variant="ghost" size="sm" onClick={write}>
                     <RefreshCw aria-hidden /> Write it again
                   </Button>
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  Gmail and Outlook open a filled-in draft if you&apos;re signed in. Nothing is sent
-                  until you press send there.
+                  Nothing is sent until you press send in your email.
                 </p>
               </div>
               <p className="text-xs text-muted-foreground">
