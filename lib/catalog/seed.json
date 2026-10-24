@@ -1,0 +1,712 @@
+[
+  {
+    "id": "brexx",
+    "name": "Brexx at Blacksburg",
+    "url": "https://offcampus.vt.edu/housing/property/brexx-at-blacksburg/2wpj609",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1069,
+      "max": 1399,
+      "basis": "per_person"
+    },
+    "apartment": {
+      "id": "catalog-brexx",
+      "name": "Brexx at Blacksburg",
+      "advertised": {
+        "amount": 1069,
+        "basis": "per_person",
+        "quote": "$1,069 - $1,399"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "brexx-rental-insurance-waiver",
+          "name": "Rental Insurance Waiver",
+          "category": "insurance",
+          "amount": 15,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Rental Insurance Waiver Income $15 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-trash",
+          "name": "Trash",
+          "category": "trash",
+          "amount": 6,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Trash $6 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-credit-reporting-fees",
+          "name": "Credit Reporting Fees",
+          "category": "other",
+          "amount": 9,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Credit Reporting Fees $9 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-administration-fee",
+          "name": "Administration Fee",
+          "category": "admin",
+          "amount": 150,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administration Fee $150",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-covered-parking",
+          "name": "Covered Parking",
+          "category": "parking",
+          "amount": 50,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Covered Parking Fee $50 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-damages-charge",
+          "name": "Damages Charge",
+          "category": "other",
+          "amount": 100,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Damages Charge $100",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-nsf-bank-fees",
+          "name": "NSF Bank Fees",
+          "category": "other",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "NSF Bank Fees $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-transfer-fee",
+          "name": "Transfer Fee",
+          "category": "other",
+          "amount": 500,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Transfer Fee $500",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-reletting-fee",
+          "name": "Reletting Fee",
+          "category": "other",
+          "amount": 500,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Reletting Fee $500",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "brexx-utility-billing-fee",
+          "name": "Utility Billing Fee",
+          "category": "utility_fee",
+          "amount": 62,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "unknown",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility Billing Fee $62",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "christopher-drive-house",
+    "name": "4 Bedroom House, 2001 Christopher Drive",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-bath-house-1-car-garage/ocpc2t2l1g",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2200,
+      "max": 2200,
+      "basis": "per_unit"
+    },
+    "apartment": {
+      "id": "catalog-christopher-drive-house",
+      "name": "4 Bedroom House, 2001 Christopher Drive",
+      "advertised": {
+        "amount": 2200,
+        "basis": "per_unit",
+        "quote": "$2,200"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "not_included",
+        "gas": "not_included",
+        "internet": "not_included",
+        "trash": "not_included"
+      },
+      "fees": [
+        {
+          "id": "christopher-drive-house-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 2200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,200 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "christopher-drive-house-risk-protection-fee",
+          "name": "Risk Protection Fee",
+          "category": "insurance",
+          "amount": 15,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Risk Protection Fee $15.00 monthly.",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "collegiate-suites",
+    "name": "Collegiate Suites of Blacksburg",
+    "url": "https://offcampus.vt.edu/housing/property/collegiate-suites-of-blacksburg/1nbe6l6",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 999,
+      "max": 999,
+      "basis": "per_person"
+    },
+    "apartment": {
+      "id": "catalog-collegiate-suites",
+      "name": "Collegiate Suites of Blacksburg",
+      "advertised": {
+        "amount": 999,
+        "basis": "per_person",
+        "quote": "$999 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "collegiate-suites-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "collegiate-suites-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 150,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $150",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "fourteen35",
+    "name": "Fourteen35 Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/fourteen35-apartments/edgcljq",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 965,
+      "max": 1005,
+      "basis": "per_person"
+    },
+    "apartment": {
+      "id": "catalog-fourteen35",
+      "name": "Fourteen35 Apartments",
+      "advertised": {
+        "amount": 965,
+        "basis": "per_person",
+        "quote": "$965 - $1,005 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "fourteen35-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "fourteen35-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "fourteen35-reconditioning-fee",
+          "name": "Reconditioning Fee",
+          "category": "reconditioning",
+          "amount": 299,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Reconditioning Fee $299",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "foxridge",
+    "name": "Foxridge Apartment Homes",
+    "url": "https://www.apartmenthomeliving.com/apartment-finder/Foxridge-Apartment-Homes-Blacksburg-VA-24060-2143760",
+    "site": "ApartmentHomeLiving",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1379,
+      "max": 1453,
+      "basis": "per_unit"
+    },
+    "apartment": {
+      "id": "catalog-foxridge",
+      "name": "Foxridge Apartment Homes",
+      "advertised": {
+        "amount": 1379,
+        "basis": "per_unit",
+        "quote": "Base Rent: $1,379"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "foxridge-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $35.00",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "foxridge-reservation-deposit",
+          "name": "Reservation Deposit",
+          "category": "security_deposit",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Reservation Deposit $200.00",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "foxridge-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $200.00",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "foxridge-deposit",
+          "name": "Deposit",
+          "category": "security_deposit",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Deposit $400-$1500",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "foxridge-utility-billing-administrative-fee",
+          "name": "Utility Billing Administrative Fee",
+          "category": "utility_fee",
+          "amount": 1.5,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility - Billing Administrative Fee $1.50/mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "foxridge-internet-service",
+          "name": "Internet Service",
+          "category": "internet",
+          "amount": 65,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Internet Service $65.00/mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "foxridge-refuse-removal",
+          "name": "Refuse Removal",
+          "category": "trash",
+          "amount": 7,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Refuse Removal $7.00/mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "hub",
+    "name": "Hub Blacksburg",
+    "url": "https://offcampus.vt.edu/housing/property/hub-blacksburg/sbs6q75",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 999,
+      "max": 1909,
+      "basis": "per_person"
+    },
+    "apartment": {
+      "id": "catalog-hub",
+      "name": "Hub Blacksburg",
+      "advertised": {
+        "amount": 999,
+        "basis": "per_person",
+        "quote": "$999 - $1,909"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "hub-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $35",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "hub-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "hub-garage-parking",
+          "name": "Garage Parking",
+          "category": "parking",
+          "amount": 30,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Garage Parking Fee $30 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "tee-street",
+    "name": "203-209 Tee Street",
+    "url": "https://www.apartmentfinder.com/Virginia/Blacksburg-Apartments/203-209-Tee-Street-Apartments-52f0hbq",
+    "site": "ApartmentFinder",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1130,
+      "max": 1725,
+      "basis": "per_unit"
+    },
+    "apartment": {
+      "id": "catalog-tee-street",
+      "name": "203-209 Tee Street",
+      "advertised": {
+        "amount": 1130,
+        "basis": "per_unit",
+        "quote": "$1,130 - $1,725"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "tee-street-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "tee-street-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "tee-street-reconditioning-fee",
+          "name": "Reconditioning Fee",
+          "category": "reconditioning",
+          "amount": 299,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Reconditioning Fee $299",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  },
+  {
+    "id": "the-edge",
+    "name": "The Edge Apartments and Townhomes",
+    "url": "https://offcampus.vt.edu/housing/property/the-edge-apartments-and-townhomes/2hm6lvb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1245,
+      "max": 1415,
+      "basis": "per_person"
+    },
+    "apartment": {
+      "id": "catalog-the-edge",
+      "name": "The Edge Apartments and Townhomes",
+      "advertised": {
+        "amount": 1245,
+        "basis": "per_person",
+        "quote": "$1,245 - $1,415 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "the-edge-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $35",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "the-edge-security-deposit",
+          "name": "Security Deposit",
+          "category": "security_deposit",
+          "amount": 500,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "SECURITY DEPOSIT $500",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": true
+    }
+  }
+]
