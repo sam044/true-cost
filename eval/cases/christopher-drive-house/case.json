@@ -1,0 +1,21 @@
+{
+  "name": "4 Bedroom House, 2001 Christopher Drive",
+  "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-bath-house-1-car-garage/ocpc2t2l1g",
+  "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+  "readOn": "2026-10-24",
+  "screenshots": [
+    {
+      "file": "1-price.png",
+      "capture": "Top of the listing: name, $2,200 price and the floor plan row"
+    },
+    {
+      "file": "2-required-fees.png",
+      "capture": "Fees and Policies section (Security Deposit - Refundable)"
+    },
+    {
+      "file": "3-description.png",
+      "capture": "The description paragraph (click Read More) with the Risk Protection Fee"
+    }
+  ],
+  "notes": "Whole-house rent split by the group. The $15 monthly fee is only in the free-text description, and utilities are all paid by residents."
+}

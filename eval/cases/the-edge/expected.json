@@ -1,0 +1,26 @@
+{
+  "advertisedPrice": {
+    "min": 1245,
+    "max": 1415,
+    "basis": "per_person"
+  },
+  "fees": [
+    {
+      "name": "Application Fee",
+      "category": "application",
+      "amount": 35,
+      "frequency": "one_time",
+      "basis": "per_person",
+      "mandatory": "yes"
+    },
+    {
+      "name": "Security Deposit",
+      "category": "security_deposit",
+      "amount": 500,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes",
+      "refundable": true
+    }
+  ]
+}

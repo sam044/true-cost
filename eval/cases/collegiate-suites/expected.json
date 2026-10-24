@@ -1,0 +1,25 @@
+{
+  "advertisedPrice": {
+    "min": 999,
+    "max": 999,
+    "basis": "per_person"
+  },
+  "fees": [
+    {
+      "name": "Application Fee",
+      "category": "application",
+      "amount": 50,
+      "frequency": "one_time",
+      "basis": "per_person",
+      "mandatory": "yes"
+    },
+    {
+      "name": "Administrative Fee",
+      "category": "admin",
+      "amount": 150,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    }
+  ]
+}

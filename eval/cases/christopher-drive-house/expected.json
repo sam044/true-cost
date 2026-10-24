@@ -1,0 +1,33 @@
+{
+  "advertisedPrice": {
+    "min": 2200,
+    "max": 2200,
+    "basis": "per_unit"
+  },
+  "utilities": {
+    "electric": "not_included",
+    "water": "not_included",
+    "gas": "not_included",
+    "internet": "not_included",
+    "trash": "not_included"
+  },
+  "fees": [
+    {
+      "name": "Security Deposit",
+      "category": "security_deposit",
+      "amount": 2200,
+      "frequency": "one_time",
+      "basis": "per_unit",
+      "mandatory": "yes",
+      "refundable": true
+    },
+    {
+      "name": "Risk Protection Fee",
+      "category": "insurance",
+      "amount": 15,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Hub Blacksburg",
+  "url": "https://offcampus.vt.edu/housing/property/hub-blacksburg/sbs6q75",
+  "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+  "readOn": "2026-10-24",
+  "screenshots": [
+    {
+      "file": "1-price.png",
+      "capture": "Top of the listing: name, price range and the first rows of the floor plan table"
+    },
+    {
+      "file": "2-required-fees.png",
+      "capture": "Fees and Policies section with the Required Fees tab selected"
+    },
+    {
+      "file": "3-parking.png",
+      "capture": "Fees and Policies section with the Parking tab selected"
+    }
+  ],
+  "notes": "Surface lot parking is listed as N/A and should not become a fee."
+}

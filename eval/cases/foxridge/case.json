@@ -1,0 +1,17 @@
+{
+  "name": "Foxridge Apartment Homes",
+  "url": "https://www.apartmenthomeliving.com/apartment-finder/Foxridge-Apartment-Homes-Blacksburg-VA-24060-2143760",
+  "site": "ApartmentHomeLiving",
+  "readOn": "2026-10-24",
+  "screenshots": [
+    {
+      "file": "1-price.png",
+      "capture": "Model lease box: Total Monthly Price, Base Rent and Required Monthly Fees"
+    },
+    {
+      "file": "2-fees.png",
+      "capture": "Fees and Policies section, including Utilities and Situational Fees"
+    }
+  ],
+  "notes": "Hard case: the deposit is a range ($400-$1500) and the late fee is a percentage, so neither has one amount. $74 required monthly fees = $1.50 + $65 + $7 (rounded)."
+}

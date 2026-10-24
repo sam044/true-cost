@@ -1,0 +1,33 @@
+{
+  "advertisedPrice": {
+    "min": 1130,
+    "max": 1725,
+    "basis": "per_unit"
+  },
+  "fees": [
+    {
+      "name": "Application Fee",
+      "category": "application",
+      "amount": 49,
+      "frequency": "one_time",
+      "basis": "per_person",
+      "mandatory": "yes"
+    },
+    {
+      "name": "Administrative Fee",
+      "category": "admin",
+      "amount": 199,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Reconditioning Fee",
+      "category": "reconditioning",
+      "amount": 299,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    }
+  ]
+}

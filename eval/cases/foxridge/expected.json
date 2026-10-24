@@ -1,0 +1,72 @@
+{
+  "advertisedPrice": {
+    "min": 1379,
+    "max": 1453,
+    "basis": "per_unit"
+  },
+  "fees": [
+    {
+      "name": "Application Fee",
+      "category": "application",
+      "amount": 35,
+      "frequency": "one_time",
+      "basis": "per_person",
+      "mandatory": "yes"
+    },
+    {
+      "name": "Reservation Deposit",
+      "category": "security_deposit",
+      "amount": 200,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Administrative Fee",
+      "category": "admin",
+      "amount": 200,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Deposit",
+      "category": "security_deposit",
+      "amount": 400,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes",
+      "amountRange": [
+        400,
+        1500
+      ]
+    },
+    {
+      "name": "Utility Billing Administrative Fee",
+      "category": "utility_fee",
+      "amount": 1.5,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Internet Service",
+      "category": "internet",
+      "amount": 65,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Refuse Removal",
+      "category": "trash",
+      "amount": 7,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    }
+  ],
+  "notFees": [
+    "Late Fee (percentage, no fixed amount)"
+  ]
+}

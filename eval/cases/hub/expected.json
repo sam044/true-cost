@@ -1,0 +1,33 @@
+{
+  "advertisedPrice": {
+    "min": 999,
+    "max": 1909,
+    "basis": "per_person"
+  },
+  "fees": [
+    {
+      "name": "Application Fee",
+      "category": "application",
+      "amount": 35,
+      "frequency": "one_time",
+      "basis": "per_person",
+      "mandatory": "yes"
+    },
+    {
+      "name": "Administrative Fee",
+      "category": "admin",
+      "amount": 200,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Garage Parking",
+      "category": "parking",
+      "amount": 30,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "no"
+    }
+  ]
+}

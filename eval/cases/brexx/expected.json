@@ -1,0 +1,97 @@
+{
+  "advertisedPrice": {
+    "min": 1069,
+    "max": 1399,
+    "basis": "per_person"
+  },
+  "fees": [
+    {
+      "name": "Rental Insurance Waiver",
+      "category": "insurance",
+      "amount": 15,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Trash",
+      "category": "trash",
+      "amount": 6,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Credit Reporting Fees",
+      "category": "other",
+      "amount": 9,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Application Fee",
+      "category": "application",
+      "amount": 50,
+      "frequency": "one_time",
+      "basis": "per_person",
+      "mandatory": "yes"
+    },
+    {
+      "name": "Administration Fee",
+      "category": "admin",
+      "amount": 150,
+      "frequency": "one_time",
+      "basis": null,
+      "mandatory": "yes"
+    },
+    {
+      "name": "Covered Parking",
+      "category": "parking",
+      "amount": 50,
+      "frequency": "monthly",
+      "basis": null,
+      "mandatory": "no"
+    },
+    {
+      "name": "Damages Charge",
+      "category": "other",
+      "amount": 100,
+      "frequency": null,
+      "basis": null,
+      "mandatory": "no"
+    },
+    {
+      "name": "NSF Bank Fees",
+      "category": "other",
+      "amount": 50,
+      "frequency": null,
+      "basis": null,
+      "mandatory": "no"
+    },
+    {
+      "name": "Transfer Fee",
+      "category": "other",
+      "amount": 500,
+      "frequency": null,
+      "basis": null,
+      "mandatory": "no"
+    },
+    {
+      "name": "Reletting Fee",
+      "category": "other",
+      "amount": 500,
+      "frequency": null,
+      "basis": null,
+      "mandatory": "no"
+    },
+    {
+      "name": "Utility Billing Fee",
+      "category": "utility_fee",
+      "amount": 62,
+      "frequency": null,
+      "basis": null,
+      "mandatory": "unknown"
+    }
+  ]
+}

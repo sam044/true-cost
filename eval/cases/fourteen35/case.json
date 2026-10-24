@@ -1,0 +1,17 @@
+{
+  "name": "Fourteen35 Apartments",
+  "url": "https://offcampus.vt.edu/housing/property/fourteen35-apartments/edgcljq",
+  "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+  "readOn": "2026-10-24",
+  "screenshots": [
+    {
+      "file": "1-price.png",
+      "capture": "Top of the listing: name, price range and the first rows of the floor plan table"
+    },
+    {
+      "file": "2-required-fees.png",
+      "capture": "Fees and Policies section with the Required Fees tab selected"
+    }
+  ],
+  "notes": "Same fee set as Tee Street (same manager), in a different site layout."
+}
