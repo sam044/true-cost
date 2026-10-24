@@ -12,9 +12,9 @@ import { Button } from "@/components/ui/button";
 import { PageHeading } from "@/components/page-heading";
 import { Stepper } from "@/components/stepper";
 import { useHydrated } from "@/components/review/use-hydrated";
+import { extractListing } from "@/components/upload/extract";
 import { toApartment } from "@/components/upload/to-apartment";
 import { MAX_APARTMENTS, useTrueCost } from "@/lib/store";
-import { Extraction } from "@/lib/types";
 
 const STORAGE_KEY = "true-cost-capture";
 const WAIT_MS = 8000;
@@ -63,16 +63,8 @@ export default function ImportPage() {
       }
       setStatus({ kind: "reading", name: capture.name });
       try {
-        const response = await fetch("/api/extract", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ images: [capture.image], text: capture.text || undefined }),
-        });
-        const body = await response.json().catch(() => null);
-        if (!response.ok) throw new Error(body?.error ?? "We couldn't read this listing.");
-        const extraction = Extraction.safeParse(body);
-        if (!extraction.success) throw new Error("We couldn't read this listing.");
-        const apartment = toApartment(capture.name, extraction.data);
+        const extraction = await extractListing({ images: [capture.image], text: capture.text });
+        const apartment = toApartment(capture.name, extraction);
         addApartment(apartment);
         router.replace(`/compare/review/${apartment.id}`);
       } catch (error) {
