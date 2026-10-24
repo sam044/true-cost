@@ -162,6 +162,16 @@ export function mailtoHref(draft: EmailDraft): string {
   return `mailto:?subject=${encodeURIComponent(draft.subject)}&body=${encodeURIComponent(draft.body)}`;
 }
 
+// Webmail compose links: open a filled-in draft for a signed-in user, who
+// reviews it and presses send. No sign-in or permissions on our side.
+export function gmailHref(draft: EmailDraft): string {
+  return `https://mail.google.com/mail/?view=cm&fs=1&su=${encodeURIComponent(draft.subject)}&body=${encodeURIComponent(draft.body)}`;
+}
+
+export function outlookHref(draft: EmailDraft): string {
+  return `https://outlook.live.com/mail/0/deeplink/compose?subject=${encodeURIComponent(draft.subject)}&body=${encodeURIComponent(draft.body)}`;
+}
+
 export interface DraftResult extends EmailDraft {
   source: "gemma" | "template";
 }

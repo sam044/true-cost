@@ -18,7 +18,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
-import { emailRequestFor, mailtoHref, type DraftResult } from "@/lib/email";
+import { emailRequestFor, gmailHref, mailtoHref, outlookHref, type DraftResult } from "@/lib/email";
 import type { Apartment, LawFlag } from "@/lib/types";
 
 type State =
@@ -129,18 +129,39 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                   className="text-sm leading-relaxed"
                 />
               </div>
-              <div className="flex flex-wrap gap-2">
-                <Button onClick={copy}>
-                  <Copy aria-hidden /> Copy
-                </Button>
-                <Button asChild variant="outline">
-                  <a href={mailtoHref({ subject, body })}>
-                    <Mail aria-hidden /> Open in mail app
+              <div className="flex flex-col gap-2">
+                <p className="text-sm font-medium">Send it from your email</p>
+                <div className="flex flex-wrap gap-2">
+                  <Button asChild>
+                    <a href={gmailHref({ subject, body })} target="_blank" rel="noreferrer">
+                      <Mail aria-hidden /> Open in Gmail
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  </Button>
+                  <Button asChild variant="outline">
+                    <a href={outlookHref({ subject, body })} target="_blank" rel="noreferrer">
+                      Open in Outlook<span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  </Button>
+                  <Button variant="outline" onClick={copy}>
+                    <Copy aria-hidden /> Copy
+                  </Button>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
+                  <a
+                    href={mailtoHref({ subject, body })}
+                    className="text-muted-foreground underline underline-offset-4 hover:text-foreground"
+                  >
+                    Use my computer&apos;s mail app
                   </a>
-                </Button>
-                <Button variant="ghost" onClick={write}>
-                  <RefreshCw aria-hidden /> Write it again
-                </Button>
+                  <Button variant="ghost" size="sm" onClick={write}>
+                    <RefreshCw aria-hidden /> Write it again
+                  </Button>
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Gmail and Outlook open a filled-in draft if you&apos;re signed in. Nothing is sent
+                  until you press send there.
+                </p>
               </div>
               <p className="text-xs text-muted-foreground">
                 Review the draft before sending. It asks questions; it isn&apos;t legal advice.

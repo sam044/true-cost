@@ -5,6 +5,8 @@ import {
   buildEmailPrompt,
   draftEmail,
   emailRequestFor,
+  gmailHref,
+  outlookHref,
   inventedAmounts,
   mailtoHref,
   parseEmailDraft,
@@ -148,5 +150,21 @@ describe("draftEmail", () => {
       throw new Error("503");
     });
     expect(result.source).toBe("template");
+  });
+});
+
+describe("webmail links", () => {
+  const draft = { subject: "Fees & rent", body: "Line 1\nLine 2" };
+
+  it("opens a filled-in Gmail compose window", () => {
+    expect(gmailHref(draft)).toBe(
+      "https://mail.google.com/mail/?view=cm&fs=1&su=Fees%20%26%20rent&body=Line%201%0ALine%202",
+    );
+  });
+
+  it("opens a filled-in Outlook compose window", () => {
+    expect(outlookHref(draft)).toBe(
+      "https://outlook.live.com/mail/0/deeplink/compose?subject=Fees%20%26%20rent&body=Line%201%0ALine%202",
+    );
   });
 });
