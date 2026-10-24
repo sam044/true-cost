@@ -1,18 +1,20 @@
 "use client";
 
 // One apartment on the Compare screen: the true monthly cost, the bar, and an
-// itemized breakdown. Every number comes from lib/cost.ts.
+// itemized breakdown. Every number comes from lib/cost.ts; flags from lib/flags.ts.
 import { Trophy } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Switch } from "@/components/ui/switch";
 import { itemize, summarize, type ItemLine } from "@/lib/cost";
+import { flagsFor } from "@/lib/flags";
 import { useTrueCost } from "@/lib/store";
 import type { Apartment, Setup } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { CostBar } from "./cost-bar";
 import { money, moneyWhole } from "./format";
+import { FlagBadges, FlagList } from "./law-flags";
 
 function FeeLine({ apartmentId, line }: { apartmentId: string; line: ItemLine }) {
   const updateFee = useTrueCost((s) => s.updateFee);
@@ -71,6 +73,7 @@ export function ApartmentColumn({
   cheapest: boolean;
 }) {
   const summary = summarize(apartment, setup);
+  const flags = flagsFor(apartment, setup);
   const { rent, lines, excluded } = itemize(apartment, setup);
   const headingId = `apartment-${apartment.id}`;
 
@@ -115,6 +118,7 @@ export function ApartmentColumn({
                 : `Within your ${money(setup.budget)} budget`}
             </p>
           )}
+          <FlagBadges apartmentId={apartment.id} flags={flags} />
         </section>
 
         <CostBar summary={summary} />
@@ -160,6 +164,13 @@ export function ApartmentColumn({
             </div>
           )}
         </section>
+
+        {flags.length > 0 && (
+          <>
+            <Separator />
+            <FlagList apartmentId={apartment.id} flags={flags} />
+          </>
+        )}
       </CardContent>
     </Card>
   );
