@@ -30,7 +30,7 @@ What is on `main` and deployed at https://true-cost-xi.vercel.app (pushes to mai
 
 | Area | State |
 | --- | --- |
-| Extraction (F3) | Done. `POST /api/extract`, `gemma-4-26b-a4b-it` with `gemma-4-31b-it` fallback, quote and amount checks. In progress, not on main: a change in `lib/ai/` to the extraction model and speed |
+| Extraction (F3) | Done. `POST /api/extract`, `gemma-4-26b-a4b-it` with `gemma-4-31b-it` fallback, quote and amount checks. About 15 seconds for a full page (no full transcript, hedged fallback). |
 | Add, Review (F1, F2, F4) | Done. Upload and paste are now the fallback section of Add |
 | Catalog (F21) | Done. Add opens on 42 complexes in a scrollable box of about 6 cards: 8 checked by hand (built from `eval/cases/`), then 34 auto-scanned and not checked (from `data/complexes/`, see the catalog section). One click adds a complex; checked ones go straight to Compare, auto-scanned ones open Review first |
 | Extension (F19) | Done, version 0.3.0. One click scrolls and stitches the full page into up to 5 images plus full page text, and a side panel shows each step live (capture, stitching, Gemma reading, then the fees) with Review in True Cost and Add to Compare buttons. Defaults to the deployed app; a localhost address saved by 0.1 is dropped on update. Still to test with a real toolbar click on a real listing |
