@@ -1,6 +1,6 @@
 # True Cost PRD
 
-Oct 24, 2026 (updated 9 PM ET) · Sam (@sam044) and Andy (@andyshah17). The editable original is a Claude Doc owned by Sam; this copy is what each person's Claude reads.
+Oct 24, 2026 (updated 6:30 PM ET) · Sam (@sam044) and Andy (@andyshah17). The editable original is a Claude Doc owned by Sam; this copy is what each person's Claude reads.
 
 ## Summary and how we win
 
@@ -24,25 +24,24 @@ Our two priorities are a product that works end to end on real listings, and a f
 
 Gemma 4 track fit: the README names `gemma-4-26b-a4b-it` and the demo shows the extraction happening live.
 
-## Status (Oct 24, 2026, 9 PM ET)
+## Status (Oct 24, 2026, 6:30 PM ET)
 
 What is on `main` and deployed at https://true-cost-xi.vercel.app (pushes to main auto-deploy):
 
 | Area | State |
 | --- | --- |
-| Extraction (F3) | Done. `POST /api/extract`, `gemma-4-26b-a4b-it` with `gemma-4-31b-it` fallback, quote and amount checks |
+| Extraction (F3) | Done. `POST /api/extract`, `gemma-4-26b-a4b-it` with `gemma-4-31b-it` fallback, quote and amount checks. In progress, not on main: a change in `lib/ai/` to the extraction model and speed |
 | Add, Review (F1, F2, F4) | Done. Upload and paste are now the fallback section of Add |
-| Catalog (F21) | Done. Add opens on 8 checked complexes built from `eval/cases/`; one click adds a complex, "Go to compare" goes straight to Compare |
-| Extension (F19) | Done. One click scrolls and stitches the full page into up to 5 images plus full page text; defaults to the deployed app. Tested in Edge on local pages; still to test with a real toolbar click on a real listing |
+| Catalog (F21) | Done. Add opens on 42 complexes in a scrollable box of about 6 cards: 8 checked by hand (built from `eval/cases/`), then 34 auto-scanned and not checked (from `data/complexes/`, see the catalog section). One click adds a complex; checked ones go straight to Compare, auto-scanned ones open Review first |
+| Extension (F19) | Done, version 0.3.0. One click scrolls and stitches the full page into up to 5 images plus full page text, and a side panel shows each step live (capture, stitching, Gemma reading, then the fees) with Review in True Cost and Add to Compare buttons. Defaults to the deployed app; a localhost address saved by 0.1 is dropped on update. Still to test with a real toolbar click on a real listing |
 | Setup, cost engine, flags, Compare (F5 to F9) | Done |
 | Leasing-office email (F10) | Done. Gemma drafts it; if Gemma fails or the draft quotes an amount it wasn't given, a plain template is returned; Virginia flags are asked as questions, not accusations; Copy, Gmail, Outlook and mail-app buttons |
 | Eval (F14) | Done. Text-only run on 8 cases: **94% precision, 97% recall** (32 right, 2 extra, 1 missed), advertised price right 8 of 8; category 97%, frequency 100%, mandatory 81% (misses are "unknown" vs labelled "no" on parking and situational fees). Image run waits on hand-taken screenshots |
-| Fee index (F20) | In progress (Andy). The Compare panel is on main against mock data; the database, API, seed and Review opt-in are not on main yet |
-| Auto-scanned complexes | In progress, not on main. About 45 Blacksburg complexes and rental companies were tried; fee text is fetched from each complex's own site (listing sites block scripts) and run through `extractFees` into `data/complexes/`. These are marked auto-scanned and not reviewed, so in the catalog they must open Review or carry an "Auto-scanned, not checked" label, listed after the 8 checked complexes, and they are never fee index seed data |
+| Fee index (F20) | In progress (Andy owns all of it). On main: shared types, the Neon client, `schema.sql`, `complexKey`, the aggregate query, the seed script and `GET /api/index/complex` (read-only), with tests, and the Compare panel, which calls that route (or mock data when `NEXT_PUBLIC_INDEX_MOCK=1`) and hides itself on any error. Not on main yet: `POST /api/index/submit` and the Review opt-in, so students cannot add fees. Whether the production database is created and seeded is not visible from the repo |
+| Landing (`/`) | Done, trimmed to the hero: headline, one line of copy, the Compare apartments button and the privacy line |
 
 **Known issues**
 
-- Brexx's catalog entry is about $30 a month too high: its listed price already includes $30 of monthly required fees, which Compare adds again.
 - Brexx's $62 utility fee frequency is inferred as monthly; the eval label leaves it blank.
 - Catalog apartment ids look like `catalog-<slug>--<uuid>`, while the fee index uses the apartment id as a plain UUID submission id. Fix before a catalog apartment can be shared to the index.
 
@@ -103,12 +102,12 @@ The goal is a deployed app where a judge picks 2 or 3 real Blacksburg complexes 
 
 One linear flow, six screens, desktop-first and responsive down to phone width. A stepper at the top (Setup, Apartments, Review, Compare) always shows where the user is and lets them go back.
 
-1. **Landing** (`/`). Headline: "The rent you see isn't the rent you pay." One real example, one primary button "Compare apartments", a "See a sample comparison" button, a three-step "how it works" strip and a privacy line: "No sign-up. Your screenshots are never stored." (Built; with F20 it becomes "No sign-up. Screenshots are never stored. Fee amounts are shared only if you choose to, with nothing that identifies you.")
+1. **Landing** (`/`). Just the hero: a "For Blacksburg renters" tag, the headline "The rent you see isn't the rent you pay.", one line naming the fees True Cost finds, one button "Compare apartments" (to Setup) and a privacy line: "No sign-up. Your screenshots are never stored." The example, sample button and "how it works" strip were cut to keep the page to one action; the sample is still at `/compare/results?sample=1`. (Built; once the Review opt-in ships, the privacy line becomes "No sign-up. Screenshots are never stored. Fee amounts are shared only if you choose to, with nothing that identifies you.")
 2. **Setup** (`/compare/setup`). Number of people sharing (1 to 6, default 1), lease length in months (default 12), optional monthly budget per person. "Continue" button.
 3. **Add apartment** (`/compare/add`). Opens on the **catalog** (F21): a searchable grid of pre-scanned Blacksburg complexes inside a fixed-height box that shows about 6 cards (two rows of three on desktop) and scrolls for the rest, so the fallback below stays in view. Each card shows the name, advertised price range, how many fees were found, and "Checked by hand" or "Auto-scanned, not checked yet". Selecting a card (click, or Enter/Space) adds the apartment to the comparison at once; a selected card shows "Added" and can be removed. Hand-checked complexes go straight to Compare; auto-scanned ones open Review first. "Get the extension" explains the one-click capture for listings not in the catalog (F19). Below the catalog, a "Not in the list? Upload screenshots or paste text" section holds the fallback: a name field ("Hub Blacksburg"), a large drop zone for up to 5 screenshots (drag, click, or paste with Ctrl+V), and a "Paste listing text instead" tab. Thumbnails with remove buttons. "Find fees" runs extraction with a progress state that names what is happening ("Reading screenshot 2 of 3"). Users add up to 3 apartments; each appears as a card with its status.
 4. **Review fees** (`/compare/review/[id]`). Header shows the detected advertised price (editable). Fee rows: name, amount, frequency chip (one-time, monthly, per semester, annual), basis chip (per person, per unit), mandatory or optional toggle, and the source quote in a muted block underneath. Low-confidence rows get an amber "Check this" badge and sort to the top. Users can edit any field, delete a row, or add a fee by hand. Utility estimates appear as separate rows labelled "Estimate". One primary button: "Looks right" (sets `reviewed: true`), with an unchecked "Add these fees to the Blacksburg fee index" checkbox beside it (F20).
 5. **Compare** (`/compare/results`). One column per apartment: name, the big number (true monthly cost per person), advertised price struck through beside it, the "hidden per year" amount, a stacked bar of rent vs recurring fees vs utilities vs one-time fees spread monthly, total cost over the lease, law flags as badges, and a "Fee index" panel listing fees other students reported at that complex that this apartment doesn't have (F20). The cheapest true cost gets a "Lowest true cost" badge. Budget line drawn if a budget was set. `?sample=1` loads the sample apartments.
-6. **Fee detail drawer** (Sheet, opens from Compare). Fee-by-fee breakdown, each flag with its plain-language explanation and statute citation, a "Draft email to leasing office" button that shows the Gemma-written email with Copy and Open in mail app buttons, and a "not legal advice" note linking Virginia Law Help.
+6. **Fee detail drawer** (Sheet, opens from Compare). Fee-by-fee breakdown, each flag with its plain-language explanation and statute citation, a "Draft email to leasing office" button that shows the Gemma-written email with Copy, Open in Gmail, Open in Outlook and Open in mail app buttons, and a "not legal advice" note linking Virginia Law Help.
 
 Empty, loading and error states are designed for every screen: a failed extraction shows "We couldn't read this image" with retry and "paste text instead". State lives in localStorage, so a refresh never loses work; a "Start over" link clears it.
 
@@ -144,7 +143,7 @@ P0 items must work for the demo; P1 items ship if P0 is done by 8:30 PM; Stretch
 
 The web app stays the main product. The extension is a small add-on that saves the screenshot step: on a listing page, the student clicks the True Cost toolbar button and lands on Review for that apartment.
 
-- **What it is:** a Manifest V3 Chrome extension in `extension/`, plain JavaScript, no build step, loaded unpacked for the demo.
+- **What it is:** a Manifest V3 Chrome extension in `extension/` (version 0.3.0; Chrome 116 or newer for the side panel), plain JavaScript, no build step, loaded unpacked for the demo. Setup and use are in `extension/README.md`.
 - **Capture (full page, one click):** clicking the toolbar button scrolls the listing from top to bottom, capturing the visible tab at each step (`chrome.tabs.captureVisibleTab`, paced under Chrome's two-captures-a-second limit), then restores the user's scroll position. The extension stitches the shots into at most 5 tall images (the `/api/extract` limit), each resized to 1600 px wide JPEG and kept small enough that the whole request stays under Vercel's 4.5 MB body limit. Very long pages keep the first screens (prices and fees sit near the top on the Blacksburg listing sites) and rely on the text for the rest. Fixed headers are hidden after the first shot so they do not repeat in every slice. It also reads the full page text (`document.body.innerText`, first 20,000 characters, including content below the fold) and the page title as the apartment name.
 - **Side panel (live steps):** clicking the button also opens a side panel that shows each step as it happens: capturing (screen N of M, with the latest screenshot), stitching (image count and size), Gemma reading (a running clock, what is being read, why it takes 30 seconds to 2 minutes, and a note when the app moves to the backup model), then the fees grouped as required, not clear and optional with their quotes. Errors show what failed with Try again (resends the same capture) and Add it another way. The panel footer always shows which app address listings go to.
 - **Extraction:** the extension posts the stitched images and text to the same `POST /api/extract` the Add screen uses. Nothing goes to a server other than the app.
@@ -158,13 +157,16 @@ The web app stays the main product. The extension is a small add-on that saves t
 The fastest way to compare is to not add anything: the Apartments step opens on a catalog of Blacksburg complexes whose fees were already extracted and checked, so a judge or student picks 2 or 3 and goes straight to Compare.
 
 - **Data, hand-checked:** a static seed in `lib/catalog/seed.json`, regenerated by `node --experimental-strip-types scripts/build-catalog.ts`, built from the 8 hand-labelled eval cases (`eval/cases/*/expected.json` plus each case's name and source URL), stored as `Apartment` objects with `reviewed: true` and every fee's source quote taken from the case's `listing.txt` where one exists. Static data means no database, no API call and no Gemma call at selection time.
-- **Data, auto-scanned:** more complexes in `lib/catalog/auto.json`, listed after the hand-checked ones, built by `scripts/complexes/` (raw data and coverage in `data/complexes/`, see its README). Each complex's price and fee text was fetched from its own site or a listing site that allows it (offcampus.vt.edu and Apartments.com block automated reading, so those were not used), run through the app's own `extractFees`, and stored with the source URL, fetch date and `autoScanned: true`. Nobody has checked these fees, so the apartment has `reviewed: false` and goes through Review like an uploaded listing. Entries need an advertised price; rental companies and scattered houses are kept out because one price would mislead. Many complex sites show rent but no fee schedule, so auto-scanned cards often show 0 or 1 fees; the extension (F19) is the way to capture a full listing.
+- **Data, auto-scanned:** more complexes in `lib/catalog/auto.json`, listed after the hand-checked ones, built by `scripts/complexes/` (raw data and coverage in `data/complexes/`, see its README). Each complex's price and fee text was fetched from its own site or a listing site that allows it (offcampus.vt.edu and Apartments.com block automated reading, so those were not used), run through the app's own `extractFees`, and stored with the source URL, fetch date and `autoScanned: true`. Nobody has checked these fees, so the apartment has `reviewed: false` and goes through Review like an uploaded listing. Entries need an advertised price; rental companies and scattered houses are kept out because one price would mislead. Of 62 complexes and companies tried, 34 made the catalog; `data/complexes/coverage.json` lists the rest and why. For example, Union Blacksburg is left out: its Greystar page shows no rent and its ApartmentFinder and ForRentUniversity pages returned 403. Many complex sites show rent but no fee schedule, so auto-scanned cards often show 0 or 1 fees; the extension (F19) is the way to capture a full listing.
 - **Selecting:** one click (or Enter/Space on the focused card) adds the complex to the store and it appears on Compare; selecting it again removes it. The 3-apartment maximum applies, and full cards say so.
 - **Freshness:** each card shows the source site and the date the listing was read ("Read Oct 24, 2026") and links to the original listing.
 - **F20 compatibility:** the catalog entry shape (complex id, name, source URL, read date, fees) matches what the fee index stores, so the index can later back the catalog without changing the UI: the catalog reads through one function, `getCatalog()`, which returns the static seed today and can merge index data later. The catalog never writes to the index.
-- **Growing it:** auto-scanned complexes from `data/complexes/catalog-entries.json` use the same `CatalogEntry` shape with `autoScanned: true` and `reviewed: false`. They sort after the checked complexes and either open Review on selection or show an "Auto-scanned, not checked" label.
+- **Layout:** cards sit in a fixed-height box that shows about 6 (two rows of three on desktop) and scrolls, so the upload fallback below stays in view. Each card says "Checked by hand" or "Auto-scanned, not checked yet".
+- **Growing it:** rerun `scripts/complexes/scan.ts`, then `to-catalog.ts` (see `data/complexes/README.md`); new entries land in `auto.json` with `autoScanned: true` and `reviewed: false`. Moving a complex to hand-checked means labelling it as an eval case and rebuilding `seed.json`.
 
 ## Blacksburg fee index (F20)
+
+**Where it stands:** the read path is on main (see Status); the write path (`POST /api/index/submit` and the Review opt-in) is not, so today the index holds only seed data. Andy owns every part of F20.
 
 When a student confirms an apartment on Review and has opted in, the reviewed fees are saved anonymously to a shared database, keyed by complex. Compare then shows what other students found at the same complex, for example "Not on your list: Utility service fee, $62/month, reported 3 times". The database starts with the 8 hand-labelled eval cases, so the demo has real data before anyone submits. The index only holds human-checked fees, never raw model output.
 
@@ -186,7 +188,7 @@ When a student confirms an apartment on Review and has opted in, the reviewed fe
 
 **When data is written:** in `handleConfirm` on Review, after validation passes and `reviewed` is set, if the box is checked and the apartment is not a sample from `lib/mock.ts`, the page fires `POST /api/index/submit` without awaiting it. Navigation never waits on the database, and a failure only logs a warning. The submission id is the apartment's id, so confirming the same apartment again replaces its submission instead of double counting.
 
-**Schema** (`lib/index/schema.sql`, run once):
+**Schema** (`lib/index/schema.sql`; on main it uses `create ... if not exists` with named indexes so it is safe to re-run, and the seed script applies it first):
 
 ```sql
 create table complexes (
@@ -266,13 +268,13 @@ export interface IndexSummary {
 **UI**
 
 1. **Compare panel (Andy).** A labelled "Fee index" section in each `apartment-column.tsx`, from `components/compare/index-panel.tsx`. It leads with fees reported at this complex that the apartment lacks (matched by category and frequency), then "Based on 5 reports, last seen Oct 24", plus "includes fees checked by the True Cost team on Oct 24" when seed data is in it. Loading shows a skeleton, not found says "No one has shared fees for this complex yet", and an error hides the panel. These are hints only: they never change the totals, since only reviewed fees count and money math stays in `lib/cost.ts`.
-2. **Review opt-in (Sam).** The checkbox and the submit call described above.
-3. **Review hint (Sam, below the cut line).** The same "Not on your list" fees with an **Add** button that inserts the fee with `source: "estimate"` and `quote: null`, so the index reaches the totals only when the student chooses.
+2. **Review opt-in (Andy, not on main yet).** The checkbox and the submit call described above.
+3. **Review hint (Andy, below the cut line).** The same "Not on your list" fees with an **Add** button that inserts the fee with `source: "estimate"` and `quote: null`, so the index reaches the totals only when the student chooses.
 4. **`/index` page (stretch, either).** A sortable table of complexes with report counts and median monthly and one-time fees.
 
 **Abuse guarding** (in the submit route): at most 30 fees, amounts 0 to 10,000, names 1 to 80 characters with control characters stripped, enums from `lib/types.ts`; at most 10 submissions per `client_hash` per day; a second submission for the same complex from the same hash on the same day replaces the first; reject requests whose `Origin` is not the app's host; medians rather than means so one fake fee doesn't move the number, with low and high shown; free-text `other` names and unverified complexes shown only with 2 or more distinct reporters. Bad rows are deleted by hand in the Neon SQL editor (fees cascade). No captcha or accounts.
 
-**Seed.** `scripts/seed-index.ts` (run with `node --experimental-strip-types`, like `eval/run.ts`) reads each `eval/cases/<slug>/case.json` and `expected.json` and writes one verified complex (slug = folder name, name and URL from `case.json`, hand-written aliases such as `1435` for Fourteen35), one `source = 'seed'` submission with a fixed UUID derived from the slug so re-running is idempotent (advertised rent = the low end of `advertisedPrice`), and one row per expected fee: 33 fees across the 8 cases. `null` frequency or basis stays null; Foxridge's 400 to 1500 `amountRange` fee uses 400.
+**Seed.** `scripts/seed-index.ts` (run with `node --env-file=.env.local --experimental-strip-types scripts/seed-index.ts`; it creates the tables if missing, then seeds) reads each `eval/cases/<slug>/case.json` and `expected.json` and writes one verified complex (slug = folder name, name and URL from `case.json`, hand-written aliases such as `1435` for Fourteen35), one `source = 'seed'` submission with a fixed UUID derived from the slug so re-running is idempotent (advertised rent = the low end of `advertisedPrice`), and one row per expected fee: 33 fees across the 8 cases. `null` frequency or basis stays null; Foxridge's 400 to 1500 `amountRange` fee uses 400.
 
 **Tasks.** It is about 4 PM Saturday and features freeze at 8:30 PM, so F20 is scoped as a P1 add-on with its own cut line.
 
@@ -298,7 +300,7 @@ If tasks 1 to 6 are not on main by 8:30 PM, ship read-only instead: seed data an
 2. Add `INDEX_SALT` (any long random string) in the project's Environment Variables, all environments.
 3. Back up `.env.local`, run `vercel env pull .env.local`, and check `GEMINI_API_KEY` is still there.
 4. Send Andy `DATABASE_URL` and `INDEX_SALT` privately (Hobby projects can't add members), or Andy builds against the mock and never needs them.
-5. Run `lib/index/schema.sql` once in the Neon SQL editor, then run the seed script once.
+5. Run the seed script once (it applies `lib/index/schema.sql` itself).
 6. Redeploy so production picks up the new variables.
 
 ## AI design
@@ -307,6 +309,7 @@ Gemma 4 does the one thing code cannot: read messy, differently formatted screen
 
 **Model and SDK**
 
+- In progress, not on main: a change in `lib/ai/` is reworking the extraction model and speed; update this section when it lands.
 - Primary model `gemma-4-26b-a4b-it` through the Gemini API with the `@google/genai` SDK, temperature 0. Fallback to `gemma-4-31b-it` on a 5xx or timeout.
 - One call per apartment with all its images (up to 5) plus any pasted text, so a 3-apartment demo is 3 calls.
 - The key lives only in `GEMINI_API_KEY` on the server (Vercel env var, `.env.local` locally, never committed).
@@ -373,6 +376,7 @@ All money math lives in one pure module, `lib/cost.ts`, with unit tests, so the 
 - Only fees with `counted: true` enter the true cost. Optional fees (for example parking) show beneath with a toggle.
 - Security deposits are spread over the lease like a fee, as decided, and carry a "refundable" label so users know it may come back.
 - Utilities marked not included get an editable estimate row per utility (source "estimate").
+- A fee marked `includedInAdvertised` (for example Brexx's rental insurance waiver, trash and credit reporting fees, which its listed price already covers) is always paid but never added on top: it moves out of rent into its own group so the advertised total stays the same, and it does not trigger the advertised-price flag.
 
 TrueMonthly = rent per person + sum over counted fees of (amount per person × periods in the lease) / leaseMonths.
 
