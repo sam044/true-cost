@@ -25,8 +25,11 @@ export function SiteHeader() {
           variant="ghost"
           size="icon"
           onClick={() => setTheme(nextTheme)}
-          aria-label={`Switch to ${nextTheme} theme`}
         >
+          {/* The theme is only known in the browser, so the label switches with
+              CSS like the icons; a label from resolvedTheme breaks hydration. */}
+          <span className="sr-only dark:hidden">Switch to dark theme</span>
+          <span className="sr-only hidden dark:inline">Switch to light theme</span>
           <Sun className="size-4 dark:hidden" aria-hidden />
           <Moon className="hidden size-4 dark:block" aria-hidden />
         </Button>
