@@ -1,28 +1,9 @@
 // Compare-side logic for the Blacksburg fee index (F20). Owner: Andy (B).
-// The database, API and seed are Sam's (lib/index/, app/api/index/). The index
+// The database, API and seed live in lib/index/, app/api/index/. The index
 // only gives hints: nothing here changes the totals in lib/cost.ts.
-import type { Apartment, FeeCategory, Frequency } from "./types";
+import type { Apartment, Frequency, IndexFee, IndexSummary } from "./types";
 
-// TODO(Andy): import these from lib/types.ts once Sam's F20 shared commit lands.
-// Copied from the PRD's "Blacksburg fee index (F20)" section.
-export interface IndexFee {
-  category: FeeCategory;
-  frequency: Frequency | null;
-  name: string; // the category label, or the fee name for "other" once 2+ reports agree
-  reports: number;
-  median: number;
-  low: number;
-  high: number;
-}
-export interface IndexSummary {
-  found: true;
-  complex: { slug: string; name: string; verified: boolean };
-  reports: number;
-  medianAdvertised: number | null;
-  includesSeed: boolean;
-  fees: IndexFee[];
-  lastSeen: string; // ISO date
-}
+export type { IndexFee, IndexSummary };
 
 const nameKey = (name: string) => name.toLowerCase().replace(/\s+/g, " ").trim();
 

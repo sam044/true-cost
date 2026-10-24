@@ -141,3 +141,25 @@ export interface LawFlag {
   citation: { label: string; url: string };
   feeIds: string[];
 }
+
+// Blacksburg fee index (F20). What GET /api/index/complex returns for one
+// complex: fees other students reported there, aggregated. Hints only.
+export interface IndexFee {
+  category: FeeCategory;
+  frequency: Frequency | null;
+  name: string; // the category label, or the fee name for "other" once 2+ reports agree
+  reports: number;
+  median: number;
+  low: number;
+  high: number;
+}
+
+export interface IndexSummary {
+  found: true;
+  complex: { slug: string; name: string; verified: boolean };
+  reports: number;
+  medianAdvertised: number | null;
+  includesSeed: boolean;
+  fees: IndexFee[];
+  lastSeen: string; // ISO date
+}
