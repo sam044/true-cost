@@ -86,3 +86,32 @@ describe("parseExtraction", () => {
     if (!r.ok) expect(r.error).toContain("fees.0");
   });
 });
+
+// Contact email (Andy): a wrong address would send the student's email to a
+// stranger, so it's kept only when it appears in the listing itself.
+describe("contact email check", () => {
+  const withEmail = (contactEmail: string | null) => ({ ...extraction([]), contactEmail });
+
+  it("keeps an address that appears in the pasted listing text", () => {
+    const out = applyChecks(withEmail("Leasing@Maple.com"), {
+      pastedText: "Questions? Email leasing@maple.com",
+      imageCount: 0,
+    });
+    expect(out.contactEmail).toBe("leasing@maple.com");
+  });
+
+  it("keeps an address that appears in an image transcript", () => {
+    const e = { ...withEmail("office@hub.com"), transcript: ["Contact: office@hub.com"] };
+    expect(applyChecks(e, { imageCount: 1 }).contactEmail).toBe("office@hub.com");
+  });
+
+  it("drops an address the listing doesn't show, or that isn't an email", () => {
+    expect(applyChecks(withEmail("made.up@example.com"), { pastedText: "Call 540-555-0100", imageCount: 0 }).contactEmail).toBeNull();
+    expect(applyChecks(withEmail("not an email"), { pastedText: "not an email", imageCount: 0 }).contactEmail).toBeNull();
+  });
+
+  it("stays null when the model found none, including older outputs without the field", () => {
+    expect(applyChecks(withEmail(null), { imageCount: 1 }).contactEmail).toBeNull();
+    expect(applyChecks(extraction([]), { imageCount: 1 }).contactEmail).toBeNull();
+  });
+});

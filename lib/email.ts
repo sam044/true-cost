@@ -37,7 +37,11 @@ export type EmailRequest = z.infer<typeof EmailRequest>;
 export interface EmailDraft {
   subject: string;
   body: string;
+  to?: string; // the leasing office's address, when the listing shows one
 }
+
+const enc = encodeURIComponent;
+const toParam = (name: string, to?: string) => (to ? `&${name}=${enc(to)}` : "");
 
 // What the browser sends: counted fees from the listing or typed in by the
 // student (not utility estimates, which are our guesses), and flag ids.
@@ -159,17 +163,17 @@ export function templateEmail(req: EmailRequest): EmailDraft {
 }
 
 export function mailtoHref(draft: EmailDraft): string {
-  return `mailto:?subject=${encodeURIComponent(draft.subject)}&body=${encodeURIComponent(draft.body)}`;
+  return `mailto:${draft.to ? enc(draft.to) : ""}?subject=${enc(draft.subject)}&body=${enc(draft.body)}`;
 }
 
 // Webmail compose links: open a filled-in draft for a signed-in user, who
 // reviews it and presses send. No sign-in or permissions on our side.
 export function gmailHref(draft: EmailDraft): string {
-  return `https://mail.google.com/mail/?view=cm&fs=1&su=${encodeURIComponent(draft.subject)}&body=${encodeURIComponent(draft.body)}`;
+  return `https://mail.google.com/mail/?view=cm&fs=1${toParam("to", draft.to)}&su=${enc(draft.subject)}&body=${enc(draft.body)}`;
 }
 
 export function outlookHref(draft: EmailDraft): string {
-  return `https://outlook.live.com/mail/0/deeplink/compose?subject=${encodeURIComponent(draft.subject)}&body=${encodeURIComponent(draft.body)}`;
+  return `https://outlook.live.com/mail/0/deeplink/compose?subject=${enc(draft.subject)}&body=${enc(draft.body)}${toParam("to", draft.to)}`;
 }
 
 export interface DraftResult extends EmailDraft {

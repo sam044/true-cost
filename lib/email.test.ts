@@ -168,3 +168,18 @@ describe("webmail links", () => {
     );
   });
 });
+
+describe("links with the leasing office's address", () => {
+  const draft = { subject: "Fees", body: "Hi", to: "leasing@example.com" };
+
+  it("fills the To line in every link", () => {
+    expect(mailtoHref(draft)).toBe("mailto:leasing%40example.com?subject=Fees&body=Hi");
+    expect(new URL(gmailHref(draft)).searchParams.get("to")).toBe("leasing@example.com");
+    expect(new URL(outlookHref(draft)).searchParams.get("to")).toBe("leasing@example.com");
+  });
+
+  it("leaves To out when there is no address", () => {
+    expect(mailtoHref({ subject: "Fees", body: "Hi" })).toBe("mailto:?subject=Fees&body=Hi");
+    expect(new URL(gmailHref({ subject: "Fees", body: "Hi" })).searchParams.has("to")).toBe(false);
+  });
+});

@@ -27,5 +27,7 @@ export function toApartment(name: string, extraction: Extraction): Apartment {
       confidence: fee.confidence,
     })),
     reviewed: false,
+    // Already checked against the listing in lib/ai/checks.ts.
+    ...(extraction.contactEmail ? { contactEmail: extraction.contactEmail } : {}),
   };
 }

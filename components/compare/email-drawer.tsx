@@ -31,6 +31,7 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
   const [state, setState] = useState<State>({ status: "idle" });
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
+  const to = apartment.contactEmail;
   const ids = {
     subject: `email-subject-${apartment.id}`,
     body: `email-body-${apartment.id}`,
@@ -114,6 +115,18 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                   Gemma was unavailable, so this is our standard draft. It still lists your fees.
                 </p>
               )}
+              <p className="text-sm">
+                <span className="font-medium">To: </span>
+                {to ? (
+                  <>
+                    {to} <span className="text-muted-foreground">(from the listing)</span>
+                  </>
+                ) : (
+                  <span className="text-muted-foreground">
+                    The listing doesn&apos;t show an email; add the office&apos;s address in your mail app.
+                  </span>
+                )}
+              </p>
               <div className="flex flex-col gap-2">
                 <Label htmlFor={ids.subject}>Subject</Label>
                 <Input
@@ -137,7 +150,7 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                 <p className="text-sm font-medium">Send it from your email</p>
                 <div className="flex flex-wrap gap-2">
                   <Button asChild>
-                    <a href={gmailHref({ subject, body })} target="_blank" rel="noreferrer">
+                    <a href={gmailHref({ subject, body, to })} target="_blank" rel="noreferrer">
                       <Mail aria-hidden /> Open in Gmail
                       <span className="sr-only"> (opens in a new tab)</span>
                     </a>
@@ -145,7 +158,7 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                   {/* mailto: opens the computer's default mail app; with Outlook
                       as the default, the subject lands in Outlook's subject line. */}
                   <Button asChild variant="outline">
-                    <a href={mailtoHref({ subject, body })} aria-describedby={ids.appHint}>
+                    <a href={mailtoHref({ subject, body, to })} aria-describedby={ids.appHint}>
                       <Mail aria-hidden /> Open in Outlook app
                     </a>
                   </Button>
@@ -159,7 +172,7 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                 </p>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                   <a
-                    href={outlookHref({ subject, body })}
+                    href={outlookHref({ subject, body, to })}
                     target="_blank"
                     rel="noreferrer"
                     // Signed-out Outlook can drop the draft on its way through

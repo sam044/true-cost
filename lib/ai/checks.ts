@@ -47,5 +47,16 @@ export function applyChecks(
     return grounded ? fee : { ...fee, confidence: "low" };
   });
   fees.sort((a, b) => order[a.confidence] - order[b.confidence]);
-  return { ...extraction, fees };
+  return { ...extraction, fees, contactEmail: groundedEmail(extraction.contactEmail, sources) };
+}
+
+const EMAIL = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+// The leasing office address, only if it is a real email that appears in the
+// listing text or transcript. A made-up address would send the student's email
+// to a stranger, so anything else becomes null. (Andy)
+export function groundedEmail(email: string | null | undefined, sources: string[]): string | null {
+  const e = email?.trim().toLowerCase();
+  if (!e || !EMAIL.test(e)) return null;
+  return sources.some((s) => s.toLowerCase().includes(e)) ? e : null;
 }
