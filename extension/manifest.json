@@ -1,12 +1,35 @@
 {
   "manifest_version": 3,
   "name": "True Cost",
-  "version": "0.2.0",
-  "description": "One click sends the whole apartment listing you are looking at to True Cost to find every hidden fee.",
-  "action": { "default_title": "Find the true cost of this listing" },
-  "background": { "service_worker": "background.js", "type": "module" },
-  "options_ui": { "page": "options.html", "open_in_tab": false },
-  "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["http://localhost:3000/*", "https://*.vercel.app/*"],
-  "optional_host_permissions": ["https://*/*", "http://*/*"]
+  "version": "0.3.0",
+  "description": "One click reads the whole apartment listing you are looking at and shows every hidden fee in a side panel, then opens it in True Cost.",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "Find the true cost of this listing"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://*.vercel.app/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
 }

@@ -1,40 +1,168 @@
 // True Cost extension. Owner: Sam (A). See docs/PRD.md, "Browser extension (F19)".
-// One click on the toolbar button captures the whole listing in the current tab:
-// it scrolls the page one screen at a time, screenshots each screen, stitches
-// the shots into at most 5 tall images and reads the page text. Then it opens
-// the app's /compare/import page and hands the capture to it. The app calls
-// Gemma; this extension never holds an API key and only talks to the app.
-import { getAppUrl } from "./config.js";
+// One click on the toolbar button opens the side panel and captures the whole
+// listing in the current tab: it scrolls the page one screen at a time,
+// screenshots each screen, stitches the shots into at most 5 tall images and
+// reads the page text. It posts that to the app's POST /api/extract (the app
+// calls Gemma; this extension never holds an API key and only talks to the
+// app) and shows each step and the fees in the side panel (panel.js). The
+// panel's buttons hand the fees to the app's /compare/import page.
+//
+// Progress lives in chrome.storage.session, which the panel watches:
+//   job        { id, tabId, name, url, appUrl, step, ... } (small, rewritten often)
+//   jobInput   { images, text } (the capture, written once)
+//   jobPreview the latest screenshot while capturing
+import { getAppUrl, hostOf, migrateAppUrl } from "./config.js";
 import { MAX_SHOTS, OUTPUT_WIDTH, fitBudget, planImages, planPieces } from "./stitch.js";
 
 const MAX_TEXT = 20000; // /api/extract rejects longer text
 const CAPTURE_GAP_MS = 550; // Chrome allows about 2 captureVisibleTab calls a second
 const SETTLE_MS = 250; // let lazy images and scroll-linked headers settle after scrolling
-const IDLE_TITLE = "Find the true cost of this listing";
+const EXTRACT_TIMEOUT_MS = 310_000; // the app's /api/extract gives up by 300s
+const HEARTBEAT_MS = 15_000; // keeps this worker alive during the long Gemma wait; the panel watches it
 const BUSY_COLOR = "#2563eb";
+const DONE_COLOR = "#15803d";
 const ERROR_COLOR = "#b91c1c";
 
-const busyTabs = new Set();
+let running = false; // one capture at a time; the panel shows the latest
 
-chrome.action.onClicked.addListener((tab) => void captureAndSend(tab));
+chrome.runtime.onInstalled.addListener(() => void migrateAppUrl().then(updateIdleTitle));
+chrome.runtime.onStartup.addListener(() => void updateIdleTitle());
+chrome.storage.onChanged.addListener((changes, area) => {
+  if (area === "sync" && changes.appTarget) void updateIdleTitle();
+});
+
+chrome.action.onClicked.addListener((tab) => {
+  // Chrome only lets the panel open straight from the click, before any await.
+  chrome.sidePanel.open({ windowId: tab.windowId }).catch((e) => console.warn("side panel", e));
+  void captureAndSend(tab);
+});
+
+chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+  if (message?.type === "retry") {
+    void readFees();
+  } else if (message?.type === "open") {
+    openInApp(message.then).then(
+      () => sendResponse({ ok: true }),
+      (e) => sendResponse({ ok: false, error: e instanceof Error ? e.message : String(e) }),
+    );
+    return true; // answers later
+  }
+});
+
+async function updateIdleTitle() {
+  await chrome.action.setTitle({ title: `Find the true cost of this listing (sends to ${hostOf(await getAppUrl())})` });
+}
 
 async function captureAndSend(tab) {
-  if (busyTabs.has(tab.id)) return;
-  busyTabs.add(tab.id);
+  if (running) return;
+  running = true;
   try {
-    if (isRestricted(tab.url)) throw new Error("Chrome doesn't let extensions read this page.");
+    await chrome.storage.session.remove(["jobInput", "jobPreview"]);
+    await setJob({
+      id: crypto.randomUUID(),
+      tabId: tab.id,
+      name: listingName(tab.title),
+      url: tab.url,
+      appUrl: await getAppUrl(),
+      step: "capturing",
+      shot: 0,
+      shots: 0,
+      startedAt: Date.now(),
+    });
+    if (isRestricted(tab.url)) {
+      throw new Error("Chrome doesn't let extensions read this page. Open an apartment listing and try again.");
+    }
     await setBadge(tab.id, "…", "Reading this listing", BUSY_COLOR);
-    const capture = await captureListing(tab);
-    await setBadge(tab.id, "…", "Opening True Cost", BUSY_COLOR);
-    await sendToApp(tab, capture);
-    await setBadge(tab.id, "", IDLE_TITLE);
+    const capture = await captureListing(tab, async (progress) => {
+      if (progress.preview) await chrome.storage.session.set({ jobPreview: progress.preview });
+      await updateJob({ step: progress.step, shot: progress.shot, shots: progress.shots });
+    });
+    await chrome.storage.session.set({ jobInput: { images: capture.images, text: capture.text } });
+    await chrome.storage.session.remove("jobPreview");
+    await updateJob({
+      name: capture.name,
+      stats: {
+        images: capture.images.length,
+        chars: capture.images.reduce((sum, url) => sum + url.length, 0),
+        text: capture.text.length,
+        shots: capture.shots,
+        truncated: capture.truncated,
+      },
+    });
   } catch (error) {
-    console.error("True Cost capture failed", error);
-    const message = error instanceof Error ? error.message : String(error);
-    await setBadge(tab.id, "!", `True Cost couldn't read this page: ${message}`, ERROR_COLOR).catch(() => {});
-  } finally {
-    busyTabs.delete(tab.id);
+    running = false;
+    await failJob(error);
+    return;
   }
+  running = false;
+  await readFees();
+}
+
+// Sends the saved capture to /api/extract. Also the panel's "Try again".
+async function readFees() {
+  const { job, jobInput } = await chrome.storage.session.get(["job", "jobInput"]);
+  if (!job || !jobInput || running) return;
+  running = true;
+  await updateJob({ step: "reading", readingSince: Date.now(), error: null, failedStep: null });
+  await setBadge(job.tabId, "…", "Gemma is reading the fees", BUSY_COLOR).catch(() => {});
+  // A pending fetch alone doesn't keep an extension service worker alive, and
+  // Gemma can take minutes. Calling an extension API every few seconds does.
+  const heartbeat = setInterval(() => void updateJob({}), HEARTBEAT_MS);
+  try {
+    const extraction = await postExtract(job.appUrl, jobInput);
+    await updateJob({ step: "done", extraction, finishedAt: Date.now() });
+    await setBadge(job.tabId, "✓", "Fees ready in the True Cost panel", DONE_COLOR).catch(() => {});
+  } catch (error) {
+    await failJob(error);
+  } finally {
+    clearInterval(heartbeat);
+    running = false;
+  }
+}
+
+async function postExtract(appUrl, { images, text }) {
+  const where = hostOf(appUrl);
+  let response;
+  try {
+    response = await fetch(`${appUrl}/api/extract`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ images, text: text?.trim() || undefined }),
+      signal: AbortSignal.timeout(EXTRACT_TIMEOUT_MS),
+    });
+  } catch (error) {
+    if (error?.name === "TimeoutError") throw new Error("Gemma took too long to answer. Try again in a moment.");
+    throw new Error(`We couldn't reach True Cost at ${where}. Check your connection, or the address in Options.`);
+  }
+  const body = await response.json().catch(() => null);
+  if (!response.ok) {
+    if (body?.error) throw new Error(body.error);
+    if (response.status === 404) throw new Error(`${where} doesn't look like True Cost. Check the address in Options.`);
+    throw new Error(`True Cost at ${where} answered with an error (${response.status}). Try again in a moment.`);
+  }
+  // The app validated the extraction before sending it, and the import page
+  // checks it again; here we only need the parts the panel shows.
+  if (!body || !Array.isArray(body.fees) || !body.advertisedPrice) {
+    throw new Error("True Cost sent back something we couldn't read. Try again.");
+  }
+  return body;
+}
+
+async function failJob(error) {
+  console.error("True Cost capture failed", error);
+  const message = error instanceof Error ? error.message : String(error);
+  const { job } = await chrome.storage.session.get("job");
+  await updateJob({ step: "error", failedStep: job?.step ?? "capturing", error: message });
+  if (job) await setBadge(job.tabId, "!", `True Cost couldn't read this page: ${message}`, ERROR_COLOR).catch(() => {});
+}
+
+async function setJob(job) {
+  await chrome.storage.session.set({ job: { ...job, heartbeat: Date.now() } });
+}
+
+async function updateJob(patch) {
+  const { job } = await chrome.storage.session.get("job");
+  if (job) await setJob({ ...job, ...patch });
 }
 
 // chrome://, the Web Store and other browser pages block extensions.
@@ -45,9 +173,9 @@ function isRestricted(url = "") {
   );
 }
 
-async function captureListing(tab) {
+async function captureListing(tab, onProgress = async () => {}) {
   const page = await inPage(tab.id, preparePage);
-  if (!page) throw new Error("the page didn't respond.");
+  if (!page) throw new Error("The page didn't respond. Reload it and try again.");
   const shots = [];
   let lastCapture = 0;
   try {
@@ -57,32 +185,35 @@ async function captureListing(tab) {
       if (shots.length === 1) await inPage(tab.id, hideFixed);
       const at = await inPage(tab.id, scrollRegion, [y]);
       if (shots.length && at.y <= shots[shots.length - 1].scrollY) break;
-      const progress = `${shots.length + 1}/${Math.max(estimate, shots.length + 1)}`;
-      await setBadge(tab.id, progress, "Capturing this listing", BUSY_COLOR);
+      const total = Math.max(estimate, shots.length + 1);
+      await setBadge(tab.id, `${shots.length + 1}/${total}`, "Capturing this listing", BUSY_COLOR);
       await delay(Math.max(SETTLE_MS, lastCapture + CAPTURE_GAP_MS - Date.now()));
       const dataUrl = await chrome.tabs.captureVisibleTab(tab.windowId, { format: "jpeg", quality: 92 });
       lastCapture = Date.now();
       shots.push({ scrollY: at.y, dataUrl });
+      await onProgress({ step: "capturing", shot: shots.length, shots: total, preview: dataUrl });
       if (at.y + page.region.height >= at.scrollHeight - 2) break;
       y = at.y + page.region.height;
     }
   } finally {
     await inPage(tab.id, restorePage).catch(() => {});
   }
+  await onProgress({ step: "stitching", shot: shots.length, shots: shots.length });
   await setBadge(tab.id, "…", "Putting the screenshots together", BUSY_COLOR);
   const stitched = await stitch(shots, page);
   return {
-    version: 2,
     name: listingName(page.title || tab.title),
     url: tab.url,
     images: stitched.dataUrls,
     text: (page.text || "").replace(/\n{3,}/g, "\n\n").trim().slice(0, MAX_TEXT),
+    shots: shots.length,
+    truncated: stitched.truncated,
   };
 }
 
 // For checking a capture from the service worker's DevTools console:
 // await trueCost.captureListing((await chrome.tabs.query({ active: true, lastFocusedWindow: true }))[0])
-globalThis.trueCost = { captureAndSend, captureListing, stitch };
+globalThis.trueCost = { captureAndSend, captureListing, readFees, stitch };
 
 async function stitch(shots, page) {
   const { pieces, height } = planPieces(shots, page.region);
@@ -139,19 +270,36 @@ function listingName(title = "") {
   return (name || "Apartment").slice(0, 80);
 }
 
-async function sendToApp(tab, capture) {
-  const appUrl = await getAppUrl();
-  const appTab = await chrome.tabs.create({ url: `${appUrl}/compare/import`, index: tab.index + 1 });
+// The panel's "Review in True Cost" / "Add to Compare". The import page adds
+// the apartment from these fees (no second Gemma call) and opens Review or
+// Compare. The job id becomes the apartment id, so a second click doesn't
+// add the apartment twice.
+async function openInApp(then) {
+  const { job } = await chrome.storage.session.get("job");
+  if (!job?.extraction) throw new Error("There are no fees to open yet.");
+  const listing = await chrome.tabs.get(job.tabId).catch(() => null);
+  const appTab = await chrome.tabs.create({
+    url: `${job.appUrl}/compare/import`,
+    ...(listing ? { index: listing.index + 1, windowId: listing.windowId } : {}),
+  });
   await waitForLoad(appTab.id);
+  const capture = {
+    version: 3,
+    id: job.id,
+    name: job.name,
+    url: job.url,
+    extraction: job.extraction,
+    then: then === "compare" ? "compare" : "review",
+  };
   const delivered = await inPage(appTab.id, deliver, [capture]);
-  if (!delivered) throw new Error("the True Cost tab couldn't take the capture.");
+  if (!delivered) throw new Error("The True Cost tab couldn't take the fees.");
 }
 
 function waitForLoad(tabId) {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
       chrome.tabs.onUpdated.removeListener(onUpdated);
-      reject(new Error("the True Cost app didn't load. Is it running?"));
+      reject(new Error("The True Cost app didn't load. Check the address in Options."));
     }, 30000);
     function onUpdated(id, info) {
       if (id !== tabId || info.status !== "complete") return;
