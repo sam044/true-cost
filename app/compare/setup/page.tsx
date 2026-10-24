@@ -1,8 +1,9 @@
 "use client";
 
 // Setup screen. Owner: Andy (B). People sharing (1-6), lease months, optional
-// monthly budget per person. Saved to the store, which persists to localStorage.
-import { useEffect, useRef, useState, type FormEvent } from "react";
+// monthly budget per person, and which optional extras they need. Saved to the
+// store, which persists to localStorage.
+import { useRef, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -11,23 +12,21 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PageHeading } from "@/components/page-heading";
 import { Stepper } from "@/components/stepper";
+import { useHydrated } from "@/components/compare/use-hydrated";
+import { defaultCounted } from "@/lib/cost";
 import { useTrueCost } from "@/lib/store";
+import type { Needs } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const PEOPLE = [1, 2, 3, 4, 5, 6];
 const LEASE_PRESETS = [10, 12];
 const MAX_LEASE_MONTHS = 24;
-
-// The store loads from localStorage after the first render. Wait for it so the
-// form starts from what the user saved, not the defaults.
-function useHydrated() {
-  const [hydrated, setHydrated] = useState(false);
-  useEffect(() => {
-    setHydrated(useTrueCost.persist.hasHydrated());
-    return useTrueCost.persist.onFinishHydration(() => setHydrated(true));
-  }, []);
-  return hydrated;
-}
+const NO_NEEDS: Needs = { parking: false, pet: false, furnished: false };
+const NEED_OPTIONS: { key: keyof Needs; label: string }[] = [
+  { key: "parking", label: "Parking" },
+  { key: "pet", label: "A pet" },
+  { key: "furnished", label: "A furnished unit" },
+];
 
 function validateLease(value: string): string | null {
   const n = Number(value);
@@ -46,10 +45,11 @@ function validateBudget(value: string): string | null {
 
 function SetupForm() {
   const router = useRouter();
-  const { setup, setSetup } = useTrueCost();
+  const { setup, apartments, setSetup, updateFee } = useTrueCost();
   const [people, setPeople] = useState(setup.people);
   const [lease, setLease] = useState(String(setup.leaseMonths));
   const [budget, setBudget] = useState(setup.budget == null ? "" : String(setup.budget));
+  const [needs, setNeeds] = useState<Needs>(setup.needs ?? NO_NEEDS);
   const [submitted, setSubmitted] = useState(false);
   const leaseRef = useRef<HTMLInputElement>(null);
   const budgetRef = useRef<HTMLInputElement>(null);
@@ -63,11 +63,26 @@ function SetupForm() {
     setSubmitted(true);
     if (validateLease(lease)) return leaseRef.current?.focus();
     if (validateBudget(budget)) return budgetRef.current?.focus();
-    setSetup({
+    const next = {
       people,
       leaseMonths: Number(lease),
       budget: budget.trim() === "" ? undefined : Number(budget),
-    });
+      needs,
+    };
+    setSetup(next);
+
+    // Re-apply the defaults to optional fees already added, but only when the
+    // answers changed, so per-fee choices made on Compare survive a resubmit.
+    const prev = setup.needs ?? NO_NEEDS;
+    if (NEED_OPTIONS.some(({ key }) => prev[key] !== needs[key])) {
+      for (const apartment of apartments) {
+        for (const fee of apartment.fees) {
+          if (fee.mandatory === "no") {
+            updateFee(apartment.id, fee.id, { counted: defaultCounted(fee, next) });
+          }
+        }
+      }
+    }
     router.push("/compare/add");
   }
 
@@ -147,6 +162,31 @@ function SetupForm() {
               </p>
             )}
           </div>
+
+          <fieldset className="flex flex-col gap-3">
+            <legend className="mb-3 text-sm font-medium">
+              Will you need any of these?{" "}
+              <span className="font-normal text-muted-foreground">(tick any that apply)</span>
+            </legend>
+            <div className="flex flex-wrap gap-x-6 gap-y-3">
+              {NEED_OPTIONS.map(({ key, label }) => (
+                <label key={key} className="flex cursor-pointer items-center gap-2 text-sm">
+                  <input
+                    type="checkbox"
+                    checked={needs[key]}
+                    onChange={(e) => setNeeds({ ...needs, [key]: e.target.checked })}
+                    aria-describedby="needs-hint"
+                    className="size-4 cursor-pointer accent-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                  />
+                  {label}
+                </label>
+              ))}
+            </div>
+            <p id="needs-hint" className="text-sm text-muted-foreground">
+              Optional fees for these count toward the true cost. You can still change any
+              single fee on the Compare screen.
+            </p>
+          </fieldset>
 
           <div className="flex flex-col gap-3">
             <Label htmlFor="budget">
