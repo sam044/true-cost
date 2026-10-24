@@ -4,7 +4,7 @@
 
 Built at GDG Build with AI x Hacktoberfest 2026, Virginia Tech (Oct 24–25, 2026).
 
-## Why
+## What
 
 Blacksburg students compare apartments by the headline per-bed price, but admin fees, utility fees, parking and reconditioning fees live on separate tabs and in fine print. Virginia now requires advertised prices to include mandatory fees (Va. Code § 59.1-608) and leases to itemize charges on page one (Va. Code § 55.1-1204.1), but nobody adds it all up for you.
 
