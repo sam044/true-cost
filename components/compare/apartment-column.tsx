@@ -16,6 +16,7 @@ import type { Apartment, Setup } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { CostBar } from "./cost-bar";
 import { money, moneyWhole } from "./format";
+import { EmailDrawer } from "./email-drawer";
 import { IndexPanel } from "./index-panel";
 import { FlagBadges, FlagList } from "./law-flags";
 
@@ -242,6 +243,8 @@ export function ApartmentColumn({
             <FlagList apartmentId={apartment.id} flags={flags} />
           </>
         )}
+
+        <EmailDrawer apartment={apartment} flags={flags} />
       </CardContent>
     </Card>
   );

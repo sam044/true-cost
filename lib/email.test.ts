@@ -1,0 +1,142 @@
+import { describe, expect, it } from "vitest";
+import {
+  EmailRequest,
+  buildEmailPrompt,
+  draftEmail,
+  emailRequestFor,
+  inventedAmounts,
+  mailtoHref,
+  parseEmailDraft,
+  templateEmail,
+} from "./email";
+import { flagsFor } from "./flags";
+import { mockApartments } from "./mock";
+
+const setup = { people: 4, leaseMonths: 12 };
+const brexx = mockApartments[0];
+const req = emailRequestFor(brexx, flagsFor(brexx, setup));
+
+describe("emailRequestFor", () => {
+  it("sends only the apartment name, advertised price, counted fees and flag titles", () => {
+    expect(req.apartmentName).toBe("Brexx at Blacksburg");
+    expect(req.advertised).toEqual({ amount: 1069, basis: "per_person" });
+    expect(req.fees.map((f) => f.name)).toEqual([
+      "Administrative fee",
+      "Application fee",
+      "Utility service fee",
+    ]);
+    expect(Object.keys(req.fees[0]).sort()).toEqual(
+      ["amount", "basis", "frequency", "mandatory", "name"].sort(),
+    );
+    expect(req.flags).toEqual(["Check page 1 of the lease"]);
+    expect(EmailRequest.safeParse(req).success).toBe(true);
+  });
+
+  it("leaves out estimates and fees the user did not count", () => {
+    const apt = {
+      ...brexx,
+      fees: [
+        ...brexx.fees,
+        { ...brexx.fees[0], id: "e", name: "Electric", source: "estimate" as const },
+        { ...brexx.fees[0], id: "x", name: "Parking", counted: false },
+      ],
+    };
+    expect(emailRequestFor(apt, []).fees.map((f) => f.name)).not.toContain("Electric");
+    expect(emailRequestFor(apt, []).fees.map((f) => f.name)).not.toContain("Parking");
+  });
+});
+
+describe("EmailRequest", () => {
+  it("rejects oversized or malformed input", () => {
+    expect(EmailRequest.safeParse({ ...req, apartmentName: "" }).success).toBe(false);
+    expect(EmailRequest.safeParse({ ...req, fees: Array(41).fill(req.fees[0]) }).success).toBe(false);
+    expect(
+      EmailRequest.safeParse({ ...req, fees: [{ ...req.fees[0], amount: -1 }] }).success,
+    ).toBe(false);
+  });
+});
+
+describe("buildEmailPrompt", () => {
+  it("includes every fee and flag as data and asks for JSON", () => {
+    const prompt = buildEmailPrompt(req);
+    expect(prompt).toContain("Brexx at Blacksburg");
+    expect(prompt).toContain("Utility service fee: $62 monthly per person (required: unknown)");
+    expect(prompt).toContain("Check page 1 of the lease");
+    expect(prompt).toMatch(/"subject"/);
+  });
+});
+
+describe("parseEmailDraft", () => {
+  it("reads JSON, with or without a code fence", () => {
+    const json = '{"subject":"Fee question","body":"Hello,\\nThanks."}';
+    expect(parseEmailDraft(json)).toEqual({ subject: "Fee question", body: "Hello,\nThanks." });
+    expect(parseEmailDraft("```json\n" + json + "\n```")).toEqual({
+      subject: "Fee question",
+      body: "Hello,\nThanks.",
+    });
+  });
+
+  it("returns null for anything that is not a subject and body", () => {
+    expect(parseEmailDraft("Sure! Here is your email")).toBeNull();
+    expect(parseEmailDraft('{"subject":""}')).toBeNull();
+    expect(parseEmailDraft(undefined)).toBeNull();
+  });
+});
+
+describe("inventedAmounts", () => {
+  it("finds dollar amounts in the draft that are not in the request", () => {
+    expect(inventedAmounts("The $62 utility fee and $1,069 rent", req)).toEqual([]);
+    expect(inventedAmounts("Is the $62.00 fee required?", req)).toEqual([]);
+    expect(inventedAmounts("I was quoted a $75 pet fee", req)).toEqual(["$75"]);
+  });
+});
+
+describe("templateEmail", () => {
+  it("asks for the full fee schedule and names each fee with its amount", () => {
+    const draft = templateEmail(req);
+    expect(draft.subject).toContain("Brexx at Blacksburg");
+    expect(draft.body).toMatch(/complete.*fee/i);
+    expect(draft.body).toContain("Utility service fee ($62 monthly)");
+    expect(inventedAmounts(draft.body, req)).toEqual([]);
+  });
+});
+
+describe("mailtoHref", () => {
+  it("encodes subject and body with no recipient", () => {
+    expect(mailtoHref({ subject: "Fees & rent", body: "Line 1\nLine 2" })).toBe(
+      "mailto:?subject=Fees%20%26%20rent&body=Line%201%0ALine%202",
+    );
+  });
+});
+
+describe("draftEmail", () => {
+  const good = '{"subject":"Fees at Brexx","body":"Hello, is the $62 utility fee required? Thank you,"}';
+
+  it("uses Gemma's draft when it parses and quotes only known amounts", async () => {
+    const result = await draftEmail(req, async () => good);
+    expect(result).toEqual({
+      subject: "Fees at Brexx",
+      body: "Hello, is the $62 utility fee required? Thank you,",
+      source: "gemma",
+    });
+  });
+
+  it("falls back to the template when the reply is not a draft", async () => {
+    const result = await draftEmail(req, async () => "Sure! Here you go.");
+    expect(result).toEqual({ ...templateEmail(req), source: "template" });
+  });
+
+  it("falls back to the template when the draft invents an amount", async () => {
+    const result = await draftEmail(req, async () =>
+      '{"subject":"Fees","body":"Is the $99 amenity fee required?"}',
+    );
+    expect(result.source).toBe("template");
+  });
+
+  it("falls back to the template when Gemma fails", async () => {
+    const result = await draftEmail(req, async () => {
+      throw new Error("503");
+    });
+    expect(result.source).toBe("template");
+  });
+});
