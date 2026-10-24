@@ -56,10 +56,10 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
     }
   }
 
-  async function copy() {
+  async function copy(message = "Email copied") {
     try {
       await navigator.clipboard.writeText(`Subject: ${subject}\n\n${body}`);
-      toast.success("Email copied");
+      toast.success(message);
     } catch {
       toast.error("Couldn't copy. Select the text and copy it yourself.");
     }
@@ -139,11 +139,20 @@ export function EmailDrawer({ apartment, flags }: { apartment: Apartment; flags:
                     </a>
                   </Button>
                   <Button asChild variant="outline">
-                    <a href={outlookHref({ subject, body })} target="_blank" rel="noreferrer">
+                    <a
+                      href={outlookHref({ subject, body })}
+                      target="_blank"
+                      rel="noreferrer"
+                      // Signed-out Outlook can drop the draft on its way through
+                      // sign-in, so copy it first as a backup the student can paste.
+                      onClick={() =>
+                        void copy("Draft copied. If Outlook asks you to sign in, sign in, then paste it.")
+                      }
+                    >
                       Open in Outlook<span className="sr-only"> (opens in a new tab)</span>
                     </a>
                   </Button>
-                  <Button variant="outline" onClick={copy}>
+                  <Button variant="outline" onClick={() => void copy()}>
                     <Copy aria-hidden /> Copy
                   </Button>
                 </div>
