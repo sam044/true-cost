@@ -4,6 +4,10 @@
 
 Live app: **[true-cost-xi.vercel.app](https://true-cost-xi.vercel.app)**. Demo video: **[watch on Loom](https://www.loom.com/share/d8e2152a9f714e55a9f441f7261340de)**. Built at GDG Build with AI x Hacktoberfest 2026, Virginia Tech (Oct 24–25, 2026).
 
+## Pitch
+
+True Cost helps students at VT who are looking for off-campus housing see the actual price of housing after all the fees and be able to compare apartments side by side. Our database of over 200 apartments around VT gives VT students plenty of options, and they can sort the database to their liking. Our Chrome extension allows them to, instead, choose an apartment that they like and scan the listing page to find all the fees included and compare it to other apartments in our database.
+
 ## The problem
 
 Blacksburg students pick apartments months ahead, and they compare them by the headline per-bed price. That price leaves a lot out. Admin fees, utility service fees, parking, amenity fees and reconditioning fees sit on separate tabs, in fine print, or in the lease itself. Real examples from Blacksburg listings:
