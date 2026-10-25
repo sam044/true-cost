@@ -17,6 +17,7 @@ import { useHydrated } from "@/components/compare/use-hydrated";
 import { summarize } from "@/lib/cost";
 import { useTrueCost } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import { money } from "@/components/compare/format";
 
 const COLUMNS = ["", "md:grid-cols-1 max-w-xl", "md:grid-cols-2", "lg:grid-cols-3 md:grid-cols-2"];
 
@@ -57,6 +58,11 @@ function Results() {
   const shown = apartments.filter((a) => !hidden.has(a.id));
   const totals = shown.map((a) => summarize(a, setup).trueMonthly);
   const cheapestId = shown.length > 1 ? shown[totals.indexOf(Math.min(...totals))].id : null;
+  // One plain sentence with the answer: the cheapest place and how far ahead it is.
+  const ranked = shown
+    .map((a, i) => ({ name: a.name, total: totals[i] }))
+    .sort((a, b) => a.total - b.total);
+  const lead = ranked.length > 1 ? ranked[1].total - ranked[0].total : 0;
 
   function toggle(id: string, show: boolean) {
     setHidden((prev) => {
@@ -88,6 +94,15 @@ function Results() {
           </Link>
         </p>
       </div>
+      {lead > 0.005 && (
+        <p className="max-w-3xl text-lg text-pretty sm:text-xl" aria-live="polite">
+          <span className="font-semibold">{ranked[0].name}</span> is{" "}
+          <span key={lead.toFixed(2)} className="num-swap inline-block font-semibold text-success">
+            {money(lead)} a month cheaper
+          </span>{" "}
+          per person than {ranked[1].name}, with every fee counted.
+        </p>
+      )}
       <div className={cn("grid items-start gap-4", COLUMNS[shown.length])}>
         {shown.map((apartment) => (
           <ApartmentColumn

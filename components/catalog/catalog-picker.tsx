@@ -111,7 +111,7 @@ export function CatalogPicker() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search complexes: Hub, Union, Foxridge…"
+            placeholder="Search, e.g. Hub or Union"
             autoComplete="off"
             className="h-11 rounded-xl pl-10 text-base"
           />
@@ -151,7 +151,10 @@ export function CatalogPicker() {
           <h3 id={listHeadingId} className="sr-only">
             {shown.length} Blacksburg complexes, scroll for more
           </h3>
-          <ul aria-label="Blacksburg complexes" className="grid gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
+          <ul
+            aria-label="Blacksburg complexes"
+            className="grid gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3"
+          >
             {shown.map((entry) => (
               <li key={entry.id}>
                 <CatalogCard
@@ -166,19 +169,45 @@ export function CatalogPicker() {
         </div>
       )}
 
+      {/* Sticks to the bottom of the screen while the list scrolls past, so the
+          next step is always one tap away. */}
       {selected.size > 0 && (
-        <div className="flex flex-wrap items-center gap-3">
-          <Button asChild size="lg">
-            <Link href={anyUnreviewed ? "/compare/review" : "/compare/results"}>
-              {anyUnreviewed ? "Review fees" : "Go to compare"} <ArrowRight className="size-4" aria-hidden />
-            </Link>
-          </Button>
-          <p className="text-sm text-muted-foreground">
-            {apartments.length} of {MAX_APARTMENTS} apartments selected.{" "}
-            {anyUnreviewed
-              ? "Auto-scanned complexes open Review first so you can check their fees."
-              : "Catalog fees are already checked, so they go straight to Compare."}
-          </p>
+        <div className="sticky bottom-4 z-30 mt-2">
+          <div className="selection-bar flex flex-col gap-3 rounded-2xl bg-foreground p-3 pl-5 text-background shadow-[0_12px_32px_-8px_rgb(0_0_0/0.35)] sm:flex-row sm:items-center">
+            <div className="flex min-w-0 flex-1 items-center gap-4">
+              <span className="flex shrink-0 gap-1" aria-hidden>
+                {Array.from({ length: MAX_APARTMENTS }, (_, i) => (
+                  <span
+                    key={i}
+                    className={cn(
+                      "size-2 rounded-full transition-colors duration-200",
+                      i < apartments.length ? "bg-background" : "bg-background/25",
+                    )}
+                  />
+                ))}
+              </span>
+              <p className="min-w-0 text-sm text-pretty">
+                <span className="font-medium">
+                  {apartments.length} of {MAX_APARTMENTS} apartments selected.
+                </span>{" "}
+                <span className="text-background/70">
+                  {anyUnreviewed
+                    ? "Auto-scanned complexes open Review first so you can check their fees."
+                    : "Catalog fees are already checked, so they go straight to Compare."}
+                </span>
+              </p>
+            </div>
+            <Button
+              asChild
+              size="lg"
+              className="shrink-0 bg-background text-foreground shadow-none hover:bg-background/90"
+            >
+              <Link href={anyUnreviewed ? "/compare/review" : "/compare/results"}>
+                {anyUnreviewed ? "Review fees" : "Go to compare"}{" "}
+                <ArrowRight className="size-4" aria-hidden />
+              </Link>
+            </Button>
+          </div>
         </div>
       )}
     </section>

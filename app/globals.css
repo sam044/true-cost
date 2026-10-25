@@ -255,3 +255,55 @@
     animation-name: none;
   }
 }
+
+/* The Apartments selection bar rises in once it has something to say. */
+@keyframes bar-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+}
+.selection-bar {
+  animation: bar-rise 320ms var(--ease-out-strong);
+}
+
+/* Each screen settles in on arrival. */
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.page-in {
+  animation: page-in 280ms var(--ease-out-strong);
+}
+@media (prefers-reduced-motion: reduce) {
+  .selection-bar {
+    animation-name: none;
+  }
+  .page-in {
+    animation: page-in-fade 200ms ease;
+  }
+}
+@keyframes page-in-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+/* A number that changes settles in from a soft blur instead of snapping. */
+@keyframes num-swap {
+  from {
+    opacity: 0.2;
+    filter: blur(3px);
+    transform: translateY(2px);
+  }
+}
+.num-swap {
+  animation: num-swap 260ms var(--ease-out-strong);
+}
+@media (prefers-reduced-motion: reduce) {
+  .num-swap {
+    animation: none;
+  }
+}

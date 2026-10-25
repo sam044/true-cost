@@ -169,7 +169,10 @@ export function ApartmentColumn({
             )}
           </div>
           <p className="mt-3 flex flex-wrap items-baseline gap-x-3">
-            <span className="text-[2.75rem] leading-none font-semibold tracking-[-0.035em] tabular-nums">
+            <span
+              key={summary.trueMonthly.toFixed(2)}
+              className="num-swap text-[2.75rem] leading-none font-semibold tracking-[-0.035em] tabular-nums"
+            >
               {money(summary.trueMonthly)}
             </span>
             <span className="text-muted-foreground tabular-nums">
