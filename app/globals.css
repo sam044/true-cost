@@ -21,6 +21,7 @@
   --color-chart-5: var(--chart-5);
   --color-hidden: var(--hidden);
   --color-hidden-foreground: var(--hidden-foreground);
+  --color-hidden-ink: var(--hidden-ink);
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-chart-4: var(--chart-4);
@@ -53,10 +54,11 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* Warm paper ground with white cards on top, so surfaces separate by tone. */
+  --background: oklch(0.985 0.004 60);
+  --foreground: oklch(0.18 0.012 30);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.18 0.012 30);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   /* Brand: VT maroon primary, burnt orange for "hidden" money */
@@ -64,16 +66,18 @@
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.965 0.006 30);
   --secondary-foreground: oklch(0.25 0.02 15);
-  --muted: oklch(0.965 0.004 30);
-  --muted-foreground: oklch(0.48 0.01 30);
+  --muted: oklch(0.962 0.005 50);
+  --muted-foreground: oklch(0.47 0.012 40);
   --accent: oklch(0.955 0.02 50);
   --accent-foreground: oklch(0.3 0.05 40);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.915 0.006 30);
-  --input: oklch(0.915 0.006 30);
+  --border: oklch(0.92 0.006 40);
+  --input: oklch(0.89 0.008 40);
   --ring: oklch(0.4 0.14 15);
   --hidden: oklch(0.62 0.17 45);
   --hidden-foreground: oklch(0.2 0.03 45);
+  /* Hidden-fee amounts set as text on cards; dark enough for AA. */
+  --hidden-ink: oklch(0.5 0.15 42);
   --success: oklch(0.52 0.13 155);
   --warning: oklch(0.75 0.15 75);
   /* Cost breakdown: rent, recurring fees, utilities, one-time and deposits */
@@ -94,24 +98,25 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --background: oklch(0.16 0.006 30);
+  --foreground: oklch(0.97 0.004 60);
+  --card: oklch(0.205 0.007 30);
+  --card-foreground: oklch(0.97 0.004 60);
+  --popover: oklch(0.225 0.007 30);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.74 0.12 15);
   --primary-foreground: oklch(0.18 0.03 15);
   --hidden: oklch(0.74 0.15 50);
   --hidden-foreground: oklch(0.18 0.03 45);
+  --hidden-ink: oklch(0.78 0.13 55);
   --success: oklch(0.72 0.14 155);
   --warning: oklch(0.8 0.14 80);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.27 0.008 30);
+  --secondary-foreground: oklch(0.97 0.004 60);
+  --muted: oklch(0.255 0.008 30);
+  --muted-foreground: oklch(0.72 0.01 50);
+  --accent: oklch(0.27 0.008 30);
+  --accent-foreground: oklch(0.97 0.004 60);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
@@ -131,14 +136,122 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@theme {
+  /* Motion: strong ease-out for anything entering or responding to a press. */
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
   }
   html {
     @apply font-sans;
+    -webkit-tap-highlight-color: transparent;
+    scrollbar-color: color-mix(in oklch, var(--foreground) 22%, transparent) transparent;
+  }
+  ::selection {
+    background: color-mix(in oklch, var(--primary) 22%, transparent);
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  /* Money fields are typed, not stepped; the spinners only add noise. */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* Expandables open with a short height and fade where the browser supports
+   animating <details> content; elsewhere they simply open. */
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+  details::details-content {
+    block-size: 0;
+    overflow: clip;
+    opacity: 0;
+    transition:
+      block-size 240ms var(--ease-out-strong),
+      opacity 200ms ease,
+      content-visibility 240ms allow-discrete;
+  }
+  details[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    details::details-content {
+      transition: opacity 150ms ease, content-visibility 150ms allow-discrete;
+    }
+  }
+}
+
+/* A press confirms the interface heard you. */
+@utility pressable {
+  transition-property: transform, background-color, color, border-color, box-shadow, opacity;
+  transition-duration: 160ms;
+  transition-timing-function: var(--ease-out-strong);
+  &:active:not(:disabled):not([aria-disabled="true"]) {
+    transform: scale(0.97);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &:active:not(:disabled) {
+      transform: none;
+    }
+  }
+}
+/* Compare bars grow from the left once, on first paint. */
+@keyframes bar-grow {
+  from {
+    clip-path: inset(0 100% 0 0 round 999px);
+  }
+}
+.bar-grow {
+  animation: bar-grow 500ms var(--ease-out-strong) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bar-grow {
+    animation-name: none;
+  }
+}
+
+/* Landing receipt: the card settles in, then its lines print in order. */
+@keyframes receipt-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@keyframes receipt-print {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.receipt-in {
+  animation: receipt-rise 600ms var(--ease-out-strong) both;
+}
+.receipt-line {
+  animation: receipt-print 420ms var(--ease-out-strong) both;
+  animation-delay: calc(250ms + var(--i, 0) * 70ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  .receipt-in,
+  .receipt-line {
+    animation-name: none;
   }
 }
