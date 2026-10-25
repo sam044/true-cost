@@ -63,11 +63,29 @@ function takeCapture(): Capture | Extracted | null {
   sessionStorage.removeItem(STORAGE_KEY);
   try {
     const json = JSON.parse(raw);
-    const parsed = json?.version === 3 ? Extracted.safeParse(json) : Capture.safeParse(json);
+    const parsed = json?.version === 3 ? Extracted.safeParse(restoreNulls(json)) : Capture.safeParse(json);
     return parsed.success ? parsed.data : null;
   } catch {
     return null;
   }
+}
+
+// Extension 0.3.1 passes the capture into this tab as an object through
+// chrome.scripting.executeScript, which drops fields set to null. So when
+// Gemma found no bedroom count, price or price quote, those fields arrive
+// missing and the capture failed the check. Put them back as null.
+function restoreNulls(json: { extraction?: unknown }) {
+  const extraction = json.extraction as
+    | { bedrooms?: unknown; advertisedPrice?: { amount?: unknown; quote?: unknown } }
+    | undefined;
+  if (extraction && typeof extraction === "object") {
+    extraction.bedrooms ??= null;
+    if (extraction.advertisedPrice && typeof extraction.advertisedPrice === "object") {
+      extraction.advertisedPrice.amount ??= null;
+      extraction.advertisedPrice.quote ??= null;
+    }
+  }
+  return json;
 }
 
 export default function ImportPage() {
