@@ -153,7 +153,8 @@ export function ApartmentColumn({
     <Card
       className={cn(
         "rounded-2xl shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-1 ring-foreground/[0.07]",
-        cheapest && "ring-2 ring-success",
+        // The cheapest place is filled maroon: the whole column is the verdict.
+        cheapest && "theme-maroon ring-0",
       )}
     >
       <CardContent className="flex flex-col gap-6 px-6 py-2">
@@ -163,7 +164,7 @@ export function ApartmentColumn({
               {apartment.name}
             </h2>
             {cheapest && (
-              <Badge className="bg-success text-white">
+              <Badge className="h-6 rounded-none bg-orange px-2.5 text-ink">
                 <Trophy aria-hidden /> Lowest true cost
               </Badge>
             )}
@@ -171,7 +172,7 @@ export function ApartmentColumn({
           <p className="mt-3 flex flex-wrap items-baseline gap-x-3">
             <span
               key={summary.trueMonthly.toFixed(2)}
-              className="num-swap text-[2.75rem] leading-none font-semibold tracking-[-0.035em] tabular-nums"
+              className="num-swap text-[4.25rem] leading-[0.85] display-type tabular-nums"
             >
               {money(summary.trueMonthly)}
             </span>
@@ -182,7 +183,7 @@ export function ApartmentColumn({
           </p>
           <p className="mt-1.5 text-sm text-muted-foreground">per person per month, all-in</p>
           {summary.hiddenPerYear > 0.005 && (
-            <p className="mt-3 w-fit rounded-lg bg-hidden/12 px-2.5 py-1 text-sm font-medium text-hidden-ink dark:bg-hidden/15">
+            <p className="mt-3 w-fit bg-orange px-2.5 py-1 text-sm font-semibold text-ink">
               {moneyWhole(summary.hiddenPerYear)} / year not in the headline price
             </p>
           )}

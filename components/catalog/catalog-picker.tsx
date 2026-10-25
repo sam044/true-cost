@@ -231,7 +231,7 @@ function CatalogCard({
     <div
       className={cn(
         "flex h-full flex-col rounded-xl bg-card text-card-foreground shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-1 ring-foreground/[0.06] transition-[box-shadow,background-color] duration-200",
-        added && "bg-primary/[0.035] ring-2 ring-primary dark:bg-primary/10",
+        added && "theme-maroon ring-0",
       )}
     >
       {/* A native button gives click, Enter and Space for free. */}

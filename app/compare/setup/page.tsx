@@ -87,7 +87,12 @@ function SetupForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="flex max-w-xl flex-col gap-6">
+    <form
+      onSubmit={onSubmit}
+      noValidate
+      className="grid items-start gap-6 lg:grid-cols-[minmax(0,36rem)_minmax(0,1fr)] lg:gap-x-10"
+    >
+      <SetupSummary people={people} lease={lease} budget={budget} needs={needs} />
       <Card className="shadow-[0_1px_2px_rgb(0_0_0/0.03)] ring-foreground/[0.07]">
         <CardContent className="flex flex-col divide-y divide-border/70 px-6 sm:px-8 [&>*]:py-7 [&>*:first-child]:pt-2 [&>*:last-child]:pb-2">
           <div>
@@ -251,6 +256,52 @@ function SetupForm() {
         </Button>
       </div>
     </form>
+  );
+}
+
+// The answers so far, set large on an orange card beside the form. A mirror of
+// the form for sighted users, so it is hidden from screen readers.
+function SetupSummary({
+  people,
+  lease,
+  budget,
+  needs,
+}: {
+  people: number;
+  lease: string;
+  budget: string;
+  needs: Needs;
+}) {
+  const months = validateLease(lease) ? null : Number(lease);
+  const amount = budget.trim() === "" || validateBudget(budget) ? null : Number(budget);
+  const extras = NEED_OPTIONS.filter(({ key }) => needs[key]).map(({ label }) =>
+    label.toLowerCase(),
+  );
+  const lines = [
+    people === 1 ? "Just you" : `Split ${people} ways`,
+    months ? `${months}-month lease` : "Lease length?",
+    amount ? `Up to $${amount.toLocaleString("en-US")} each` : "No budget set",
+  ];
+
+  return (
+    <div
+      aria-hidden
+      className="hidden flex-col justify-between gap-10 bg-orange p-8 text-ink lg:sticky lg:top-20 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:flex lg:min-h-[28rem]"
+    >
+      <p className="text-sm font-medium text-ink/70">Your setup</p>
+      <div className="flex flex-col gap-1">
+        {lines.map((line) => (
+          <p key={line} className="num-swap text-5xl display-type xl:text-6xl">
+            {line}
+          </p>
+        ))}
+      </div>
+      <p className="text-base text-pretty text-ink/80">
+        {extras.length
+          ? `Optional fees for ${extras.join(", ")} will count toward the true cost.`
+          : "No optional extras counted yet."}
+      </p>
+    </div>
   );
 }
 

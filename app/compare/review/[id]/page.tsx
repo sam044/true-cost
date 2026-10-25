@@ -174,12 +174,8 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
       <PageHeading
         title={`Check the fees for ${apartment.name}`}
         description="Every fee shows the words it came from. Fix anything that looks off, then confirm."
+        meta={apartments.length > 1 ? `Apartment ${position} of ${apartments.length}` : undefined}
       />
-      {apartments.length > 1 && (
-        <p className="-mt-7 pb-10 text-sm text-muted-foreground">
-          Apartment {position} of {apartments.length}
-        </p>
-      )}
 
       <div className="flex flex-col gap-12">
         <section
