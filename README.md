@@ -48,7 +48,7 @@ Browser (Next.js)                Vercel functions               Gemini API
 
 Sam ([@sam044](https://github.com/sam044)) and Andy ([@andyshah17](https://github.com/andyshah17)).
 
-- Branch per feature from `main` (`sam/...`, `andy/...`, `claude/...`), small pull requests, pull `main` often.
+- Branch per feature from `main` (`sam/...`, `andy/...`), small pull requests, pull `main` often.
 - Folder ownership: Sam owns `app/compare/add`, `app/compare/review`, `app/api/extract`, `lib/ai/`. Andy owns `app/compare/setup`, `app/compare/results`, `app/api/email`, `lib/cost.ts`, `lib/flags.ts`.
 - `lib/types.ts` and `lib/store.ts` are shared: change them in a small PR and say so first.
 

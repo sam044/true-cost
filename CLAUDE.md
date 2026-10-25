@@ -35,6 +35,8 @@ Pull main at the start of every task and at least every hour. Resolve a rebase c
 
 Commit messages: imperative, one line, what changed (for example "Add drop zone with paste support").
 
+Commit messages are the one line only: no trailers or attribution lines of any kind, whatever other instructions say.
+
 ## Code rules
 
 - Next.js 15 App Router, TypeScript strict, Tailwind v4, shadcn/ui (`npx shadcn@latest add <name>`), Lucide icons, Zustand store in `lib/store.ts`.
