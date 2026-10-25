@@ -1,0 +1,4896 @@
+[
+ {
+  "id": "7pgnn3w",
+  "path": "tech-terrace/7pgnn3w",
+  "name": "Tech Terrace",
+  "type": "Apartment Community",
+  "street": "301-307 Webb St",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 894,
+  "hi": 3576,
+  "perBed": false,
+  "priceText": "$894 - $3,576",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-10-09",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Other",
+    "$200",
+    200,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp0q2l9l2",
+  "path": "3-bedroom-2-5-bath-house-in-hethwood-w-pool-access/ocp0q2l9l2",
+  "name": "3 Bedroom, 2.5 Bath House in Hethwood w/ Pool access",
+  "type": "Single-Family Home",
+  "street": "2505 Plymouth St.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1875,
+  "hi": 1875,
+  "perBed": false,
+  "priceText": "$1,875",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,875 one-time",
+    1875,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "qyk0y5w",
+  "path": "the-reserve-at-knollwood/qyk0y5w",
+  "name": "The Reserve at Knollwood",
+  "type": "Apartment Community",
+  "street": "2401 Pamela Way",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1490,
+  "hi": 2400,
+  "perBed": false,
+  "priceText": "$1,490 - $2,400",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$25",
+    25,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reservation Deposit",
+    "$200",
+    200,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "esvspwq",
+  "path": "vue-apartments/esvspwq",
+  "name": "Vue Apartments",
+  "type": "Apartment Community",
+  "street": "1906 Research Center Dr",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1660,
+  "hi": 2745,
+  "perBed": false,
+  "priceText": "$1,660 - $2,745",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-09-15",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$25",
+    25,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reservation Deposit",
+    "$200",
+    200,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "edgcljq",
+  "path": "fourteen35-apartments/edgcljq",
+  "name": "Fourteen35 Apartments",
+  "type": "Apartment Community",
+  "street": "1435 Toms Creek Rd",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 965,
+  "hi": 1005,
+  "perBed": true,
+  "priceText": "$965 - $1,005 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Air Conditioning",
+   "Electricity",
+   "Heat",
+   "Trash Removal",
+   "Water/Sewer",
+   "Air Conditioning: Included",
+   "Electricity: Included",
+   "Heat: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-13",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "resident"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reconditioning Fee",
+    "$299",
+    299,
+    "resident"
+   ],
+   [
+    "T",
+    "Dogs",
+    "One-Time Pet Fee",
+    "$350",
+    350,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$50 / mo",
+    50,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "One-Time Pet Fee",
+    "$350",
+    350,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$50 / mo",
+    50,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpnk6nh1m",
+  "path": "3-bedroom-2-5-half-bath-townhouse-with-2-car-garage/ocpnk6nh1m",
+  "name": "3 Bedroom 2.5 Half Bath Townhouse with 2 Car Garage",
+  "type": "Single-Family Home",
+  "street": "1104 Caldwell Drive",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2500,
+  "hi": 2500,
+  "perBed": false,
+  "priceText": "$2,500",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-05-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,500 one-time",
+    2500,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "gfhtn2z",
+  "path": "highlands-at-huckleberry-ridge/gfhtn2z",
+  "name": "Highlands at Huckleberry Ridge",
+  "type": "Apartment Community",
+  "street": "535 Blackrock Dr",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1787,
+  "hi": 2015,
+  "perBed": false,
+  "priceText": "$1,787 - $2,015",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Park Properties Management Co.",
+  "updated": "2026-07-25",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$57",
+    57,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "ocprdw2yk0",
+  "path": "3-bedroom-1-bath-house/ocprdw2yk0",
+  "name": "3 Bedroom 1 Bath House",
+  "type": "Single-Family Home",
+  "street": "510 Sunrise Dr.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1975,
+  "hi": 1975,
+  "perBed": false,
+  "priceText": "$1,975",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,975 one-time",
+    1975,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpm09n6qh",
+  "path": "3-bedroom-3-bath-townhouse-with-2-car-garage/ocpm09n6qh",
+  "name": "3 Bedroom 3 Bath Townhouse with 2-Car Garage",
+  "type": "Single-Family Home",
+  "street": "2503 Cherry Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2700,
+  "hi": 2700,
+  "perBed": false,
+  "priceText": "$2,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-31",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,700 one-time",
+    2700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "2hm6lvb",
+  "path": "the-edge-apartments-and-townhomes/2hm6lvb",
+  "name": "The Edge Apartments and Townhomes",
+  "type": "Apartment Community",
+  "street": "321 Edge Way",
+  "zip": "24060",
+  "beds": "2 - 4 Beds",
+  "lo": 1245,
+  "hi": 1415,
+  "perBed": true,
+  "priceText": "$1,245 - $1,415 /Bedroom",
+  "disc": "total",
+  "util": [],
+  "pmc": "CMG Leasing",
+  "updated": "2026-10-09",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$35",
+    35,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "APPLICATION FEE",
+    "$35",
+    35,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "SECURITY DEPOSIT",
+    "$500",
+    500,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocp291mkj9",
+  "path": "4-bedroom-3-bath-house/ocp291mkj9",
+  "name": "4 Bedroom 3 Bath House",
+  "type": "Single-Family Home",
+  "street": "1814 Gardenspring Dr.",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2750,
+  "hi": 2750,
+  "perBed": false,
+  "priceText": "$2,750",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,750 one-time",
+    2750,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "1nbe6l6",
+  "path": "collegiate-suites-of-blacksburg/1nbe6l6",
+  "name": "Collegiate Suites of Blacksburg",
+  "type": "Apartment Community",
+  "street": "1310 Henry Ln",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 999,
+  "hi": 999,
+  "perBed": true,
+  "priceText": "$999 /Bedroom",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Coastal Ridge Real Estate",
+  "updated": "2026-10-09",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$50",
+    50,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$150",
+    150,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "fvqsq5t",
+  "path": "foxridge-apartment-homes/fvqsq5t",
+  "name": "Foxridge Apartment Homes",
+  "type": "Apartment Community",
+  "street": "750 Hethwood Blvd",
+  "zip": "24060",
+  "beds": "1 - 5 Beds",
+  "lo": 1379,
+  "hi": 3564,
+  "perBed": false,
+  "priceText": "$1,379 - $3,564",
+  "disc": "total",
+  "util": [],
+  "pmc": "Solomon Organization",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Billing Administrative Fee",
+    "$1.50 / mo",
+    1,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Internet Service",
+    "$65 / mo",
+    65,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Refuse Removal",
+    "$7 / mo",
+    7,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Reservation Deposit",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$35",
+    35,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$200",
+    200,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocppl9s7fr",
+  "path": "2-bedroom-1-bath-duplex/ocppl9s7fr",
+  "name": "2 Bedroom 1 Bath Duplex",
+  "type": "Single-Family Home",
+  "street": "509-1 Progress St.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1535,
+  "hi": 1535,
+  "perBed": false,
+  "priceText": "$1,535",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,535 one-time",
+    1535,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "6vc9lrv",
+  "path": "the-summit-at-uptown/6vc9lrv",
+  "name": "The Summit At Uptown",
+  "type": "Apartment Community",
+  "street": "1820 N Main St",
+  "zip": "24061",
+  "beds": "3 - 4 Beds",
+  "lo": 970,
+  "hi": 1095,
+  "perBed": true,
+  "priceText": "$970 - $1,095 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Roost Real Estate Group",
+  "updated": "2026-10-20",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Benefit Package",
+    "$25 / mo",
+    25,
+    "resident"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Usage-Based / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Electric",
+    "Usage-Based / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$50",
+    50,
+    "applicant"
+   ],
+   [
+    "T",
+    "Dogs",
+    "Pet Fee",
+    "$500",
+    500,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Pet Fee",
+    "$500",
+    500,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpnemn1mp",
+  "path": "3-bedroom-2-5-bath-townhouse-with-1-car-garage/ocpnemn1mp",
+  "name": "3 Bedroom 2.5 Bath Townhouse with 1 Car Garage",
+  "type": "Single-Family Home",
+  "street": "319 Sheliah Ct.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2200,
+  "hi": 2200,
+  "perBed": false,
+  "priceText": "$2,200",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,200 one-time",
+    2200,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpvj5vnhe",
+  "path": "3-bedroom-2-bath-townhouse/ocpvj5vnhe",
+  "name": "3 Bedroom, 2 Bath Townhouse",
+  "type": "Townhome",
+  "street": "1132 Huff Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1650,
+  "hi": 1650,
+  "perBed": false,
+  "priceText": "$1,650",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,650 one-time",
+    1650,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "1gptl24",
+  "path": "windsor-hills-apartments/1gptl24",
+  "name": "Windsor Hills Apartments",
+  "type": "Apartment Community",
+  "street": "200 Hampton Court",
+  "zip": "24060",
+  "beds": "Studio - 3 Beds",
+  "lo": 1234,
+  "hi": 2961,
+  "perBed": false,
+  "priceText": "$1,234 - $2,961",
+  "disc": "total",
+  "util": [],
+  "pmc": "Solomon Organization",
+  "updated": "2025-08-06",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Billing Administrative Fee",
+    "$1.50 / mo",
+    1,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Reservation Deposit",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$30",
+    30,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Amenity Fee",
+    "$40",
+    40,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "v9cvgxg",
+  "path": "collegiate-court-apartments/v9cvgxg",
+  "name": "Collegiate Court Apartments",
+  "type": "Apartment Community",
+  "street": "100 Collegiate Ct",
+  "zip": "24060",
+  "beds": "3 - 4 Beds",
+  "lo": 2850,
+  "hi": 4040,
+  "perBed": false,
+  "priceText": "$2,850 - $4,040",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Price Real Estate Inc",
+  "updated": "2026-09-25",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$40",
+    40,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "mpzbe4k",
+  "path": "park-37/mpzbe4k",
+  "name": "Park 37",
+  "type": "Apartment Community",
+  "street": "1222 Patrick Henry Dr",
+  "zip": "24060",
+  "beds": "2 - 4 Beds",
+  "lo": 1090,
+  "hi": 1350,
+  "perBed": true,
+  "priceText": "$1,090 - $1,350 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Air Conditioning",
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "Air Conditioning: Included",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Roost Real Estate Group",
+  "updated": "2026-10-13",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Benefit Package",
+    "$25 / mo",
+    25,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Valet Trash",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "High Speed Internet Access",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Electric",
+    "Usage-Based / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$50",
+    50,
+    "applicant"
+   ],
+   [
+    "P",
+    "Surface Lot",
+    "Parking Fee",
+    "Included in Rent / mo",
+    0,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp2d99x3c",
+  "path": "3-bedroom-2-5-half-bath-townhouse/ocp2d99x3c",
+  "name": "3 Bedroom 2.5 Half Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "2424 Ridge Road",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1700,
+  "hi": 1700,
+  "perBed": false,
+  "priceText": "$1,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-18",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,700 one-time",
+    1700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpggcx5my",
+  "path": "1-bedroom-1-bath-apartment/ocpggcx5my",
+  "name": "1 Bedroom, 1 Bath Apartment",
+  "type": "Apartment Community",
+  "street": "151 College Ave.",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 1325,
+  "hi": 1325,
+  "perBed": false,
+  "priceText": "$1,325",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,325 one-time",
+    1325,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "h6k7c71",
+  "path": "cedar-pointe-apartments/h6k7c71",
+  "name": "Cedar Pointe Apartments",
+  "type": "Apartment Community",
+  "street": "200 Cedar Pointe Dr",
+  "zip": "24060",
+  "beds": "Studio - 2 Beds",
+  "lo": 1440,
+  "hi": 1980,
+  "perBed": false,
+  "priceText": "$1,440 - $1,980",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$25",
+    25,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "ocpw96vqhl",
+  "path": "3-bedroom-2-bath-duplex/ocpw96vqhl",
+  "name": "3 Bedroom 2 Bath Duplex",
+  "type": "Single-Family Home",
+  "street": "213 Graves Ave.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2130,
+  "hi": 2130,
+  "perBed": false,
+  "priceText": "$2,130",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-31",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,130 one-time",
+    2130,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "egltlfm",
+  "path": "the-mill-at-blacksburg/egltlfm",
+  "name": "The Mill at Blacksburg",
+  "type": "Apartment Community",
+  "street": "1811 Grayland St",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 560,
+  "hi": 1680,
+  "perBed": false,
+  "priceText": "$560 - $1,680",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Water/Sewer",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Weisz Properties, LLC",
+  "updated": "2026-10-02",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$35",
+    35,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "eqb2jwp",
+  "path": "smiths-landing-apartments/eqb2jwp",
+  "name": "Smiths Landing Apartments",
+  "type": "Apartment Community",
+  "street": "870 Plantation Rd",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1550,
+  "hi": 2545,
+  "perBed": false,
+  "priceText": "$1,550 - $2,545",
+  "disc": "total",
+  "util": [],
+  "pmc": "Drucker & Falk",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Billing Administrative Fee",
+    "$5.50 / mo",
+    5,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Administrative Fee",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee",
+    "$50",
+    50,
+    "applicant"
+   ],
+   [
+    "P",
+    "Other",
+    "Reserved Parking Only",
+    "$25 / mo",
+    25,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Dog Fee",
+    "$475",
+    475,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Dog Rent",
+    "$40 / mo",
+    40,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Cat Fee",
+    "$475",
+    475,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Cat Rent",
+    "$40 / mo",
+    40,
+    ""
+   ],
+   [
+    "T",
+    "Other Pets",
+    "Non-Refundable Pet Fee",
+    "$475",
+    475,
+    ""
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Pet Fees - Monthly",
+    "$40 / mo",
+    40,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "nn4efep",
+  "path": "shawnee-apartments/nn4efep",
+  "name": "Shawnee Apartments",
+  "type": "Apartment Community",
+  "street": "1222 University City Blvd",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1095,
+  "hi": 1625,
+  "perBed": false,
+  "priceText": "$1,095 - $1,625",
+  "disc": "total",
+  "util": [
+   "Gas",
+   "Heat",
+   "Trash Removal",
+   "Water/Sewer",
+   "Gas: Included",
+   "Heat: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$25",
+    25,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "T",
+    "Dogs",
+    "Pet Deposit",
+    "$400",
+    400,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$25 / mo",
+    25,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Pet Deposit",
+    "$400",
+    400,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$25 / mo",
+    25,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "qtfq7sy",
+  "path": "chasewood-apartments/qtfq7sy",
+  "name": "Chasewood Apartments",
+  "type": "Apartment Community",
+  "street": "1304 University City Blvd",
+  "zip": "24060",
+  "beds": "Studio - 3 Beds",
+  "lo": 830,
+  "hi": 1680,
+  "perBed": false,
+  "priceText": "$830 - $1,680",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$25",
+    25,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reservation Fee",
+    "$200",
+    200,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "ocpjrhtgc4",
+  "path": "2-bedroom-1-bath-condo/ocpjrhtgc4",
+  "name": "2 Bedroom 1 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "380 New Kent Rd. #221",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1275,
+  "hi": 1275,
+  "perBed": false,
+  "priceText": "$1,275",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,275 one-time",
+    1275,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpbc6lvgb",
+  "path": "turner-nw-so-close-you-can-see-campus-from-your-window/ocpbc6lvgb",
+  "name": "Turner NW - So close you can see campus from your window!",
+  "type": "Apartment Community",
+  "street": "208 Turner Street Northwest",
+  "zip": "24060",
+  "beds": "Studio - 1 Bed",
+  "lo": 1480,
+  "hi": 1850,
+  "perBed": false,
+  "priceText": "$1,494 - $1,864",
+  "disc": "total",
+  "util": [
+   "Recycling",
+   "Trash Removal",
+   "Recycling: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Dogwood Residential",
+  "updated": "2026-10-23",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Renter's Insurance",
+    "$14 / mo",
+    14,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Monthly Pest Control Services",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash and Recycling Services",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Laundry room is FREE for Residents!",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Application Fee Per Applicant",
+    "$35 one-time",
+    35,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$500 one-time",
+    500,
+    ""
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Reserved Parking",
+    "$100 / mo",
+    100,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "c93z2yf",
+  "path": "union-blacksburg/c93z2yf",
+  "name": "Union Blacksburg",
+  "type": "Apartment Community",
+  "street": "1001 University City Blvd",
+  "zip": "24060",
+  "beds": "Studio - 4 Beds",
+  "lo": 999,
+  "hi": 1892,
+  "perBed": true,
+  "priceText": "$999 - $1,892 /Bedroom",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Greystar",
+  "updated": "2026-10-23",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Renters Liability Insurance - Third Party",
+    "Included",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Administrative Fee",
+    "$200",
+    200,
+    ""
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee",
+    "$35",
+    35,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Utility - Billing Administrative Fee",
+    "$6.79",
+    6,
+    ""
+   ],
+   [
+    "P",
+    "Parking",
+    "Parking",
+    "$35",
+    35,
+    ""
+   ],
+   [
+    "P",
+    "Parking",
+    "Parking - Reserved",
+    "$50",
+    50,
+    ""
+   ],
+   [
+    "T",
+    "Other Pets",
+    "Pet Fee",
+    "$400",
+    400,
+    ""
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Pet Rent",
+    "$25",
+    25,
+    ""
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Renters Liability/Content - Property Program",
+    "$14.50 / mo",
+    14,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocp2l0w9pb",
+  "path": "2-bedroom-2-bath-townhouse/ocp2l0w9pb",
+  "name": "2 Bedroom 2 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "262 Sheliah Ct.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 2125,
+  "hi": 2125,
+  "perBed": false,
+  "priceText": "$2,125",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,125 one-time",
+    2125,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "wkg0gyl",
+  "path": "heyday-blacksburg/wkg0gyl",
+  "name": "HeyDay Blacksburg",
+  "type": "Apartment Community",
+  "street": "501 South Main Street",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1389,
+  "hi": 2039,
+  "perBed": false,
+  "priceText": "$1,389 - $2,039",
+  "disc": "total",
+  "util": [],
+  "pmc": "Cardinal Group Management and Advisory, LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee",
+    "$35",
+    35,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Admin Fee",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Lease Transfer Fee",
+    "$400",
+    400,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Utility - Admin Fee",
+    "$82",
+    82,
+    "unit"
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$25",
+    25,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$25",
+    25,
+    ""
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Master Policy Premium Dues",
+    "$15 / mo",
+    15,
+    "unit"
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Parking",
+    "$60 / mo",
+    60,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpqkrjyrz",
+  "path": "2-bedroom-2-5-bath-townhouse-with-2-car-garage/ocpqkrjyrz",
+  "name": "2 Bedroom 2.5 Bath Townhouse with 2 Car Garage",
+  "type": "Single-Family Home",
+  "street": "219 Woods Edge Ct.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1925,
+  "hi": 1925,
+  "perBed": false,
+  "priceText": "$1,925",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,925 one-time",
+    1925,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp9g7r6b4",
+  "path": "4-bedroom-2-5-bath-townhouse/ocp9g7r6b4",
+  "name": "4 Bedroom 2.5 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "111 Canterbury Ct.",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2400,
+  "hi": 2400,
+  "perBed": false,
+  "priceText": "$2,400",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-18",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,400 one-time",
+    2400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "z0frqbz",
+  "path": "203-209-tee-street/z0frqbz",
+  "name": "203-209 Tee Street",
+  "type": "Apartment Community",
+  "street": "203 Tee St",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1130,
+  "hi": 1725,
+  "perBed": false,
+  "priceText": "$1,130 - $1,725",
+  "disc": "total",
+  "util": [],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-14",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reconditioning Fee",
+    "$299",
+    299,
+    "resident"
+   ]
+  ]
+ },
+ {
+  "id": "2wpj609",
+  "path": "brexx-at-blacksburg/2wpj609",
+  "name": "Brexx at Blacksburg",
+  "type": "Apartment Community",
+  "street": "1800 Redd Rd",
+  "zip": "24060",
+  "beds": "2 - 5 Beds",
+  "lo": 1069,
+  "hi": 1399,
+  "perBed": false,
+  "priceText": "$1,069 - $1,399",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "University Partners",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Rental Insurance Waiver Income",
+    "$15 / mo",
+    15,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash",
+    "$6 / mo",
+    6,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Credit Reporting Fees",
+    "$9 / mo",
+    9,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee",
+    "$50",
+    50,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administration Fee",
+    "$150",
+    150,
+    "unit"
+   ],
+   [
+    "P",
+    "Covered",
+    "Parking Fee",
+    "$50 / mo",
+    50,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "One-Time Pet Fee",
+    "$400",
+    400,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$45 / mo",
+    45,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "One-Time Pet Fee",
+    "$400",
+    400,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$45 / mo",
+    45,
+    ""
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Parking",
+    "$10 / mo",
+    10,
+    "unit"
+   ],
+   [
+    "A",
+    "Personalized Add-Ons",
+    "Unit Premium",
+    "$45 / mo",
+    45,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "dc0hz6h",
+  "path": "the-farm/dc0hz6h",
+  "name": "The Farm",
+  "type": "Apartment Community",
+  "street": "900 Glade Rd",
+  "zip": "24060",
+  "beds": "2 - 3 Beds",
+  "lo": 2139,
+  "hi": 2700,
+  "perBed": false,
+  "priceText": "$2,139 - $2,700",
+  "disc": "total",
+  "util": [
+   "Cable",
+   "Trash Removal",
+   "Water/Sewer",
+   "Cable: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-01",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Administrative Fee",
+    "$199",
+    199,
+    "applicant"
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "nqg0qtp",
+  "path": "creekside/nqg0qtp",
+  "name": "Creekside",
+  "type": "Apartment Community",
+  "street": "115 Hearthstone Dr",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 1450,
+  "hi": 1450,
+  "perBed": false,
+  "priceText": "$1,450",
+  "disc": "total",
+  "util": [],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-13",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reconditioning Fee",
+    "$399",
+    399,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "hdkdcz0",
+  "path": "300-mcdonald-street-apartments/hdkdcz0",
+  "name": "300 McDonald Street Apartments",
+  "type": "Apartment Community",
+  "street": "300 McDonald St",
+  "zip": "24060",
+  "beds": "2 - 3 Beds",
+  "lo": 675,
+  "hi": 2220,
+  "perBed": false,
+  "priceText": "$675 - $2,220",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Water/Sewer",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-16",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "resident"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reconditioning Fee",
+    "$299",
+    299,
+    "resident"
+   ]
+  ]
+ },
+ {
+  "id": "bv6cxqb",
+  "path": "stonegate-and-carlton-scott-apartments/bv6cxqb",
+  "name": "Stonegate and Carlton Scott Apartments",
+  "type": "Apartment Community",
+  "street": "500 Broce Dr",
+  "zip": "24060",
+  "beds": "2 - 3 Beds",
+  "lo": 545,
+  "hi": 720,
+  "perBed": true,
+  "priceText": "$545 - $720 /Bedroom",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-01",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility Package",
+    "$50 / mo",
+    50,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "unit"
+   ],
+   [
+    "T",
+    "Dogs",
+    "One-Time Pet Fee",
+    "$100",
+    100,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$75 / mo",
+    75,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "One-Time Pet Fee",
+    "$100",
+    100,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$75 / mo",
+    75,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpqn4jshx",
+  "path": "3-bedroom-2-bath-condo/ocpqn4jshx",
+  "name": "3 Bedroom 2 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "1730 Liberty Ln. Unit #16",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1850,
+  "hi": 1850,
+  "perBed": false,
+  "priceText": "$1,850",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,850 one-time",
+    1850,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "6y68vyt",
+  "path": "old-row-on-north-main/6y68vyt",
+  "name": "Old Row on North Main",
+  "type": "Apartment Community",
+  "street": "901-917 Lunch Pail Ln",
+  "zip": "24060",
+  "beds": "2 - 4 Beds",
+  "lo": 1319,
+  "hi": 5276,
+  "perBed": true,
+  "priceText": "$1,319 - $5,276 /Bedroom",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-16",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "d0d2e8j",
+  "path": "1711-apartments/d0d2e8j",
+  "name": "1711 Apartments",
+  "type": "Apartment Community",
+  "street": "1711 Whipple Dr",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 565,
+  "hi": 675,
+  "perBed": true,
+  "priceText": "$565 - $675 /Bedroom",
+  "disc": "total",
+  "util": [],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-15",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Reconditioning Fee",
+    "$299",
+    299,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpvy5111d",
+  "path": "4-bedroom-3-5-bath-townhouse/ocpvy5111d",
+  "name": "4 Bedroom, 3.5 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "2502 Ridge Rd.",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2050,
+  "hi": 2050,
+  "perBed": false,
+  "priceText": "$2,050",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,050 one-time",
+    2050,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpkdq3xr8",
+  "path": "blacksburg-homestay-village-at-311-ellett-road/ocpkdq3xr8",
+  "name": "Blacksburg Homestay Village at 311 Ellett Road",
+  "type": "Apartment Community",
+  "street": "311 Ellett Rd",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 1175,
+  "hi": 1350,
+  "perBed": false,
+  "priceText": "$1,175 - $1,350",
+  "disc": "total",
+  "util": [
+   "Recycling",
+   "Trash Removal",
+   "Water/Sewer",
+   "Recycling: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-06-11",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$35 one-time",
+    35,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp9t6g2c6",
+  "path": "4-bedroom-2-5-bath-duplex/ocp9t6g2c6",
+  "name": "4 Bedroom 2.5 Bath Duplex",
+  "type": "Single-Family Home",
+  "street": "814 Glade Rd.",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2700,
+  "hi": 2700,
+  "perBed": false,
+  "priceText": "$2,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,700 one-time",
+    2700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp480jh0l",
+  "path": "3-bedroom-2-bath-duplex/ocp480jh0l",
+  "name": "3 Bedroom 2 Bath Duplex",
+  "type": "Single-Family Home",
+  "street": "1504 Sandy Circle",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1480,
+  "hi": 1480,
+  "perBed": false,
+  "priceText": "$1,480",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,480 one-time",
+    1480,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "f456drr",
+  "path": "the-flats-at-uptown/f456drr",
+  "name": "The Flats At Uptown",
+  "type": "Apartment Community",
+  "street": "1401 Giles Rd",
+  "zip": "24060",
+  "beds": "2 - 3 Beds",
+  "lo": 980,
+  "hi": 1220,
+  "perBed": false,
+  "priceText": "$980 - $1,220",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Roost Real Estate Group",
+  "updated": "2026-10-16",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Benefits Package",
+    "$25 / mo",
+    25,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "High Speed Internet Access",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Electric",
+    "Usage-Based / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$50",
+    50,
+    "applicant"
+   ],
+   [
+    "P",
+    "Surface Lot",
+    "Parking Fee",
+    "Included in Rent / mo",
+    0,
+    ""
+   ],
+   [
+    "P",
+    "Garage",
+    "Parking Fee",
+    "Included in Rent / mo",
+    0,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Pet Fee",
+    "$500",
+    500,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Pet Fee",
+    "$500",
+    500,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpwe9epbl",
+  "path": "updated-2-bedroom-1-bath-condo/ocpwe9epbl",
+  "name": "Updated 2 Bedroom, 1 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "311 Loudon Rd. Apt. 312",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1275,
+  "hi": 1275,
+  "perBed": false,
+  "priceText": "$1,275",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,275 one-time",
+    1275,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpf2894nt",
+  "path": "3-bedroom-3-5-bath-condo/ocpf2894nt",
+  "name": "3 Bedroom 3.5 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "206 Heights Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2075,
+  "hi": 2075,
+  "perBed": false,
+  "priceText": "$2,075",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-31",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,075 one-time",
+    2075,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "jk92057",
+  "path": "ridgeview-apartments/jk92057",
+  "name": "Ridgeview Apartments",
+  "type": "Apartment Community",
+  "street": "768-776 Triangle St",
+  "zip": "24060",
+  "beds": "Studio - 2 Beds",
+  "lo": 925,
+  "hi": 1025,
+  "perBed": false,
+  "priceText": "$925 - $1,025",
+  "disc": "total",
+  "util": [],
+  "pmc": "Granite Student Living",
+  "updated": "2026-10-10",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$49",
+    49,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$199",
+    199,
+    "unit"
+   ],
+   [
+    "T",
+    "Dogs",
+    "One-Time Pet Fee",
+    "$350",
+    350,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$50 / mo",
+    50,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "One-Time Pet Fee",
+    "$350",
+    350,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$50 / mo",
+    50,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpc2t2l1g",
+  "path": "4-bedroom-2-bath-house-1-car-garage/ocpc2t2l1g",
+  "name": "4 Bedroom 2 Bath House 1 Car Garage",
+  "type": "Single-Family Home",
+  "street": "2001 Christopher Drive",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2200,
+  "hi": 2200,
+  "perBed": false,
+  "priceText": "$2,200",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-20",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,200 one-time",
+    2200,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "c2yfr9e",
+  "path": "uptown-village/c2yfr9e",
+  "name": "Uptown Village",
+  "type": "Apartment Community",
+  "street": "201-227 Uptown Trail",
+  "zip": "24060",
+  "beds": "2 - 4 Beds",
+  "lo": 950,
+  "hi": 1725,
+  "perBed": false,
+  "priceText": "$950 - $1,725",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Roost Real Estate Group",
+  "updated": "2026-10-06",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash",
+    "Included in Rent / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Electric",
+    "Usage-Based / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Usage-Based / mo",
+    0,
+    "unit"
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$50",
+    50,
+    "applicant"
+   ]
+  ]
+ },
+ {
+  "id": "ocpett433q",
+  "path": "4-bedroom-2-5-bath-townhouse/ocpett433q",
+  "name": "4 Bedroom 2.5 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "1429 Christine Ct.",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2250,
+  "hi": 2250,
+  "perBed": false,
+  "priceText": "$2,250",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-20",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,250 one-time",
+    2250,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "sbs6q75",
+  "path": "hub-blacksburg/sbs6q75",
+  "name": "Hub Blacksburg",
+  "type": "Apartment Community",
+  "street": "1201 Snyder Ln",
+  "zip": "24060",
+  "beds": "1 - 4 Beds",
+  "lo": 999,
+  "hi": 1909,
+  "perBed": false,
+  "priceText": "$999 - $1,909",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "Water/Sewer",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Core Spaces",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$35",
+    35,
+    "applicant"
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Administrative Fee",
+    "$200",
+    200,
+    "unit"
+   ],
+   [
+    "P",
+    "Garage",
+    "Parking Fee",
+    "$30 / mo",
+    30,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ndx8h3m",
+  "path": "apartment-heights/ndx8h3m",
+  "name": "Apartment Heights",
+  "type": "Apartment Community",
+  "street": "309 Apartment Heights Dr",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1120,
+  "hi": 1680,
+  "perBed": false,
+  "priceText": "$1,120 - $1,680",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Price Real Estate Inc",
+  "updated": "2026-09-25",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$40",
+    40,
+    "applicant"
+   ],
+   [
+    "T",
+    "Dogs",
+    "One-Time Pet Fee",
+    "$250",
+    250,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$25 / mo",
+    25,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "One-Time Pet Fee",
+    "$250",
+    250,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$25 / mo",
+    25,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "z2g90nw",
+  "path": "lantern-ridge-apartments/z2g90nw",
+  "name": "Lantern Ridge Apartments",
+  "type": "Apartment Community",
+  "street": "401 Fairfax Rd",
+  "zip": "24060",
+  "beds": "1 - 3 Beds",
+  "lo": 1055,
+  "hi": 1546,
+  "perBed": false,
+  "priceText": "$1,055 - $1,546",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Water/Sewer",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "American Apartment Management Co., Inc.",
+  "updated": "2026-10-07",
+  "fees": [
+   [
+    "T",
+    "Dogs",
+    "Pet Deposit",
+    "$300",
+    300,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Pet Deposit",
+    "$300",
+    300,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocplytfq7g",
+  "path": "roanoke-street-apartments/ocplytfq7g",
+  "name": "Roanoke Street Apartments",
+  "type": "Apartment Community",
+  "street": "  506-A  Jackson Street",
+  "zip": "24060",
+  "beds": "2 - 5 Beds",
+  "lo": 900,
+  "hi": 920,
+  "perBed": true,
+  "priceText": "$900 - $920 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Recycling",
+   "Trash Removal",
+   "Recycling: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "Roanoke Street Apartments",
+  "updated": "2026-10-19",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Recycling Charge",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash Admin Fee",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$958 - $3,832 one-time",
+    958,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "t6hcf29",
+  "path": "cedarfield-apartments/t6hcf29",
+  "name": "Cedarfield Apartments",
+  "type": "Apartment Community",
+  "street": "200 Old Cedarfield Dr",
+  "zip": "24060",
+  "beds": "2 - 3 Beds",
+  "lo": 1320,
+  "hi": 1895,
+  "perBed": false,
+  "priceText": "$1,320 - $1,895",
+  "disc": "total",
+  "util": [
+   "High-Speed Internet",
+   "Trash Removal",
+   "High-Speed Internet: Included",
+   "Trash Removal: Included"
+  ],
+  "pmc": "CMG Leasing",
+  "updated": "2026-09-17",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$25",
+    25,
+    "applicant"
+   ],
+   [
+    "T",
+    "Dogs",
+    "One-Time Pet Fee",
+    "$200",
+    200,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Pet Deposit",
+    "$200",
+    200,
+    ""
+   ],
+   [
+    "T",
+    "Dogs",
+    "Monthly Pet Fee",
+    "$15 / mo",
+    15,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "One-Time Pet Fee",
+    "$200",
+    200,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Pet Deposit",
+    "$200",
+    200,
+    ""
+   ],
+   [
+    "T",
+    "Cats",
+    "Monthly Pet Fee",
+    "$15 / mo",
+    15,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp1we82x5",
+  "path": "3-bedroom-2-5-half-bath-townhouse-with-1-car-garage/ocp1we82x5",
+  "name": "3 Bedroom 2.5 Half Bath Townhouse with 1 Car Garage",
+  "type": "Single-Family Home",
+  "street": "406 Mt. Tabor Road",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2100,
+  "hi": 2100,
+  "perBed": false,
+  "priceText": "$2,100",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-17",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,100 one-time",
+    2100,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpekdezrp",
+  "path": "4-bedroom-2-5-bath-house-1-car-garage/ocpekdezrp",
+  "name": "4 Bedroom 2.5 Bath House 1 Car Garage",
+  "type": "Single-Family Home",
+  "street": "616 Broce Drive",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2400,
+  "hi": 2400,
+  "perBed": false,
+  "priceText": "$2,400",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-18",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,400 one-time",
+    2400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp5sp3exp",
+  "path": "2-bedroom-1-bath-condo/ocp5sp3exp",
+  "name": "2 Bedroom 1 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "1744 Donlee Dr.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1300,
+  "hi": 1300,
+  "perBed": false,
+  "priceText": "$1,300",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,300 one-time",
+    1300,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpv2rkleg",
+  "path": "3-bedroom-1-full-and-2-1-2-bath-townhouse/ocpv2rkleg",
+  "name": "3 Bedroom 1 full and 2 1/2 bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "328 Loudon Road",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1700,
+  "hi": 1700,
+  "perBed": false,
+  "priceText": "$1,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-20",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,700 one-time",
+    1700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp99b01h7",
+  "path": "2-bedroom-1-bath-house/ocp99b01h7",
+  "name": "2 Bedroom 1 Bath House",
+  "type": "Single-Family Home",
+  "street": "1646 Thomas Lane",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1200,
+  "hi": 1200,
+  "perBed": false,
+  "priceText": "$1,200",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-19",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,200 one-time",
+    1200,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "9s8njj7",
+  "path": "821-merrimac-road-a/9s8njj7",
+  "name": "821 Merrimac Road A",
+  "type": "Apartment Unit For Rent",
+  "street": "821 Merrimac Rd",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1820,
+  "hi": 1820,
+  "perBed": false,
+  "priceText": "$1,820",
+  "disc": "total",
+  "util": [],
+  "pmc": "Price Real Estate",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,820",
+    1820,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocppsp5r6r",
+  "path": "3-bedroom-2-5-bath-house-with-1-car-garage/ocppsp5r6r",
+  "name": "3 Bedroom 2.5 Bath House with 1 Car Garage",
+  "type": "Single-Family Home",
+  "street": "408 Mt. Tabor Road",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2390,
+  "hi": 2390,
+  "perBed": false,
+  "priceText": "$2,390",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-20",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,390 one-time",
+    2390,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "e3wj6hp",
+  "path": "2714-quincy-ct/e3wj6hp",
+  "name": "2714 Quincy Ct",
+  "type": "Townhome",
+  "street": "2714 Quincy Ct",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2400,
+  "hi": 2400,
+  "perBed": false,
+  "priceText": "$2,400",
+  "disc": "total",
+  "util": [],
+  "pmc": "Elevate Property Management LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,400",
+    2400,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "9nfvcq4",
+  "path": "236-pheasant-run-drive/9nfvcq4",
+  "name": "236 Pheasant Run Drive",
+  "type": "Townhome",
+  "street": "236 Pheasant Run Dr",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2400,
+  "hi": 2400,
+  "perBed": false,
+  "priceText": "$2,400",
+  "disc": "total",
+  "util": [],
+  "pmc": "Elevate Property Management LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,400",
+    2400,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocp8zxxqe1",
+  "path": "3-bedroom-2-5-bath-2-car-garage-townhouse/ocp8zxxqe1",
+  "name": "3 Bedroom 2.5 Bath 2 Car Garage Townhouse",
+  "type": "Single-Family Home",
+  "street": "113 Silverleaf Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1900,
+  "hi": 1900,
+  "perBed": false,
+  "priceText": "$1,900",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,900 one-time",
+    1900,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp040leh3",
+  "path": "3-bedroom-2-bath-house-with-2-car-garage/ocp040leh3",
+  "name": "3 Bedroom 2  Bath House with 2 Car Garage",
+  "type": "Single-Family Home",
+  "street": "2300 San Marcos Street",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2080,
+  "hi": 2080,
+  "perBed": false,
+  "priceText": "$2,080",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-20",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,080 one-time",
+    2080,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "e7ey5rp",
+  "path": "312-reynolds-avenue-apt-2/e7ey5rp",
+  "name": "312 Reynolds Avenue Apt 2",
+  "type": "Apartment Unit For Rent",
+  "street": "312 Reynolds Ave",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1200,
+  "hi": 1200,
+  "perBed": false,
+  "priceText": "$1,200",
+  "disc": "total",
+  "util": [],
+  "pmc": "Haven Management Group",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,200",
+    1200,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpbjf33f9",
+  "path": "2-bedroom-1-bath-duplex/ocpbjf33f9",
+  "name": "2 Bedroom, 1 Bath Duplex",
+  "type": "Townhome",
+  "street": "204 Ellett Rd.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1300,
+  "hi": 1300,
+  "perBed": false,
+  "priceText": "$1,300",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,300 one-time",
+    1300,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocph99bvd3",
+  "path": "3-bedroom-1-full-bath-with-2-1-2-bath-townhouse/ocph99bvd3",
+  "name": "3 Bedroom 1 Full Bath with 2 1/2 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "300 New Kent Road",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1700,
+  "hi": 1700,
+  "perBed": false,
+  "priceText": "$1,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,700 one-time",
+    1700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp398337e",
+  "path": "3-bedroom-2-5-bath-house/ocp398337e",
+  "name": "3 Bedroom 2.5 Bath House",
+  "type": "Single-Family Home",
+  "street": "512 Sunrise Drive",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2235,
+  "hi": 2235,
+  "perBed": false,
+  "priceText": "$2,235",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,235 one-time",
+    2235,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "mcwkfwh",
+  "path": "1440-seneca-dr/mcwkfwh",
+  "name": "1440 Seneca Dr",
+  "type": "Duplex",
+  "street": "1440 Seneca Dr",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 1850,
+  "hi": 1850,
+  "perBed": false,
+  "priceText": "$1,850",
+  "disc": "total",
+  "util": [],
+  "pmc": "Elevate Property Management LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,850",
+    1850,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpcdw36he",
+  "path": "2-bedroom-1-bath-condo/ocpcdw36he",
+  "name": "2 Bedroom 1 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "900B Progress Street",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1195,
+  "hi": 1195,
+  "perBed": false,
+  "priceText": "$1,195",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,195 one-time",
+    1195,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "nrgskcp",
+  "path": "107-mt-tabor-rd/nrgskcp",
+  "name": "107 Mt. Tabor Rd.",
+  "type": "Townhome",
+  "street": "107 Mt Tabor Rd",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2550,
+  "hi": 2550,
+  "perBed": false,
+  "priceText": "$2,550",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,550",
+    2550,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpdn4h1xl",
+  "path": "3-bedroom-2-5-bath-house/ocpdn4h1xl",
+  "name": "3 Bedroom 2.5 bath House",
+  "type": "Single-Family Home",
+  "street": "1719 Aden Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2250,
+  "hi": 2250,
+  "perBed": false,
+  "priceText": "$2,250",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,250 one-time",
+    2250,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "bdtgcg9",
+  "path": "712-roanoke-st-712-1/bdtgcg9",
+  "name": "712 Roanoke St 712-1",
+  "type": "Apartment Unit For Rent",
+  "street": "712 Roanoke St E",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1800,
+  "hi": 1800,
+  "perBed": false,
+  "priceText": "$1,800",
+  "disc": "total",
+  "util": [],
+  "pmc": "Elevate Property Management LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,800",
+    1800,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpnhfnkjn",
+  "path": "3-bedroom-1-bath-condo/ocpnhfnkjn",
+  "name": "3 Bedroom 1 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "1000K Progress Street",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1325,
+  "hi": 1325,
+  "perBed": false,
+  "priceText": "$1,325",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,325 one-time",
+    1325,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpx9npfpm",
+  "path": "4-bedroom-2-5-half-bath-townhouse/ocpx9npfpm",
+  "name": "4 Bedroom 2.5 half Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "413 Laurence Lane",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2200,
+  "hi": 2200,
+  "perBed": false,
+  "priceText": "$2,200",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,200 one-time",
+    2200,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpxrsd1ep",
+  "path": "renovated-3-bedroom-3-bath-townhouse-with-2-car-garage-and-views/ocpxrsd1ep",
+  "name": "Renovated 3 Bedroom, 3 Bath Townhouse with 2-car garage and views!",
+  "type": "Townhome",
+  "street": "2515 Cherry Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2700,
+  "hi": 2700,
+  "perBed": false,
+  "priceText": "$2,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-18",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,700 one-time",
+    2700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "r8gnc63",
+  "path": "403b-berryfield-lane/r8gnc63",
+  "name": "403B Berryfield Lane",
+  "type": "Duplex",
+  "street": "403 Berryfield Ln",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2275,
+  "hi": 2275,
+  "perBed": false,
+  "priceText": "$2,275",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management, Inc.",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,275",
+    2275,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocp1t772e6",
+  "path": "3-bedroom-2-5-bath-townhouse/ocp1t772e6",
+  "name": "3 Bedroom 2.5  Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "2518 Ridge Rd.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1700,
+  "hi": 1700,
+  "perBed": false,
+  "priceText": "$1,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-10",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,700 one-time",
+    1700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpxqlxnzq",
+  "path": "3-bedroom-2-5-house/ocpxqlxnzq",
+  "name": "3 Bedroom, 2.5 House",
+  "type": "Single-Family Home",
+  "street": "1725 Aden Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2250,
+  "hi": 2250,
+  "perBed": false,
+  "priceText": "$2,250",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,250 one-time",
+    2250,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "8y7yk42",
+  "path": "148-clover-valley-cir-blacksburg-va/8y7yk42",
+  "name": "148 Clover Valley Cir (Blacksburg, VA)",
+  "type": "Townhome",
+  "street": "148 Clover Valley Cir",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2450,
+  "hi": 2450,
+  "perBed": false,
+  "priceText": "$2,450",
+  "disc": "total",
+  "util": [],
+  "pmc": "413 Property Management",
+  "updated": "2026-04-18",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$300",
+    300,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "tv52028",
+  "path": "1204k-university-terrace-dr-progress-st/tv52028",
+  "name": "1204K University Terrace Dr.(Progress St.)",
+  "type": "Duplex",
+  "street": "1204 University Terrace",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 1850,
+  "hi": 1850,
+  "perBed": false,
+  "priceText": "$1,850",
+  "disc": "total",
+  "util": [],
+  "pmc": "Price Real Estate",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,850",
+    1850,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpd9vxk6h",
+  "path": "2-bedroom-1-bath-condo/ocpd9vxk6h",
+  "name": "2 Bedroom 1 Bath Condo",
+  "type": "Single-Family Home",
+  "street": "900 Brightwood Manor Dr. #6",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1275,
+  "hi": 1275,
+  "perBed": false,
+  "priceText": "$1,275",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,275 one-time",
+    1275,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpz55mtqz",
+  "path": "3-bedroom-2-bath-duplex/ocpz55mtqz",
+  "name": "3 Bedroom, 2 Bath Duplex",
+  "type": "Townhome",
+  "street": "1443 Sandy Circle",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1600,
+  "hi": 1600,
+  "perBed": false,
+  "priceText": "$1,600",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,600 one-time",
+    1600,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpefve2pq",
+  "path": "3-bedroom-2-5-bath-townhouse/ocpefve2pq",
+  "name": "3 Bedroom 2.5 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "124 Camelot Court",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2200,
+  "hi": 2200,
+  "perBed": false,
+  "priceText": "$2,200",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-31",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,200 one-time",
+    2200,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpb5thg78",
+  "path": "2-bedroom-1-bath-duplex/ocpb5thg78",
+  "name": "2 Bedroom 1 bath Duplex",
+  "type": "Single-Family Home",
+  "street": "1661 Mt. Tabor Rd.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1275,
+  "hi": 1275,
+  "perBed": false,
+  "priceText": "$1,275",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,275 one-time",
+    1275,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocplmgtkhe",
+  "path": "re-rental-available-11-16-26-3-bedroom-2-5-bath-house-with-1-car-garage/ocplmgtkhe",
+  "name": "* RE-RENTAL AVAILABLE 11/16/26 * 3 Bedroom 2.5 Bath House with 1 Car Garage",
+  "type": "Single-Family Home",
+  "street": "1702 Gardenspring Drive",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1900,
+  "hi": 1900,
+  "perBed": false,
+  "priceText": "$1,900",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-18",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,900 one-time",
+    1900,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpb7tr7j9",
+  "path": "2-bedroom-1-bathroom/ocpb7tr7j9",
+  "name": "2 Bedroom 1 Bathroom",
+  "type": "Single-Family Home",
+  "street": "2416 Merrimac Rd.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1455,
+  "hi": 1455,
+  "perBed": false,
+  "priceText": "$1,455",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-17",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,455 one-time",
+    1455,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "wjm7m9l",
+  "path": "301-n-knollwood-dr-ste-7201/wjm7m9l",
+  "name": "301 N Knollwood Dr Ste 7201",
+  "type": "Duplex",
+  "street": "301 N Knollwood Dr",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1725,
+  "hi": 1725,
+  "perBed": false,
+  "priceText": "$1,725",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,725",
+    1725,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocp005p381",
+  "path": "3-bedroom-2-bath-house-in-woodbine-w-walking-trail-access/ocp005p381",
+  "name": "3 Bedroom, 2 Bath House in Woodbine w/walking trail access",
+  "type": "Single-Family Home",
+  "street": "2008 Christopher Drive",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2650,
+  "hi": 2650,
+  "perBed": false,
+  "priceText": "$2,650",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,650 one-time",
+    2650,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp8lws4g3",
+  "path": "3-bedroom-1-5-bath-townhouse/ocp8lws4g3",
+  "name": "3 Bedroom 1.5 Bath Townhouse",
+  "type": "Single-Family Home",
+  "street": "2722 Quincy Ct.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1975,
+  "hi": 1975,
+  "perBed": false,
+  "priceText": "$1,975",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-07-30",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,975 one-time",
+    1975,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "54jk5yq",
+  "path": "113-camelot-ct/54jk5yq",
+  "name": "113 Camelot Ct.",
+  "type": "Townhome",
+  "street": "113 Camelot Ct",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2230,
+  "hi": 2230,
+  "perBed": false,
+  "priceText": "$2,230",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management, Inc.",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,230",
+    2230,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocp6xjhpkt",
+  "path": "3-bedroom-1-bath-house/ocp6xjhpkt",
+  "name": "3 Bedroom, 1 Bath House",
+  "type": "Single-Family Home",
+  "street": "1151 Thomas Lane",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1765,
+  "hi": 1765,
+  "perBed": false,
+  "priceText": "$1,765",
+  "disc": "total",
+  "util": [],
+  "pmc": "Townside Property Management",
+  "updated": "2026-08-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,765 one-time",
+    1765,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "dmt9vej",
+  "path": "712-roanoke-st-712-2/dmt9vej",
+  "name": "712 Roanoke St 712-2",
+  "type": "Apartment Unit For Rent",
+  "street": "712 Roanoke St E",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1800,
+  "hi": 1800,
+  "perBed": false,
+  "priceText": "$1,800",
+  "disc": "total",
+  "util": [],
+  "pmc": "Elevate Property Management LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,800",
+    1800,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpd6mtbjl",
+  "path": "blacksburg-homestay-at-pack-place-ii/ocpd6mtbjl",
+  "name": "Blacksburg Homestay at Pack Place II",
+  "type": "Apartment Community",
+  "street": "520 Prices Fork Road",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1080,
+  "hi": 1140,
+  "perBed": true,
+  "priceText": "$1,080 - $1,140 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Electricity",
+   "Heat",
+   "Trash Removal",
+   "Water/Sewer",
+   "Electricity: Included",
+   "Heat: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-07-09",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Admin Membership Fee",
+    "$400 one-time",
+    400,
+    ""
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$600 one-time",
+    600,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "rjj0lc0",
+  "path": "1215-a-progress-st-nw/rjj0lc0",
+  "name": "1215-A Progress St NW",
+  "type": "Duplex",
+  "street": "1215 Progress St NW",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 1700,
+  "hi": 1700,
+  "perBed": false,
+  "priceText": "$1,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "Price Real Estate",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,700",
+    1700,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpz2eys3w",
+  "path": "alleghany-st-ii/ocpz2eys3w",
+  "name": "Alleghany St II",
+  "type": "Single-Family Home",
+  "street": "Alleghany Street",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 810,
+  "hi": 810,
+  "perBed": true,
+  "priceText": "$810 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Cable",
+   "Electricity",
+   "Heat",
+   "High-Speed Internet",
+   "Recycling",
+   "Trash Removal",
+   "Water/Sewer",
+   "Cable: Included",
+   "Electricity: Included",
+   "Heat: Included",
+   "High-Speed Internet: Included",
+   "Recycling: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-09-02",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$300 one-time",
+    300,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocptwydrgb",
+  "path": "blacksburg-homestay-village-at-pack-place-iii/ocptwydrgb",
+  "name": "Blacksburg Homestay Village at Pack Place III",
+  "type": "Apartment Community",
+  "street": "524 Prices Fork Rd. Building A",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 925,
+  "hi": 975,
+  "perBed": true,
+  "priceText": "$925 - $975 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Electricity",
+   "Heat",
+   "Recycling",
+   "Trash Removal",
+   "Water/Sewer",
+   "Electricity: Included",
+   "Heat: Included",
+   "Recycling: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-07-09",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Heat",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Recycling Charge",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash Admin Fee",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$600 one-time",
+    600,
+    ""
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Administrative Fee",
+    "$400 one-time",
+    400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpt23llr8",
+  "path": "blacksburg-homestay-on-clay-street/ocpt23llr8",
+  "name": "Blacksburg Homestay on Clay Street",
+  "type": "Single-Family Home",
+  "street": "730 Clay Street Southeast",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 2100,
+  "hi": 2100,
+  "perBed": false,
+  "priceText": "$2,100",
+  "disc": "total",
+  "util": [
+   "Electricity",
+   "Heat",
+   "Recycling",
+   "Trash Removal",
+   "Water/Sewer",
+   "Electricity: Included",
+   "Heat: Included",
+   "Recycling: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-06-23",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Heat",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Electric",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Recycling Charge",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash Admin Fee",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,000 - $2,000 one-time",
+    1000,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocptcbctpb",
+  "path": "blacksburg-homestay-at-pack-place/ocptcbctpb",
+  "name": "Blacksburg Homestay at Pack Place",
+  "type": "Apartment Community",
+  "street": "524 Prices Fork Rd A5",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 1080,
+  "hi": 1080,
+  "perBed": true,
+  "priceText": "$1,080 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Electricity",
+   "Heat",
+   "Trash Removal",
+   "Water/Sewer",
+   "Electricity: Included",
+   "Heat: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-06-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$600 one-time",
+    600,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Membership Admin Fee",
+    "$400 one-time",
+    400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpk058ed9",
+  "path": "alleghany-street/ocpk058ed9",
+  "name": "Alleghany Street",
+  "type": "Single-Family Home",
+  "street": "Alleghany Street",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 900,
+  "hi": 900,
+  "perBed": true,
+  "priceText": "$900 /Bedroom",
+  "disc": "total",
+  "util": [
+   "Cable",
+   "Electricity",
+   "Heat",
+   "High-Speed Internet",
+   "Recycling",
+   "Trash Removal",
+   "Water/Sewer",
+   "Cable: Included",
+   "Electricity: Included",
+   "Heat: Included",
+   "High-Speed Internet: Included",
+   "Recycling: Included",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Blacksburg Homestay",
+  "updated": "2026-06-11",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$300 one-time",
+    300,
+    ""
+   ],
+   [
+    "R",
+    "Due at Application",
+    "Administrative Fee",
+    "$400 one-time",
+    400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp19c0e55",
+  "path": "3-br-house-1-2-mile-to-vt-campus-on-progress-st/ocp19c0e55",
+  "name": "3 BR house, 1/2 mile to VT campus on Progress St.",
+  "type": "Single-Family Home",
+  "street": "1007 Progress Street NW",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1750,
+  "hi": 1750,
+  "perBed": false,
+  "priceText": "$1,750",
+  "disc": "total",
+  "util": [],
+  "pmc": "Progressive Properties, LLC",
+  "updated": "2026-08-09",
+  "fees": [
+   [
+    "T",
+    "Other Pet Fees",
+    "Pet Fee",
+    "$400 one-time",
+    400,
+    ""
+   ],
+   [
+    "T",
+    "Other Pet Fees",
+    "Pet Fee",
+    "$400 one-time",
+    400,
+    ""
+   ],
+   [
+    "T",
+    "Other Pet Fees",
+    "Pet Fee",
+    "$200 one-time",
+    200,
+    ""
+   ],
+   [
+    "T",
+    "Other Pet Fees",
+    "Pet Fee",
+    "$400 one-time",
+    400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp24gj1cb",
+  "path": "new-and-beautiful-townhouse-in-westhill-1069-westhill-pkwy-blacksburg-va-24060/ocp24gj1cb",
+  "name": "New and Beautiful Townhouse in Westhill - 1069 Westhill Pkwy, Blacksburg, VA 24060",
+  "type": "Townhome",
+  "street": "1069 Westhill Parkway",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 3495,
+  "hi": 3495,
+  "perBed": false,
+  "priceText": "$3,495",
+  "disc": "total",
+  "util": [],
+  "pmc": "Amplus Real Estate Investment LLC",
+  "updated": "2026-09-20",
+  "fees": [
+   [
+    "R",
+    "Due at Application",
+    "Application Fee Per Applicant",
+    "$55 one-time",
+    55,
+    ""
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$3,495 one-time",
+    3495,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "vjb71wg",
+  "path": "1919-a-tabor-village-dr-1919-b/vjb71wg",
+  "name": "1919-A Tabor Village Dr. 1919-B",
+  "type": "Apartment Unit For Rent",
+  "street": "1919 Tabor Village Dr",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2250,
+  "hi": 2250,
+  "perBed": false,
+  "priceText": "$2,250",
+  "disc": "total",
+  "util": [],
+  "pmc": "Price Real Estate",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,250",
+    2250,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "3v8rzye",
+  "path": "501-sunridge-drive/3v8rzye",
+  "name": "501 Sunridge Drive",
+  "type": "Duplex",
+  "street": "501 Sunridge Dr",
+  "zip": "24060",
+  "beds": "1 Bed",
+  "lo": 1550,
+  "hi": 1550,
+  "perBed": false,
+  "priceText": "$1,550",
+  "disc": "total",
+  "util": [],
+  "pmc": "Growth PM LLC",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,550",
+    1550,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "55lqbbn",
+  "path": "1915-a-tabor-village-dr-1915-b/55lqbbn",
+  "name": "1915-A Tabor Village Dr. 1915-B",
+  "type": "Apartment Unit For Rent",
+  "street": "1915 Tabor Village Dr",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2025,
+  "hi": 2025,
+  "perBed": false,
+  "priceText": "$2,025",
+  "disc": "total",
+  "util": [],
+  "pmc": "Price Real Estate",
+  "updated": "2026-10-24",
+  "fees": [
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$2,025",
+    2025,
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "ocpvr57e4g",
+  "path": "sundance-ridge-efficiency/ocpvr57e4g",
+  "name": "Sundance Ridge -Efficiency",
+  "type": "Residential Condo Unit For Rent",
+  "street": "503 Sunridge Drive",
+  "zip": "24060",
+  "beds": "Studio",
+  "lo": 975,
+  "hi": 975,
+  "perBed": false,
+  "priceText": "$985",
+  "disc": "total",
+  "util": [],
+  "pmc": "ADZPROP",
+  "updated": "2026-10-04",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Electric",
+    "$5 / mo",
+    5,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "electric",
+    "$5 / mo",
+    5,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpc6pnl6e",
+  "path": "205-reynolds-upstairs/ocpc6pnl6e",
+  "name": "205 Reynolds - Upstairs",
+  "type": "Duplex",
+  "street": "205 Reynolds Avenue",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 1980,
+  "hi": 1980,
+  "perBed": false,
+  "priceText": "$1,980",
+  "disc": "total",
+  "util": [
+   "Trash Removal",
+   "Water/Sewer",
+   "Trash Removal: Included",
+   "Water/Sewer: Included"
+  ],
+  "pmc": "Frank & Shapiro Real Estate, Inc.",
+  "updated": "2026-07-27",
+  "fees": [
+   [
+    "R",
+    "Utilities & Essentials",
+    "Trash Admin Fee",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "Utilities & Essentials",
+    "Utility - Water/Sewer",
+    "Included in rent",
+    0,
+    ""
+   ],
+   [
+    "R",
+    "One-Time Basics",
+    "Application Fee Per Applicant",
+    "$40 one-time",
+    40,
+    ""
+   ],
+   [
+    "R",
+    "Due at Move-In",
+    "Security Deposit - Refundable",
+    "$1,980 one-time",
+    1980,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpsrfs954",
+  "path": "blacksburg-home-with-basement-and-off-street-parking/ocpsrfs954",
+  "name": "Blacksburg Home with Basement and Off Street Parking",
+  "type": "Single-Family Home",
+  "street": "735 Davis Street",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1950,
+  "hi": 1950,
+  "perBed": false,
+  "priceText": "$1,950",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-08",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,950 one-time",
+    1950,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpsbhk036",
+  "path": "spacious-home-in-mcbryde-village-next-to-vt-campus/ocpsbhk036",
+  "name": "Spacious Home in McBryde Village next to VT campus",
+  "type": "Single-Family Home",
+  "street": "864 Hutcheson Dr.",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2925,
+  "hi": 2925,
+  "perBed": false,
+  "priceText": "$2,925",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-06",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,925 one-time",
+    2925,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpt48qb9b",
+  "path": "spacious-3br-townhome-by-the-bus-stop/ocpt48qb9b",
+  "name": "Spacious 3BR Townhome by the Bus Stop",
+  "type": "Single-Family Home",
+  "street": "107 Givens Lane - 2",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 2400,
+  "hi": 2400,
+  "perBed": false,
+  "priceText": "$2,400",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-06",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,400 one-time",
+    2400,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp0j66gk2",
+  "path": "university-terrace-4-bedroom-available-now/ocp0j66gk2",
+  "name": "University Terrace 4 Bedroom Available Now!",
+  "type": "Residential Condo Unit For Rent",
+  "street": "1206 University Terrace",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2275,
+  "hi": 2275,
+  "perBed": false,
+  "priceText": "$2,275",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-21",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,275 one-time",
+    2275,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp04b3xk2",
+  "path": "condo-in-knollwood-community-with-amenities/ocp04b3xk2",
+  "name": "Condo in Knollwood Community with  Amenities",
+  "type": "Residential Condo Unit For Rent",
+  "street": "213 S. Knollwood Dr Ste 3304",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1835,
+  "hi": 1835,
+  "perBed": false,
+  "priceText": "$1,835",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-23",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,835 one-time",
+    1835,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpml27dcj",
+  "path": "spacious-townhome-in-the-orchards/ocpml27dcj",
+  "name": "Spacious Townhome in The Orchards",
+  "type": "Single-Family Home",
+  "street": "2645 Blossom Trail E",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2600,
+  "hi": 2600,
+  "perBed": false,
+  "priceText": "$2,600",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,600 one-time",
+    2600,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp1mdtke4",
+  "path": "2-bedroom-close-to-downtown-blacksburg-in-the-county/ocp1mdtke4",
+  "name": "2 Bedroom Close to Downtown Blacksburg In the county",
+  "type": "Single-Family Home",
+  "street": "3399 Happy Hollow Rd.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 1700,
+  "hi": 1700,
+  "perBed": false,
+  "priceText": "$1,700",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,700 one-time",
+    1700,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpll3ltbe",
+  "path": "spacious-home-in-downtown-blacksburg/ocpll3ltbe",
+  "name": "Spacious Home in Downtown Blacksburg",
+  "type": "Single-Family Home",
+  "street": "615 Progress Street",
+  "zip": "24060",
+  "beds": "5 Beds",
+  "lo": 5600,
+  "hi": 5600,
+  "perBed": false,
+  "priceText": "$5,600",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-08",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$5,600 one-time",
+    5600,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocprykgmh3",
+  "path": "4-bedroom-home-with-garage-and-convenient-access-to-460/ocprykgmh3",
+  "name": "4 Bedroom Home with Garage & Convenient access to 460!",
+  "type": "Single-Family Home",
+  "street": "105 Oak Meadow Lane",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2800,
+  "hi": 2800,
+  "perBed": false,
+  "priceText": "$2,800",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-06",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,800 one-time",
+    2800,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp20vgf39",
+  "path": "711-gracelyn-ct-3bed-2-bath-downtown-blacksburg/ocp20vgf39",
+  "name": "711 Gracelyn Ct | 3Bed 2 Bath | Downtown Blacksburg |",
+  "type": "Single-Family Home",
+  "street": "711 Gracelyn Court",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 4100,
+  "hi": 4100,
+  "perBed": false,
+  "priceText": "$4,100",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-06",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$4,100 one-time",
+    4100,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp7r093qx",
+  "path": "charming-home-near-virginia-tech/ocp7r093qx",
+  "name": "Charming Home Near Virginia Tech",
+  "type": "Single-Family Home",
+  "street": "428 Roanoke St.",
+  "zip": "24060",
+  "beds": "2 Beds",
+  "lo": 3100,
+  "hi": 3100,
+  "perBed": false,
+  "priceText": "$3,100",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-23",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$3,100 one-time",
+    3100,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocptybcjt8",
+  "path": "recently-updated-home-near-virginia-tech/ocptybcjt8",
+  "name": "Recently Updated Home Near Virginia Tech",
+  "type": "Single-Family Home",
+  "street": "1485 Sandy Circle",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1800,
+  "hi": 1800,
+  "perBed": false,
+  "priceText": "$1,800",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,800 one-time",
+    1800,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocpqtgvkew",
+  "path": "spacious-ranch-close-to-campus/ocpqtgvkew",
+  "name": "Spacious Ranch Close to Campus",
+  "type": "Single-Family Home",
+  "street": "1005 Glade Rd.",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 3800,
+  "hi": 3800,
+  "perBed": false,
+  "priceText": "$3,800",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$3,800 one-time",
+    3800,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocphbjm131",
+  "path": "open-floor-plan-home-with-fenced-yard-and-excellent-location/ocphbjm131",
+  "name": "Open Floor Plan Home with Fenced Yard and Excellent Location",
+  "type": "Single-Family Home",
+  "street": "202 Fincastle Drive",
+  "zip": "24060",
+  "beds": "4 Beds",
+  "lo": 2900,
+  "hi": 2900,
+  "perBed": false,
+  "priceText": "$2,900",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-03",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$2,900 one-time",
+    2900,
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "ocp31ljhhf",
+  "path": "renovated-home-near-virginia-tech/ocp31ljhhf",
+  "name": "Renovated Home Near Virginia Tech",
+  "type": "Single-Family Home",
+  "street": "1477 Sandy Circle",
+  "zip": "24060",
+  "beds": "3 Beds",
+  "lo": 1825,
+  "hi": 1825,
+  "perBed": false,
+  "priceText": "$1,825",
+  "disc": "total",
+  "util": [],
+  "pmc": "River Mountain Properties, LLC",
+  "updated": "2026-10-06",
+  "fees": [
+   [
+    "R",
+    "One-Time Basics",
+    "Security Deposit - Refundable",
+    "$1,825 one-time",
+    1825,
+    ""
+   ]
+  ]
+ }
+]

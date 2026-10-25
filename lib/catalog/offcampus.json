@@ -1,0 +1,6526 @@
+[
+  {
+    "id": "151-college-ave",
+    "name": "1 Bedroom Apartment, 151 College Ave.",
+    "url": "https://offcampus.vt.edu/housing/property/1-bedroom-1-bath-apartment/ocpggcx5my",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1325,
+      "max": 1325,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-151-college-ave",
+      "name": "1 Bedroom Apartment, 151 College Ave.",
+      "advertised": {
+        "amount": 1325,
+        "basis": "per_unit",
+        "quote": "$1,325"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "151-college-ave-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1325,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,325 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1711-apartments",
+    "name": "1711 Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/1711-apartments/d0d2e8j",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 565,
+      "max": 675,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1711-apartments",
+      "name": "1711 Apartments",
+      "advertised": {
+        "amount": 565,
+        "basis": "per_person",
+        "quote": "$565 - $675 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1711-apartments-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "1711-apartments-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "1711-apartments-reconditioning-fee",
+          "name": "Reconditioning Fee",
+          "category": "reconditioning",
+          "amount": 299,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Reconditioning Fee $299",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "300-mcdonald-street-apartments",
+    "name": "300 McDonald Street Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/300-mcdonald-street-apartments/hdkdcz0",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 675,
+      "max": 2220,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-300-mcdonald-street-apartments",
+      "name": "300 McDonald Street Apartments",
+      "advertised": {
+        "amount": 675,
+        "basis": "per_unit",
+        "quote": "$675 - $2,220"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "300-mcdonald-street-apartments-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "300-mcdonald-street-apartments-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "300-mcdonald-street-apartments-reconditioning-fee",
+          "name": "Reconditioning Fee",
+          "category": "reconditioning",
+          "amount": 299,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Reconditioning Fee $299",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "apartment-heights",
+    "name": "Apartment Heights",
+    "url": "https://offcampus.vt.edu/housing/property/apartment-heights/ndx8h3m",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1120,
+      "max": 1680,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-apartment-heights",
+      "name": "Apartment Heights",
+      "advertised": {
+        "amount": 1120,
+        "basis": "per_unit",
+        "quote": "$1,120 - $1,680"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "apartment-heights-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 40,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $40",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "apartment-heights-one-time-pet-fee",
+          "name": "One-Time Pet Fee",
+          "category": "pet",
+          "amount": 250,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "One-Time Pet Fee $250",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "apartment-heights-monthly-pet-fee",
+          "name": "Monthly Pet Fee",
+          "category": "pet",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Monthly Pet Fee $25 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "blacksburg-homestay-at-pack-place",
+    "name": "Blacksburg Homestay at Pack Place",
+    "url": "https://offcampus.vt.edu/housing/property/blacksburg-homestay-at-pack-place/ocptcbctpb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1080,
+      "max": 1080,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-blacksburg-homestay-at-pack-place",
+      "name": "Blacksburg Homestay at Pack Place",
+      "advertised": {
+        "amount": 1080,
+        "basis": "per_person",
+        "quote": "$1,080 /Bedroom"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "blacksburg-homestay-at-pack-place-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 600,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $600 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "blacksburg-homestay-at-pack-place-membership-admin-fee",
+          "name": "Membership Admin Fee",
+          "category": "admin",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Membership Admin Fee $400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "blacksburg-homestay-at-pack-place-ii",
+    "name": "Blacksburg Homestay at Pack Place II",
+    "url": "https://offcampus.vt.edu/housing/property/blacksburg-homestay-at-pack-place-ii/ocpd6mtbjl",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1080,
+      "max": 1140,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-blacksburg-homestay-at-pack-place-ii",
+      "name": "Blacksburg Homestay at Pack Place II",
+      "advertised": {
+        "amount": 1080,
+        "basis": "per_person",
+        "quote": "$1,080 - $1,140 /Bedroom"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "blacksburg-homestay-at-pack-place-ii-admin-membership-fee",
+          "name": "Admin Membership Fee",
+          "category": "admin",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Admin Membership Fee $400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "blacksburg-homestay-at-pack-place-ii-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 600,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $600 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "blacksburg-homestay-village-at-311-ellett-road",
+    "name": "Blacksburg Homestay Village at 311 Ellett Road",
+    "url": "https://offcampus.vt.edu/housing/property/blacksburg-homestay-village-at-311-ellett-road/ocpkdq3xr8",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1175,
+      "max": 1350,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-blacksburg-homestay-village-at-311-ellett-road",
+      "name": "Blacksburg Homestay Village at 311 Ellett Road",
+      "advertised": {
+        "amount": 1175,
+        "basis": "per_unit",
+        "quote": "$1,175 - $1,350"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "blacksburg-homestay-village-at-311-ellett-road-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $35 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "blacksburg-homestay-village-at-pack-place-iii",
+    "name": "Blacksburg Homestay Village at Pack Place III",
+    "url": "https://offcampus.vt.edu/housing/property/blacksburg-homestay-village-at-pack-place-iii/ocptwydrgb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 925,
+      "max": 975,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-blacksburg-homestay-village-at-pack-place-iii",
+      "name": "Blacksburg Homestay Village at Pack Place III",
+      "advertised": {
+        "amount": 925,
+        "basis": "per_person",
+        "quote": "$925 - $975 /Bedroom"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "blacksburg-homestay-village-at-pack-place-iii-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 600,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $600 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "blacksburg-homestay-village-at-pack-place-iii-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "cedar-pointe",
+    "name": "Cedar Pointe Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/cedar-pointe-apartments/h6k7c71",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1440,
+      "max": 1980,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-cedar-pointe",
+      "name": "Cedar Pointe Apartments",
+      "advertised": {
+        "amount": 1440,
+        "basis": "per_unit",
+        "quote": "$1,440 - $1,980"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "cedar-pointe-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 25,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $25",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "cedarfield",
+    "name": "Cedarfield Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/cedarfield-apartments/t6hcf29",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1320,
+      "max": 1895,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-cedarfield",
+      "name": "Cedarfield Apartments",
+      "advertised": {
+        "amount": 1320,
+        "basis": "per_unit",
+        "quote": "$1,320 - $1,895"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "cedarfield-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 25,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "cedarfield-one-time-pet-fee",
+          "name": "One-Time Pet Fee",
+          "category": "pet",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "One-Time Pet Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "cedarfield-pet-deposit",
+          "name": "Pet Deposit",
+          "category": "pet",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": true,
+          "quote": "Pet Deposit $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "cedarfield-monthly-pet-fee",
+          "name": "Monthly Pet Fee",
+          "category": "pet",
+          "amount": 15,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Monthly Pet Fee $15 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "chasewood-downs",
+    "name": "Chasewood Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/chasewood-apartments/qtfq7sy",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 830,
+      "max": 1680,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-chasewood-downs",
+      "name": "Chasewood Apartments",
+      "advertised": {
+        "amount": 830,
+        "basis": "per_unit",
+        "quote": "$830 - $1,680"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "chasewood-downs-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 25,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "chasewood-downs-reservation-fee",
+          "name": "Reservation Fee",
+          "category": "other",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Reservation Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "collegiate-court",
+    "name": "Collegiate Court Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/collegiate-court-apartments/v9cvgxg",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2850,
+      "max": 4040,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-collegiate-court",
+      "name": "Collegiate Court Apartments",
+      "advertised": {
+        "amount": 2850,
+        "basis": "per_unit",
+        "quote": "$2,850 - $4,040"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "collegiate-court-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 40,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $40",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "creekside",
+    "name": "Creekside",
+    "url": "https://offcampus.vt.edu/housing/property/creekside/nqg0qtp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1450,
+      "max": 1450,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-creekside",
+      "name": "Creekside",
+      "advertised": {
+        "amount": 1450,
+        "basis": "per_unit",
+        "quote": "$1,450"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "creekside-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "creekside-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "creekside-reconditioning-fee",
+          "name": "Reconditioning Fee",
+          "category": "reconditioning",
+          "amount": 399,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Reconditioning Fee $399",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "heyday-blacksburg",
+    "name": "HeyDay Blacksburg",
+    "url": "https://offcampus.vt.edu/housing/property/heyday-blacksburg/wkg0gyl",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1389,
+      "max": 2039,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-heyday-blacksburg",
+      "name": "HeyDay Blacksburg",
+      "advertised": {
+        "amount": 1389,
+        "basis": "per_unit",
+        "quote": "$1,389 - $2,039"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "heyday-blacksburg-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee $35",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "heyday-blacksburg-admin-fee",
+          "name": "Admin Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Admin Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "heyday-blacksburg-lease-transfer-fee",
+          "name": "Lease Transfer Fee",
+          "category": "other",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Lease Transfer Fee $400",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "heyday-blacksburg-utility-admin-fee",
+          "name": "Utility - Admin Fee",
+          "category": "utility_fee",
+          "amount": 82,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility - Admin Fee $82",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "heyday-blacksburg-monthly-pet-fee",
+          "name": "Monthly Pet Fee",
+          "category": "pet",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Monthly Pet Fee $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "heyday-blacksburg-master-policy-premium-dues",
+          "name": "Master Policy Premium Dues",
+          "category": "insurance",
+          "amount": 15,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Master Policy Premium Dues $15 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "heyday-blacksburg-parking",
+          "name": "Parking",
+          "category": "parking",
+          "amount": 60,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Parking $60 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "highlands-at-huckleberry-ridge",
+    "name": "Highlands at Huckleberry Ridge",
+    "url": "https://offcampus.vt.edu/housing/property/highlands-at-huckleberry-ridge/gfhtn2z",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1787,
+      "max": 2015,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-highlands-at-huckleberry-ridge",
+      "name": "Highlands at Huckleberry Ridge",
+      "advertised": {
+        "amount": 1787,
+        "basis": "per_unit",
+        "quote": "$1,787 - $2,015"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "highlands-at-huckleberry-ridge-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 57,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $57",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "lantern-ridge-apartments",
+    "name": "Lantern Ridge Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/lantern-ridge-apartments/z2g90nw",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1055,
+      "max": 1546,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-lantern-ridge-apartments",
+      "name": "Lantern Ridge Apartments",
+      "advertised": {
+        "amount": 1055,
+        "basis": "per_unit",
+        "quote": "$1,055 - $1,546"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "lantern-ridge-apartments-pet-deposit",
+          "name": "Pet Deposit",
+          "category": "pet",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": true,
+          "quote": "Pet Deposit $300",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "old-row-on-north-main",
+    "name": "Old Row on North Main",
+    "url": "https://offcampus.vt.edu/housing/property/old-row-on-north-main/6y68vyt",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1319,
+      "max": 5276,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-old-row-on-north-main",
+      "name": "Old Row on North Main",
+      "advertised": {
+        "amount": 1319,
+        "basis": "per_person",
+        "quote": "$1,319 - $5,276 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "old-row-on-north-main-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "old-row-on-north-main-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "park-37",
+    "name": "Park 37",
+    "url": "https://offcampus.vt.edu/housing/property/park-37/mpzbe4k",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1090,
+      "max": 1350,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-park-37",
+      "name": "Park 37",
+      "advertised": {
+        "amount": 1090,
+        "basis": "per_person",
+        "quote": "$1,090 - $1,350 /Bedroom"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "park-37-benefit-package",
+          "name": "Benefit Package",
+          "category": "other",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Benefit Package $25 / mo",
+          "source": "ai",
+          "confidence": "high",
+          "includedInAdvertised": true
+        },
+        {
+          "id": "park-37-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $50",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "ridgeview-apartments",
+    "name": "Ridgeview Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/ridgeview-apartments/jk92057",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 925,
+      "max": 1025,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-ridgeview-apartments",
+      "name": "Ridgeview Apartments",
+      "advertised": {
+        "amount": 925,
+        "basis": "per_unit",
+        "quote": "$925 - $1,025"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "ridgeview-apartments-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "ridgeview-apartments-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "ridgeview-apartments-one-time-pet-fee",
+          "name": "One-Time Pet Fee",
+          "category": "pet",
+          "amount": 350,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "One-Time Pet Fee $350",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "ridgeview-apartments-monthly-pet-fee",
+          "name": "Monthly Pet Fee",
+          "category": "pet",
+          "amount": 50,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Monthly Pet Fee $50 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "roanoke-street-apartments",
+    "name": "Roanoke Street Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/roanoke-street-apartments/ocplytfq7g",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 900,
+      "max": 920,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-roanoke-street-apartments",
+      "name": "Roanoke Street Apartments",
+      "advertised": {
+        "amount": 900,
+        "basis": "per_person",
+        "quote": "$900 - $920 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "roanoke-street-apartments-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 958,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $958 - $3,832 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "shawnee",
+    "name": "Shawnee Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/shawnee-apartments/nn4efep",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1095,
+      "max": 1625,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-shawnee",
+      "name": "Shawnee Apartments",
+      "advertised": {
+        "amount": 1095,
+        "basis": "per_unit",
+        "quote": "$1,095 - $1,625"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "included",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "shawnee-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 25,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "shawnee-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "shawnee-pet-deposit",
+          "name": "Pet Deposit",
+          "category": "pet",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": true,
+          "quote": "Pet Deposit $400",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "shawnee-monthly-pet-fee",
+          "name": "Monthly Pet Fee",
+          "category": "pet",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Monthly Pet Fee $25 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "smiths-landing",
+    "name": "Smiths Landing Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/smiths-landing-apartments/eqb2jwp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1550,
+      "max": 2545,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-smiths-landing",
+      "name": "Smiths Landing Apartments",
+      "advertised": {
+        "amount": 1550,
+        "basis": "per_unit",
+        "quote": "$1,550 - $2,545"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "smiths-landing-utility-billing-administrative-fee",
+          "name": "Utility - Billing Administrative Fee",
+          "category": "utility_fee",
+          "amount": 5.5,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility - Billing Administrative Fee $5.50 / mo",
+          "source": "ai",
+          "confidence": "high",
+          "includedInAdvertised": true
+        },
+        {
+          "id": "smiths-landing-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-reserved-parking-only",
+          "name": "Reserved Parking Only",
+          "category": "parking",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Reserved Parking Only $25 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-dog-fee",
+          "name": "Dog Fee",
+          "category": "pet",
+          "amount": 475,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Dog Fee $475",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-dog-rent",
+          "name": "Dog Rent",
+          "category": "pet",
+          "amount": 40,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Dog Rent $40 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-cat-fee",
+          "name": "Cat Fee",
+          "category": "pet",
+          "amount": 475,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Cat Fee $475",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-cat-rent",
+          "name": "Cat Rent",
+          "category": "pet",
+          "amount": 40,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Cat Rent $40 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-non-refundable-pet-fee",
+          "name": "Non-Refundable Pet Fee",
+          "category": "pet",
+          "amount": 475,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Non-Refundable Pet Fee $475",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "smiths-landing-pet-fees-monthly",
+          "name": "Pet Fees - Monthly",
+          "category": "pet",
+          "amount": 40,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Fees - Monthly $40 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "stonegate-carlton-scott",
+    "name": "Stonegate and Carlton Scott Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/stonegate-and-carlton-scott-apartments/bv6cxqb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 545,
+      "max": 720,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-stonegate-carlton-scott",
+      "name": "Stonegate and Carlton Scott Apartments",
+      "advertised": {
+        "amount": 545,
+        "basis": "per_person",
+        "quote": "$545 - $720 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "stonegate-carlton-scott-utility-package",
+          "name": "Utility Package",
+          "category": "utility_fee",
+          "amount": 50,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility Package $50 / mo",
+          "source": "ai",
+          "confidence": "high",
+          "includedInAdvertised": true
+        },
+        {
+          "id": "stonegate-carlton-scott-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "stonegate-carlton-scott-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "stonegate-carlton-scott-one-time-pet-fee",
+          "name": "One-Time Pet Fee",
+          "category": "pet",
+          "amount": 100,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "One-Time Pet Fee $100",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "stonegate-carlton-scott-monthly-pet-fee",
+          "name": "Monthly Pet Fee",
+          "category": "pet",
+          "amount": 75,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Monthly Pet Fee $75 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "tech-terrace",
+    "name": "Tech Terrace",
+    "url": "https://offcampus.vt.edu/housing/property/tech-terrace/7pgnn3w",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 894,
+      "max": 3576,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-tech-terrace",
+      "name": "Tech Terrace",
+      "advertised": {
+        "amount": 894,
+        "basis": "per_unit",
+        "quote": "$894 - $3,576"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "tech-terrace-other-one-time-basics",
+          "name": "Other (One-Time Basics)",
+          "category": "other",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Other (One-Time Basics) $200",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "the-farm",
+    "name": "The Farm",
+    "url": "https://offcampus.vt.edu/housing/property/the-farm/dc0hz6h",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2139,
+      "max": 2700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-the-farm",
+      "name": "The Farm",
+      "advertised": {
+        "amount": 2139,
+        "basis": "per_unit",
+        "quote": "$2,139 - $2,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "the-farm-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 199,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $199",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "the-farm-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 49,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $49",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "the-flats-at-uptown",
+    "name": "The Flats At Uptown",
+    "url": "https://offcampus.vt.edu/housing/property/the-flats-at-uptown/f456drr",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 980,
+      "max": 1220,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-the-flats-at-uptown",
+      "name": "The Flats At Uptown",
+      "advertised": {
+        "amount": 980,
+        "basis": "per_unit",
+        "quote": "$980 - $1,220"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "the-flats-at-uptown-benefits-package",
+          "name": "Benefits Package",
+          "category": "other",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Benefits Package $25 / mo",
+          "source": "ai",
+          "confidence": "high",
+          "includedInAdvertised": true
+        },
+        {
+          "id": "the-flats-at-uptown-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "the-flats-at-uptown-pet-fee",
+          "name": "Pet Fee",
+          "category": "pet",
+          "amount": 500,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Fee $500",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "the-mill",
+    "name": "The Mill at Blacksburg",
+    "url": "https://offcampus.vt.edu/housing/property/the-mill-at-blacksburg/egltlfm",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 560,
+      "max": 1680,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-the-mill",
+      "name": "The Mill at Blacksburg",
+      "advertised": {
+        "amount": 560,
+        "basis": "per_unit",
+        "quote": "$560 - $1,680"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "the-mill-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $35",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "reserve-at-knollwood",
+    "name": "The Reserve at Knollwood",
+    "url": "https://offcampus.vt.edu/housing/property/the-reserve-at-knollwood/qyk0y5w",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1490,
+      "max": 2400,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-reserve-at-knollwood",
+      "name": "The Reserve at Knollwood",
+      "advertised": {
+        "amount": 1490,
+        "basis": "per_unit",
+        "quote": "$1,490 - $2,400"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "reserve-at-knollwood-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 25,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "reserve-at-knollwood-reservation-deposit",
+          "name": "Reservation Deposit",
+          "category": "security_deposit",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Reservation Deposit $200",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "summit-at-uptown",
+    "name": "The Summit At Uptown",
+    "url": "https://offcampus.vt.edu/housing/property/the-summit-at-uptown/6vc9lrv",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 970,
+      "max": 1095,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-summit-at-uptown",
+      "name": "The Summit At Uptown",
+      "advertised": {
+        "amount": 970,
+        "basis": "per_person",
+        "quote": "$970 - $1,095 /Bedroom"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "not_included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "summit-at-uptown-benefit-package",
+          "name": "Benefit Package",
+          "category": "other",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Benefit Package $25 / mo",
+          "source": "ai",
+          "confidence": "high",
+          "includedInAdvertised": true
+        },
+        {
+          "id": "summit-at-uptown-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "summit-at-uptown-pet-fee",
+          "name": "Pet Fee",
+          "category": "pet",
+          "amount": 500,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Fee $500",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "turner-nw",
+    "name": "Turner NW",
+    "url": "https://offcampus.vt.edu/housing/property/turner-nw-so-close-you-can-see-campus-from-your-window/ocpbc6lvgb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1480,
+      "max": 1850,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-turner-nw",
+      "name": "Turner NW",
+      "advertised": {
+        "amount": 1480,
+        "basis": "per_unit",
+        "quote": "$1,494 - $1,864"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "turner-nw-renter-s-insurance",
+          "name": "Renter's Insurance",
+          "category": "insurance",
+          "amount": 14,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Renter's Insurance $14 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "turner-nw-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $35 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "turner-nw-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 500,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $500 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "turner-nw-reserved-parking",
+          "name": "Reserved Parking",
+          "category": "parking",
+          "amount": 100,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Reserved Parking $100 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "union-blacksburg",
+    "name": "Union Blacksburg",
+    "url": "https://offcampus.vt.edu/housing/property/union-blacksburg/c93z2yf",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 999,
+      "max": 1892,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-union-blacksburg",
+      "name": "Union Blacksburg",
+      "advertised": {
+        "amount": 999,
+        "basis": "per_person",
+        "quote": "$999 - $1,892 /Bedroom"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "union-blacksburg-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-application-fee",
+          "name": "Application Fee",
+          "category": "application",
+          "amount": 35,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee $35",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-utility-billing-administrative-fee",
+          "name": "Utility - Billing Administrative Fee",
+          "category": "utility_fee",
+          "amount": 6.79,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility - Billing Administrative Fee $6.79",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-parking",
+          "name": "Parking",
+          "category": "parking",
+          "amount": 35,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Parking $35",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-parking-reserved",
+          "name": "Parking - Reserved",
+          "category": "parking",
+          "amount": 50,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Parking - Reserved $50",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-pet-fee",
+          "name": "Pet Fee",
+          "category": "pet",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Fee $400",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-pet-rent",
+          "name": "Pet Rent",
+          "category": "pet",
+          "amount": 25,
+          "frequency": "monthly",
+          "basis": "per_person",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Rent $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "union-blacksburg-renters-liability-content-property-program",
+          "name": "Renters Liability/Content - Property Program",
+          "category": "insurance",
+          "amount": 14.5,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Renters Liability/Content - Property Program $14.50 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "uptown-village",
+    "name": "Uptown Village",
+    "url": "https://offcampus.vt.edu/housing/property/uptown-village/c2yfr9e",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 950,
+      "max": 1725,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-uptown-village",
+      "name": "Uptown Village",
+      "advertised": {
+        "amount": 950,
+        "basis": "per_unit",
+        "quote": "$950 - $1,725"
+      },
+      "utilities": {
+        "electric": "not_included",
+        "water": "not_included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "uptown-village-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 50,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $50",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "vue",
+    "name": "Vue Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/vue-apartments/esvspwq",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1660,
+      "max": 2745,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-vue",
+      "name": "Vue Apartments",
+      "advertised": {
+        "amount": 1660,
+        "basis": "per_unit",
+        "quote": "$1,660 - $2,745"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "vue-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 25,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $25",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "vue-reservation-deposit",
+          "name": "Reservation Deposit",
+          "category": "security_deposit",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Reservation Deposit $200",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "windsor-hills",
+    "name": "Windsor Hills Apartments",
+    "url": "https://offcampus.vt.edu/housing/property/windsor-hills-apartments/1gptl24",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1234,
+      "max": 2961,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-windsor-hills",
+      "name": "Windsor Hills Apartments",
+      "advertised": {
+        "amount": 1234,
+        "basis": "per_unit",
+        "quote": "$1,234 - $2,961"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "windsor-hills-utility-billing-administrative-fee",
+          "name": "Utility - Billing Administrative Fee",
+          "category": "utility_fee",
+          "amount": 1.5,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility - Billing Administrative Fee $1.50 / mo",
+          "source": "ai",
+          "confidence": "high",
+          "includedInAdvertised": true
+        },
+        {
+          "id": "windsor-hills-reservation-deposit",
+          "name": "Reservation Deposit",
+          "category": "security_deposit",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Reservation Deposit $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "windsor-hills-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 30,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $30",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "windsor-hills-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $200",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "windsor-hills-amenity-fee",
+          "name": "Amenity Fee",
+          "category": "amenity",
+          "amount": 40,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Amenity Fee $40",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "501-sunridge-dr",
+    "name": "1 Bedroom Duplex, 501 Sunridge Dr",
+    "url": "https://offcampus.vt.edu/housing/property/501-sunridge-drive/3v8rzye",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1550,
+      "max": 1550,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-501-sunridge-dr",
+      "name": "1 Bedroom Duplex, 501 Sunridge Dr",
+      "advertised": {
+        "amount": 1550,
+        "basis": "per_unit",
+        "quote": "$1,550"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "501-sunridge-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1550,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,550",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "alleghany-street",
+    "name": "1 Bedroom House, Alleghany Street",
+    "url": "https://offcampus.vt.edu/housing/property/alleghany-st-ii/ocpz2eys3w",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 810,
+      "max": 810,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-alleghany-street",
+      "name": "1 Bedroom House, Alleghany Street",
+      "advertised": {
+        "amount": 810,
+        "basis": "per_person",
+        "quote": "$810 /Bedroom"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "alleghany-street-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $300 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "alleghany-street-2",
+    "name": "1 Bedroom House, Alleghany Street",
+    "url": "https://offcampus.vt.edu/housing/property/alleghany-street/ocpk058ed9",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 900,
+      "max": 900,
+      "basis": "per_person"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-alleghany-street-2",
+      "name": "1 Bedroom House, Alleghany Street",
+      "advertised": {
+        "amount": 900,
+        "basis": "per_person",
+        "quote": "$900 /Bedroom"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "included",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "alleghany-street-2-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $300 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "alleghany-street-2-administrative-fee",
+          "name": "Administrative Fee",
+          "category": "admin",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Administrative Fee $400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "312-reynolds-ave",
+    "name": "2 Bedroom Apartment, 312 Reynolds Ave",
+    "url": "https://offcampus.vt.edu/housing/property/312-reynolds-avenue-apt-2/e7ey5rp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1200,
+      "max": 1200,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-312-reynolds-ave",
+      "name": "2 Bedroom Apartment, 312 Reynolds Ave",
+      "advertised": {
+        "amount": 1200,
+        "basis": "per_unit",
+        "quote": "$1,200"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "312-reynolds-ave-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,200",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "712-roanoke-st-e",
+    "name": "2 Bedroom Apartment, 712 Roanoke St E",
+    "url": "https://offcampus.vt.edu/housing/property/712-roanoke-st-712-1/bdtgcg9",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1800,
+      "max": 1800,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-712-roanoke-st-e",
+      "name": "2 Bedroom Apartment, 712 Roanoke St E",
+      "advertised": {
+        "amount": 1800,
+        "basis": "per_unit",
+        "quote": "$1,800"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "712-roanoke-st-e-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1800,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,800",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1744-donlee-dr",
+    "name": "2 Bedroom Condo, 1744 Donlee Dr.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-condo/ocp5sp3exp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1300,
+      "max": 1300,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1744-donlee-dr",
+      "name": "2 Bedroom Condo, 1744 Donlee Dr.",
+      "advertised": {
+        "amount": 1300,
+        "basis": "per_unit",
+        "quote": "$1,300"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1744-donlee-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1300,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,300 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "213-s-knollwood-dr-ste-3304",
+    "name": "2 Bedroom Condo, 213 S. Knollwood Dr Ste 3304",
+    "url": "https://offcampus.vt.edu/housing/property/condo-in-knollwood-community-with-amenities/ocp04b3xk2",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1835,
+      "max": 1835,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-213-s-knollwood-dr-ste-3304",
+      "name": "2 Bedroom Condo, 213 S. Knollwood Dr Ste 3304",
+      "advertised": {
+        "amount": 1835,
+        "basis": "per_unit",
+        "quote": "$1,835"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "213-s-knollwood-dr-ste-3304-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1835,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,835 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "311-loudon-rd-apt-312",
+    "name": "2 Bedroom Condo, 311 Loudon Rd. Apt. 312",
+    "url": "https://offcampus.vt.edu/housing/property/updated-2-bedroom-1-bath-condo/ocpwe9epbl",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1275,
+      "max": 1275,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-311-loudon-rd-apt-312",
+      "name": "2 Bedroom Condo, 311 Loudon Rd. Apt. 312",
+      "advertised": {
+        "amount": 1275,
+        "basis": "per_unit",
+        "quote": "$1,275"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "311-loudon-rd-apt-312-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1275,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,275 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "380-new-kent-rd-221",
+    "name": "2 Bedroom Condo, 380 New Kent Rd. #221",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-condo/ocpjrhtgc4",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1275,
+      "max": 1275,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-380-new-kent-rd-221",
+      "name": "2 Bedroom Condo, 380 New Kent Rd. #221",
+      "advertised": {
+        "amount": 1275,
+        "basis": "per_unit",
+        "quote": "$1,275"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "380-new-kent-rd-221-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1275,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,275 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "900-brightwood-manor-dr-6",
+    "name": "2 Bedroom Condo, 900 Brightwood Manor Dr. #6",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-condo/ocpd9vxk6h",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1275,
+      "max": 1275,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-900-brightwood-manor-dr-6",
+      "name": "2 Bedroom Condo, 900 Brightwood Manor Dr. #6",
+      "advertised": {
+        "amount": 1275,
+        "basis": "per_unit",
+        "quote": "$1,275"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "900-brightwood-manor-dr-6-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1275,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,275 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "900b-progress-street",
+    "name": "2 Bedroom Condo, 900B Progress Street",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-condo/ocpcdw36he",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1195,
+      "max": 1195,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-900b-progress-street",
+      "name": "2 Bedroom Condo, 900B Progress Street",
+      "advertised": {
+        "amount": 1195,
+        "basis": "per_unit",
+        "quote": "$1,195"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "900b-progress-street-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1195,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,195 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1661-mt-tabor-rd",
+    "name": "2 Bedroom Duplex, 1661 Mt. Tabor Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-duplex/ocpb5thg78",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1275,
+      "max": 1275,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1661-mt-tabor-rd",
+      "name": "2 Bedroom Duplex, 1661 Mt. Tabor Rd.",
+      "advertised": {
+        "amount": 1275,
+        "basis": "per_unit",
+        "quote": "$1,275"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1661-mt-tabor-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1275,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,275 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "301-n-knollwood-dr",
+    "name": "2 Bedroom Duplex, 301 N Knollwood Dr",
+    "url": "https://offcampus.vt.edu/housing/property/301-n-knollwood-dr-ste-7201/wjm7m9l",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1725,
+      "max": 1725,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-301-n-knollwood-dr",
+      "name": "2 Bedroom Duplex, 301 N Knollwood Dr",
+      "advertised": {
+        "amount": 1725,
+        "basis": "per_unit",
+        "quote": "$1,725"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "301-n-knollwood-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1725,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,725",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "509-1-progress-st",
+    "name": "2 Bedroom Duplex, 509-1 Progress St.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-duplex/ocppl9s7fr",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1535,
+      "max": 1535,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-509-1-progress-st",
+      "name": "2 Bedroom Duplex, 509-1 Progress St.",
+      "advertised": {
+        "amount": 1535,
+        "basis": "per_unit",
+        "quote": "$1,535"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "509-1-progress-st-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1535,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,535 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1646-thomas-lane",
+    "name": "2 Bedroom House, 1646 Thomas Lane",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-house/ocp99b01h7",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1200,
+      "max": 1200,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1646-thomas-lane",
+      "name": "2 Bedroom House, 1646 Thomas Lane",
+      "advertised": {
+        "amount": 1200,
+        "basis": "per_unit",
+        "quote": "$1,200"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1646-thomas-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,200 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2416-merrimac-rd",
+    "name": "2 Bedroom House, 2416 Merrimac Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bathroom/ocpb7tr7j9",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1455,
+      "max": 1455,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2416-merrimac-rd",
+      "name": "2 Bedroom House, 2416 Merrimac Rd.",
+      "advertised": {
+        "amount": 1455,
+        "basis": "per_unit",
+        "quote": "$1,455"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2416-merrimac-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1455,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,455 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "3399-happy-hollow-rd",
+    "name": "2 Bedroom House, 3399 Happy Hollow Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-close-to-downtown-blacksburg-in-the-county/ocp1mdtke4",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1700,
+      "max": 1700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-3399-happy-hollow-rd",
+      "name": "2 Bedroom House, 3399 Happy Hollow Rd.",
+      "advertised": {
+        "amount": 1700,
+        "basis": "per_unit",
+        "quote": "$1,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "3399-happy-hollow-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "428-roanoke-st",
+    "name": "2 Bedroom House, 428 Roanoke St.",
+    "url": "https://offcampus.vt.edu/housing/property/charming-home-near-virginia-tech/ocp7r093qx",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3100,
+      "max": 3100,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-428-roanoke-st",
+      "name": "2 Bedroom House, 428 Roanoke St.",
+      "advertised": {
+        "amount": 3100,
+        "basis": "per_unit",
+        "quote": "$3,100"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "428-roanoke-st-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 3100,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $3,100 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "730-clay-street-southeast",
+    "name": "2 Bedroom House, 730 Clay Street Southeast",
+    "url": "https://offcampus.vt.edu/housing/property/blacksburg-homestay-on-clay-street/ocpt23llr8",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2100,
+      "max": 2100,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-730-clay-street-southeast",
+      "name": "2 Bedroom House, 730 Clay Street Southeast",
+      "advertised": {
+        "amount": 2100,
+        "basis": "per_unit",
+        "quote": "$2,100"
+      },
+      "utilities": {
+        "electric": "included",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "730-clay-street-southeast-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1000,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,000 - $2,000 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "204-ellett-rd",
+    "name": "2 Bedroom Townhouse, 204 Ellett Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-1-bath-duplex/ocpbjf33f9",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1300,
+      "max": 1300,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-204-ellett-rd",
+      "name": "2 Bedroom Townhouse, 204 Ellett Rd.",
+      "advertised": {
+        "amount": 1300,
+        "basis": "per_unit",
+        "quote": "$1,300"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "204-ellett-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1300,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,300 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "219-woods-edge-ct",
+    "name": "2 Bedroom Townhouse, 219 Woods Edge Ct.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-2-5-bath-townhouse-with-2-car-garage/ocpqkrjyrz",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1925,
+      "max": 1925,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-219-woods-edge-ct",
+      "name": "2 Bedroom Townhouse, 219 Woods Edge Ct.",
+      "advertised": {
+        "amount": 1925,
+        "basis": "per_unit",
+        "quote": "$1,925"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "219-woods-edge-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1925,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,925 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "262-sheliah-ct",
+    "name": "2 Bedroom Townhouse, 262 Sheliah Ct.",
+    "url": "https://offcampus.vt.edu/housing/property/2-bedroom-2-bath-townhouse/ocp2l0w9pb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2125,
+      "max": 2125,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-262-sheliah-ct",
+      "name": "2 Bedroom Townhouse, 262 Sheliah Ct.",
+      "advertised": {
+        "amount": 2125,
+        "basis": "per_unit",
+        "quote": "$2,125"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "262-sheliah-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2125,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,125 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1915-tabor-village-dr",
+    "name": "3 Bedroom Apartment, 1915 Tabor Village Dr",
+    "url": "https://offcampus.vt.edu/housing/property/1915-a-tabor-village-dr-1915-b/55lqbbn",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2025,
+      "max": 2025,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1915-tabor-village-dr",
+      "name": "3 Bedroom Apartment, 1915 Tabor Village Dr",
+      "advertised": {
+        "amount": 2025,
+        "basis": "per_unit",
+        "quote": "$2,025"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1915-tabor-village-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2025,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,025",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1919-tabor-village-dr",
+    "name": "3 Bedroom Apartment, 1919 Tabor Village Dr",
+    "url": "https://offcampus.vt.edu/housing/property/1919-a-tabor-village-dr-1919-b/vjb71wg",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2250,
+      "max": 2250,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1919-tabor-village-dr",
+      "name": "3 Bedroom Apartment, 1919 Tabor Village Dr",
+      "advertised": {
+        "amount": 2250,
+        "basis": "per_unit",
+        "quote": "$2,250"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1919-tabor-village-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2250,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,250",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "712-roanoke-st-e-2",
+    "name": "3 Bedroom Apartment, 712 Roanoke St E",
+    "url": "https://offcampus.vt.edu/housing/property/712-roanoke-st-712-2/dmt9vej",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1800,
+      "max": 1800,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-712-roanoke-st-e-2",
+      "name": "3 Bedroom Apartment, 712 Roanoke St E",
+      "advertised": {
+        "amount": 1800,
+        "basis": "per_unit",
+        "quote": "$1,800"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "712-roanoke-st-e-2-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1800,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,800",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "821-merrimac-rd",
+    "name": "3 Bedroom Apartment, 821 Merrimac Rd",
+    "url": "https://offcampus.vt.edu/housing/property/821-merrimac-road-a/9s8njj7",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1820,
+      "max": 1820,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-821-merrimac-rd",
+      "name": "3 Bedroom Apartment, 821 Merrimac Rd",
+      "advertised": {
+        "amount": 1820,
+        "basis": "per_unit",
+        "quote": "$1,820"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "821-merrimac-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1820,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,820",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1000k-progress-street",
+    "name": "3 Bedroom Condo, 1000K Progress Street",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-1-bath-condo/ocpnhfnkjn",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1325,
+      "max": 1325,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1000k-progress-street",
+      "name": "3 Bedroom Condo, 1000K Progress Street",
+      "advertised": {
+        "amount": 1325,
+        "basis": "per_unit",
+        "quote": "$1,325"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1000k-progress-street-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1325,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,325 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1730-liberty-ln-unit-16",
+    "name": "3 Bedroom Condo, 1730 Liberty Ln. Unit #16",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-condo/ocpqn4jshx",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1850,
+      "max": 1850,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1730-liberty-ln-unit-16",
+      "name": "3 Bedroom Condo, 1730 Liberty Ln. Unit #16",
+      "advertised": {
+        "amount": 1850,
+        "basis": "per_unit",
+        "quote": "$1,850"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1730-liberty-ln-unit-16-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1850,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,850 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "206-heights-lane",
+    "name": "3 Bedroom Condo, 206 Heights Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-3-5-bath-condo/ocpf2894nt",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2075,
+      "max": 2075,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-206-heights-lane",
+      "name": "3 Bedroom Condo, 206 Heights Lane",
+      "advertised": {
+        "amount": 2075,
+        "basis": "per_unit",
+        "quote": "$2,075"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "206-heights-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2075,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,075 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1504-sandy-circle",
+    "name": "3 Bedroom Duplex, 1504 Sandy Circle",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-duplex/ocp480jh0l",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1480,
+      "max": 1480,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1504-sandy-circle",
+      "name": "3 Bedroom Duplex, 1504 Sandy Circle",
+      "advertised": {
+        "amount": 1480,
+        "basis": "per_unit",
+        "quote": "$1,480"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1504-sandy-circle-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1480,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,480 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "213-graves-ave",
+    "name": "3 Bedroom Duplex, 213 Graves Ave.",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-duplex/ocpw96vqhl",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2130,
+      "max": 2130,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-213-graves-ave",
+      "name": "3 Bedroom Duplex, 213 Graves Ave.",
+      "advertised": {
+        "amount": 2130,
+        "basis": "per_unit",
+        "quote": "$2,130"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "213-graves-ave-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2130,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,130 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1007-progress-street-nw",
+    "name": "3 Bedroom House, 1007 Progress Street NW",
+    "url": "https://offcampus.vt.edu/housing/property/3-br-house-1-2-mile-to-vt-campus-on-progress-st/ocp19c0e55",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1750,
+      "max": 1750,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1007-progress-street-nw",
+      "name": "3 Bedroom House, 1007 Progress Street NW",
+      "advertised": {
+        "amount": 1750,
+        "basis": "per_unit",
+        "quote": "$1,750"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1007-progress-street-nw-pet-fee",
+          "name": "Pet Fee",
+          "category": "pet",
+          "amount": 400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Fee $400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "1007-progress-street-nw-pet-fee-2",
+          "name": "Pet Fee",
+          "category": "pet",
+          "amount": 200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "no",
+          "counted": false,
+          "refundable": false,
+          "quote": "Pet Fee $200 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1151-thomas-lane",
+    "name": "3 Bedroom House, 1151 Thomas Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-1-bath-house/ocp6xjhpkt",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1765,
+      "max": 1765,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1151-thomas-lane",
+      "name": "3 Bedroom House, 1151 Thomas Lane",
+      "advertised": {
+        "amount": 1765,
+        "basis": "per_unit",
+        "quote": "$1,765"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1151-thomas-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1765,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,765 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1477-sandy-circle",
+    "name": "3 Bedroom House, 1477 Sandy Circle",
+    "url": "https://offcampus.vt.edu/housing/property/renovated-home-near-virginia-tech/ocp31ljhhf",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1825,
+      "max": 1825,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1477-sandy-circle",
+      "name": "3 Bedroom House, 1477 Sandy Circle",
+      "advertised": {
+        "amount": 1825,
+        "basis": "per_unit",
+        "quote": "$1,825"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1477-sandy-circle-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1825,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,825 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1485-sandy-circle",
+    "name": "3 Bedroom House, 1485 Sandy Circle",
+    "url": "https://offcampus.vt.edu/housing/property/recently-updated-home-near-virginia-tech/ocptybcjt8",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1800,
+      "max": 1800,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1485-sandy-circle",
+      "name": "3 Bedroom House, 1485 Sandy Circle",
+      "advertised": {
+        "amount": 1800,
+        "basis": "per_unit",
+        "quote": "$1,800"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1485-sandy-circle-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1800,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,800 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1702-gardenspring-drive",
+    "name": "3 Bedroom House, 1702 Gardenspring Drive",
+    "url": "https://offcampus.vt.edu/housing/property/re-rental-available-11-16-26-3-bedroom-2-5-bath-house-with-1-car-garage/ocplmgtkhe",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1900,
+      "max": 1900,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1702-gardenspring-drive",
+      "name": "3 Bedroom House, 1702 Gardenspring Drive",
+      "advertised": {
+        "amount": 1900,
+        "basis": "per_unit",
+        "quote": "$1,900"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1702-gardenspring-drive-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1900,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,900 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1719-aden-lane",
+    "name": "3 Bedroom House, 1719 Aden Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-house/ocpdn4h1xl",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2250,
+      "max": 2250,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1719-aden-lane",
+      "name": "3 Bedroom House, 1719 Aden Lane",
+      "advertised": {
+        "amount": 2250,
+        "basis": "per_unit",
+        "quote": "$2,250"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1719-aden-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2250,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,250 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1725-aden-lane",
+    "name": "3 Bedroom House, 1725 Aden Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-house/ocpxqlxnzq",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2250,
+      "max": 2250,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1725-aden-lane",
+      "name": "3 Bedroom House, 1725 Aden Lane",
+      "advertised": {
+        "amount": 2250,
+        "basis": "per_unit",
+        "quote": "$2,250"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1725-aden-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2250,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,250 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2008-christopher-drive",
+    "name": "3 Bedroom House, 2008 Christopher Drive",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-house-in-woodbine-w-walking-trail-access/ocp005p381",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2650,
+      "max": 2650,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2008-christopher-drive",
+      "name": "3 Bedroom House, 2008 Christopher Drive",
+      "advertised": {
+        "amount": 2650,
+        "basis": "per_unit",
+        "quote": "$2,650"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2008-christopher-drive-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2650,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,650 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2300-san-marcos-street",
+    "name": "3 Bedroom House, 2300 San Marcos Street",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-house-with-2-car-garage/ocp040leh3",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2080,
+      "max": 2080,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2300-san-marcos-street",
+      "name": "3 Bedroom House, 2300 San Marcos Street",
+      "advertised": {
+        "amount": 2080,
+        "basis": "per_unit",
+        "quote": "$2,080"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2300-san-marcos-street-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2080,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,080 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2505-plymouth-st",
+    "name": "3 Bedroom House, 2505 Plymouth St.",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-house-in-hethwood-w-pool-access/ocp0q2l9l2",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1875,
+      "max": 1875,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2505-plymouth-st",
+      "name": "3 Bedroom House, 2505 Plymouth St.",
+      "advertised": {
+        "amount": 1875,
+        "basis": "per_unit",
+        "quote": "$1,875"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2505-plymouth-st-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1875,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,875 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "408-mt-tabor-road",
+    "name": "3 Bedroom House, 408 Mt. Tabor Road",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-house-with-1-car-garage/ocppsp5r6r",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2390,
+      "max": 2390,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-408-mt-tabor-road",
+      "name": "3 Bedroom House, 408 Mt. Tabor Road",
+      "advertised": {
+        "amount": 2390,
+        "basis": "per_unit",
+        "quote": "$2,390"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "408-mt-tabor-road-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2390,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,390 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "510-sunrise-dr",
+    "name": "3 Bedroom House, 510 Sunrise Dr.",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-1-bath-house/ocprdw2yk0",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1975,
+      "max": 1975,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-510-sunrise-dr",
+      "name": "3 Bedroom House, 510 Sunrise Dr.",
+      "advertised": {
+        "amount": 1975,
+        "basis": "per_unit",
+        "quote": "$1,975"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "510-sunrise-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1975,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,975 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "512-sunrise-drive",
+    "name": "3 Bedroom House, 512 Sunrise Drive",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-house/ocp398337e",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2235,
+      "max": 2235,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-512-sunrise-drive",
+      "name": "3 Bedroom House, 512 Sunrise Drive",
+      "advertised": {
+        "amount": 2235,
+        "basis": "per_unit",
+        "quote": "$2,235"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "512-sunrise-drive-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2235,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,235 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "711-gracelyn-court",
+    "name": "3 Bedroom House, 711 Gracelyn Court",
+    "url": "https://offcampus.vt.edu/housing/property/711-gracelyn-ct-3bed-2-bath-downtown-blacksburg/ocp20vgf39",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 4100,
+      "max": 4100,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-711-gracelyn-court",
+      "name": "3 Bedroom House, 711 Gracelyn Court",
+      "advertised": {
+        "amount": 4100,
+        "basis": "per_unit",
+        "quote": "$4,100"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "711-gracelyn-court-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 4100,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $4,100 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "735-davis-street",
+    "name": "3 Bedroom House, 735 Davis Street",
+    "url": "https://offcampus.vt.edu/housing/property/blacksburg-home-with-basement-and-off-street-parking/ocpsrfs954",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1950,
+      "max": 1950,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-735-davis-street",
+      "name": "3 Bedroom House, 735 Davis Street",
+      "advertised": {
+        "amount": 1950,
+        "basis": "per_unit",
+        "quote": "$1,950"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "735-davis-street-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1950,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,950 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "864-hutcheson-dr",
+    "name": "3 Bedroom House, 864 Hutcheson Dr.",
+    "url": "https://offcampus.vt.edu/housing/property/spacious-home-in-mcbryde-village-next-to-vt-campus/ocpsbhk036",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2925,
+      "max": 2925,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-864-hutcheson-dr",
+      "name": "3 Bedroom House, 864 Hutcheson Dr.",
+      "advertised": {
+        "amount": 2925,
+        "basis": "per_unit",
+        "quote": "$2,925"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "864-hutcheson-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2925,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,925 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "107-givens-lane-2",
+    "name": "3 Bedroom Townhouse, 107 Givens Lane - 2",
+    "url": "https://offcampus.vt.edu/housing/property/spacious-3br-townhome-by-the-bus-stop/ocpt48qb9b",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2400,
+      "max": 2400,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-107-givens-lane-2",
+      "name": "3 Bedroom Townhouse, 107 Givens Lane - 2",
+      "advertised": {
+        "amount": 2400,
+        "basis": "per_unit",
+        "quote": "$2,400"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "107-givens-lane-2-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "107-mt-tabor-rd",
+    "name": "3 Bedroom Townhouse, 107 Mt Tabor Rd",
+    "url": "https://offcampus.vt.edu/housing/property/107-mt-tabor-rd/nrgskcp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2550,
+      "max": 2550,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-107-mt-tabor-rd",
+      "name": "3 Bedroom Townhouse, 107 Mt Tabor Rd",
+      "advertised": {
+        "amount": 2550,
+        "basis": "per_unit",
+        "quote": "$2,550"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "107-mt-tabor-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2550,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,550",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1104-caldwell-drive",
+    "name": "3 Bedroom Townhouse, 1104 Caldwell Drive",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-half-bath-townhouse-with-2-car-garage/ocpnk6nh1m",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2500,
+      "max": 2500,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1104-caldwell-drive",
+      "name": "3 Bedroom Townhouse, 1104 Caldwell Drive",
+      "advertised": {
+        "amount": 2500,
+        "basis": "per_unit",
+        "quote": "$2,500"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1104-caldwell-drive-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2500,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,500 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "113-camelot-ct",
+    "name": "3 Bedroom Townhouse, 113 Camelot Ct",
+    "url": "https://offcampus.vt.edu/housing/property/113-camelot-ct/54jk5yq",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2230,
+      "max": 2230,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-113-camelot-ct",
+      "name": "3 Bedroom Townhouse, 113 Camelot Ct",
+      "advertised": {
+        "amount": 2230,
+        "basis": "per_unit",
+        "quote": "$2,230"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "113-camelot-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2230,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,230",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "113-silverleaf-lane",
+    "name": "3 Bedroom Townhouse, 113 Silverleaf Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-2-car-garage-townhouse/ocp8zxxqe1",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1900,
+      "max": 1900,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-113-silverleaf-lane",
+      "name": "3 Bedroom Townhouse, 113 Silverleaf Lane",
+      "advertised": {
+        "amount": 1900,
+        "basis": "per_unit",
+        "quote": "$1,900"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "113-silverleaf-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1900,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,900 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1132-huff-lane",
+    "name": "3 Bedroom Townhouse, 1132 Huff Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-townhouse/ocpvj5vnhe",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1650,
+      "max": 1650,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1132-huff-lane",
+      "name": "3 Bedroom Townhouse, 1132 Huff Lane",
+      "advertised": {
+        "amount": 1650,
+        "basis": "per_unit",
+        "quote": "$1,650"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1132-huff-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1650,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,650 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "124-camelot-court",
+    "name": "3 Bedroom Townhouse, 124 Camelot Court",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-townhouse/ocpefve2pq",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2200,
+      "max": 2200,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-124-camelot-court",
+      "name": "3 Bedroom Townhouse, 124 Camelot Court",
+      "advertised": {
+        "amount": 2200,
+        "basis": "per_unit",
+        "quote": "$2,200"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "124-camelot-court-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,200 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1443-sandy-circle",
+    "name": "3 Bedroom Townhouse, 1443 Sandy Circle",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-bath-duplex/ocpz55mtqz",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1600,
+      "max": 1600,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1443-sandy-circle",
+      "name": "3 Bedroom Townhouse, 1443 Sandy Circle",
+      "advertised": {
+        "amount": 1600,
+        "basis": "per_unit",
+        "quote": "$1,600"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1443-sandy-circle-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1600,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,600 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2424-ridge-road",
+    "name": "3 Bedroom Townhouse, 2424 Ridge Road",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-half-bath-townhouse/ocp2d99x3c",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1700,
+      "max": 1700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2424-ridge-road",
+      "name": "3 Bedroom Townhouse, 2424 Ridge Road",
+      "advertised": {
+        "amount": 1700,
+        "basis": "per_unit",
+        "quote": "$1,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2424-ridge-road-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2503-cherry-lane",
+    "name": "3 Bedroom Townhouse, 2503 Cherry Lane",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-3-bath-townhouse-with-2-car-garage/ocpm09n6qh",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2700,
+      "max": 2700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2503-cherry-lane",
+      "name": "3 Bedroom Townhouse, 2503 Cherry Lane",
+      "advertised": {
+        "amount": 2700,
+        "basis": "per_unit",
+        "quote": "$2,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2503-cherry-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2515-cherry-lane",
+    "name": "3 Bedroom Townhouse, 2515 Cherry Lane",
+    "url": "https://offcampus.vt.edu/housing/property/renovated-3-bedroom-3-bath-townhouse-with-2-car-garage-and-views/ocpxrsd1ep",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2700,
+      "max": 2700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2515-cherry-lane",
+      "name": "3 Bedroom Townhouse, 2515 Cherry Lane",
+      "advertised": {
+        "amount": 2700,
+        "basis": "per_unit",
+        "quote": "$2,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2515-cherry-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2518-ridge-rd",
+    "name": "3 Bedroom Townhouse, 2518 Ridge Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-townhouse/ocp1t772e6",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1700,
+      "max": 1700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2518-ridge-rd",
+      "name": "3 Bedroom Townhouse, 2518 Ridge Rd.",
+      "advertised": {
+        "amount": 1700,
+        "basis": "per_unit",
+        "quote": "$1,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2518-ridge-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2714-quincy-ct",
+    "name": "3 Bedroom Townhouse, 2714 Quincy Ct",
+    "url": "https://offcampus.vt.edu/housing/property/2714-quincy-ct/e3wj6hp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2400,
+      "max": 2400,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2714-quincy-ct",
+      "name": "3 Bedroom Townhouse, 2714 Quincy Ct",
+      "advertised": {
+        "amount": 2400,
+        "basis": "per_unit",
+        "quote": "$2,400"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2714-quincy-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,400",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2722-quincy-ct",
+    "name": "3 Bedroom Townhouse, 2722 Quincy Ct.",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-1-5-bath-townhouse/ocp8lws4g3",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1975,
+      "max": 1975,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2722-quincy-ct",
+      "name": "3 Bedroom Townhouse, 2722 Quincy Ct.",
+      "advertised": {
+        "amount": 1975,
+        "basis": "per_unit",
+        "quote": "$1,975"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2722-quincy-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1975,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,975 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "300-new-kent-road",
+    "name": "3 Bedroom Townhouse, 300 New Kent Road",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-1-full-bath-with-2-1-2-bath-townhouse/ocph99bvd3",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1700,
+      "max": 1700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-300-new-kent-road",
+      "name": "3 Bedroom Townhouse, 300 New Kent Road",
+      "advertised": {
+        "amount": 1700,
+        "basis": "per_unit",
+        "quote": "$1,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "300-new-kent-road-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "319-sheliah-ct",
+    "name": "3 Bedroom Townhouse, 319 Sheliah Ct.",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-bath-townhouse-with-1-car-garage/ocpnemn1mp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2200,
+      "max": 2200,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-319-sheliah-ct",
+      "name": "3 Bedroom Townhouse, 319 Sheliah Ct.",
+      "advertised": {
+        "amount": 2200,
+        "basis": "per_unit",
+        "quote": "$2,200"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "319-sheliah-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,200 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "328-loudon-road",
+    "name": "3 Bedroom Townhouse, 328 Loudon Road",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-1-full-and-2-1-2-bath-townhouse/ocpv2rkleg",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1700,
+      "max": 1700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-328-loudon-road",
+      "name": "3 Bedroom Townhouse, 328 Loudon Road",
+      "advertised": {
+        "amount": 1700,
+        "basis": "per_unit",
+        "quote": "$1,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "328-loudon-road-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "406-mt-tabor-road",
+    "name": "3 Bedroom Townhouse, 406 Mt. Tabor Road",
+    "url": "https://offcampus.vt.edu/housing/property/3-bedroom-2-5-half-bath-townhouse-with-1-car-garage/ocp1we82x5",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2100,
+      "max": 2100,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-406-mt-tabor-road",
+      "name": "3 Bedroom Townhouse, 406 Mt. Tabor Road",
+      "advertised": {
+        "amount": 2100,
+        "basis": "per_unit",
+        "quote": "$2,100"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "406-mt-tabor-road-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2100,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,100 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1206-university-terrace",
+    "name": "4 Bedroom Condo, 1206 University Terrace",
+    "url": "https://offcampus.vt.edu/housing/property/university-terrace-4-bedroom-available-now/ocp0j66gk2",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2275,
+      "max": 2275,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1206-university-terrace",
+      "name": "4 Bedroom Condo, 1206 University Terrace",
+      "advertised": {
+        "amount": 2275,
+        "basis": "per_unit",
+        "quote": "$2,275"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1206-university-terrace-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2275,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,275 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1204-university-terrace",
+    "name": "4 Bedroom Duplex, 1204 University Terrace",
+    "url": "https://offcampus.vt.edu/housing/property/1204k-university-terrace-dr-progress-st/tv52028",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1850,
+      "max": 1850,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1204-university-terrace",
+      "name": "4 Bedroom Duplex, 1204 University Terrace",
+      "advertised": {
+        "amount": 1850,
+        "basis": "per_unit",
+        "quote": "$1,850"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1204-university-terrace-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1850,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,850",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1215-progress-st-nw",
+    "name": "4 Bedroom Duplex, 1215 Progress St NW",
+    "url": "https://offcampus.vt.edu/housing/property/1215-a-progress-st-nw/rjj0lc0",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1700,
+      "max": 1700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1215-progress-st-nw",
+      "name": "4 Bedroom Duplex, 1215 Progress St NW",
+      "advertised": {
+        "amount": 1700,
+        "basis": "per_unit",
+        "quote": "$1,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1215-progress-st-nw-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,700",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1440-seneca-dr",
+    "name": "4 Bedroom Duplex, 1440 Seneca Dr",
+    "url": "https://offcampus.vt.edu/housing/property/1440-seneca-dr/mcwkfwh",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1850,
+      "max": 1850,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1440-seneca-dr",
+      "name": "4 Bedroom Duplex, 1440 Seneca Dr",
+      "advertised": {
+        "amount": 1850,
+        "basis": "per_unit",
+        "quote": "$1,850"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1440-seneca-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1850,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,850",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "205-reynolds-avenue",
+    "name": "4 Bedroom Duplex, 205 Reynolds Avenue",
+    "url": "https://offcampus.vt.edu/housing/property/205-reynolds-upstairs/ocpc6pnl6e",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 1980,
+      "max": 1980,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-205-reynolds-avenue",
+      "name": "4 Bedroom Duplex, 205 Reynolds Avenue",
+      "advertised": {
+        "amount": 1980,
+        "basis": "per_unit",
+        "quote": "$1,980"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "included",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "included"
+      },
+      "fees": [
+        {
+          "id": "205-reynolds-avenue-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 40,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $40 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "205-reynolds-avenue-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 1980,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $1,980 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "403-berryfield-ln",
+    "name": "4 Bedroom Duplex, 403 Berryfield Ln",
+    "url": "https://offcampus.vt.edu/housing/property/403b-berryfield-lane/r8gnc63",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2275,
+      "max": 2275,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-403-berryfield-ln",
+      "name": "4 Bedroom Duplex, 403 Berryfield Ln",
+      "advertised": {
+        "amount": 2275,
+        "basis": "per_unit",
+        "quote": "$2,275"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "403-berryfield-ln-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2275,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,275",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "814-glade-rd",
+    "name": "4 Bedroom Duplex, 814 Glade Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-5-bath-duplex/ocp9t6g2c6",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2700,
+      "max": 2700,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-814-glade-rd",
+      "name": "4 Bedroom Duplex, 814 Glade Rd.",
+      "advertised": {
+        "amount": 2700,
+        "basis": "per_unit",
+        "quote": "$2,700"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "814-glade-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2700,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,700 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1005-glade-rd",
+    "name": "4 Bedroom House, 1005 Glade Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/spacious-ranch-close-to-campus/ocpqtgvkew",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3800,
+      "max": 3800,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1005-glade-rd",
+      "name": "4 Bedroom House, 1005 Glade Rd.",
+      "advertised": {
+        "amount": 3800,
+        "basis": "per_unit",
+        "quote": "$3,800"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1005-glade-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 3800,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $3,800 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "105-oak-meadow-lane",
+    "name": "4 Bedroom House, 105 Oak Meadow Lane",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-home-with-garage-and-convenient-access-to-460/ocprykgmh3",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2800,
+      "max": 2800,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-105-oak-meadow-lane",
+      "name": "4 Bedroom House, 105 Oak Meadow Lane",
+      "advertised": {
+        "amount": 2800,
+        "basis": "per_unit",
+        "quote": "$2,800"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "105-oak-meadow-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2800,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,800 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1814-gardenspring-dr",
+    "name": "4 Bedroom House, 1814 Gardenspring Dr.",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-3-bath-house/ocp291mkj9",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2750,
+      "max": 2750,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1814-gardenspring-dr",
+      "name": "4 Bedroom House, 1814 Gardenspring Dr.",
+      "advertised": {
+        "amount": 2750,
+        "basis": "per_unit",
+        "quote": "$2,750"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1814-gardenspring-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2750,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,750 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "202-fincastle-drive",
+    "name": "4 Bedroom House, 202 Fincastle Drive",
+    "url": "https://offcampus.vt.edu/housing/property/open-floor-plan-home-with-fenced-yard-and-excellent-location/ocphbjm131",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2900,
+      "max": 2900,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-202-fincastle-drive",
+      "name": "4 Bedroom House, 202 Fincastle Drive",
+      "advertised": {
+        "amount": 2900,
+        "basis": "per_unit",
+        "quote": "$2,900"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "202-fincastle-drive-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2900,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,900 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "616-broce-drive",
+    "name": "4 Bedroom House, 616 Broce Drive",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-5-bath-house-1-car-garage/ocpekdezrp",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2400,
+      "max": 2400,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-616-broce-drive",
+      "name": "4 Bedroom House, 616 Broce Drive",
+      "advertised": {
+        "amount": 2400,
+        "basis": "per_unit",
+        "quote": "$2,400"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "616-broce-drive-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1069-westhill-parkway",
+    "name": "4 Bedroom Townhouse, 1069 Westhill Parkway",
+    "url": "https://offcampus.vt.edu/housing/property/new-and-beautiful-townhouse-in-westhill-1069-westhill-pkwy-blacksburg-va-24060/ocp24gj1cb",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 3495,
+      "max": 3495,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1069-westhill-parkway",
+      "name": "4 Bedroom Townhouse, 1069 Westhill Parkway",
+      "advertised": {
+        "amount": 3495,
+        "basis": "per_unit",
+        "quote": "$3,495"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1069-westhill-parkway-application-fee-per-applicant",
+          "name": "Application Fee Per Applicant",
+          "category": "application",
+          "amount": 55,
+          "frequency": "one_time",
+          "basis": "per_person",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Application Fee Per Applicant $55 one-time",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "1069-westhill-parkway-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 3495,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $3,495 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "111-canterbury-ct",
+    "name": "4 Bedroom Townhouse, 111 Canterbury Ct.",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-5-bath-townhouse/ocp9g7r6b4",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2400,
+      "max": 2400,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-111-canterbury-ct",
+      "name": "4 Bedroom Townhouse, 111 Canterbury Ct.",
+      "advertised": {
+        "amount": 2400,
+        "basis": "per_unit",
+        "quote": "$2,400"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "111-canterbury-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,400 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "1429-christine-ct",
+    "name": "4 Bedroom Townhouse, 1429 Christine Ct.",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-5-bath-townhouse/ocpett433q",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2250,
+      "max": 2250,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-1429-christine-ct",
+      "name": "4 Bedroom Townhouse, 1429 Christine Ct.",
+      "advertised": {
+        "amount": 2250,
+        "basis": "per_unit",
+        "quote": "$2,250"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "1429-christine-ct-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2250,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,250 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "148-clover-valley-cir",
+    "name": "4 Bedroom Townhouse, 148 Clover Valley Cir",
+    "url": "https://offcampus.vt.edu/housing/property/148-clover-valley-cir-blacksburg-va/8y7yk42",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2450,
+      "max": 2450,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-148-clover-valley-cir",
+      "name": "4 Bedroom Townhouse, 148 Clover Valley Cir",
+      "advertised": {
+        "amount": 2450,
+        "basis": "per_unit",
+        "quote": "$2,450"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "148-clover-valley-cir-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 300,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $300",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "236-pheasant-run-dr",
+    "name": "4 Bedroom Townhouse, 236 Pheasant Run Dr",
+    "url": "https://offcampus.vt.edu/housing/property/236-pheasant-run-drive/9nfvcq4",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2400,
+      "max": 2400,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-236-pheasant-run-dr",
+      "name": "4 Bedroom Townhouse, 236 Pheasant Run Dr",
+      "advertised": {
+        "amount": 2400,
+        "basis": "per_unit",
+        "quote": "$2,400"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "236-pheasant-run-dr-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2400,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,400",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2502-ridge-rd",
+    "name": "4 Bedroom Townhouse, 2502 Ridge Rd.",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-3-5-bath-townhouse/ocpvy5111d",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2050,
+      "max": 2050,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2502-ridge-rd",
+      "name": "4 Bedroom Townhouse, 2502 Ridge Rd.",
+      "advertised": {
+        "amount": 2050,
+        "basis": "per_unit",
+        "quote": "$2,050"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2502-ridge-rd-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2050,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,050 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "2645-blossom-trail-e",
+    "name": "4 Bedroom Townhouse, 2645 Blossom Trail E",
+    "url": "https://offcampus.vt.edu/housing/property/spacious-townhome-in-the-orchards/ocpml27dcj",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2600,
+      "max": 2600,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-2645-blossom-trail-e",
+      "name": "4 Bedroom Townhouse, 2645 Blossom Trail E",
+      "advertised": {
+        "amount": 2600,
+        "basis": "per_unit",
+        "quote": "$2,600"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "2645-blossom-trail-e-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2600,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,600 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "413-laurence-lane",
+    "name": "4 Bedroom Townhouse, 413 Laurence Lane",
+    "url": "https://offcampus.vt.edu/housing/property/4-bedroom-2-5-half-bath-townhouse/ocpx9npfpm",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 2200,
+      "max": 2200,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-413-laurence-lane",
+      "name": "4 Bedroom Townhouse, 413 Laurence Lane",
+      "advertised": {
+        "amount": 2200,
+        "basis": "per_unit",
+        "quote": "$2,200"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "413-laurence-lane-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 2200,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $2,200 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "615-progress-street",
+    "name": "5 Bedroom House, 615 Progress Street",
+    "url": "https://offcampus.vt.edu/housing/property/spacious-home-in-downtown-blacksburg/ocpll3ltbe",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 5600,
+      "max": 5600,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-615-progress-street",
+      "name": "5 Bedroom House, 615 Progress Street",
+      "advertised": {
+        "amount": 5600,
+        "basis": "per_unit",
+        "quote": "$5,600"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "615-progress-street-security-deposit-refundable",
+          "name": "Security Deposit - Refundable",
+          "category": "security_deposit",
+          "amount": 5600,
+          "frequency": "one_time",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": true,
+          "quote": "Security Deposit - Refundable $5,600 one-time",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  },
+  {
+    "id": "sundance-ridge",
+    "name": "Studio Condo, 503 Sunridge Drive",
+    "url": "https://offcampus.vt.edu/housing/property/sundance-ridge-efficiency/ocpvr57e4g",
+    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
+    "readOn": "2026-10-24",
+    "priceRange": {
+      "min": 975,
+      "max": 975,
+      "basis": "per_unit"
+    },
+    "autoScanned": true,
+    "apartment": {
+      "id": "catalog-sundance-ridge",
+      "name": "Studio Condo, 503 Sunridge Drive",
+      "advertised": {
+        "amount": 975,
+        "basis": "per_unit",
+        "quote": "$985"
+      },
+      "utilities": {
+        "electric": "unknown",
+        "water": "unknown",
+        "gas": "unknown",
+        "internet": "unknown",
+        "trash": "unknown"
+      },
+      "fees": [
+        {
+          "id": "sundance-ridge-utility-electric",
+          "name": "Utility - Electric",
+          "category": "utility_fee",
+          "amount": 5,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "Utility - Electric $5 / mo",
+          "source": "ai",
+          "confidence": "high"
+        },
+        {
+          "id": "sundance-ridge-electric",
+          "name": "electric",
+          "category": "utility_fee",
+          "amount": 5,
+          "frequency": "monthly",
+          "basis": "per_unit",
+          "mandatory": "yes",
+          "counted": true,
+          "refundable": false,
+          "quote": "electric $5 / mo",
+          "source": "ai",
+          "confidence": "high"
+        }
+      ],
+      "reviewed": false
+    }
+  }
+]

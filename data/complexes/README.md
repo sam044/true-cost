@@ -9,6 +9,16 @@ Raw data for growing the catalog (F21) past the 8 hand-labelled eval cases. Ever
 | `scanned/<slug>.json` | `extractFees` output for each fetched page, with the model used and a hash of the text it read |
 | `lib/catalog/auto.json` | One catalog entry per scan with an advertised price, in the catalog's `CatalogEntry` shape with `autoScanned: true` and `apartment.reviewed: false`; `getCatalog()` lists them after the hand-checked seed |
 | `coverage.json` | Per complex: fetched or blocked, scan result, fee count, low-confidence count, price range |
+| `offcampus/listings.json` | 129 Blacksburg listings from offcampus.vt.edu (Oct 24, 2026) that show a price and at least one priced fee: name, type, street, price range, per-bed or per-unit, the price as shown, included utilities, property manager, and the fee table rows as `[group, heading, label, value, number, charged per]` (groups: `R` required, `P` parking, `T` pets, `A` add-ons) |
+| `lib/catalog/offcampus.json` | The catalog entries built from those listings by `scripts/complexes/offcampus.ts` (121; the 8 that are hand-checked complexes are left out). An entry with the same id as one in `auto.json` replaces it |
+
+## offcampus.vt.edu listings
+
+These were read in a normal browser session on the site, from the same listing data its property pages show, so no Gemma call was needed. Of 381 listings on the site, 260 are in Blacksburg and 160 of those show a price and a priced fee; `listings.json` keeps 129 of them (sublets and rooms, which are mostly posted by individuals, and "Rent TBD" listings are dropped). To rebuild the catalog entries after editing `listings.json`:
+
+```bash
+node --experimental-strip-types scripts/complexes/offcampus.ts
+```
 
 ## Rebuild
 
