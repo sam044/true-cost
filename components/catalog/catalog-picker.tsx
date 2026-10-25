@@ -60,7 +60,6 @@ export function CatalogPicker() {
     return ids;
   }, [apartments]);
   const full = apartments.length >= MAX_APARTMENTS;
-  const autoCount = catalog.filter((e) => e.autoScanned).length;
   const anyUnreviewed = apartments.some((a) => catalogIdOf(a.id) && !a.reviewed);
 
   const q = query.trim().toLowerCase();
@@ -90,11 +89,6 @@ export function CatalogPicker() {
         <h2 id="catalog-heading" className="text-xl font-semibold tracking-tight">
           Pick Blacksburg complexes
         </h2>
-        <p className="max-w-2xl text-sm text-pretty text-muted-foreground">
-          {catalog.length} complexes with fees already read from each listing.{" "}
-          {catalog.length - autoCount} are checked by hand; {autoCount} marked Auto-scanned open
-          Review first. Select up to {MAX_APARTMENTS}.
-        </p>
       </div>
 
       <div className="flex max-w-md flex-col gap-1.5">
