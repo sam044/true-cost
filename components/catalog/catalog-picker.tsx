@@ -125,32 +125,32 @@ export function CatalogPicker() {
       </div>
 
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-      <div className="flex w-full max-w-md flex-col gap-1.5">
-        <Label htmlFor={searchId} className="sr-only">
-          Search complexes
-        </Label>
-        <div className="relative">
-          <Search
-            className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted-foreground"
-            aria-hidden
-          />
-          <Input
-            id={searchId}
-            type="search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search, e.g. Hub or Union"
-            autoComplete="off"
-            className="h-11 rounded-xl pl-10 text-base"
-          />
+        <div className="flex w-full max-w-md flex-col gap-1.5">
+          <Label htmlFor={searchId} className="sr-only">
+            Search complexes
+          </Label>
+          <div className="relative">
+            <Search
+              className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted-foreground"
+              aria-hidden
+            />
+            <Input
+              id={searchId}
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search, e.g. Hub or Union"
+              autoComplete="off"
+              className="h-11 rounded-xl pl-10 text-base"
+            />
+          </div>
         </div>
-      </div>
         <div className="flex items-center gap-2">
           <Label htmlFor={sortId} className="shrink-0 text-sm text-muted-foreground">
             Sort by
           </Label>
           <Select value={sort} onValueChange={(v) => setSort(v as SortKey)}>
-            <SelectTrigger id={sortId} className="h-11 min-w-56 rounded-xl">
+            <SelectTrigger id={sortId} className="h-11 min-w-56 rounded-xl text-base">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
