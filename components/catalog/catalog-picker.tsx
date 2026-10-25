@@ -12,12 +12,27 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
   catalogApartment,
   catalogIdOf,
   getCatalog,
   listingFeeCount,
   type CatalogEntry,
 } from "@/lib/catalog";
+import {
+  SORT_LABELS,
+  catalogSummary,
+  milesToCampus,
+  sharersFor,
+  sortCatalog,
+  type SortKey,
+} from "@/lib/catalog/sort";
 import { MAX_APARTMENTS, useTrueCost } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -47,6 +62,10 @@ export function CatalogPicker() {
   const apartments = useTrueCost((s) => s.apartments);
   const { addApartment, removeApartment } = useTrueCost();
   const [query, setQuery] = useState("");
+  // Sorting (Andy): prices per person for the current Setup.
+  const [sort, setSort] = useState<SortKey>("recommended");
+  const setup = useTrueCost((s) => s.setup);
+  const sortId = useId();
   const [announcement, setAnnouncement] = useState("");
   const searchId = useId();
   const listHeadingId = useId();
@@ -63,9 +82,23 @@ export function CatalogPicker() {
   const anyUnreviewed = apartments.some((a) => catalogIdOf(a.id) && !a.reviewed);
 
   const q = query.trim().toLowerCase();
-  const shown = q
-    ? catalog.filter((e) => `${e.name} ${e.site}`.toLowerCase().includes(q))
-    : catalog;
+  const shown = sortCatalog(
+    q ? catalog.filter((e) => `${e.name} ${e.site}`.toLowerCase().includes(q)) : catalog,
+    sort,
+    setup,
+  );
+  // When sorting by a price, each card shows the number it was sorted by.
+  const perPerson = (entry: CatalogEntry): PerPerson | null => {
+    if (sort === "recommended" || sort === "distance" || sort === "hidden-asc") return null;
+    if (entry.apartment.advertised.amount <= 0) return null;
+    const s = catalogSummary(entry, setup);
+    const trueCost = sort === "true-asc" || sort === "true-desc";
+    return {
+      amount: trueCost ? s.trueMonthly : s.advertisedMonthly,
+      allIn: trueCost,
+      split: entry.apartment.advertised.basis === "per_unit" ? sharersFor(entry, setup) : null,
+    };
+  };
 
   function toggle(entry: CatalogEntry) {
     if (selected.has(entry.id)) {
@@ -91,7 +124,8 @@ export function CatalogPicker() {
         </h2>
       </div>
 
-      <div className="flex max-w-md flex-col gap-1.5">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+      <div className="flex w-full max-w-md flex-col gap-1.5">
         <Label htmlFor={searchId} className="sr-only">
           Search complexes
         </Label>
@@ -109,6 +143,24 @@ export function CatalogPicker() {
             autoComplete="off"
             className="h-11 rounded-xl pl-10 text-base"
           />
+        </div>
+      </div>
+        <div className="flex items-center gap-2">
+          <Label htmlFor={sortId} className="shrink-0 text-sm text-muted-foreground">
+            Sort by
+          </Label>
+          <Select value={sort} onValueChange={(v) => setSort(v as SortKey)}>
+            <SelectTrigger id={sortId} className="h-11 min-w-56 rounded-xl">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {(Object.keys(SORT_LABELS) as SortKey[]).map((key) => (
+                <SelectItem key={key} value={key}>
+                  {SORT_LABELS[key]}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
       </div>
 
@@ -153,6 +205,8 @@ export function CatalogPicker() {
               <li key={entry.id}>
                 <CatalogCard
                   entry={entry}
+                  miles={milesToCampus(entry.id)}
+                  perPerson={perPerson(entry)}
                   added={selected.has(entry.id)}
                   blocked={full && !selected.has(entry.id)}
                   onToggle={() => toggle(entry)}
@@ -208,13 +262,23 @@ export function CatalogPicker() {
   );
 }
 
+interface PerPerson {
+  amount: number;
+  allIn: boolean; // true cost (fees included) rather than the advertised price
+  split: { people: number; bedroomsKnown: boolean } | null; // whole-unit prices only
+}
+
 function CatalogCard({
   entry,
+  miles,
+  perPerson,
   added,
   blocked,
   onToggle,
 }: {
   entry: CatalogEntry;
+  miles: number | null; // straight line to the Drillfield
+  perPerson: PerPerson | null; // shown when sorting by a price
   added: boolean;
   blocked: boolean;
   onToggle: () => void;
@@ -268,6 +332,21 @@ function CatalogCard({
           </span>
         </span>
         <span className="mt-1 text-sm tabular-nums">{priceRange(entry.priceRange)}</span>
+        {perPerson && (
+          <span className="text-sm font-medium tabular-nums">
+            About {dollars.format(perPerson.amount)} a month each{perPerson.allIn ? ", all-in" : ""}
+            {perPerson.split && (
+              <span className="font-normal text-muted-foreground">
+                {" "}
+                · split {perPerson.split.people} {perPerson.split.people === 1 ? "way" : "ways"}
+                {perPerson.split.bedroomsKnown ? "" : ", bedrooms unknown"}
+              </span>
+            )}
+          </span>
+        )}
+        <span className="text-sm text-muted-foreground tabular-nums">
+          {miles != null ? `About ${miles.toFixed(1)} mi to campus` : "Distance unknown"}
+        </span>
         <span className="text-sm text-muted-foreground">
           {fees === 1 ? "1 fee found" : `${fees} fees found`}
           {entry.autoScanned ? " · Auto-scanned, not checked yet" : " · Checked by hand"}

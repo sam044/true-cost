@@ -1,0 +1,642 @@
+{
+  "1000k-progress-street": {
+    "address": "1000K Progress Street, 24060, Blacksburg, VA",
+    "lat": 37.254658,
+    "lng": -80.4235889
+  },
+  "1005-glade-rd": {
+    "address": "1005 Glade Rd., 24060, Blacksburg, VA",
+    "lat": 37.2355402,
+    "lng": -80.4407478
+  },
+  "1007-progress-street-nw": {
+    "address": "1007 Progress Street NW, 24060, Blacksburg, VA",
+    "lat": 37.2387474,
+    "lng": -80.4221692
+  },
+  "105-oak-meadow-lane": {
+    "address": "105 Oak Meadow Lane, 24060, Blacksburg, VA",
+    "lat": 37.2661155,
+    "lng": -80.4172785
+  },
+  "1069-westhill-parkway": {
+    "address": "1069 Westhill Parkway, 24060, Blacksburg, VA",
+    "lat": 37.2099721,
+    "lng": -80.4789227
+  },
+  "107-givens-lane-2": {
+    "address": "107 Givens Lane - 2, 24060, Blacksburg, VA",
+    "lat": 37.2556126,
+    "lng": -80.4121898
+  },
+  "107-mt-tabor-rd": {
+    "address": "107 Mt Tabor Rd, 24060, Blacksburg, VA",
+    "lat": 37.2580584,
+    "lng": -80.4104681
+  },
+  "1104-caldwell-drive": {
+    "address": "1104 Caldwell Drive, 24060, Blacksburg, VA",
+    "lat": 37.239247,
+    "lng": -80.4009588
+  },
+  "111-canterbury-ct": {
+    "address": "111 Canterbury Ct., 24060, Blacksburg, VA",
+    "lat": 37.2243419,
+    "lng": -80.4456509
+  },
+  "113-camelot-ct": {
+    "address": "113 Camelot Ct, 24060, Blacksburg, VA",
+    "lat": 37.2237032,
+    "lng": -80.4475312
+  },
+  "1132-huff-lane": {
+    "address": "1132 Huff Lane, 24060, Blacksburg, VA",
+    "lat": 37.1832411,
+    "lng": -80.4233653
+  },
+  "1151-thomas-lane": {
+    "address": "1151 Thomas Lane, 24060, Blacksburg, VA",
+    "lat": 37.1972641,
+    "lng": -80.4876142
+  },
+  "1204-university-terrace": {
+    "address": "1204 University Terrace, 24060, Blacksburg, VA",
+    "lat": 37.2437638,
+    "lng": -80.4205829
+  },
+  "1206-university-terrace": {
+    "address": "1206 University Terrace, 24060, Blacksburg, VA",
+    "lat": 37.2441043,
+    "lng": -80.4204183
+  },
+  "1215-progress-st-nw": {
+    "address": "1215 Progress St NW, 24060, Blacksburg, VA",
+    "lat": 37.2435812,
+    "lng": -80.4221295
+  },
+  "124-camelot-court": {
+    "address": "124 Camelot Court, 24060, Blacksburg, VA",
+    "lat": 37.2231417,
+    "lng": -80.4477075
+  },
+  "1429-christine-ct": {
+    "address": "1429 Christine Ct., 24060, Blacksburg, VA",
+    "lat": 37.2472868,
+    "lng": -80.4289932
+  },
+  "1440-seneca-dr": {
+    "address": "1440 Seneca Dr, 24060, Blacksburg, VA",
+    "lat": 37.247582,
+    "lng": -80.4168356
+  },
+  "1443-sandy-circle": {
+    "address": "1443 Sandy Circle, 24060, Blacksburg, VA",
+    "lat": 37.2048942,
+    "lng": -80.4833138
+  },
+  "1477-sandy-circle": {
+    "address": "1477 Sandy Circle, 24060, Blacksburg, VA",
+    "lat": 37.2052945,
+    "lng": -80.4837516
+  },
+  "148-clover-valley-cir": {
+    "address": "148 Clover Valley Cir, 24060, Blacksburg, VA",
+    "lat": 37.2466815,
+    "lng": -80.4122903
+  },
+  "1485-sandy-circle": {
+    "address": "1485 Sandy Circle, 24060, Blacksburg, VA",
+    "lat": 37.205069,
+    "lng": -80.4837537
+  },
+  "1504-sandy-circle": {
+    "address": "1504 Sandy Circle, 24060, Blacksburg, VA",
+    "lat": 37.2045676,
+    "lng": -80.4843378
+  },
+  "151-college-ave": {
+    "address": "151 College Ave., 24060, Blacksburg, VA",
+    "lat": 37.2299659,
+    "lng": -80.4160022
+  },
+  "1646-thomas-lane": {
+    "address": "1646 Thomas Lane, 24060, Blacksburg, VA",
+    "lat": 37.207704,
+    "lng": -80.4924903
+  },
+  "1661-mt-tabor-rd": {
+    "address": "1661 Mt. Tabor Rd., 24060, Blacksburg, VA",
+    "lat": 37.2739493,
+    "lng": -80.3932627
+  },
+  "1702-gardenspring-drive": {
+    "address": "1702 Gardenspring Drive, 24060, Blacksburg, VA",
+    "lat": 37.2130461,
+    "lng": -80.3916199
+  },
+  "1711-apartments": {
+    "address": "1711 Whipple Dr, Blacksburg, VA",
+    "lat": 37.2537349,
+    "lng": -80.4143933
+  },
+  "1719-aden-lane": {
+    "address": "1719 Aden Lane, 24060, Blacksburg, VA",
+    "lat": 37.2537165,
+    "lng": -80.4152065
+  },
+  "1725-aden-lane": {
+    "address": "1725 Aden Lane, 24060, Blacksburg, VA",
+    "lat": 37.2537837,
+    "lng": -80.4152365
+  },
+  "1744-donlee-dr": {
+    "address": "1744 Donlee Dr., 24060, Blacksburg, VA",
+    "lat": 37.2121806,
+    "lng": -80.3924893
+  },
+  "1814-gardenspring-dr": {
+    "address": "1814 Gardenspring Dr., 24060, Blacksburg, VA",
+    "lat": 37.2108523,
+    "lng": -80.3914422
+  },
+  "1915-tabor-village-dr": {
+    "address": "1915 Tabor Village Dr, 24060, Blacksburg, VA",
+    "lat": 37.2586899,
+    "lng": -80.4077498
+  },
+  "1919-tabor-village-dr": {
+    "address": "1919 Tabor Village Dr, 24060, Blacksburg, VA",
+    "lat": 37.2589886,
+    "lng": -80.4080254
+  },
+  "2008-christopher-drive": {
+    "address": "2008 Christopher Drive, 24060, Blacksburg, VA",
+    "lat": 37.2607554,
+    "lng": -80.4072577
+  },
+  "202-fincastle-drive": {
+    "address": "202 Fincastle Drive, 24060, Blacksburg, VA",
+    "lat": 37.2374411,
+    "lng": -80.3999702
+  },
+  "204-ellett-rd": {
+    "address": "204 Ellett Rd., 24060, Blacksburg, VA",
+    "lat": 37.2075998,
+    "lng": -80.3974329
+  },
+  "205-reynolds-avenue": {
+    "address": "205 Reynolds Avenue, 24060, Blacksburg, VA",
+    "lat": 37.2232211,
+    "lng": -80.4053722
+  },
+  "206-heights-lane": {
+    "address": "206 Heights Lane, 24060, Blacksburg, VA",
+    "lat": 37.2437014,
+    "lng": -80.414568
+  },
+  "213-graves-ave": {
+    "address": "213 Graves Ave., 24060, Blacksburg, VA",
+    "lat": 37.2229433,
+    "lng": -80.4048075
+  },
+  "213-s-knollwood-dr-ste-3304": {
+    "address": "213 S. Knollwood Dr Ste 3304, 24060, Blacksburg, VA",
+    "lat": 37.2005917,
+    "lng": -80.4034669
+  },
+  "2300-san-marcos-street": {
+    "address": "2300 San Marcos Street, 24060, Blacksburg, VA",
+    "lat": 37.2217187,
+    "lng": -80.4490001
+  },
+  "236-pheasant-run-dr": {
+    "address": "236 Pheasant Run Dr, 24060, Blacksburg, VA",
+    "lat": 37.2490059,
+    "lng": -80.4191249
+  },
+  "2416-merrimac-rd": {
+    "address": "2416 Merrimac Rd., 24060, Blacksburg, VA",
+    "lat": 37.2142276,
+    "lng": -80.4681694
+  },
+  "2424-ridge-road": {
+    "address": "2424 Ridge Road, 24060, Blacksburg, VA",
+    "lat": 37.1969784,
+    "lng": -80.4037546
+  },
+  "2502-ridge-rd": {
+    "address": "2502 Ridge Rd., 24060, Blacksburg, VA",
+    "lat": 37.1961416,
+    "lng": -80.4036854
+  },
+  "2505-plymouth-st": {
+    "address": "2505 Plymouth St., 24060, Blacksburg, VA",
+    "lat": 37.2188835,
+    "lng": -80.4504694
+  },
+  "2518-ridge-rd": {
+    "address": "2518 Ridge Rd., 24060, Blacksburg, VA",
+    "lat": 37.1958588,
+    "lng": -80.403417
+  },
+  "262-sheliah-ct": {
+    "address": "262 Sheliah Ct., 24060, Blacksburg, VA",
+    "lat": 37.2032262,
+    "lng": -80.4028817
+  },
+  "2714-quincy-ct": {
+    "address": "2714 Quincy Ct, 24060, Blacksburg, VA",
+    "lat": 37.2146294,
+    "lng": -80.45369
+  },
+  "2722-quincy-ct": {
+    "address": "2722 Quincy Ct., 24060, Blacksburg, VA",
+    "lat": 37.2146912,
+    "lng": -80.4539843
+  },
+  "300-new-kent-road": {
+    "address": "300 New Kent Road, 24060, Blacksburg, VA",
+    "lat": 37.2093228,
+    "lng": -80.3956024
+  },
+  "301-n-knollwood-dr": {
+    "address": "301 N Knollwood Dr, 24060, Blacksburg, VA",
+    "lat": 37.2012768,
+    "lng": -80.4031435
+  },
+  "311-loudon-rd-apt-312": {
+    "address": "311 Loudon Rd. Apt. 312, 24060, Blacksburg, VA",
+    "lat": 37.2105005,
+    "lng": -80.3939358
+  },
+  "312-reynolds-ave": {
+    "address": "312 Reynolds Ave, 24060, Blacksburg, VA",
+    "lat": 37.2234759,
+    "lng": -80.4043326
+  },
+  "319-sheliah-ct": {
+    "address": "319 Sheliah Ct., 24060, Blacksburg, VA",
+    "lat": 37.2034316,
+    "lng": -80.4039596
+  },
+  "328-loudon-road": {
+    "address": "328 Loudon Road, 24060, Blacksburg, VA",
+    "lat": 37.209582,
+    "lng": -80.3944231
+  },
+  "3399-happy-hollow-rd": {
+    "address": "3399 Happy Hollow Rd., 24060, Blacksburg, VA",
+    "lat": 37.2636422,
+    "lng": -80.4007594
+  },
+  "380-new-kent-rd-221": {
+    "address": "380 New Kent Rd. #221, 24060, Blacksburg, VA",
+    "lat": 37.2110451,
+    "lng": -80.3941571
+  },
+  "403-berryfield-ln": {
+    "address": "403 Berryfield Ln, 24060, Blacksburg, VA",
+    "lat": 37.230165,
+    "lng": -80.4087712
+  },
+  "406-mt-tabor-road": {
+    "address": "406 Mt. Tabor Road, 24060, Blacksburg, VA",
+    "lat": 37.2598916,
+    "lng": -80.4064997
+  },
+  "408-mt-tabor-road": {
+    "address": "408 Mt. Tabor Road, 24060, Blacksburg, VA",
+    "lat": 37.2600333,
+    "lng": -80.4062772
+  },
+  "413-laurence-lane": {
+    "address": "413 Laurence Lane, 24060, Blacksburg, VA",
+    "lat": 37.2467681,
+    "lng": -80.4270023
+  },
+  "428-roanoke-st": {
+    "address": "428 Roanoke St., 24060, Blacksburg, VA",
+    "lat": 37.2315813,
+    "lng": -80.4102693
+  },
+  "501-sunridge-dr": {
+    "address": "501 Sunridge Dr, 24060, Blacksburg, VA",
+    "lat": 37.2442377,
+    "lng": -80.4279724
+  },
+  "509-1-progress-st": {
+    "address": "509-1 Progress St., 24060, Blacksburg, VA",
+    "lat": 37.2529489,
+    "lng": -80.422713
+  },
+  "510-sunrise-dr": {
+    "address": "510 Sunrise Dr., 24060, Blacksburg, VA",
+    "lat": 37.2180815,
+    "lng": -80.3922421
+  },
+  "512-sunrise-drive": {
+    "address": "512 Sunrise Drive, 24060, Blacksburg, VA",
+    "lat": 37.2180874,
+    "lng": -80.3922371
+  },
+  "615-progress-street": {
+    "address": "615 Progress Street, 24060, Blacksburg, VA",
+    "lat": 37.2344908,
+    "lng": -80.4182678
+  },
+  "616-broce-drive": {
+    "address": "616 Broce Drive, 24060, Blacksburg, VA",
+    "lat": 37.2405637,
+    "lng": -80.4303014
+  },
+  "711-gracelyn-court": {
+    "address": "711 Gracelyn Court, 24060, Blacksburg, VA",
+    "lat": 37.2223367,
+    "lng": -80.4113098
+  },
+  "712-roanoke-st-e": {
+    "address": "712 Roanoke St E, 24060, Blacksburg, VA",
+    "lat": 37.2282881,
+    "lng": -80.4155121
+  },
+  "712-roanoke-st-e-2": {
+    "address": "712 Roanoke St E, 24060, Blacksburg, VA",
+    "lat": 37.2282881,
+    "lng": -80.4155121
+  },
+  "730-clay-street-southeast": {
+    "address": "730 Clay Street Southeast, 24060, Blacksburg, VA",
+    "lat": 37.2324536,
+    "lng": -80.4031836
+  },
+  "735-davis-street": {
+    "address": "735 Davis Street, 24060, Blacksburg, VA",
+    "lat": 37.1854423,
+    "lng": -80.4100007
+  },
+  "814-glade-rd": {
+    "address": "814 Glade Rd., 24060, Blacksburg, VA",
+    "lat": 37.2351373,
+    "lng": -80.4378286
+  },
+  "821-merrimac-rd": {
+    "address": "821 Merrimac Rd, 24060, Blacksburg, VA",
+    "lat": 37.1902947,
+    "lng": -80.4264843
+  },
+  "864-hutcheson-dr": {
+    "address": "864 Hutcheson Dr., 24060, Blacksburg, VA",
+    "lat": 37.2367723,
+    "lng": -80.431985
+  },
+  "900-brightwood-manor-dr-6": {
+    "address": "900 Brightwood Manor Dr. #6, 24060, Blacksburg, VA",
+    "lat": 37.2230235,
+    "lng": -80.4459253
+  },
+  "900b-progress-street": {
+    "address": "900B Progress Street, 24060, Blacksburg, VA",
+    "lat": 37.2471922,
+    "lng": -80.4226093
+  },
+  "alight-blacksburg": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "alleghany-street": {
+    "address": "Alleghany Street, 24060, Blacksburg, VA",
+    "lat": 37.2367784,
+    "lng": -80.40213
+  },
+  "alleghany-street-2": {
+    "address": "Alleghany Street, 24060, Blacksburg, VA",
+    "lat": 37.2367784,
+    "lng": -80.40213
+  },
+  "apartment-heights": {
+    "address": "309 Apartment Heights Dr, 24060, Blacksburg, VA",
+    "lat": 37.2356049,
+    "lng": -80.4093518
+  },
+  "blacksburg-homestay-at-pack-place": {
+    "address": "524 Prices Fork Rd A5, 24060, Blacksburg, VA",
+    "lat": 37.2342683,
+    "lng": -80.424752
+  },
+  "blacksburg-homestay-at-pack-place-ii": {
+    "address": "520 Prices Fork Road, 24060, Blacksburg, VA",
+    "lat": 37.2346201,
+    "lng": -80.42461
+  },
+  "blacksburg-homestay-village-at-311-ellett-road": {
+    "address": "311 Ellett Rd, 24060, Blacksburg, VA",
+    "lat": 37.2062859,
+    "lng": -80.3963208
+  },
+  "blacksburg-homestay-village-at-pack-place-iii": {
+    "address": "524 Prices Fork Rd. Building A, 24060, Blacksburg, VA",
+    "lat": 37.2342423,
+    "lng": -80.424696
+  },
+  "brexx": {
+    "address": "1800 Redd Rd, 24060, Blacksburg, VA",
+    "lat": 37.2258759,
+    "lng": -80.4478637
+  },
+  "cedar-pointe": {
+    "address": "200 Cedar Pointe Dr, Blacksburg, VA",
+    "lat": 37.2003371,
+    "lng": -80.3985103
+  },
+  "cedarfield": {
+    "address": "200 Old Cedarfield Dr, 24060, Blacksburg, VA",
+    "lat": 37.2056361,
+    "lng": -80.3964327
+  },
+  "chasewood-downs": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "christopher-drive-house": {
+    "address": "2001 Christopher Drive, 24060, Blacksburg, VA",
+    "lat": 37.2605301,
+    "lng": -80.4065264
+  },
+  "collegiate-court": {
+    "address": "100 Collegiate Ct, Blacksburg, VA",
+    "lat": 37.2338536,
+    "lng": -80.4193059
+  },
+  "collegiate-suites": {
+    "address": "1310 Henry Ln, 24060, Blacksburg, VA",
+    "lat": 37.2451903,
+    "lng": -80.4167489
+  },
+  "creekside": {
+    "address": "115 Hearthstone Dr, 24060, Blacksburg, VA",
+    "lat": 37.2391217,
+    "lng": -80.4183436
+  },
+  "fourteen35": {
+    "address": "1435 Toms Creek Rd, 24060, Blacksburg, VA",
+    "lat": 37.244605,
+    "lng": -80.4301367
+  },
+  "foxridge": {
+    "address": "750 Hethwood Blvd, Blacksburg, VA",
+    "lat": 37.2169215,
+    "lng": -80.4530324
+  },
+  "highlands-at-huckleberry-ridge": {
+    "address": "535 Blackrock Dr, Blacksburg, VA",
+    "lat": 37.1854491,
+    "lng": -80.4223756
+  },
+  "hub": {
+    "address": "1201 Snyder Ln, 24060, Blacksburg, VA",
+    "lat": 37.2434502,
+    "lng": -80.4259737
+  },
+  "landing-at-stonegate": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "lantern-ridge-apartments": {
+    "address": "401 Fairfax Rd, 24060, Blacksburg, VA",
+    "lat": 37.2087237,
+    "lng": -80.3928474
+  },
+  "maple-ridge": {
+    "address": "344 Red Maple Dr, Blacksburg, VA",
+    "lat": 37.2547389,
+    "lng": -80.407785
+  },
+  "oak-manor": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "park-37": {
+    "address": "1222 Patrick Henry Dr, Blacksburg, VA",
+    "lat": 37.2473513,
+    "lng": -80.4199167
+  },
+  "pheasant-run": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "reserve-at-knollwood": {
+    "address": "2401 Pamela Way, Blacksburg, VA",
+    "lat": 37.2025856,
+    "lng": -80.4049018
+  },
+  "ridgeview-apartments": {
+    "address": "768-776 Triangle St, 24060, Blacksburg, VA",
+    "lat": 37.1837912,
+    "lng": -80.4115951
+  },
+  "roanoke-street-apartments": {
+    "address": "  506-A  Jackson Street, 24060, Blacksburg, VA",
+    "lat": 37.2297591,
+    "lng": -80.4151124
+  },
+  "shawnee": {
+    "address": "1222 University City Blvd, 24060, Blacksburg, VA",
+    "lat": 37.242078,
+    "lng": -80.4332773
+  },
+  "smiths-landing": {
+    "address": "870 Plantation Rd, 24060, Blacksburg, VA",
+    "lat": 37.223915,
+    "lng": -80.4417067
+  },
+  "stonegate-carlton-scott": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "summit-at-uptown": {
+    "address": "1820 N Main St, Blacksburg, VA",
+    "lat": 37.2554368,
+    "lng": -80.4106142
+  },
+  "sundance-ridge": {
+    "address": "503 Sunridge Drive, 24060, Blacksburg, VA",
+    "lat": 37.2446736,
+    "lng": -80.4278593
+  },
+  "tech-terrace": {
+    "address": "301-307 Webb St, Blacksburg, VA",
+    "lat": 37.2362634,
+    "lng": -80.4221606
+  },
+  "tee-street": {
+    "address": "203 Tee St, Blacksburg, VA",
+    "lat": 37.2482826,
+    "lng": -80.4124387
+  },
+  "terrace-view": {
+    "address": "413 Hunt Club Rd, Blacksburg, VA",
+    "lat": 37.2430377,
+    "lng": -80.4250534
+  },
+  "the-arbors": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "the-chase": {
+    "address": "421-461 Roanoke St E, Blacksburg, VA",
+    "lat": 37.2321145,
+    "lng": -80.4102936
+  },
+  "the-edge": {
+    "address": "321 Edge Way, 24060, Blacksburg, VA",
+    "lat": 37.235017,
+    "lng": -80.424515
+  },
+  "the-farm": {
+    "address": "900 Glade Rd, 24060, Blacksburg, VA",
+    "lat": 37.2356949,
+    "lng": -80.4393592
+  },
+  "the-mill": {
+    "address": "1811 Grayland St, Blacksburg, VA",
+    "lat": 37.2107303,
+    "lng": -80.3965258
+  },
+  "turner-nw": {
+    "address": "208 Turner Street Northwest, 24060, Blacksburg, VA",
+    "lat": 37.2330773,
+    "lng": -80.4196455
+  },
+  "union-blacksburg": {
+    "address": "1001 University City Blvd, 24060, Blacksburg, VA",
+    "lat": 37.2380885,
+    "lng": -80.4351555
+  },
+  "university-terrace": {
+    "address": "Blacksburg, VA",
+    "lat": 37.2296566,
+    "lng": -80.4136767
+  },
+  "uptown-village": {
+    "address": "201-227 Uptown Trail, 24060, Blacksburg, VA",
+    "lat": 37.2512168,
+    "lng": -80.4133886
+  },
+  "vue": {
+    "address": "1906 Research Center Dr, Blacksburg, VA",
+    "lat": 37.2031778,
+    "lng": -80.4059202
+  },
+  "windsor-hills": {
+    "address": "200 Hampton Ct, Blacksburg, VA",
+    "lat": 37.2393841,
+    "lng": -80.3978247
+  }
+}
