@@ -11,7 +11,7 @@ import type { CatalogEntry } from "../../lib/catalog/convert";
 import type { OffcampusListing } from "./offcampus-convert";
 
 register("../../eval/loader.mjs", import.meta.url);
-const { offcampusToEntry, slugFor } = await import("./offcampus-convert");
+const { checkPrices, offcampusToEntry, slugFor } = await import("./offcampus-convert");
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 const readJson = <T>(file: string) => JSON.parse(readFileSync(path.join(root, file), "utf8")) as T;
@@ -62,7 +62,8 @@ for (const listing of listings) {
   }
   const entry = offcampusToEntry(listing, id, READ_ON);
   if (!entry) {
-    skipped.push(listing.name);
+    const prices = checkPrices(listing);
+    skipped.push("problem" in prices ? `${listing.name} (${prices.problem})` : listing.name);
     continue;
   }
   taken.add(id);

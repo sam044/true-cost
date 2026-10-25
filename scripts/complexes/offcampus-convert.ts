@@ -33,6 +33,38 @@ export interface OffcampusListing {
   pmc?: string; // property manager; absent on listings posted by individuals
   updated: string;
   fees: OffcampusFeeRow[];
+  // Floor plans as [bedrooms, 1 if priced per bed else 0, low, high], for
+  // listings with more than one plan or any per-bed plan.
+  plans?: [beds: number, perBed: 0 | 1, low: number, high: number][];
+}
+
+// The site's floor plans don't always agree with its summary price: Tech
+// Terrace lists the same 4-bed unit as "$894" per bed and "$3,576" per unit,
+// and some per-unit plans are plainly per-bed prices (a 3-bed for less than a
+// 1-bed). Returns the per-person or per-unit range to show, or a reason the
+// listing's prices can't be trusted.
+export function checkPrices(
+  listing: OffcampusListing,
+): { min: number; max: number; basis: Basis } | { problem: string } {
+  const plans = listing.plans ?? [];
+  const basis: Basis = listing.perBed ? "per_person" : "per_unit";
+  if (plans.length === 0) return { min: listing.lo, max: listing.hi, basis };
+  if (plans.some((p) => p[1] === 1)) {
+    // Bring every plan to a per-person price.
+    const each = plans.flatMap(([beds, perBed, lo, hi]) =>
+      perBed ? [lo, hi] : [lo / Math.max(beds, 1), hi / Math.max(beds, 1)],
+    );
+    const min = Math.round(Math.min(...each));
+    const max = Math.round(Math.max(...each));
+    if (max > 2.5 * min) return { problem: `per-bed prices run from $${min} to $${max}` };
+    return { min, max, basis: "per_person" };
+  }
+  const byBeds = [...plans].sort((a, b) => a[0] - b[0]);
+  for (const [i, more] of byBeds.entries()) {
+    const fewer = byBeds.slice(0, i).find((p) => p[0] < more[0] && more[2] < 0.9 * p[2]);
+    if (fewer) return { problem: `a ${more[0]}-bed unit ($${more[2]}) costs less than a ${fewer[0]}-bed ($${fewer[2]})` };
+  }
+  return { min: listing.lo, max: listing.hi, basis };
 }
 
 const NO_NEEDS = { people: 1, leaseMonths: 12 };
@@ -135,7 +167,9 @@ export function isCatalogListing(listing: OffcampusListing): boolean {
 // whose price and fee table were both read.
 export function offcampusToEntry(listing: OffcampusListing, id: string, readOn: string): CatalogEntry | null {
   if (!isCatalogListing(listing)) return null;
-  const basis: Basis = listing.perBed ? "per_person" : "per_unit";
+  const prices = checkPrices(listing);
+  if ("problem" in prices) return null;
+  const basis = prices.basis;
   // The site's price "includes monthly required fees" unless the price it
   // shows is higher than the floor plans' rent (then the rent is base rent).
   const shownLow = amountOf(listing.priceText);
@@ -200,12 +234,12 @@ export function offcampusToEntry(listing: OffcampusListing, id: string, readOn: 
     url: `https://offcampus.vt.edu/housing/property/${listing.path}`,
     site: OFFCAMPUS_SITE,
     readOn,
-    priceRange: { min: listing.lo, max: listing.hi, basis },
+    priceRange: { min: prices.min, max: prices.max, basis },
     autoScanned: true,
     apartment: {
       id: `catalog-${id}`,
       name,
-      advertised: { amount: listing.lo, basis, quote: listing.priceText },
+      advertised: { amount: prices.min, basis, quote: listing.priceText },
       utilities: utilitiesOf(listing),
       fees,
       reviewed: false,

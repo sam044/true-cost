@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import listings from "../../data/complexes/offcampus/listings.json";
 import {
   categoryOf,
+  checkPrices,
   displayName,
   offcampusToEntry,
   type OffcampusListing,
@@ -69,6 +70,16 @@ describe("offcampus.vt.edu catalog entries", () => {
     expect(displayName(byId("ocpc2t2l1g"))).toBe("4 Bedroom House, 2001 Christopher Drive");
     expect(displayName(byId("e3wj6hp"))).toBe("3 Bedroom Townhouse, 2714 Quincy Ct");
     expect(displayName(byId("ocpbc6lvgb"))).toBe("Turner NW");
+  });
+
+  it("prices listings that mix per-bed and per-unit plans per person", () => {
+    expect(checkPrices(byId("7pgnn3w"))).toEqual({ min: 894, max: 894, basis: "per_person" });
+  });
+
+  it("drops listings whose floor plans contradict each other", () => {
+    expect(checkPrices(byId("6y68vyt"))).toHaveProperty("problem");
+    expect(checkPrices(byId("wkg0gyl"))).toHaveProperty("problem");
+    expect(offcampus.some((e) => e.url.endsWith("/wkg0gyl"))).toBe(false);
   });
 
   it("files utility billing fees as utilities, not admin fees", () => {

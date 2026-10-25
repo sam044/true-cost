@@ -120,80 +120,6 @@
     }
   },
   {
-    "id": "300-mcdonald-street-apartments",
-    "name": "300 McDonald Street Apartments",
-    "url": "https://offcampus.vt.edu/housing/property/300-mcdonald-street-apartments/hdkdcz0",
-    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
-    "readOn": "2026-10-24",
-    "priceRange": {
-      "min": 675,
-      "max": 2220,
-      "basis": "per_unit"
-    },
-    "autoScanned": true,
-    "apartment": {
-      "id": "catalog-300-mcdonald-street-apartments",
-      "name": "300 McDonald Street Apartments",
-      "advertised": {
-        "amount": 675,
-        "basis": "per_unit",
-        "quote": "$675 - $2,220"
-      },
-      "utilities": {
-        "electric": "unknown",
-        "water": "included",
-        "gas": "unknown",
-        "internet": "unknown",
-        "trash": "included"
-      },
-      "fees": [
-        {
-          "id": "300-mcdonald-street-apartments-application-fee-per-applicant",
-          "name": "Application Fee Per Applicant",
-          "category": "application",
-          "amount": 49,
-          "frequency": "one_time",
-          "basis": "per_person",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Application Fee Per Applicant $49",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "300-mcdonald-street-apartments-administrative-fee",
-          "name": "Administrative Fee",
-          "category": "admin",
-          "amount": 199,
-          "frequency": "one_time",
-          "basis": "per_person",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Administrative Fee $199",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "300-mcdonald-street-apartments-reconditioning-fee",
-          "name": "Reconditioning Fee",
-          "category": "reconditioning",
-          "amount": 299,
-          "frequency": "one_time",
-          "basis": "per_person",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Reconditioning Fee $299",
-          "source": "ai",
-          "confidence": "high"
-        }
-      ],
-      "reviewed": false
-    }
-  },
-  {
     "id": "apartment-heights",
     "name": "Apartment Heights",
     "url": "https://offcampus.vt.edu/housing/property/apartment-heights/ndx8h3m",
@@ -808,136 +734,6 @@
     }
   },
   {
-    "id": "heyday-blacksburg",
-    "name": "HeyDay Blacksburg",
-    "url": "https://offcampus.vt.edu/housing/property/heyday-blacksburg/wkg0gyl",
-    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
-    "readOn": "2026-10-24",
-    "priceRange": {
-      "min": 1389,
-      "max": 2039,
-      "basis": "per_unit"
-    },
-    "autoScanned": true,
-    "apartment": {
-      "id": "catalog-heyday-blacksburg",
-      "name": "HeyDay Blacksburg",
-      "advertised": {
-        "amount": 1389,
-        "basis": "per_unit",
-        "quote": "$1,389 - $2,039"
-      },
-      "utilities": {
-        "electric": "unknown",
-        "water": "unknown",
-        "gas": "unknown",
-        "internet": "unknown",
-        "trash": "unknown"
-      },
-      "fees": [
-        {
-          "id": "heyday-blacksburg-application-fee",
-          "name": "Application Fee",
-          "category": "application",
-          "amount": 35,
-          "frequency": "one_time",
-          "basis": "per_person",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Application Fee $35",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "heyday-blacksburg-admin-fee",
-          "name": "Admin Fee",
-          "category": "admin",
-          "amount": 200,
-          "frequency": "one_time",
-          "basis": "per_unit",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Admin Fee $200",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "heyday-blacksburg-lease-transfer-fee",
-          "name": "Lease Transfer Fee",
-          "category": "other",
-          "amount": 400,
-          "frequency": "one_time",
-          "basis": "per_unit",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Lease Transfer Fee $400",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "heyday-blacksburg-utility-admin-fee",
-          "name": "Utility - Admin Fee",
-          "category": "utility_fee",
-          "amount": 82,
-          "frequency": "one_time",
-          "basis": "per_unit",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Utility - Admin Fee $82",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "heyday-blacksburg-monthly-pet-fee",
-          "name": "Monthly Pet Fee",
-          "category": "pet",
-          "amount": 25,
-          "frequency": "monthly",
-          "basis": "per_unit",
-          "mandatory": "no",
-          "counted": false,
-          "refundable": false,
-          "quote": "Monthly Pet Fee $25",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "heyday-blacksburg-master-policy-premium-dues",
-          "name": "Master Policy Premium Dues",
-          "category": "insurance",
-          "amount": 15,
-          "frequency": "monthly",
-          "basis": "per_unit",
-          "mandatory": "no",
-          "counted": false,
-          "refundable": false,
-          "quote": "Master Policy Premium Dues $15 / mo",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "heyday-blacksburg-parking",
-          "name": "Parking",
-          "category": "parking",
-          "amount": 60,
-          "frequency": "monthly",
-          "basis": "per_unit",
-          "mandatory": "no",
-          "counted": false,
-          "refundable": false,
-          "quote": "Parking $60 / mo",
-          "source": "ai",
-          "confidence": "high"
-        }
-      ],
-      "reviewed": false
-    }
-  },
-  {
     "id": "highlands-at-huckleberry-ridge",
     "name": "Highlands at Huckleberry Ridge",
     "url": "https://offcampus.vt.edu/housing/property/highlands-at-huckleberry-ridge/gfhtn2z",
@@ -1030,66 +826,6 @@
     }
   },
   {
-    "id": "old-row-on-north-main",
-    "name": "Old Row on North Main",
-    "url": "https://offcampus.vt.edu/housing/property/old-row-on-north-main/6y68vyt",
-    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
-    "readOn": "2026-10-24",
-    "priceRange": {
-      "min": 1319,
-      "max": 5276,
-      "basis": "per_person"
-    },
-    "autoScanned": true,
-    "apartment": {
-      "id": "catalog-old-row-on-north-main",
-      "name": "Old Row on North Main",
-      "advertised": {
-        "amount": 1319,
-        "basis": "per_person",
-        "quote": "$1,319 - $5,276 /Bedroom"
-      },
-      "utilities": {
-        "electric": "unknown",
-        "water": "unknown",
-        "gas": "unknown",
-        "internet": "included",
-        "trash": "included"
-      },
-      "fees": [
-        {
-          "id": "old-row-on-north-main-application-fee-per-applicant",
-          "name": "Application Fee Per Applicant",
-          "category": "application",
-          "amount": 49,
-          "frequency": "one_time",
-          "basis": "per_person",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Application Fee Per Applicant $49",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "old-row-on-north-main-administrative-fee",
-          "name": "Administrative Fee",
-          "category": "admin",
-          "amount": 199,
-          "frequency": "one_time",
-          "basis": "per_unit",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Administrative Fee $199",
-          "source": "ai",
-          "confidence": "high"
-        }
-      ],
-      "reviewed": false
-    }
-  },
-  {
     "id": "park-37",
     "name": "Park 37",
     "url": "https://offcampus.vt.edu/housing/property/park-37/mpzbe4k",
@@ -1159,7 +895,7 @@
     "priceRange": {
       "min": 925,
       "max": 1025,
-      "basis": "per_unit"
+      "basis": "per_person"
     },
     "autoScanned": true,
     "apartment": {
@@ -1167,7 +903,7 @@
       "name": "Ridgeview Apartments",
       "advertised": {
         "amount": 925,
-        "basis": "per_unit",
+        "basis": "per_person",
         "quote": "$925 - $1,025"
       },
       "utilities": {
@@ -1212,7 +948,7 @@
           "category": "pet",
           "amount": 350,
           "frequency": "one_time",
-          "basis": "per_unit",
+          "basis": "per_person",
           "mandatory": "no",
           "counted": false,
           "refundable": false,
@@ -1226,7 +962,7 @@
           "category": "pet",
           "amount": 50,
           "frequency": "monthly",
-          "basis": "per_unit",
+          "basis": "per_person",
           "mandatory": "no",
           "counted": false,
           "refundable": false,
@@ -1656,8 +1392,8 @@
     "readOn": "2026-10-24",
     "priceRange": {
       "min": 894,
-      "max": 3576,
-      "basis": "per_unit"
+      "max": 894,
+      "basis": "per_person"
     },
     "autoScanned": true,
     "apartment": {
@@ -1665,7 +1401,7 @@
       "name": "Tech Terrace",
       "advertised": {
         "amount": 894,
-        "basis": "per_unit",
+        "basis": "per_person",
         "quote": "$894 - $3,576"
       },
       "utilities": {
@@ -1682,7 +1418,7 @@
           "category": "other",
           "amount": 200,
           "frequency": "one_time",
-          "basis": "per_unit",
+          "basis": "per_person",
           "mandatory": "yes",
           "counted": true,
           "refundable": false,
@@ -1755,81 +1491,6 @@
     }
   },
   {
-    "id": "the-flats-at-uptown",
-    "name": "The Flats At Uptown",
-    "url": "https://offcampus.vt.edu/housing/property/the-flats-at-uptown/f456drr",
-    "site": "VT Off-Campus Housing (offcampus.vt.edu)",
-    "readOn": "2026-10-24",
-    "priceRange": {
-      "min": 980,
-      "max": 1220,
-      "basis": "per_unit"
-    },
-    "autoScanned": true,
-    "apartment": {
-      "id": "catalog-the-flats-at-uptown",
-      "name": "The Flats At Uptown",
-      "advertised": {
-        "amount": 980,
-        "basis": "per_unit",
-        "quote": "$980 - $1,220"
-      },
-      "utilities": {
-        "electric": "not_included",
-        "water": "included",
-        "gas": "unknown",
-        "internet": "included",
-        "trash": "included"
-      },
-      "fees": [
-        {
-          "id": "the-flats-at-uptown-benefits-package",
-          "name": "Benefits Package",
-          "category": "other",
-          "amount": 25,
-          "frequency": "monthly",
-          "basis": "per_unit",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Benefits Package $25 / mo",
-          "source": "ai",
-          "confidence": "high",
-          "includedInAdvertised": true
-        },
-        {
-          "id": "the-flats-at-uptown-application-fee-per-applicant",
-          "name": "Application Fee Per Applicant",
-          "category": "application",
-          "amount": 50,
-          "frequency": "one_time",
-          "basis": "per_person",
-          "mandatory": "yes",
-          "counted": true,
-          "refundable": false,
-          "quote": "Application Fee Per Applicant $50",
-          "source": "ai",
-          "confidence": "high"
-        },
-        {
-          "id": "the-flats-at-uptown-pet-fee",
-          "name": "Pet Fee",
-          "category": "pet",
-          "amount": 500,
-          "frequency": "one_time",
-          "basis": "per_unit",
-          "mandatory": "no",
-          "counted": false,
-          "refundable": false,
-          "quote": "Pet Fee $500",
-          "source": "ai",
-          "confidence": "high"
-        }
-      ],
-      "reviewed": false
-    }
-  },
-  {
     "id": "the-mill",
     "name": "The Mill at Blacksburg",
     "url": "https://offcampus.vt.edu/housing/property/the-mill-at-blacksburg/egltlfm",
@@ -1837,8 +1498,8 @@
     "readOn": "2026-10-24",
     "priceRange": {
       "min": 560,
-      "max": 1680,
-      "basis": "per_unit"
+      "max": 1100,
+      "basis": "per_person"
     },
     "autoScanned": true,
     "apartment": {
@@ -1846,7 +1507,7 @@
       "name": "The Mill at Blacksburg",
       "advertised": {
         "amount": 560,
-        "basis": "per_unit",
+        "basis": "per_person",
         "quote": "$560 - $1,680"
       },
       "utilities": {
@@ -2249,17 +1910,17 @@
     "site": "VT Off-Campus Housing (offcampus.vt.edu)",
     "readOn": "2026-10-24",
     "priceRange": {
-      "min": 950,
-      "max": 1725,
-      "basis": "per_unit"
+      "min": 575,
+      "max": 1100,
+      "basis": "per_person"
     },
     "autoScanned": true,
     "apartment": {
       "id": "catalog-uptown-village",
       "name": "Uptown Village",
       "advertised": {
-        "amount": 950,
-        "basis": "per_unit",
+        "amount": 575,
+        "basis": "per_person",
         "quote": "$950 - $1,725"
       },
       "utilities": {
