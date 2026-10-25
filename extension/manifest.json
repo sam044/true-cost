@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "True Cost",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "One click reads the whole apartment listing you are looking at and shows every hidden fee in a side panel, then opens it in True Cost.",
   "minimum_chrome_version": "116",
   "action": {

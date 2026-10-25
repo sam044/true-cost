@@ -291,7 +291,8 @@ async function openInApp(then) {
     extraction: job.extraction,
     then: then === "compare" ? "compare" : "review",
   };
-  const delivered = await inPage(appTab.id, deliver, [capture]);
+  // As a string: executeScript drops null fields from objects it passes in.
+  const delivered = await inPage(appTab.id, deliver, [JSON.stringify(capture)]);
   if (!delivered) throw new Error("The True Cost tab couldn't take the fees.");
 }
 
@@ -419,9 +420,9 @@ function restorePage() {
 
 // Runs inside the app tab. The import page reads the capture from
 // sessionStorage on load, or when this event fires if it loaded first.
-function deliver(capture) {
+function deliver(json) {
   try {
-    sessionStorage.setItem("true-cost-capture", JSON.stringify(capture));
+    sessionStorage.setItem("true-cost-capture", json);
   } catch {
     return false;
   }
