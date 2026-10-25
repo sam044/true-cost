@@ -2,7 +2,7 @@
 
 **The rent you see isn't the rent you pay.** True Cost uses Gemma 4 to read apartment listings, find every fee, and show what each place really costs per person per month, side by side, before you sign.
 
-Live app: **[true-cost-xi.vercel.app](https://true-cost-xi.vercel.app)**. Built at GDG Build with AI x Hacktoberfest 2026, Virginia Tech (Oct 24–25, 2026).
+Live app: **[true-cost-xi.vercel.app](https://true-cost-xi.vercel.app)**. Demo video: **[watch on Loom](https://www.loom.com/share/d8e2152a9f714e55a9f441f7261340de)**. Built at GDG Build with AI x Hacktoberfest 2026, Virginia Tech (Oct 24–25, 2026).
 
 ## The problem
 
