@@ -43,8 +43,8 @@ export const FeeRow = forwardRef<HTMLInputElement, FeeRowProps>(function FeeRow(
     <li
       aria-labelledby={`${id}-title`}
       className={cn(
-        "flex flex-col gap-4 rounded-xl border bg-card p-4 sm:p-5",
-        flagged && "border-warning",
+        "flex flex-col gap-4 rounded-2xl bg-card p-5 shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-1 ring-foreground/[0.07] sm:p-6",
+        flagged && "bg-warning/[0.06] ring-2 ring-warning dark:bg-warning/10",
       )}
     >
       <div className="flex flex-wrap items-center gap-2">
@@ -132,7 +132,7 @@ export const FeeRow = forwardRef<HTMLInputElement, FeeRowProps>(function FeeRow(
       </div>
 
       {fee.quote ? (
-        <figure className="rounded-lg bg-muted px-3 py-2 text-sm">
+        <figure className="rounded-xl bg-muted/80 px-3.5 py-2.5 text-sm">
           <figcaption className="text-xs font-medium text-muted-foreground">
             From the listing
           </figcaption>

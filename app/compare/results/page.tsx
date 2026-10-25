@@ -22,7 +22,7 @@ const COLUMNS = ["", "md:grid-cols-1 max-w-xl", "md:grid-cols-2", "lg:grid-cols-
 
 function EmptyState() {
   return (
-    <div className="flex max-w-xl flex-col items-start gap-4 rounded-xl border border-dashed p-8">
+    <div className="flex max-w-xl flex-col items-start gap-4 rounded-2xl bg-muted/70 p-8">
       <Building2 className="size-8 text-muted-foreground" aria-hidden />
       <div>
         <h2 className="font-semibold">No apartments to compare yet</h2>
@@ -68,21 +68,26 @@ function Results() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      {apartments.length > 1 && (
-        <ApartmentPicker
-          apartments={apartments}
-          shown={new Set(shown.map((a) => a.id))}
-          onToggle={toggle}
-        />
-      )}
-      <p className="text-sm text-muted-foreground">
-        {setup.people === 1 ? "Just you" : `Split ${setup.people} ways`}, {setup.leaseMonths}
-        -month lease.{" "}
-        <Link href="/compare/setup" className="underline underline-offset-4 hover:text-foreground">
-          Change setup
-        </Link>
-      </p>
+    <div className="flex flex-col gap-6">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-3">
+        {apartments.length > 1 && (
+          <ApartmentPicker
+            apartments={apartments}
+            shown={new Set(shown.map((a) => a.id))}
+            onToggle={toggle}
+          />
+        )}
+        <p className="text-sm text-muted-foreground">
+          {setup.people === 1 ? "Just you" : `Split ${setup.people} ways`}, {setup.leaseMonths}
+          -month lease.{" "}
+          <Link
+            href="/compare/setup"
+            className="rounded-sm font-medium text-foreground underline decoration-foreground/30 underline-offset-4 transition-colors hover:decoration-foreground focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+          >
+            Change setup
+          </Link>
+        </p>
+      </div>
       <div className={cn("grid items-start gap-4", COLUMNS[shown.length])}>
         {shown.map((apartment) => (
           <ApartmentColumn

@@ -56,12 +56,12 @@ function AddApartments() {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-14">
       <CatalogPicker />
 
       {apartments.length > 0 && (
         <section aria-labelledby="added-heading" className="flex flex-col gap-3">
-          <h2 id="added-heading" className="text-lg font-semibold">
+          <h2 id="added-heading" className="text-xl font-semibold tracking-tight">
             Your apartments{" "}
             <span className="font-normal text-muted-foreground">
               ({apartments.length} of {MAX_APARTMENTS})
@@ -77,15 +77,15 @@ function AddApartments() {
         </section>
       )}
 
-      <section aria-labelledby="fallback-heading" className="flex flex-col gap-4 border-t pt-6">
-        <h2 id="fallback-heading" className="text-lg font-semibold">
+      <section aria-labelledby="fallback-heading" className="flex flex-col gap-4">
+        <h2 id="fallback-heading" className="text-xl font-semibold tracking-tight">
           Not in the list?
         </h2>
         <ExtensionNote />
       </section>
 
       {unreviewed && (
-        <div className="flex flex-wrap items-center gap-3 border-t pt-6">
+        <div className="flex flex-wrap items-center gap-3">
           <Button asChild size="lg">
             <Link href="/compare/review">Review fees</Link>
           </Button>
@@ -100,9 +100,9 @@ function AddApartments() {
 
 function ExtensionNote() {
   return (
-    <div className="flex flex-col gap-4 rounded-xl border bg-muted/40 p-4 sm:p-5">
-      <p className="flex items-start gap-3 text-sm text-muted-foreground">
-        <Puzzle className="mt-0.5 size-5 shrink-0" aria-hidden />
+    <div className="flex flex-col gap-5 rounded-2xl bg-muted/70 p-5 sm:p-6">
+      <p className="flex items-start gap-3 text-[0.95rem] text-pretty">
+        <Puzzle className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
         On any listing page, one click captures the whole page and opens it here for review.
       </p>
       <div className="flex flex-wrap items-start gap-3">
@@ -157,8 +157,8 @@ function ExtensionNote() {
 function ApartmentCard({ apartment, onRemove }: { apartment: Apartment; onRemove: () => void }) {
   const count = apartment.fees.length;
   return (
-    <Card className="h-full">
-      <CardContent className="flex h-full flex-col gap-3 p-4">
+    <Card className="h-full shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-foreground/[0.07]">
+      <CardContent className="flex h-full flex-col gap-2 px-4">
         <div className="flex items-start justify-between gap-2">
           <h3 className="font-semibold break-words">{apartment.name}</h3>
           <Button
@@ -174,7 +174,7 @@ function ApartmentCard({ apartment, onRemove }: { apartment: Apartment; onRemove
         <p className="text-sm text-muted-foreground">
           {count === 1 ? "1 fee found" : `${count} fees found`}
         </p>
-        <p className="mt-auto flex items-center gap-1.5 text-sm">
+        <p className="mt-auto flex items-center gap-1.5 pt-2 text-sm">
           {apartment.reviewed ? (
             <>
               <CircleCheck className="size-4 text-success" aria-hidden /> Reviewed

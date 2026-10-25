@@ -10,20 +10,21 @@ export function SiteHeader() {
   const nextTheme = resolvedTheme === "dark" ? "light" : "dark";
 
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/85 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border/70 bg-background">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link
           href="/"
-          className="flex items-center gap-2 rounded-md font-semibold tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="pressable flex items-center gap-2.5 rounded-md font-semibold tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
-          <span className="grid size-7 place-items-center rounded-md bg-primary text-primary-foreground">
-            <Receipt className="size-4" aria-hidden />
+          <span className="grid size-7 place-items-center rounded-lg bg-primary text-primary-foreground">
+            <Receipt className="size-4" strokeWidth={2.25} aria-hidden />
           </span>
           True Cost
         </Link>
         <Button
           variant="ghost"
           size="icon"
+          className="text-muted-foreground hover:text-foreground"
           onClick={() => setTheme(nextTheme)}
         >
           {/* The theme is only known in the browser, so the label switches with

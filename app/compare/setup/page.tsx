@@ -5,7 +5,7 @@
 // store, which persists to localStorage.
 import { useRef, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -88,43 +88,49 @@ function SetupForm() {
 
   return (
     <form onSubmit={onSubmit} noValidate className="flex max-w-xl flex-col gap-6">
-      <Card>
-        <CardContent className="flex flex-col gap-8 p-6">
-          <fieldset className="flex flex-col gap-3">
-            <legend className="mb-3 text-sm font-medium">How many people will share the unit?</legend>
-            <div className="flex flex-wrap gap-2">
-              {PEOPLE.map((n) => (
-                <label key={n} className="relative">
-                  <input
-                    type="radio"
-                    name="people"
-                    value={n}
-                    checked={people === n}
-                    onChange={() => setPeople(n)}
-                    className="peer sr-only"
-                  />
-                  <span
-                    className={cn(
-                      "grid size-11 cursor-pointer place-items-center rounded-lg border text-base font-medium tabular-nums transition-colors motion-reduce:transition-none",
-                      "hover:bg-muted peer-focus-visible:border-ring peer-focus-visible:ring-3 peer-focus-visible:ring-ring/50",
-                      "peer-checked:border-primary peer-checked:bg-primary peer-checked:text-primary-foreground",
-                    )}
-                  >
-                    {n}
-                    <span className="sr-only">{n === 1 ? " person" : " people"}</span>
-                  </span>
-                </label>
-              ))}
-            </div>
-            <p className="text-sm text-muted-foreground">
-              {people === 1
-                ? "Per-unit fees are all yours."
-                : `Per-unit rent and fees are split ${people} ways.`}
-            </p>
-          </fieldset>
+      <Card className="shadow-[0_1px_2px_rgb(0_0_0/0.03)] ring-foreground/[0.07]">
+        <CardContent className="flex flex-col divide-y divide-border/70 px-6 sm:px-8 [&>*]:py-7 [&>*:first-child]:pt-2 [&>*:last-child]:pb-2">
+          <div>
+            <fieldset className="flex flex-col gap-3">
+              <legend className="mb-3 text-[0.95rem] font-medium">
+                How many people will share the unit?
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {PEOPLE.map((n) => (
+                  <label key={n} className="relative">
+                    <input
+                      type="radio"
+                      name="people"
+                      value={n}
+                      checked={people === n}
+                      onChange={() => setPeople(n)}
+                      className="peer sr-only"
+                    />
+                    <span
+                      className={cn(
+                        "pressable grid size-11 cursor-pointer place-items-center rounded-xl border bg-card text-base font-medium tabular-nums motion-reduce:transition-none",
+                        "hover:border-foreground/25 peer-focus-visible:border-ring peer-focus-visible:ring-3 peer-focus-visible:ring-ring/50",
+                        "peer-checked:border-primary peer-checked:bg-primary peer-checked:text-primary-foreground",
+                      )}
+                    >
+                      {n}
+                      <span className="sr-only">{n === 1 ? " person" : " people"}</span>
+                    </span>
+                  </label>
+                ))}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                {people === 1
+                  ? "Per-unit fees are all yours."
+                  : `Per-unit rent and fees are split ${people} ways.`}
+              </p>
+            </fieldset>
+          </div>
 
           <div className="flex flex-col gap-3">
-            <Label htmlFor="lease">Lease length in months</Label>
+            <Label htmlFor="lease" className="text-[0.95rem]">
+              Lease length in months
+            </Label>
             <div className="flex flex-wrap items-center gap-2">
               <Input
                 ref={leaseRef}
@@ -138,7 +144,7 @@ function SetupForm() {
                 onChange={(e) => setLease(e.target.value)}
                 aria-invalid={leaseError ? true : undefined}
                 aria-describedby={cn("lease-hint", leaseError && "lease-error")}
-                className="h-10 w-24 tabular-nums"
+                className="h-11 w-20 rounded-xl text-base tabular-nums"
               />
               {LEASE_PRESETS.map((n) => (
                 <Button
@@ -147,7 +153,7 @@ function SetupForm() {
                   variant="outline"
                   aria-pressed={lease === String(n)}
                   onClick={() => setLease(String(n))}
-                  className="h-10 aria-pressed:border-primary aria-pressed:bg-primary aria-pressed:text-primary-foreground dark:aria-pressed:bg-primary aria-pressed:hover:bg-primary/90"
+                  className="h-11 rounded-xl px-3.5 text-[0.95rem] aria-pressed:border-primary aria-pressed:bg-primary aria-pressed:text-primary-foreground dark:aria-pressed:bg-primary aria-pressed:hover:bg-primary/90"
                 >
                   {n} months
                 </Button>
@@ -163,40 +169,52 @@ function SetupForm() {
             )}
           </div>
 
-          <fieldset className="flex flex-col gap-3">
-            <legend className="mb-3 text-sm font-medium">
-              Will you need any of these?{" "}
-              <span className="font-normal text-muted-foreground">(tick any that apply)</span>
-            </legend>
-            <div className="flex flex-wrap gap-x-6 gap-y-3">
-              {NEED_OPTIONS.map(({ key, label }) => (
-                <label key={key} className="flex cursor-pointer items-center gap-2 text-sm">
-                  <input
-                    type="checkbox"
-                    checked={needs[key]}
-                    onChange={(e) => setNeeds({ ...needs, [key]: e.target.checked })}
-                    aria-describedby="needs-hint"
-                    className="size-4 cursor-pointer accent-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
-                  />
-                  {label}
-                </label>
-              ))}
-            </div>
-            <p id="needs-hint" className="text-sm text-muted-foreground">
-              Optional fees for these count toward the true cost. You can still change any
-              single fee on the Compare screen.
-            </p>
-          </fieldset>
+          <div>
+            <fieldset className="flex flex-col gap-3">
+              <legend className="mb-3 text-[0.95rem] font-medium">
+                Will you need any of these?{" "}
+                <span className="font-normal text-muted-foreground">(tick any that apply)</span>
+              </legend>
+              <div className="flex flex-wrap gap-2">
+                {NEED_OPTIONS.map(({ key, label }) => (
+                  <label key={key} className="relative">
+                    <input
+                      type="checkbox"
+                      checked={needs[key]}
+                      onChange={(e) => setNeeds({ ...needs, [key]: e.target.checked })}
+                      aria-describedby="needs-hint"
+                      className="peer sr-only"
+                    />
+                    <span
+                      className={cn(
+                        "pressable flex h-11 cursor-pointer items-center gap-2 rounded-xl border bg-card px-4 text-[0.95rem] select-none",
+                        "hover:border-foreground/25 peer-focus-visible:border-ring peer-focus-visible:ring-3 peer-focus-visible:ring-ring/50",
+                        "peer-checked:border-primary peer-checked:bg-primary/[0.07] peer-checked:text-primary dark:peer-checked:bg-primary/15",
+                        "[&>svg]:hidden peer-checked:[&>svg]:block",
+                      )}
+                    >
+                      <Check className="size-4" aria-hidden />
+                      {label}
+                    </span>
+                  </label>
+                ))}
+              </div>
+              <p id="needs-hint" className="text-sm text-muted-foreground">
+                Optional fees for these count toward the true cost. You can still change any single
+                fee on the Compare screen.
+              </p>
+            </fieldset>
+          </div>
 
           <div className="flex flex-col gap-3">
-            <Label htmlFor="budget">
+            <Label htmlFor="budget" className="text-[0.95rem]">
               Monthly budget per person
               <span className="font-normal text-muted-foreground">(optional)</span>
             </Label>
             <div className="relative w-40">
               <span
                 aria-hidden
-                className="pointer-events-none absolute inset-y-0 left-3 flex items-center text-muted-foreground"
+                className="pointer-events-none absolute inset-y-0 left-3.5 flex items-center text-muted-foreground"
               >
                 $
               </span>
@@ -212,7 +230,7 @@ function SetupForm() {
                 onChange={(e) => setBudget(e.target.value)}
                 aria-invalid={budgetError ? true : undefined}
                 aria-describedby={cn("budget-hint", budgetError && "budget-error")}
-                className="h-10 pl-6 tabular-nums"
+                className="h-11 rounded-xl pl-7 text-base tabular-nums"
               />
             </div>
             <p id="budget-hint" className="text-sm text-muted-foreground">
@@ -252,7 +270,7 @@ export default function SetupPage() {
         <div
           role="status"
           aria-label="Loading your saved setup"
-          className="h-96 max-w-xl animate-pulse rounded-xl bg-muted motion-reduce:animate-none"
+          className="h-[34rem] max-w-xl animate-pulse rounded-xl bg-muted motion-reduce:animate-none"
         />
       )}
     </>

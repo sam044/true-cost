@@ -77,7 +77,8 @@ export default function ReviewPage({ params }: { params: Promise<{ id: string }>
 function ReviewApartment({ apartment }: { apartment: Apartment }) {
   const router = useRouter();
   const apartments = useTrueCost((s) => s.apartments);
-  const { updateApartment, updateFee, addFee, removeFee, shareToIndex, setShareToIndex } = useTrueCost();
+  const { updateApartment, updateFee, addFee, removeFee, shareToIndex, setShareToIndex } =
+    useTrueCost();
 
   // Flagged fees go first. The order is fixed when the screen opens so rows
   // don't jump while the user edits them; new fees go at the end.
@@ -175,14 +176,17 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
         description="Every fee shows the words it came from. Fix anything that looks off, then confirm."
       />
       {apartments.length > 1 && (
-        <p className="-mt-4 pb-6 text-sm text-muted-foreground">
+        <p className="-mt-7 pb-10 text-sm text-muted-foreground">
           Apartment {position} of {apartments.length}
         </p>
       )}
 
-      <div className="flex flex-col gap-8">
-        <section aria-labelledby="price-heading" className="rounded-xl border bg-card p-4 sm:p-5">
-          <h2 id="price-heading" className="text-lg font-semibold">
+      <div className="flex flex-col gap-12">
+        <section
+          aria-labelledby="price-heading"
+          className="rounded-2xl bg-card p-5 shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-1 ring-foreground/[0.07] sm:p-6"
+        >
+          <h2 id="price-heading" className="text-lg font-semibold tracking-tight">
             Advertised rent
           </h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_2fr]">
@@ -226,7 +230,7 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
               </Select>
             </div>
             {apartment.advertised.quote && (
-              <figure className="self-end rounded-lg bg-muted px-3 py-2 text-sm">
+              <figure className="self-end rounded-xl bg-muted/80 px-3.5 py-2.5 text-sm">
                 <figcaption className="text-xs font-medium text-muted-foreground">
                   From the listing
                 </figcaption>
@@ -238,7 +242,7 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
 
         <section aria-labelledby="fees-heading" className="flex flex-col gap-4">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <h2 id="fees-heading" className="text-lg font-semibold">
+            <h2 id="fees-heading" className="text-xl font-semibold tracking-tight">
               Fees <span className="font-normal text-muted-foreground">({fees.length})</span>
             </h2>
             {flaggedCount > 0 && (
@@ -250,14 +254,14 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
           </div>
 
           {fees.length === 0 ? (
-            <div className="rounded-xl border border-dashed p-8 text-center">
+            <div className="rounded-2xl bg-muted/70 p-8 text-center">
               <p className="font-medium">No fees found</p>
               <p className="mt-1 text-sm text-muted-foreground">
                 If you know about any fees for this apartment, add them below.
               </p>
             </div>
           ) : (
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-3">
               {fees.map((fee) => (
                 <FeeRow
                   key={fee.id}
@@ -280,8 +284,11 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
           </Button>
         </section>
 
-        <section aria-labelledby="utilities-heading" className="rounded-xl border bg-card p-4 sm:p-5">
-          <h2 id="utilities-heading" className="text-lg font-semibold">
+        <section
+          aria-labelledby="utilities-heading"
+          className="rounded-2xl bg-card p-5 shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-1 ring-foreground/[0.07] sm:p-6"
+        >
+          <h2 id="utilities-heading" className="text-lg font-semibold tracking-tight">
             Utilities
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
@@ -290,7 +297,7 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
           </p>
           <dl className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-5">
             {(Object.keys(UTILITY_LABELS) as UtilityName[]).map((name) => (
-              <div key={name} className="rounded-lg bg-muted px-3 py-2">
+              <div key={name} className="rounded-xl bg-muted/80 px-3.5 py-2.5">
                 <dt className="text-muted-foreground">{UTILITY_LABELS[name]}</dt>
                 <dd className="font-medium">{UTILITY_STATUS[apartment.utilities[name]]}</dd>
               </div>
@@ -298,13 +305,13 @@ function ReviewApartment({ apartment }: { apartment: Apartment }) {
           </dl>
         </section>
 
-        <div className="flex flex-col gap-3 border-t pt-6">
+        <div className="flex flex-col gap-5 rounded-2xl bg-muted/70 p-5 sm:p-6">
           {showErrors && errors.length > 0 && (
             <div
               ref={errorRef}
               tabIndex={-1}
               role="alert"
-              className="rounded-lg border border-destructive/40 bg-destructive/10 px-4 py-3 text-sm text-destructive"
+              className="rounded-xl bg-destructive/10 px-4 py-3 text-sm text-destructive focus:outline-none"
             >
               {errors.join(" ")}
             </div>

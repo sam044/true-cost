@@ -15,19 +15,19 @@ export function CostBar({ summary }: { summary: CostSummary }) {
 
   return (
     <div className="flex flex-col gap-3">
-      <div aria-hidden className="flex h-4 w-full gap-0.5 overflow-hidden rounded-full bg-muted">
+      <div aria-hidden className="bar-grow flex h-2.5 w-full gap-[3px] overflow-hidden rounded-full bg-muted">
         {parts.map((s) => (
           <div
             key={s.key}
-            className={s.color}
+            className={`${s.color} first:rounded-l-full last:rounded-r-full`}
             style={{ width: `${(summary.breakdown[s.key] / summary.trueMonthly) * 100}%` }}
           />
         ))}
       </div>
-      <ul className="grid gap-1 text-sm" aria-label="Monthly cost by type">
+      <ul className="grid gap-1.5 text-sm" aria-label="Monthly cost by type">
         {parts.map((s) => (
           <li key={s.key} className="flex items-center gap-2">
-            <span aria-hidden className={`size-2.5 shrink-0 rounded-sm ${s.color}`} />
+            <span aria-hidden className={`size-2 shrink-0 rounded-full ${s.color}`} />
             <span className="text-muted-foreground">{s.label}</span>
             <span className="ml-auto tabular-nums">{money(summary.breakdown[s.key])}</span>
           </li>

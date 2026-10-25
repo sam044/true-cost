@@ -11,40 +11,49 @@ const STEPS = [
 
 export type StepKey = (typeof STEPS)[number]["key"];
 
+// Four equal segments: a filled bar over each step reached, the label under it.
+// On a phone only the current label shows, with "Step n of 4".
 export function Stepper({ current }: { current: StepKey }) {
   const currentIndex = STEPS.findIndex((s) => s.key === current);
 
   return (
-    <nav aria-label="Progress" className="py-6">
-      <ol className="flex flex-wrap items-center gap-2 text-sm">
+    <nav aria-label="Progress" className="pt-8 pb-10">
+      <p className="mb-2 text-sm text-muted-foreground sm:hidden" aria-hidden>
+        Step {currentIndex + 1} of {STEPS.length}
+        <span className="text-foreground"> · {STEPS[currentIndex].label}</span>
+      </p>
+      <ol className="grid grid-cols-4 gap-2 text-sm">
         {STEPS.map((step, i) => {
           const done = i < currentIndex;
           const active = i === currentIndex;
           return (
-            <li key={step.key} className="flex items-center gap-2">
+            <li key={step.key} className="min-w-0">
               <Link
                 href={step.href}
                 aria-current={active ? "step" : undefined}
-                className={cn(
-                  "flex items-center gap-2 rounded-full px-3 py-1.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
-                  active && "bg-primary text-primary-foreground",
-                  done && "text-foreground hover:bg-muted",
-                  !active && !done && "text-muted-foreground hover:bg-muted",
-                )}
+                className="group flex flex-col gap-2.5 rounded-md pb-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background"
               >
                 <span
-                  className={cn(
-                    "grid size-5 place-items-center rounded-full border text-xs",
-                    active && "border-primary-foreground/40",
-                    done && "border-success bg-success text-white",
-                  )}
                   aria-hidden
+                  className={cn(
+                    "h-1 rounded-full transition-colors duration-300",
+                    active || done ? "bg-primary" : "bg-border group-hover:bg-foreground/20",
+                  )}
+                />
+                <span
+                  className={cn(
+                    "flex items-center gap-1.5 truncate transition-colors",
+                    active && "font-medium text-foreground",
+                    done && "text-muted-foreground group-hover:text-foreground",
+                    !active && !done && "text-muted-foreground group-hover:text-foreground",
+                    "max-sm:sr-only",
+                  )}
                 >
-                  {done ? <Check className="size-3" /> : i + 1}
+                  {done && <Check className="size-3.5 shrink-0 text-primary" aria-hidden />}
+                  {step.label}
+                  {done && <span className="sr-only"> (done)</span>}
                 </span>
-                {step.label}
               </Link>
-              {i < STEPS.length - 1 && <span className="h-px w-6 bg-border" aria-hidden />}
             </li>
           );
         })}

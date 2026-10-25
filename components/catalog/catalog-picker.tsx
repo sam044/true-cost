@@ -87,10 +87,10 @@ export function CatalogPicker() {
   return (
     <section aria-labelledby="catalog-heading" className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
-        <h2 id="catalog-heading" className="text-lg font-semibold">
+        <h2 id="catalog-heading" className="text-xl font-semibold tracking-tight">
           Pick Blacksburg complexes
         </h2>
-        <p className="text-sm text-muted-foreground">
+        <p className="max-w-2xl text-sm text-pretty text-muted-foreground">
           {catalog.length} complexes with fees already read from each listing.{" "}
           {catalog.length - autoCount} are checked by hand; {autoCount} marked Auto-scanned open
           Review first. Select up to {MAX_APARTMENTS}.
@@ -98,10 +98,12 @@ export function CatalogPicker() {
       </div>
 
       <div className="flex max-w-md flex-col gap-1.5">
-        <Label htmlFor={searchId}>Search complexes</Label>
+        <Label htmlFor={searchId} className="sr-only">
+          Search complexes
+        </Label>
         <div className="relative">
           <Search
-            className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground"
+            className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-muted-foreground"
             aria-hidden
           />
           <Input
@@ -109,9 +111,9 @@ export function CatalogPicker() {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Hub, Union, Foxridge…"
+            placeholder="Search complexes: Hub, Union, Foxridge…"
             autoComplete="off"
-            className="pl-9"
+            className="h-11 rounded-xl pl-10 text-base"
           />
         </div>
       </div>
@@ -121,14 +123,14 @@ export function CatalogPicker() {
       </p>
 
       {full && (
-        <p className="rounded-lg border bg-muted/50 p-3 text-sm text-muted-foreground">
+        <p className="rounded-xl bg-muted px-4 py-3 text-sm text-muted-foreground">
           You have {MAX_APARTMENTS} apartments, the most True Cost compares at once. Select an added
           complex again to remove it.
         </p>
       )}
 
       {shown.length === 0 ? (
-        <div className="flex flex-col items-start gap-3 rounded-xl border border-dashed p-6">
+        <div className="flex flex-col items-start gap-3 rounded-2xl bg-muted/60 p-6">
           <p className="font-medium">No complexes match &ldquo;{query.trim()}&rdquo;</p>
           <p className="text-sm text-muted-foreground">
             Check the spelling, or add the listing yourself below.
@@ -144,12 +146,12 @@ export function CatalogPicker() {
           role="region"
           aria-labelledby={listHeadingId}
           tabIndex={0}
-          className="max-h-[26rem] overflow-y-auto rounded-xl border bg-muted/30 p-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="relative max-h-[30rem] overflow-y-auto overscroll-contain rounded-2xl bg-muted/70 p-2 [scrollbar-gutter:stable] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:p-3"
         >
           <h3 id={listHeadingId} className="sr-only">
             {shown.length} Blacksburg complexes, scroll for more
           </h3>
-          <ul aria-label="Blacksburg complexes" className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <ul aria-label="Blacksburg complexes" className="grid gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
             {shown.map((entry) => (
               <li key={entry.id}>
                 <CatalogCard
@@ -199,8 +201,8 @@ function CatalogCard({
   return (
     <div
       className={cn(
-        "flex h-full flex-col rounded-xl border bg-card text-card-foreground transition-colors",
-        added && "border-primary ring-1 ring-primary",
+        "flex h-full flex-col rounded-xl bg-card text-card-foreground shadow-[0_1px_2px_rgb(0_0_0/0.04)] ring-1 ring-foreground/[0.06] transition-[box-shadow,background-color] duration-200",
+        added && "bg-primary/[0.035] ring-2 ring-primary dark:bg-primary/10",
       )}
     >
       {/* A native button gives click, Enter and Space for free. */}
@@ -211,20 +213,22 @@ function CatalogCard({
         aria-disabled={blocked || undefined}
         onClick={onToggle}
         className={cn(
-          "flex flex-1 flex-col gap-2 rounded-t-xl p-4 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
-          blocked ? "cursor-not-allowed" : "hover:bg-muted/60",
+          "group/card flex flex-1 flex-col gap-1.5 rounded-t-xl p-4 text-left transition-transform duration-150 ease-(--ease-out-strong) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+          blocked ? "cursor-not-allowed" : "active:scale-[0.985] motion-reduce:active:scale-100",
         )}
       >
         <span className="flex items-start justify-between gap-2">
-          <span className="font-semibold break-words">{entry.name}</span>
+          <span className="leading-snug font-semibold break-words">{entry.name}</span>
           {/* aria-pressed already says whether it's added. */}
           <span
             aria-hidden
             className={cn(
-              "inline-flex shrink-0 items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium",
+              "inline-flex h-6 shrink-0 items-center gap-1 rounded-full px-2.5 text-xs font-medium transition-colors duration-200",
               added
                 ? "bg-primary text-primary-foreground"
-                : "border text-muted-foreground",
+                : blocked
+                  ? "bg-muted text-muted-foreground"
+                  : "bg-muted text-foreground group-hover/card:bg-primary group-hover/card:text-primary-foreground",
             )}
           >
             {added ? (
@@ -240,7 +244,7 @@ function CatalogCard({
             )}
           </span>
         </span>
-        <span className="text-sm">{priceRange(entry.priceRange)}</span>
+        <span className="mt-1 text-sm tabular-nums">{priceRange(entry.priceRange)}</span>
         <span className="text-sm text-muted-foreground">
           {fees === 1 ? "1 fee found" : `${fees} fees found`}
           {entry.autoScanned ? " · Auto-scanned, not checked yet" : " · Checked by hand"}
@@ -251,7 +255,7 @@ function CatalogCard({
           </span>
         )}
       </button>
-      <div className="flex flex-col gap-1 border-t px-4 py-3 text-xs text-muted-foreground">
+      <div className="mx-4 flex flex-col gap-1 border-t border-dashed border-foreground/10 py-3 text-xs text-muted-foreground">
         <span>
           {entry.site} · Read {readDate(entry.readOn)}
         </span>
